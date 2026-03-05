@@ -649,6 +649,7 @@
     #brain3d-canvas {
       width: 100%;
       height: 100%;
+      outline: none;
     }
 
     .brain-controls {
@@ -815,7 +816,6 @@
 </head>
 <body>
   <div class="app-container">
-    <!-- Sidebar -->
     <nav class="sidebar" id="sidebar">
       <div class="sidebar-header">
         <a href="#" class="logo" onclick="showPage('intro'); return false;">
@@ -885,14 +885,11 @@
 
     <div class="nav-overlay" id="navOverlay" onclick="toggleSidebar()"></div>
 
-    <!-- Main Content -->
     <main class="main-content">
-      <!-- Reading Progress -->
       <div class="reading-bar">
         <div class="reading-progress" id="readingProgress"></div>
       </div>
 
-      <!-- Header -->
       <header class="top-header">
         <button class="nav-toggle" onclick="toggleSidebar()">☰</button>
         <div class="breadcrumb">
@@ -906,7 +903,6 @@
         </div>
       </header>
 
-      <!-- PAGE: INTRO -->
       <div class="page active" id="page-intro">
         <div class="page-hero">
           <div class="chapter-number">Wprowadzenie</div>
@@ -967,12 +963,11 @@
         </div>
       </div>
 
-      <!-- PAGE: HISTORY -->
       <div class="page" id="page-history">
         <div class="page-hero">
           <div class="chapter-number">Historia</div>
           <h1>Historia neuropsychologii</h1>
-          <p class="lead">Od frenologii Gall'a przez odkrycia Broki i Wernickego po współczesne metody neuroobrazowania — jak zmieniało się rozumienie mózgu i umysłu.</p>
+          <p class="lead">Od frenologii Galla przez odkrycia Broki i Wernickego po współczesne metody neuroobrazowania — jak zmieniało się rozumienie mózgu i umysłu.</p>
         </div>
 
         <div class="section">
@@ -991,13 +986,13 @@
 
         <div class="section">
           <h2>XX wiek: od holizmu do kognitywistyki</h2>
-          <p><strong>Karl Lashley (1890–1958)</strong> — amerycki neuropsycholog, który w latach 20. i 30. prowadził eksperymenty na szczurach, usuwając fragmenty kory mózgowej. Doszedł do wniosku, że trudność w uczeniu się zależy od <em>wielkości</em> usuniętego obszaru, a nie jego <em>lokalizacji</em> — sformułował zasadę <span class="term">masy akcji</span>.</p>
+          <p><strong>Karl Lashley (1890–1958)</strong> — amerykański neuropsycholog, który w latach 20. i 30. prowadził eksperymenty na szczurach, usuwając fragmenty kory mózgowej. Doszedł do wniosku, że trudność w uczeniu się zależy od <em>wielkości</em> usuniętego obszaru, a nie jego <em>lokalizacji</em> — sformułował zasadę <span class="term">masy akcji</span>.</p>
 
           <p><strong>Donald Hebb (1904–1985)</strong> — kanadyjski psycholog, który w 1949 roku opublikował <em>Organization of Behavior</em>, wprowadzając koncepcję <span class="term">komórek zespołowych (cell assemblies)</span> i regułę Hebba: „Neurony, które razem się aktywują, razem się łączą." To fundament współczesnej neuroplastyczności.</p>
 
           <p><strong>Roger Sperry (1913–1994)</strong> — w latach 60. badał pacjentów po <span class="term">callosotomii</span> (przecięciu ciała modzelowatego). Jego eksperymenty z Michaelem Gazzanigą ujawniły, że każda półkula może funkcjonować niezależnie, z lewą dominującą w mowie. Sperry otrzymał Nagrodę Nobla w 1981 roku.</p>
 
-          <p><strong>Aleksander Łuria (1902–1977)</strong> — rosyjski neuropsycholog, który stworzył kompleksową teorię funkcjonalnych układów mózgu i metodologię badania neuropsychologicznego. Jego prace kliniczne (np. <em>Człowiek z roztrzaskanym światem</em>) są klasykami.</p>
+          <p><strong>Aleksander Łuria (Alexander Luria, 1902–1977)</strong> — rosyjski neuropsycholog, który stworzył kompleksową teorię funkcjonalnych układów mózgu i metodologię badania neuropsychologicznego. Jego prace kliniczne (np. <em>Człowiek z roztrzaskanym światem</em>) są klasykami opartymi o głębokie obserwacje zachowania.</p>
         </div>
 
         <div class="section">
@@ -1021,7 +1016,6 @@
       </div>
 
 
-      <!-- PAGE: ANATOMY -->
       <div class="page" id="page-anatomy">
         <div class="page-hero">
           <div class="chapter-number">Neurobiologia</div>
@@ -1047,13 +1041,18 @@
             <div class="card">
               <div class="card-label">Płat</div>
               <div class="card-title">Skroniowy (temporalny)</div>
-              <p>Słuch, pamięć, język (obszar Wernickego), rozpoznawanie twarzy. Zawiera hipokamp i ciałko migdałowate.</p>
+              <p>Słuch, pamięć, język (obszar Wernickego), rozpoznawanie twarzy. W głębi zawiera hipokamp i ciałko migdałowate.</p>
             </div>
             <div class="card">
               <div class="card-label">Płat</div>
               <div class="card-title">Potyliczny (occipitalny)</div>
               <p>Przetwarzanie wzrokowe. Kora wzrokowa pierwotna (V1, BA 17) i obszary asocjacyjne wizualne.</p>
             </div>
+          </div>
+          
+          <div class="callout callout-info">
+            <span class="callout-icon">ℹ️</span>
+            <p>Poza głównymi czterema płatami, wymienia się również <strong>Wyspę (Insula)</strong> — ukrytą pod bruzdą boczną, kluczową m.in. dla świadomości trzewnej (interocepcji) oraz empatii.</p>
           </div>
 
           <h3>Pola Brodmanna</h3>
@@ -1102,7 +1101,7 @@
 
           <div class="callout callout-info">
             <span class="callout-icon">ℹ️</span>
-            <p><strong>DTI (Dyfuzyjna Tomografia Komputerowa)</strong> to technika MRI pozwalająca wizualizować szlaki istoty białej w żywym mózgu. Wykorzystuje zjawisko <span class="term">anizotropii dyfuzji</span> — woda dyfunduje szybciej wzdłuż włókien nerwowych niż w poprzek.</p>
+            <p><strong>DTI (Dyfuzyjna Tomografia Komputerowa)</strong> to technika MRI pozwalająca wizualizować szlaki istoty białej w żywym mózgu. Wykorzystuje zjawisko <span class="term">anizotropii dyfuzji</span> — woda dyfunduje szybciej wzdłuż włókien nerwowych (aksonów) niż w poprzek, co pozwala komputerowo zrekonstruować trasy połączeń nerwowych (tzw. traktografia).</p>
           </div>
         </div>
 
@@ -1112,7 +1111,6 @@
         </div>
       </div>
 
-      <!-- PAGE: NEURON -->
       <div class="page" id="page-neuron">
         <div class="page-hero">
           <div class="chapter-number">Neurobiologia</div>
@@ -1149,7 +1147,7 @@
             <li><strong>Hiperpolaryzacja</strong> — przejściowe przesunięcie poniżej poziomu spoczynkowego ("przerwa refrakcyjna")</li>
           </ol>
 
-          <p>Przewodzenie wzdłuż aksonu jest <span class="term">solitatoryjne</span> — skacze między węzłami Ranviera (przerwami w pochewce mielinowej), co znacznie przyspiesza transmisję (do 120 m/s w włóknach mielinizowanych).</p>
+          <p>Przewodzenie wzdłuż aksonu z osłonką jest <span class="term">saltatoryjne (skokowe)</span> — impuls przeskakuje między węzłami Ranviera (przerwami w pochewce mielinowej), co dramatycznie przyspiesza transmisję (do 120 m/s w włóknach mielinizowanych) w porównaniu do włókien niezmielinizowanych.</p>
         </div>
 
         <div class="section">
@@ -1206,7 +1204,6 @@
         </div>
       </div>
 
-      <!-- PAGE: SYSTEMS -->
       <div class="page" id="page-systems">
         <div class="page-hero">
           <div class="chapter-number">Neurobiologia</div>
@@ -1226,8 +1223,8 @@
             </div>
             <div class="card">
               <div class="card-label">Układ</div>
-              <div class="card-title">Szerotoninergiczny</div>
-              <p>Szczyt jądra raphe → kora, hipokamp, ciałko migdałowate. Nastrój, sen, apetyt.</p>
+              <div class="card-title">Serotoninergiczny</div>
+              <p>Szczyt jądra szwu (raphe nuclei) → kora, hipokamp, ciałko migdałowate. Nastrój, sen, apetyt.</p>
             </div>
             <div class="card">
               <div class="card-label">Układ</div>
@@ -1237,7 +1234,7 @@
             <div class="card">
               <div class="card-label">Układ</div>
               <div class="card-title">Noradrenergiczny</div>
-              <p>Zespół zębaty (locus coeruleus) → cały mózg. Uwaga, pobudzenie, stres.</p>
+              <p>Miejsce sinawe (locus coeruleus) → cały mózg. Uwaga, pobudzenie, czujność, stres.</p>
             </div>
           </div>
         </div>
@@ -1248,7 +1245,7 @@
 
           <div class="definition-block">
             <div class="def-term">Sieć trybu domyślnego (DMN — Default Mode Network)</div>
-            <p>Aktywna, gdy nie wykonujemy zadania zewnętrznie ukierunkowanego. Obejmuje: tylną korę obręczy, precuneus, skroniowy biegun, przyśrodkową korę przedczołową. Zaangażowana w: myślenie o sobie, przeszłości/przyszłości, teorię umysłu. Zaburzona w depresji, Alzheimerze, autyźmie.</p>
+            <p>Aktywna, gdy nie wykonujemy zadania zewnętrznie ukierunkowanego. Obejmuje: tylną korę obręczy, precuneus, skroniowy biegun, przyśrodkową korę przedczołową. Zaangażowana w: myślenie o sobie, przeszłości/przyszłości, teorię umysłu. Zaburzona w depresji, Alzheimerze, autyzmie.</p>
           </div>
 
           <div class="definition-block">
@@ -1263,7 +1260,7 @@
 
           <div class="definition-block">
             <div class="def-term">Sieć znaczenia (salience network)</div>
-            <p>Wykrywa istotne bodźce i przełącza między DMN a ECN. Obejmuje: zakręt obręczy przedni, ciałko migdałowate. Zaangażowana w przetwarzanie emocjonalne i bólowe.</p>
+            <p>Wykrywa istotne bodźce i przełącza między DMN a ECN. Obejmuje: zakręt obręczy przedni (ACC), ciałko migdałowate. Zaangażowana w przetwarzanie emocjonalne i odczuwanie bólu.</p>
           </div>
         </div>
 
@@ -1278,7 +1275,6 @@
         </div>
       </div>
 
-      <!-- PAGE: COGPSYCH -->
       <div class="page" id="page-cogpsych">
         <div class="page-hero">
           <div class="chapter-number">Kognitywistyka</div>
@@ -1351,7 +1347,6 @@
       </div>
 
 
-      <!-- PAGE: MEMORY -->
       <div class="page" id="page-memory">
         <div class="page-hero">
           <div class="chapter-number">Funkcje Poznawcze</div>
@@ -1364,7 +1359,7 @@
           
           <div class="definition-block">
             <div class="def-term">Model Atkinsona-Shiffrina (1968)</div>
-            <p>Klasyczny model trójkomponentowy: <strong>pamięć sensoryczna</strong> (ultrakraótka, ikoniczna/echoiczna) → <strong>pamięć krótkotrwała</strong> (PKT, ~7±2 elementy, 15-30s) → <strong>pamięć długotrwała</strong> (PDT, teoretycznie nieograniczona).</p>
+            <p>Klasyczny model trójkomponentowy: <strong>pamięć sensoryczna</strong> (ultrakrótka, ikoniczna/echoiczna) → <strong>pamięć krótkotrwała</strong> (PKT, ~7±2 elementy, 15-30s) → <strong>pamięć długotrwała</strong> (PDT, teoretycznie nieograniczona).</p>
           </div>
 
           <div class="definition-block">
@@ -1398,8 +1393,8 @@
         <div class="section">
           <h2>Neurobiologia pamięci</h2>
           
-          <h3>Hipokamp i struktury skroniowo-podstawne</h3>
-          <p><span class="term">Hipokamp</span> (wraz z zawiaskami, zakrętem zębatym i poduszkowatym) jest kluczowy dla:</p>
+          <h3>Hipokamp i formacja hipokampa</h3>
+          <p><span class="term">Formacja hipokampa</span> (właściwy hipokamp, zakręt zębaty i podkładka (subiculum)) jest kluczowa dla:</p>
           <ul>
             <li><strong>Konsolidacji pamięci deklaratywnej</strong> — przekształcania krótkotrwałych wspomnień w długotrwałe</li>
             <li><strong>Nawigacji przestrzennej</strong> — neurony miejsca (place cells) kodują pozycję w przestrzeni</li>
@@ -1408,7 +1403,7 @@
 
           <div class="callout callout-info">
             <span class="callout-icon">ℹ️</span>
-            <p><strong>Nagroda Nobla 2014</strong> dla Johna O'Keefe oraz May-Britt i Edvarda Moserów za odkrycie <span class="term">komórek miejsca</span> (hipokamp) i <span class="term">komórek siatki</span> (jądro podkorowe) — systemu nawigacji przestrzennej w mózgu.</p>
+            <p><strong>Nagroda Nobla 2014</strong> dla Johna O'Keefe oraz May-Britt i Edvarda Moserów za odkrycie <span class="term">komórek miejsca</span> (hipokamp) i <span class="term">komórek siatki</span> (w korze śródwęchowej) — systemu nawigacji przestrzennej w mózgu.</p>
           </div>
 
           <h3>Kora prefrontalna i pamięć robocza</h3>
@@ -1438,7 +1433,7 @@
 
           <div class="definition-block">
             <div class="def-term">Zespół Korzakoffa</div>
-            <p>Amnezja następcza + konfabulacja + ataksja wynikająca z niedoboru tiaminy (B1), najczęściej w przebiegu alkoholizmu. Uszkodzenia: ciała suteczkowate, wzgórze.</p>
+            <p>Amnezja następcza + konfabulacja + ataksja wynikająca z niedoboru tiaminy (witaminy B1), najczęściej w przebiegu alkoholizmu. Uszkodzenia: ciała suteczkowate, wzgórze.</p>
           </div>
 
           <div class="definition-block">
@@ -1453,7 +1448,6 @@
         </div>
       </div>
 
-      <!-- PAGE: ATTENTION -->
       <div class="page" id="page-attention">
         <div class="page-hero">
           <div class="chapter-number">Funkcje Poznawcze</div>
@@ -1500,7 +1494,7 @@
             <li><strong>Representacyjny</strong> — w wyobrażeniowej przestrzeni (np. w opisie z pamięci)</li>
           </ul>
 
-          <p>Testy: przekreślanie linii, kopiowanie rysunku, bisekcja linii, test karmienia lwa (kancielowanie celów po lewej).</p>
+          <p>Testy: przekreślanie linii, kopiowanie rysunku, bisekcja linii, test karmienia lwa (kancelowanie celów po lewej).</p>
         </div>
 
         <div class="page-footer">
@@ -1509,7 +1503,6 @@
         </div>
       </div>
 
-      <!-- PAGE: LANGUAGE -->
       <div class="page" id="page-language">
         <div class="page-hero">
           <div class="chapter-number">Funkcje Poznawcze</div>
@@ -1570,7 +1563,6 @@
         </div>
       </div>
 
-      <!-- PAGE: EXECUTIVE -->
       <div class="page" id="page-executive">
         <div class="page-hero">
           <div class="chapter-number">Funkcje Poznawcze</div>
@@ -1646,7 +1638,6 @@
         </div>
       </div>
 
-      <!-- PAGE: PERCEPTION -->
       <div class="page" id="page-perception">
         <div class="page-hero">
           <div class="chapter-number">Funkcje Poznawcze</div>
@@ -1667,7 +1658,7 @@
             <div class="card">
               <div class="card-label">Szlak</div>
               <div class="card-title">Dorsalny („Gdzie? / Jak?")</div>
-              <p>Biegnie od V1 przez V2, MT/V5 do kory ciemieniowej. Odpowiada za lokalizację przestrzenną, analizę ruchu, kontrolę działania. Zaburzenia → <span class="term">zaburzenia optic ataxia</span> (niezdolność do precyzyjnego sięgania).</p>
+              <p>Biegnie od V1 przez V2, MT/V5 do kory ciemieniowej. Odpowiada za lokalizację przestrzenną, analizę ruchu, kontrolę działania. Zaburzenia → <span class="term">ataksja wzrokowa (optic ataxia)</span> (niezdolność do precyzyjnego sięgania).</p>
             </div>
           </div>
 
@@ -1678,22 +1669,22 @@
         </div>
 
         <div class="section">
-          <h2>Agnosja wzrokowa</h2>
-          <p><span class="term">Agnosja</span> (z gr. „bez poznania") to niemożność rozpoznania obiektów wzrokowych przy zachowanej percepcji i inteligencji. Ludia Teuber zdefiniowała ją jako „percepcję bez poznania".</p>
+          <h2>Agnozja wzrokowa</h2>
+          <p><span class="term">Agnozja</span> (z gr. „bez poznania") to niemożność rozpoznania obiektów wzrokowych przy zachowanej percepcji i inteligencji. Hans-Lukas Teuber zdefiniował ją jako „percepcję bez poznania".</p>
 
           <div class="definition-block">
-            <div class="def-term">Agnosja appercepcyjna</div>
+            <div class="def-term">Agnozja appercepcyjna</div>
             <p>Deficyt na poziomie percepcji — pacjent nie może skonstruować spójnej reprezentacji percepcyjnej obiektu. Widzi fragmenty, ale nie potrafi ich zintegrować. Związana z uszkodzeniem kory wzrokowej asocjacyjnej (V2, V4).</p>
           </div>
 
           <div class="definition-block">
-            <div class="def-term">Agnosja asocjacyjna</div>
+            <div class="def-term">Agnozja asocjacyjna</div>
             <p>Percepcja zachowana, ale brak dostępu do pamięci semantycznej. Pacjent może narysować obiekt, ale go nie rozpozna. Związana z korą skroniową dolną.</p>
           </div>
 
           <div class="definition-block">
             <div class="def-term">Prozopagnozja</div>
-            <p>Specyficzny deficyt rozpoznawania twarzy. Związana z uszkodzeniem <span class="term">zakrętu poduszkowatego (FFA — Fusiform Face Area)</span>. Pacjent widzi oczy, nos, usta, ale nie może ich zintegrować w rozpoznawalną twarz.</p>
+            <p>Specyficzny deficyt rozpoznawania twarzy. Związana z uszkodzeniem <span class="term">zakrętu wrzecionowatego/poduszkowatego (FFA — Fusiform Face Area)</span>. Pacjent widzi oczy, nos, usta, ale nie może ich zintegrować w rozpoznawalną twarz.</p>
           </div>
         </div>
 
@@ -1704,7 +1695,7 @@
           <ul>
             <li><strong>Ideaomotoryczna</strong> — niezdolność do wykonywania gestów na komendę (np. „pokaż, jak używasz młotka"), choć gesty spontaniczne zachowane</li>
             <li><strong>Kinestetyczna</strong> — trudności z manipulacją przedmiotami w przestrzeni</li>
-            <li><strong>Mowy</strong> — trudności z artykulacją (dysarthria)</li>
+            <li><strong>Mowy</strong> — trudności z artykulacją (dysarthria apraktyczna)</li>
             <li><strong>Konstrukcyjna</strong> — trudności z konstruowaniem/rysowaniem (np. zegar)</li>
           </ul>
 
@@ -1718,7 +1709,6 @@
       </div>
 
 
-      <!-- PAGE: APHASIA -->
       <div class="page" id="page-aphasia">
         <div class="page-hero">
           <div class="chapter-number">Zaburzenia</div>
@@ -1791,7 +1781,6 @@
         </div>
       </div>
 
-      <!-- PAGE: AMNESIA -->
       <div class="page" id="page-amnesia">
         <div class="page-hero">
           <div class="chapter-number">Zaburzenia</div>
@@ -1812,8 +1801,8 @@
           <ul>
             <li>Uszkodzenie hipokampów (niedokrwienie tylnej tętnicy mózgowej)</li>
             <li>Zespół Korzakoffa (niedobór tiaminy B1)</li>
-            <li>Encefalitis (np. opryszczkowy, atakujący skroniowe rogi)</li>
-            <li>Urazy czaszkowo-mózgowe (obrażenia wyrostków skroniowych)</li>
+            <li>Encefalitis (np. opryszczkowy, atakujący bieguny skroniowe)</li>
+            <li>Urazy czaszkowo-mózgowe (obrażenia biegunów skroniowych)</li>
             <li>Operacje neurochirurgiczne (jak u H.M.)</li>
           </ul>
         </div>
@@ -1848,7 +1837,6 @@
         </div>
       </div>
 
-      <!-- PAGE: DEMENTIA -->
       <div class="page" id="page-dementia">
         <div class="page-hero">
           <div class="chapter-number">Zaburzenia</div>
@@ -1882,8 +1870,8 @@
 
           <h3>Patologia</h3>
           <ul>
-            <li><strong>Plakiety amyloidowe</strong> — złogi β-amyloidu między neuronami</li>
-            <li><strong>Zwężenia neurofibrylarne</strong> — zaburzona tau wewnątrz neuronów</li>
+            <li><strong>Blaszki amyloidowe</strong> — złogi β-amyloidu między neuronami</li>
+            <li><strong>Zwyrodnienie włókienkowe (sploty neurofibrylarne)</strong> — zmutowane białko tau wewnątrz neuronów</li>
             <li><strong>Atrofia mózgu</strong> — szczególnie skroniowo-podstawna (hipokamp)</li>
           </ul>
 
@@ -1918,7 +1906,6 @@
         </div>
       </div>
 
-      <!-- PAGE: TBI -->
       <div class="page" id="page-tbi">
         <div class="page-hero">
           <div class="chapter-number">Zaburzenia</div>
@@ -1954,9 +1941,9 @@
           <div class="definition-block">
             <div class="def-term">Krwawienie wewnątrzczaszkowe</div>
             <ul>
-              <li><strong>Epiduralny</strong> — między czaszką a oponą twardą, często z uszkodzeniem tętnicy klinowatej górnej</li>
-              <li><strong>Subduralny</strong> — między oponą twardą a pajęczynówką, często u osób starszych (atrofia mózgu)</li>
-              <li><strong>Śródmózgowy</strong> — wewnątrz tkanki mózgowej</li>
+              <li><strong>Nadoponowe (Epiduralne)</strong> — między czaszką a oponą twardą, często z uszkodzeniem tętnicy oponowej środkowej</li>
+              <li><strong>Podtwardówkowe (Subduralne)</strong> — między oponą twardą a pajęczynówką, często u osób starszych (atrofia mózgu sprzyja rozerwaniu żył pomostowych)</li>
+              <li><strong>Śródmózgowe</strong> — wewnątrz tkanki mózgowej</li>
             </ul>
           </div>
 
@@ -1970,7 +1957,7 @@
           <h2>CTE — Przewlekła Encefalopatia Traumatyczna</h2>
           <p><span class="term">CTE (Chronic Traumatic Encephalopathy)</span> to postępująca choroba neurodegeneracyjna związana z <strong>powtarzającymi się urazami głowy</strong> (np. u sportowców kontaktowych, żołnierzy).</p>
 
-          <p><strong>Patologia:</strong> akumulacja białka tau wokół naczyń krwionośnych w korze. <strong>Objawy:</strong> zmiany osobowości, depresja, impulsywność, postępujące otępienie. <strong>Diagnoza:</strong> wyłącznie post mortem (choć badania nad biomarkerami trwają).</p>
+          <p><strong>Patologia:</strong> akumulacja zmutowanego białka tau wokół naczyń krwionośnych w korze. <strong>Objawy:</strong> zmiany osobowości, depresja, impulsywność, postępujące otępienie. <strong>Diagnoza:</strong> z całą pewnością wyłącznie post mortem (choć badania nad biomarkerami trwają).</p>
         </div>
 
         <div class="section">
@@ -1997,7 +1984,6 @@
       </div>
 
 
-      <!-- PAGE: CASES OVERVIEW -->
       <div class="page" id="page-cases">
         <div class="page-hero">
           <div class="chapter-number">Przypadki Kliniczne</div>
@@ -2041,7 +2027,6 @@
         </div>
       </div>
 
-      <!-- PAGE: CASE H.M. -->
       <div class="page" id="page-case-hm">
         <div class="page-hero">
           <div class="chapter-number">Przypadek Kliniczny · Pamięć</div>
@@ -2106,7 +2091,6 @@
         </div>
       </div>
 
-      <!-- PAGE: CASE GAGE -->
       <div class="page" id="page-case-gage">
         <div class="page-hero">
           <div class="chapter-number">Przypadek Kliniczny · Płat Czołowy</div>
@@ -2179,7 +2163,6 @@
         </div>
       </div>
 
-      <!-- PAGE: CASE TAN -->
       <div class="page" id="page-case-tan">
         <div class="page-hero">
           <div class="chapter-number">Przypadek Kliniczny · Język</div>
@@ -2229,7 +2212,6 @@
         </div>
       </div>
 
-      <!-- PAGE: CASE SPLIT BRAIN -->
       <div class="page" id="page-case-split">
         <div class="page-hero">
           <div class="chapter-number">Przypadek Kliniczny · Asymetria Półkul</div>
@@ -2293,7 +2275,6 @@
       </div>
 
 
-      <!-- PAGE: TESTS OVERVIEW -->
       <div class="page" id="page-tests-overview">
         <div class="page-hero">
           <div class="chapter-number">Diagnostyka</div>
@@ -2335,7 +2316,7 @@
             <div class="card" onclick="showPage('tests-executive')">
               <div class="card-label">Kategoria</div>
               <div class="card-title">Funkcje wykonawcze</div>
-              <p>Hamowanie, elastyczność, planowanie, rozwiązywanie problemów — TMT-B, WCST, Stroop, Wieża z Hanoi.</p>
+              <p>Hamowanie, elastyczność, planowanie, rozwiązywanie problemów — TMT-B, WCST, Stroopa, Wieża z Hanoi.</p>
             </div>
             <div class="card">
               <div class="card-label">Kategoria</div>
@@ -2345,7 +2326,7 @@
             <div class="card">
               <div class="card-label">Kategoria</div>
               <div class="card-title">Testy uwagi</div>
-              <p>Testy vigilancji, podzielonej uwagi, selektywnej — CPT, d2-R, Test Stroop.</p>
+              <p>Testy w Vigilancji, podzielonej uwagi, selektywnej — CPT, d2-R, Test Stroopa.</p>
             </div>
             <div class="card">
               <div class="card-label">Kategoria</div>
@@ -2373,7 +2354,6 @@
         </div>
       </div>
 
-      <!-- PAGE: TESTS SCREEN -->
       <div class="page" id="page-tests-screen">
         <div class="page-hero">
           <div class="chapter-number">Diagnostyka</div>
@@ -2417,7 +2397,7 @@
             <li>Zadanie z przesunięciem (set-shifting)</li>
             <li>Test zegara (konstrukcja)</li>
             <li>Identyfikację zwierząt</li>
-            <li>Opóźnone przypominanie po zadaniu zakłócającym</li>
+            <li>Opóźnione przypominanie po zadaniu zakłócającym</li>
             <li>Abstrakcję (podobieństwa)</li>
           </ul>
 
@@ -2455,7 +2435,6 @@
         </div>
       </div>
 
-      <!-- PAGE: TESTS MEMORY -->
       <div class="page" id="page-tests-memory">
         <div class="page-hero">
           <div class="chapter-number">Diagnostyka</div>
@@ -2487,7 +2466,7 @@
           
           <div class="definition-block">
             <div class="def-term">Rey-Osterrieth Complex Figure Test (ROCFT)</div>
-            <p>Pacjent kopiuje złożoną figurę geometryczną, a następnie rysuje ją z pamięci (natychmiast i po opóźnieniu). Ocenia pamięć wzrokowo-przestrzenią, konstrukcję, strategie organizacyjne. Deficyty w przypominaniu po opóźnieniu sugerują dysfunkcję prawej półkuli lub hipokampa.</p>
+            <p>Pacjent kopiuje złożoną figurę geometryczną, a następnie rysuje ją z pamięci (natychmiast i po opóźnieniu). Ocenia pamięć wzrokowo-przestrzenną, konstrukcję, strategie organizacyjne. Deficyty w przypominaniu po opóźnieniu sugerują dysfunkcję prawej półkuli lub hipokampa.</p>
           </div>
 
           <div class="definition-block">
@@ -2516,7 +2495,6 @@
         </div>
       </div>
 
-      <!-- PAGE: TESTS EXECUTIVE -->
       <div class="page" id="page-tests-executive">
         <div class="page-hero">
           <div class="chapter-number">Diagnostyka</div>
@@ -2596,7 +2574,6 @@
         </div>
       </div>
 
-      <!-- PAGE: ASSESSMENT -->
       <div class="page" id="page-assessment">
         <div class="page-hero">
           <div class="chapter-number">Diagnostyka</div>
@@ -2662,7 +2639,6 @@
         </div>
       </div>
 
-      <!-- PAGE: NEUROIMAGING -->
       <div class="page" id="page-neuroimaging">
         <div class="page-hero">
           <div class="chapter-number">Diagnostyka</div>
@@ -2711,7 +2687,6 @@
       </div>
 
 
-      <!-- PAGE: WIKI -->
       <div class="page" id="page-wiki">
         <div class="page-hero">
           <div class="chapter-number">Referencje</div>
@@ -2752,8 +2727,8 @@
               <div class="wiki-entry-def">Nabyte zaburzenie zdolności językowych spowodowane uszkodzeniem mózgu. Może dotyczyć mówienia, rozumienia, czytania i pisania. Główne typy: afazja Broki (niepłynna), afazja Wernickego (płynna), afazja globalna, afazja anomiczna.</div>
             </div>
             <div class="wiki-entry">
-              <div class="wiki-entry-term">Agnosja</div>
-              <div class="wiki-entry-def">Zaburzenie rozpoznawania bodźców sensorycznych przy zachowanych zmysłach. Pacjent widzi/słyszy/czuje, ale nie może zidentyfikować bodźca. Typy: agnosja wzrokowa, prozopagnosja (twarze), agnosja przestrzenna.</div>
+              <div class="wiki-entry-term">Agnozja</div>
+              <div class="wiki-entry-def">Zaburzenie rozpoznawania bodźców sensorycznych przy zachowanych zmysłach. Pacjent widzi/słyszy/czuje, ale nie może zidentyfikować bodźca. Typy: agnozja wzrokowa, prozopagnozja (twarze), agnozja przestrzenna.</div>
             </div>
             <div class="wiki-entry">
               <div class="wiki-entry-term">Akson</div>
@@ -2857,7 +2832,7 @@
             <div class="wiki-group-letter">F</div>
             <div class="wiki-entry">
               <div class="wiki-entry-term">FFA</div>
-              <div class="wiki-entry-def">Fusiform Face Area — obszar w zakręcie poduszkowatym specjalizowany do rozpoznawania twarzy. Uszkodzenie → prozopagnozja.</div>
+              <div class="wiki-entry-def">Fusiform Face Area — obszar w zakręcie wrzecionowatym specjalizowany do rozpoznawania twarzy. Uszkodzenie → prozopagnozja.</div>
             </div>
             <div class="wiki-entry">
               <div class="wiki-entry-term">Fluencja</div>
@@ -3033,7 +3008,7 @@
             </div>
             <div class="wiki-entry">
               <div class="wiki-entry-term">Prozopagnozja</div>
-              <div class="wiki-entry-def">Specyficzny deficyt rozpoznawania twarzy. Związana z uszkodzeniem FFA (zakręt poduszkowaty).</div>
+              <div class="wiki-entry-def">Specyficzny deficyt rozpoznawania twarzy. Związana z uszkodzeniem FFA (zakręt wrzecionowaty).</div>
             </div>
             <div class="wiki-entry">
               <div class="wiki-entry-term">Pryming</div>
@@ -3105,7 +3080,7 @@
             <div class="wiki-group-letter">W</div>
             <div class="wiki-entry">
               <div class="wiki-entry-term">Węzeł Ranviera</div>
-              <div class="wiki-entry-def">Przerwa w pochewce mielinowej, gdzie akson jest odsłonięty. Miejsce regeneracji potencjału czynnościowego w przewodzeniu solitatoryjnym.</div>
+              <div class="wiki-entry-def">Przerwa w pochewce mielinowej, gdzie akson jest odsłonięty. Miejsce regeneracji potencjału czynnościowego w przewodzeniu saltatoryjnym.</div>
             </div>
             <div class="wiki-entry">
               <div class="wiki-entry-term">Wzgórze</div>
@@ -3134,7 +3109,6 @@
     </main>
   </div>
 
-  <!-- 3D Brain Modal -->
   <div class="modal-overlay" id="brain3d-modal">
     <div class="modal-content">
       <div class="modal-header">
@@ -3158,15 +3132,12 @@
   <script>
     // Page navigation
     function showPage(pageId) {
-      // Hide all pages
       document.querySelectorAll('.page').forEach(page => {
         page.classList.remove('active');
       });
       
-      // Show selected page
       document.getElementById('page-' + pageId).classList.add('active');
       
-      // Update nav items
       document.querySelectorAll('.nav-item').forEach(item => {
         item.classList.remove('active');
         if (item.dataset.page === pageId) {
@@ -3174,7 +3145,6 @@
         }
       });
       
-      // Update breadcrumb
       const pageTitles = {
         'intro': 'Definicja i zakres',
         'history': 'Historia dyscypliny',
@@ -3206,26 +3176,21 @@
       };
       document.getElementById('breadcrumb').textContent = pageTitles[pageId] || pageId;
       
-      // Reset reading progress
       document.getElementById('readingProgress').style.width = '0%';
       
-      // Close sidebar on mobile
       if (window.innerWidth <= 900) {
         document.getElementById('sidebar').classList.remove('open');
         document.getElementById('navOverlay').classList.remove('open');
       }
       
-      // Scroll to top
       window.scrollTo(0, 0);
     }
 
-    // Sidebar toggle
     function toggleSidebar() {
       document.getElementById('sidebar').classList.toggle('open');
       document.getElementById('navOverlay').classList.toggle('open');
     }
 
-    // Reading progress
     window.addEventListener('scroll', function() {
       const scrollTop = window.scrollY;
       const docHeight = document.body.scrollHeight - window.innerHeight;
@@ -3233,12 +3198,10 @@
       document.getElementById('readingProgress').style.width = scrollPercent + '%';
     });
 
-    // Search functionality
     document.getElementById('searchInput').addEventListener('input', function(e) {
       const query = e.target.value.toLowerCase();
       if (query.length < 2) return;
       
-      // Simple search - find first match and navigate
       const pages = ['intro', 'history', 'anatomy', 'neuron', 'systems', 'cogpsych', 'memory', 
                      'attention', 'language', 'executive', 'perception', 'aphasia', 'amnesia', 
                      'dementia', 'tbi', 'cases', 'case-hm', 'case-gage', 'case-tan', 'case-split',
@@ -3254,9 +3217,7 @@
       }
     });
 
-    // Wiki filter
     function filterWiki(letter) {
-      // Update buttons
       document.querySelectorAll('.wiki-letter').forEach(btn => {
         btn.classList.remove('active');
         if (btn.textContent === letter || (letter === 'all' && btn.textContent === 'Wszystkie')) {
@@ -3264,7 +3225,6 @@
         }
       });
       
-      // Filter entries
       document.querySelectorAll('.wiki-group').forEach(group => {
         if (letter === 'all' || group.dataset.letter === letter) {
           group.style.display = 'block';
@@ -3274,149 +3234,106 @@
       });
     }
 
-    // Three.js Brain Visualization
-    let scene, camera, renderer, brainGroup;
+    // Odświeżona wizualizacja Three.js (znacznie bardziej merytoryczna przestrzennie)
+    let scene, camera, renderer, brainGroup, controls;
     let currentHighlight = 'all';
 
     function initBrain3D() {
       const container = document.getElementById('brain3d-canvas');
       
-      // Scene
+      while (container.firstChild) {
+          container.removeChild(container.firstChild);
+      }
+      
       scene = new THREE.Scene();
       scene.background = new THREE.Color(0x111114);
       
-      // Camera
       camera = new THREE.PerspectiveCamera(50, container.clientWidth / container.clientHeight, 0.1, 1000);
-      camera.position.z = 5;
+      camera.position.set(0, 0, 4.5);
       
-      // Renderer
-      renderer = new THREE.WebGLRenderer({ antialias: true });
+      renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
       renderer.setSize(container.clientWidth, container.clientHeight);
       container.appendChild(renderer.domElement);
       
-      // Lights
-      const ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
+      controls = new THREE.OrbitControls(camera, renderer.domElement);
+      controls.enableDamping = true;
+      controls.dampingFactor = 0.05;
+      
+      const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
       scene.add(ambientLight);
       
       const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
       directionalLight.position.set(5, 5, 5);
       scene.add(directionalLight);
       
-      const pointLight = new THREE.PointLight(0xc9a227, 0.5);
-      pointLight.position.set(-5, 3, 3);
-      scene.add(pointLight);
-      
-      // Brain group
       brainGroup = new THREE.Group();
       scene.add(brainGroup);
       
-      // Create brain lobes as simplified shapes
-      const lobeMaterial = new THREE.MeshPhongMaterial({ 
-        color: 0x8b7a6a,
-        shininess: 30,
-        transparent: true,
-        opacity: 0.9
-      });
-      
-      // Frontal lobe (left and right)
-      const frontalGeo = new THREE.SphereGeometry(0.8, 32, 32);
-      frontalGeo.scale(1, 0.7, 0.8);
-      
-      const frontalLeft = new THREE.Mesh(frontalGeo, lobeMaterial.clone());
-      frontalLeft.position.set(-0.5, 0.5, 0.3);
-      frontalLeft.userData = { region: 'frontal' };
-      brainGroup.add(frontalLeft);
-      
-      const frontalRight = new THREE.Mesh(frontalGeo, lobeMaterial.clone());
-      frontalRight.position.set(0.5, 0.5, 0.3);
-      frontalRight.userData = { region: 'frontal' };
-      brainGroup.add(frontalRight);
-      
-      // Parietal lobe
-      const parietalGeo = new THREE.SphereGeometry(0.75, 32, 32);
-      parietalGeo.scale(1, 0.6, 0.7);
-      
-      const parietalLeft = new THREE.Mesh(parietalGeo, lobeMaterial.clone());
-      parietalLeft.position.set(-0.55, -0.2, 0.2);
-      parietalLeft.userData = { region: 'parietal' };
-      brainGroup.add(parietalLeft);
-      
-      const parietalRight = new THREE.Mesh(parietalGeo, lobeMaterial.clone());
-      parietalRight.position.set(0.55, -0.2, 0.2);
-      parietalRight.userData = { region: 'parietal' };
-      brainGroup.add(parietalRight);
-      
-      // Temporal lobe
-      const temporalGeo = new THREE.SphereGeometry(0.65, 32, 32);
-      temporalGeo.scale(0.8, 0.9, 0.7);
-      
-      const temporalLeft = new THREE.Mesh(temporalGeo, lobeMaterial.clone());
-      temporalLeft.position.set(-0.7, -0.3, -0.2);
-      temporalLeft.userData = { region: 'temporal' };
-      brainGroup.add(temporalLeft);
-      
-      const temporalRight = new THREE.Mesh(temporalGeo, lobeMaterial.clone());
-      temporalRight.position.set(0.7, -0.3, -0.2);
-      temporalRight.userData = { region: 'temporal' };
-      brainGroup.add(temporalRight);
-      
-      // Occipital lobe
-      const occipitalGeo = new THREE.SphereGeometry(0.6, 32, 32);
-      occipitalGeo.scale(0.9, 0.7, 0.6);
-      
-      const occipital = new THREE.Mesh(occipitalGeo, lobeMaterial.clone());
-      occipital.position.set(0, -0.6, -0.4);
-      occipital.userData = { region: 'occipital' };
-      brainGroup.add(occipital);
-      
-      // Limbic system (hippocampus, amygdala - simplified)
-      const limbicGeo = new THREE.SphereGeometry(0.25, 16, 16);
-      const limbicMaterial = new THREE.MeshPhongMaterial({ 
-        color: 0xb86b7b,
-        shininess: 30
-      });
-      
-      const limbicLeft = new THREE.Mesh(limbicGeo, limbicMaterial);
-      limbicLeft.position.set(-0.4, -0.4, -0.1);
-      limbicLeft.userData = { region: 'limbic' };
-      brainGroup.add(limbicLeft);
-      
-      const limbicRight = new THREE.Mesh(limbicGeo, limbicMaterial);
-      limbicRight.position.set(0.4, -0.4, -0.1);
-      limbicRight.userData = { region: 'limbic' };
-      brainGroup.add(limbicRight);
-      
-      // Corpus callosum (connecting structure)
-      const corpusGeo = new THREE.CylinderGeometry(0.15, 0.15, 1.2, 16);
-      const corpusMaterial = new THREE.MeshPhongMaterial({ 
+      const lobeMat = new THREE.MeshPhongMaterial({
         color: 0xeeeeee,
-        shininess: 50
+        shininess: 15,
+        transparent: true,
+        opacity: 0.9,
+        flatShading: true
       });
-      const corpus = new THREE.Mesh(corpusGeo, corpusMaterial);
-      corpus.rotation.z = Math.PI / 2;
-      corpus.position.set(0, 0.1, 0);
-      brainGroup.add(corpus);
-      
+
+      function addLobe(geo, x, y, z, region) {
+        const mesh = new THREE.Mesh(geo, lobeMat.clone());
+        mesh.position.set(x, y, z);
+        mesh.userData = { region: region };
+        
+        const wireframe = new THREE.WireframeGeometry(geo);
+        const line = new THREE.LineSegments(wireframe);
+        line.material.color.setHex(0x444444);
+        line.material.opacity = 0.15;
+        line.material.transparent = true;
+        mesh.add(line);
+        
+        brainGroup.add(mesh);
+        return mesh;
+      }
+
+      // Frontal Lobe (+Z, +Y)
+      const frontalGeo = new THREE.SphereGeometry(0.7, 32, 32);
+      frontalGeo.scale(0.8, 0.9, 1.0);
+      addLobe(frontalGeo, -0.35, 0.4, 0.5, 'frontal');
+      addLobe(frontalGeo, 0.35, 0.4, 0.5, 'frontal');
+
+      // Parietal Lobe (-Z, +Y)
+      const parietalGeo = new THREE.SphereGeometry(0.65, 32, 32);
+      parietalGeo.scale(0.8, 0.8, 0.8);
+      addLobe(parietalGeo, -0.4, 0.5, -0.3, 'parietal');
+      addLobe(parietalGeo, 0.4, 0.5, -0.3, 'parietal');
+
+      // Temporal Lobe (-Y, outer X, mid Z)
+      const temporalGeo = new THREE.SphereGeometry(0.6, 32, 32);
+      temporalGeo.scale(0.7, 0.6, 1.1);
+      addLobe(temporalGeo, -0.7, -0.1, 0.1, 'temporal');
+      addLobe(temporalGeo, 0.7, -0.1, 0.1, 'temporal');
+
+      // Occipital Lobe (-Z)
+      const occipitalGeo = new THREE.SphereGeometry(0.55, 32, 32);
+      occipitalGeo.scale(0.9, 0.8, 0.7);
+      addLobe(occipitalGeo, -0.3, 0.0, -0.9, 'occipital');
+      addLobe(occipitalGeo, 0.3, 0.0, -0.9, 'occipital');
+
+      // Limbic System (Internal Torus for cingulate/hippocampus representation)
+      const limbicGeo = new THREE.TorusGeometry(0.3, 0.08, 16, 32);
+      const limbicMesh1 = addLobe(limbicGeo, -0.15, 0.1, 0, 'limbic');
+      limbicMesh1.rotation.y = Math.PI / 2;
+      const limbicMesh2 = addLobe(limbicGeo, 0.15, 0.1, 0, 'limbic');
+      limbicMesh2.rotation.y = Math.PI / 2;
+
       // Cerebellum
-      const cerebellumGeo = new THREE.SphereGeometry(0.5, 32, 32);
-      cerebellumGeo.scale(1.2, 0.5, 0.6);
-      const cerebellum = new THREE.Mesh(cerebellumGeo, lobeMaterial.clone());
-      cerebellum.position.set(0, -1, -0.3);
-      brainGroup.add(cerebellum);
+      const cerebellumGeo = new THREE.SphereGeometry(0.4, 32, 32);
+      cerebellumGeo.scale(1.2, 0.6, 0.8);
+      addLobe(cerebellumGeo, 0, -0.6, -0.6, 'none');
+
+      // Brainstem
+      const stemGeo = new THREE.CylinderGeometry(0.15, 0.1, 0.8, 16);
+      const stem = addLobe(stemGeo, 0, -0.7, -0.2, 'none');
+      stem.rotation.x = -Math.PI / 8;
       
-      // Add wireframe overlay for "neural" look
-      brainGroup.children.forEach(child => {
-        if (child.geometry && child.userData.region) {
-          const wireframe = new THREE.WireframeGeometry(child.geometry);
-          const line = new THREE.LineSegments(wireframe);
-          line.material.color.setHex(0x444444);
-          line.material.opacity = 0.1;
-          line.material.transparent = true;
-          child.add(line);
-        }
-      });
-      
-      // Animation
       animate();
     }
 
@@ -3424,7 +3341,10 @@
       requestAnimationFrame(animate);
       
       if (brainGroup) {
-        brainGroup.rotation.y += 0.003;
+        brainGroup.rotation.y += 0.002;
+      }
+      if (controls) {
+        controls.update();
       }
       
       renderer.render(scene, camera);
@@ -3433,7 +3353,6 @@
     function highlightRegion(region) {
       currentHighlight = region;
       
-      // Update buttons
       document.querySelectorAll('.brain-region-btn').forEach(btn => {
         btn.classList.remove('active');
         if (btn.textContent.toLowerCase().includes(region) || 
@@ -3442,24 +3361,23 @@
         }
       });
       
-      // Highlight brain parts
       const colors = {
-        'frontal': 0x5b8cb8,  // blue
-        'parietal': 0x4a9b9b, // teal
-        'temporal': 0xc9a227, // gold
-        'occipital': 0x8b7ab8, // purple
-        'limbic': 0xb86b7b,   // rose
-        'all': 0x8b7a6a       // default
+        'frontal': 0x5b8cb8, 
+        'parietal': 0x4a9b9b,
+        'temporal': 0xc9a227, 
+        'occipital': 0x8b7ab8, 
+        'limbic': 0xb86b7b,   
+        'all': 0xeeeeee       
       };
       
       brainGroup.children.forEach(child => {
         if (child.userData && child.userData.region) {
           if (region === 'all' || child.userData.region === region) {
             child.material.color.setHex(colors[child.userData.region] || colors['all']);
-            child.material.opacity = 1;
+            child.material.opacity = 0.9;
           } else {
             child.material.color.setHex(0x333333);
-            child.material.opacity = 0.3;
+            child.material.opacity = 0.15;
           }
         }
       });
@@ -3476,14 +3394,12 @@
       document.getElementById('brain3d-modal').classList.remove('active');
     }
 
-    // Close modal on escape
     document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape') {
         close3DModal();
       }
     });
 
-    // Handle window resize
     window.addEventListener('resize', function() {
       if (renderer && camera) {
         const container = document.getElementById('brain3d-canvas');

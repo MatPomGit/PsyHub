@@ -587,6 +587,92 @@
       line-height: 1.6;
     }
 
+    .article-index {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .article-link,
+    .article-disabled {
+      display: block;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.1rem 1.2rem;
+      text-decoration: none;
+      transition: transform 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+    }
+
+    .article-link:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent-gold);
+    }
+
+    .article-disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      pointer-events: none;
+      border-style: dashed;
+    }
+
+    .article-status {
+      display: inline-block;
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 0.55rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .article-link .article-status {
+      color: var(--accent-teal);
+    }
+
+    .article-disabled .article-status {
+      color: var(--accent-rose);
+    }
+
+    .article-name {
+      display: block;
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      color: var(--text-primary);
+      margin-bottom: 0.45rem;
+      font-weight: 600;
+    }
+
+    .article-note {
+      display: block;
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+      line-height: 1.55;
+    }
+
+    .cluster-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .cluster-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.2rem;
+    }
+
+    .cluster-card h3 {
+      margin-top: 0;
+    }
+
+    .cluster-card ul {
+      margin-bottom: 0;
+    }
+
     /* 3D Modal */
     .modal-overlay {
       position: fixed;
@@ -1097,6 +1183,7 @@
       <div class="nav-section">
         <div class="nav-section-title">Referencje</div>
         <a class="nav-item" data-page="wiki" onclick="showPage('wiki')">WIKI — Słownik</a>
+        <a class="nav-item" data-page="wiki-cognitive" onclick="showPage('wiki-cognitive')">WIKI — Psychologia poznawcza</a>
         <a class="nav-item" data-page="zakres" onclick="showPage('zakres')">Zakres wiedzy</a>
         <a class="nav-item" data-page="literatura" onclick="showPage('literatura')">Literatura</a>
       </div>
@@ -3329,7 +3416,265 @@
 
         <div class="page-footer">
           <span class="footer-note">WIKI — Słownik</span>
-          <button class="btn-next" onclick="showPage('intro')">Powrót do strony głównej →</button>
+          <button class="btn-next" onclick="showPage('wiki-cognitive')">Następny: WIKI — Psychologia poznawcza →</button>
+        </div>
+      </div>
+
+      <div class="page" id="page-wiki-cognitive">
+        <div class="page-hero">
+          <div class="chapter-number">Referencje</div>
+          <h1>WIKI — Psychologia poznawcza</h1>
+          <p class="lead">Osobna strona WIKI mapująca obszar psychologii poznawczej: od procesów podstawowych, przez złożone operacje umysłowe i modelowanie obliczeniowe, aż po psychologię sztucznej inteligencji.</p>
+        </div>
+
+        <div class="section">
+          <h2>Zakres działu</h2>
+          <p>Psychologia poznawcza bada, jak system umysł–mózg odbiera, selekcjonuje, reprezentuje, przechowuje i przekształca informacje. Obejmuje percepcję, uwagę, pamięć, język, podejmowanie decyzji, rozwiązywanie problemów, świadomość, metapoznanie oraz społeczne aspekty wnioskowania.</p>
+          <p>Współcześnie dział ten łączy klasyczne eksperymenty psychologiczne z neuronauką poznawczą, modelami formalnymi, symulacjami komputerowymi i analizą systemów sztucznej inteligencji. Dzięki temu można porównywać zachowanie człowieka, modele obliczeniowe i architektury AI w ramach wspólnego języka reprezentacji oraz przetwarzania informacji.</p>
+          <div class="callout callout-info">
+            <div class="callout-icon">🧭</div>
+            <p>Lista poniżej obejmuje zarówno istniejące artykuły portalu, jak i planowane hasła. Pozycje jeszcze nieopracowane są celowo wygaszone, aby czytelnik od razu widział strukturę przyszłej rozbudowy działu.</p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Pełna lista artykułów</h2>
+          <div class="definition-block">
+            <div class="def-term">Wrażenie a spostrzeganie</div>
+            <p><strong>Wrażenie</strong> jest najprostszym, bezpośrednim efektem pobudzenia receptora przez bodziec. Dotyczy pojedynczych cech, takich jak jasność, barwa, głośność, nacisk czy temperatura, i stanowi pierwszy etap kontaktu układu nerwowego z informacją. <strong>Spostrzeganie</strong> jest procesem wyższego rzędu: łączy wiele wrażeń, porządkuje je, porównuje z pamięcią i kontekstem oraz nadaje im znaczenie, dzięki czemu rozpoznajemy <em>co</em> widzimy, słyszymy lub czujemy. Innymi słowy: wrażenie dostarcza surowego materiału zmysłowego, a spostrzeganie buduje z niego świadomy obraz obiektu lub zdarzenia.</p>
+          </div>
+          <div class="definition-block">
+            <div class="def-term">Wyobraźnia — opis naukowy</div>
+            <p><strong>Wyobraźnia</strong> to zdolność poznawcza polegająca na generowaniu, podtrzymywaniu i przekształcaniu reprezentacji umysłowych przy względnym braku aktualnego bodźca zmysłowego. Nie jest prostą „fantazją”, lecz złożonym procesem angażującym pamięć roboczą, pamięć długotrwałą, systemy uwagowe oraz sieci odpowiedzialne za symulację percepcyjną i przewidywanie. Dzięki wyobraźni człowiek może odtwarzać obrazy, dźwięki i scenariusze, tworzyć nowe kombinacje treści, planować przyszłe działania, przeprowadzać symulacje mentalne oraz testować możliwe rozwiązania bez konieczności wykonywania ich w świecie zewnętrznym.</p>
+          </div>
+          <div class="article-index">
+            <a class="article-link" href="javascript:void(0)" onclick="showPage('cogpsych')">
+              <span class="article-status">artykuł dostępny</span>
+              <span class="article-name">Modele poznania</span>
+              <span class="article-note">Wprowadzenie do reprezentacji, przetwarzania informacji i głównych ram teoretycznych.</span>
+            </a>
+            <a class="article-link" href="javascript:void(0)" onclick="showPage('attention')">
+              <span class="article-status">artykuł dostępny</span>
+              <span class="article-name">Uwaga</span>
+              <span class="article-note">Selekcja informacji, zasoby uwagowe, kontrola odgórna i oddolna.</span>
+            </a>
+            <a class="article-link" href="javascript:void(0)" onclick="showPage('memory')">
+              <span class="article-status">artykuł dostępny</span>
+              <span class="article-name">Pamięć</span>
+              <span class="article-note">Pamięć robocza, epizodyczna, semantyczna, proceduralna i procesy konsolidacji.</span>
+            </a>
+            <a class="article-link" href="javascript:void(0)" onclick="showPage('language')">
+              <span class="article-status">artykuł dostępny</span>
+              <span class="article-name">Język</span>
+              <span class="article-note">Rozumienie i produkcja mowy, reprezentacje leksykalne i przetwarzanie składni.</span>
+            </a>
+            <a class="article-link" href="javascript:void(0)" onclick="showPage('executive')">
+              <span class="article-status">artykuł dostępny</span>
+              <span class="article-name">Funkcje wykonawcze</span>
+              <span class="article-note">Hamowanie, elastyczność poznawcza, planowanie i monitorowanie działania.</span>
+            </a>
+            <a class="article-link" href="javascript:void(0)" onclick="showPage('perception')">
+              <span class="article-status">artykuł dostępny</span>
+              <span class="article-name">Percepcja i gnozja</span>
+              <span class="article-note">Analiza bodźców, rozpoznawanie wzorców, integracja sensoryczna i identyfikacja obiektów.</span>
+            </a>
+
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Niższe procesy poznawcze</span>
+              <span class="article-note">Rejestracja sensoryczna, detekcja cech, podstawowa selekcja bodźców i wczesne etapy organizacji percepcyjnej.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Wyższe procesy poznawcze</span>
+              <span class="article-note">Myślenie abstrakcyjne, język, planowanie, rozwiązywanie problemów, metapoznanie i kontrola wykonawcza.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Wrażenie — podstawowy materiał zmysłowy</span>
+              <span class="article-note">Receptory, progi wrażliwości, transdukcja bodźca i kodowanie elementarnych cech bodźcowych.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Spostrzeganie — organizacja i nadawanie znaczenia</span>
+              <span class="article-note">Jak układ poznawczy scala wiele wrażeń w rozpoznawalny obiekt, scenę lub zdarzenie.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Spór o strukturę spostrzeżenia: strukturalizm i gestaltyzm</span>
+              <span class="article-note">Klasyczny spór o to, czy spostrzeżenie jest sumą elementów sensorycznych, czy też pierwotnie zorganizowaną całością o własnych prawach.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Scena wizualna: rzeczy i cechy</span>
+              <span class="article-note">Analiza sceny wzrokowej z rozróżnieniem na obiekty („rzeczy”) oraz ich cechy, takie jak kolor, kształt, ruch, położenie i relacje przestrzenne.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Faza 1: Rejestracja sensoryczna</span>
+              <span class="article-note">Przyjęcie energii bodźca przez receptory i wytworzenie pierwotnej odpowiedzi zmysłowej.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Faza 2: Selekcja i uwagowe filtrowanie</span>
+              <span class="article-note">Wybór informacji istotnych i tłumienie części sygnałów zanim powstanie pełny percept.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Faza 3: Organizacja percepcyjna</span>
+              <span class="article-note">Grupowanie cech, wyodrębnianie figury z tła, stałość percepcyjna i porządkowanie wzorca.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Faza 4: Identyfikacja i rozpoznanie</span>
+              <span class="article-note">Dopasowanie wzorca do reprezentacji pamięciowych i rozpoznanie obiektu, twarzy, słowa lub dźwięku.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Zaburzenia postrzegania: dysleksja i inne trudności</span>
+              <span class="article-note">Zakłócenia analizy i integracji bodźców obejmujące m.in. dysleksję, agnozje, zaburzenia integracji wzrokowo-przestrzennej oraz inne deficyty percepcyjne.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Faza 5: Interpretacja znaczenia</span>
+              <span class="article-note">Nadanie sensu z udziałem kontekstu, doświadczenia, oczekiwań i wiedzy semantycznej.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Faza 6: Reakcja i korekta predykcyjna</span>
+              <span class="article-note">Wpływ decyzji, działania i sprzężenia zwrotnego na dalsze kształtowanie percepcji.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Wyobraźnia i reprezentacje umysłowe</span>
+              <span class="article-note">Generowanie reprezentacji bez bieżącego bodźca, obrazowanie umysłowe, rotacje mentalne, symulacje przyszłych działań i twórcze rekombinacje treści pamięciowych.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Uczenie się i kategoryzacja</span>
+              <span class="article-note">Uczenie asocjacyjne, prototypy, egzemplarze, reguły i uczenie wzmacniające.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Myślenie</span>
+              <span class="article-note">Operowanie reprezentacjami umysłowymi w celu wnioskowania, porównywania, abstrahowania, tworzenia pojęć i generowania rozwiązań.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Zapisywanie i przechowywanie wiedzy w umyśle</span>
+              <span class="article-note">Kodowanie, konsolidacja i organizacja wiedzy w pamięci semantycznej, schematach, sieciach pojęciowych i reprezentacjach długotrwałych.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Myślenie i rozwiązywanie problemów</span>
+              <span class="article-note">Heurystyki, algorytmy, wgląd, analogie i ograniczenia przeszukiwania przestrzeni problemu.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Podejmowanie decyzji</span>
+              <span class="article-note">Racjonalność ograniczona, teoria perspektywy, ryzyko, preferencje i wybór adaptacyjny.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Świadomość i metapoznanie</span>
+              <span class="article-note">Dostęp świadomościowy, monitorowanie poznania, pewność sądu i iluzje introspekcji.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Psychologia poznania społecznego</span>
+              <span class="article-note">Atrybucje, teoria umysłu, stereotypy, mentalizacja i predykcja zachowań innych osób.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Emocje w przetwarzaniu poznawczym</span>
+              <span class="article-note">Wpływ afektu na uwagę, pamięć, decyzje, uczenie się i kontrolę poznawczą.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Metody badawcze psychologii poznawczej</span>
+              <span class="article-note">Eksperyment, chronometria umysłowa, eye-tracking, EEG/ERP, fMRI i modelowanie danych.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Symulacje komputerowe procesów poznawczych</span>
+              <span class="article-note">Modele symboliczne, subsymboliczne, bayesowskie i hybrydowe odwzorowujące zachowanie człowieka.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Architektury poznawcze</span>
+              <span class="article-note">ACT-R, SOAR, Global Workspace, predictive processing i architektury agentowe.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Sieci neuronowe i modelowanie koneksjonistyczne</span>
+              <span class="article-note">Reprezentacje rozproszone, uczenie głębokie i porównania z ludzkim uczeniem się.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Psychologia sztucznej inteligencji</span>
+              <span class="article-note">Jak ludzie postrzegają systemy AI, przypisują im intencje, zaufanie, odpowiedzialność i sprawczość.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Poznanie człowieka a systemy AI</span>
+              <span class="article-note">Porównanie błędów, generalizacji, pamięci, wyjaśnialności i granic symulacji umysłu.</span>
+            </span>
+            <span class="article-disabled">
+              <span class="article-status">artykuł planowany</span>
+              <span class="article-name">Etyka i bezpieczeństwo poznawcze AI</span>
+              <span class="article-note">Wpływ automatyzacji poznawczej na uwagę, decyzje, odpowiedzialność i dobrostan użytkownika.</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Mapa tematyczna działu</h2>
+          <div class="cluster-list">
+            <div class="cluster-card">
+              <h3>1. Procesy podstawowe</h3>
+              <ul>
+                <li>wrażenia jako elementarne dane zmysłowe,</li>
+                <li>spostrzeganie jako organizacja i interpretacja bodźców,</li>
+                <li>uwaga selektywna, podzielna i wykonawcza,</li>
+                <li>kodowanie informacji i pamięć robocza.</li>
+              </ul>
+            </div>
+            <div class="cluster-card">
+              <h3>2. Procesy złożone</h3>
+              <ul>
+                <li>niższe procesy poznawcze: analiza sensoryczna, selekcja i organizacja percepcyjna,</li>
+                <li>wyższe procesy poznawcze: język, myślenie, rozwiązywanie problemów i planowanie,</li>
+                <li>decyzje, heurystyki, metapoznanie i samoregulacja.</li>
+              </ul>
+            </div>
+            <div class="cluster-card">
+              <h3>3. Modelowanie komputerowe</h3>
+              <ul>
+                <li>modele formalne procesów umysłowych,</li>
+                <li>symulacje agentowe i architektury poznawcze,</li>
+                <li>sieci neuronowe jako modele wybranych funkcji.</li>
+              </ul>
+            </div>
+            <div class="cluster-card">
+              <h3>4. AI i psychologia</h3>
+              <ul>
+                <li>interakcja człowiek–AI,</li>
+                <li>antropomorfizacja i zaufanie do algorytmów,</li>
+                <li>psychologia odbioru, używania i współpracy z AI.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Jak rozumieć symulację komputerową w tym dziale</h2>
+          <p>Symulacja komputerowa w psychologii poznawczej nie oznacza wyłącznie budowy „sztucznego mózgu”. Częściej chodzi o tworzenie modeli, które reprodukują obserwowalne dane: czasy reakcji, wzorce błędów, trajektorie uczenia się, profile pamięciowe lub decyzje podejmowane pod niepewnością.</p>
+          <p>Modele symboliczne dobrze opisują operacje regułowe i sekwencyjne, modele koneksjonistyczne lepiej odwzorowują uczenie rozproszone i stopniową generalizację, a podejścia bayesowskie formalizują wnioskowanie probabilistyczne. Psychologia sztucznej inteligencji dodaje do tego perspektywę użytkownika: bada, kiedy człowiek uznaje system za „inteligentny”, jak interpretuje jego decyzje i jak zmienia własne strategie poznawcze podczas współpracy z AI.</p>
+        </div>
+
+        <div class="page-footer">
+          <span class="footer-note">WIKI — Psychologia poznawcza</span>
+          <button class="btn-next" onclick="showPage('zakres')">Następny: Zakres wiedzy →</button>
         </div>
       </div>
       <!-- ═══════════════════════════════════════════════ ZAKRES WIEDZY -->
@@ -3805,6 +4150,7 @@
         'assessment': 'Metody oceny',
         'neuroimaging': 'Neuroobrazowanie',
         'wiki': 'WIKI — Słownik',
+        'wiki-cognitive': 'WIKI — Psychologia poznawcza',
         'zakres': 'Zakres wiedzy',
         'literatura': 'Literatura',
         'neurofarmakologia': 'Neurofarmakologia'
@@ -3841,7 +4187,7 @@
                      'attention', 'language', 'executive', 'perception', 'aphasia', 'amnesia', 
                      'dementia', 'tbi', 'cases', 'case-hm', 'case-gage', 'case-tan', 'case-split',
                      'tests-overview', 'tests-screen', 'tests-memory', 'tests-executive', 
-                     'assessment', 'neuroimaging', 'wiki', 'zakres', 'literatura', 'neurofarmakologia'];
+                     'assessment', 'neuroimaging', 'wiki', 'wiki-cognitive', 'zakres', 'literatura', 'neurofarmakologia'];
       
       for (const page of pages) {
         const content = document.getElementById('page-' + page).textContent.toLowerCase();

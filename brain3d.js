@@ -88,7 +88,7 @@
   //  Parametry wyznaczone na podstawie atlasów:
   //    r  = promień bazowy
   //    sx/sy/sz = skalowanie elipsoidy
-  //    cx/cy/cz = centrum regionu (PRZED przymnocniem przez side)
+  //    cx/cy/cz = centrum regionu (PRZED przemnożeniem przez side)
   //    tMin/tMax = zakres azymutalny [rad]
   //    pMin/pMax = zakres elevacji [rad]
   //    thick = grubość (wolumen chmury)
@@ -114,7 +114,7 @@
         // Główne bruzdy (niska f, wysoka amplituda)
         { ft: 1.8, fp: 1.0, a: 0.072, pt: 0.00, pp: 0.10 }, // sulcus frontalis sup.
         { ft: 2.5, fp: 1.8, a: 0.062, pt: 0.40, pp: 0.50 }, // sulcus precentralis
-        { ft: 1.2, fp: 0.7, a: 0.058, pt: 1.00, pp: 0.00 }, // globalna krzywiznaa
+        { ft: 1.2, fp: 0.7, a: 0.058, pt: 1.00, pp: 0.00 }, // globalna krzywizna
         // Zakręty pośrednie
         { ft: 3.4, fp: 2.0, a: 0.042, pt: 1.20, pp: 1.20 },
         { ft: 2.0, fp: 3.4, a: 0.034, pt: 0.70, pp: 1.80 }, // sulcus frontalis inf.
@@ -265,7 +265,7 @@
       color: 0x3bbfaa,
       points: 21000,
       generator: (rng) => corticalPt(rng, CFG.parietal, -1),
-      desc: 'Leży między bruzdą centralną a bruzdą potyliczno-ciemieniową, dominując w widoku górnym. <em>Zakręt zacentralny</em> (pola 1, 2, 3) tworzy pierwotną korę somatosensoryczną — czuciowy homunkulus z nadreprezentacją twarzy i dłoni. <em>Bruzda śródciemieniowa</em> (IPS) rozdziela płacik górny (SPL — orientacja przestrzenna) od dolnego (IPL): <em>zakręt kątowy</em> (pole 39 — czytanie, liczenie, integracja multimodalna) i <em>nadmarginalny</em> (pole 40 — praksja ideomotoryczna). Droga grzbietowa wzroku (<em>where/how</em>) dociera tu z kory wzrokowej. Uszkodzenia prawostronne → neglect przestrzenny; lewostronne → apraksja, aleksja, akalkulia, zespół Gerstmanna.',
+      desc: 'Leży między bruzdą centralną a bruzdą potyliczno-ciemieniową, dominując w widoku górnym. <em>Zakręt zaśrodkowy</em> (pola 1, 2, 3) tworzy pierwotną korę somatosensoryczną — czuciowy homunkulus z nadreprezentacją twarzy i dłoni. <em>Bruzda śródciemieniowa</em> (IPS) rozdziela płacik górny (SPL — orientacja przestrzenna) od dolnego (IPL): <em>zakręt kątowy</em> (pole 39 — czytanie, liczenie, integracja multimodalna) i <em>nadmarginalny</em> (pole 40 — praksja ideomotoryczna). Droga grzbietowa wzroku (<em>where/how</em>) dociera tu z kory wzrokowej. Uszkodzenia prawostronne → neglect przestrzenny; lewostronne → apraksja, aleksja, akalkulia, zespół Gerstmanna.',
     },
     {
       id: 'parietal_r', linkedTo: 'parietal',
@@ -486,7 +486,7 @@
       color: 0x70aaff,
       points: 22000,
       generator: (rng) => corticalPt(rng, CFG.cerebellum, 0),
-      desc: 'Tylna jama czaszki, oddzielona od mózgowia namiotem móżdżku. Charakterystyczne <em>folia cerebelli</em> (listki) — gęstsze niż zakręty kory, odzwierciedlone w modelu wyższymi częstotliwościami harmonik. Zawiera ~69 mld neuronów (ponad 50% wszystkich). Anatomia: <em>robak</em> (vermis — równowaga, postawa) + <em>półkule</em> (koordynacja kończyn, uczenie motoryczne) + <em>kłaczek</em> (odruchy przedsionkowo-oczne). Działa jako <em>predykcyjny procesor błędu</em>: porównuje zamierzony ruch z efektorem proprioreceptywnym. Uszkodzenie: ataksja, dysmetria, adiadochokineza, drżenie zamiarowe, dyzartria móżdżkowa.',
+      desc: 'Tylna jama czaszki, oddzielona od mózgowia namiotem móżdżku. Charakterystyczne <em>folia cerebelli</em> (listki) — gęstsze niż zakręty kory, odzwierciedlone w modelu wyższymi częstotliwościami harmonik. Zawiera ~69 mld neuronów (ponad 50% wszystkich). Anatomia: <em>robak</em> (vermis — równowaga, postawa) + <em>półkule</em> (koordynacja kończyn, uczenie motoryczne) + <em>kłaczek</em> (odruchy przedsionkowo-oczne). Działa jako <em>predykcyjny procesor błędu</em>: porównuje zamierzony ruch ze sprzężeniem proprioceptywnym. Uszkodzenie: ataksja, dysmetria, adiadochokineza, drżenie zamiarowe, dyzartria móżdżkowa.',
     },
 
     // ── PIEŃ MÓZGU ────────────────────────────────────────────────

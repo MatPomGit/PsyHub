@@ -1267,7 +1267,7 @@
             <div class="card">
               <div class="card-label">Płat</div>
               <div class="card-title">Skroniowy (temporalny)</div>
-              <p>Słuch, pamięć, język (obszar Wernickego), rozpoznawanie twarzy. W głębi zawiera hipokamp i ciałko migdałowate.</p>
+              <p>Słuch, pamięć, język (obszar Wernickego), rozpoznawanie twarzy. W głębi zawiera hipokamp i ciało migdałowate.</p>
             </div>
             <div class="card">
               <div class="card-label">Płat</div>
@@ -1327,7 +1327,7 @@
 
           <div class="callout callout-info">
             <span class="callout-icon">ℹ️</span>
-            <p><strong>DTI (Dyfuzyjna Tomografia Komputerowa)</strong> to technika MRI pozwalająca wizualizować szlaki istoty białej w żywym mózgu. Wykorzystuje zjawisko <span class="term">anizotropii dyfuzji</span> — woda dyfunduje szybciej wzdłuż włókien nerwowych (aksonów) niż w poprzek, co pozwala komputerowo zrekonstruować trasy połączeń nerwowych (tzw. traktografia).</p>
+            <p><strong>DTI (obrazowanie tensora dyfuzji)</strong> to technika MRI pozwalająca wizualizować szlaki istoty białej w żywym mózgu. Wykorzystuje zjawisko <span class="term">anizotropii dyfuzji</span> — woda dyfunduje szybciej wzdłuż włókien nerwowych (aksonów) niż w poprzek, co pozwala komputerowo zrekonstruować trasy połączeń nerwowych (tzw. traktografia).</p>
           </div>
         </div>
 
@@ -1450,7 +1450,7 @@
             <div class="card">
               <div class="card-label">Układ</div>
               <div class="card-title">Serotoninergiczny</div>
-              <p>Szczyt jądra szwu (raphe nuclei) → kora, hipokamp, ciałko migdałowate. Nastrój, sen, apetyt.</p>
+              <p>Szczyt jądra szwu (raphe nuclei) → kora, hipokamp, ciało migdałowate. Nastrój, sen, apetyt.</p>
             </div>
             <div class="card">
               <div class="card-label">Układ</div>
@@ -1486,7 +1486,7 @@
 
           <div class="definition-block">
             <div class="def-term">Sieć znaczenia (salience network)</div>
-            <p>Wykrywa istotne bodźce i przełącza między DMN a ECN. Obejmuje: zakręt obręczy przedni (ACC), ciałko migdałowate. Zaangażowana w przetwarzanie emocjonalne i odczuwanie bólu.</p>
+            <p>Wykrywa istotne bodźce i przełącza między DMN a ECN. Obejmuje: zakręt obręczy przedni (ACC), ciało migdałowate. Zaangażowana w przetwarzanie emocjonalne i odczuwanie bólu.</p>
           </div>
         </div>
 
@@ -3034,7 +3034,7 @@
             </div>
             <div class="wiki-entry">
               <div class="wiki-entry-term">DTI</div>
-              <div class="wiki-entry-def">Dyfuzyjna Tomografia Komputerowa — technika MRI pozwalająca wizualizować szlaki istoty białej (traktografię).</div>
+              <div class="wiki-entry-def">obrazowanie tensora dyfuzji — technika MRI pozwalająca wizualizować szlaki istoty białej (traktografię).</div>
             </div>
           </div>
 
@@ -3298,7 +3298,7 @@
             </div>
             <div class="wiki-entry">
               <div class="wiki-entry-term">Układ limbiczny</div>
-              <div class="wiki-entry-def">Zespół struktur w głębi mózgu (hipokamp, ciałko migdałowate, zakręt obręczy) kluczowych dla emocji, pamięci i motywacji.</div>
+              <div class="wiki-entry-def">Zespół struktur w głębi mózgu (hipokamp, ciało migdałowate, zakręt obręczy) kluczowych dla emocji, pamięci i motywacji.</div>
             </div>
           </div>
 
@@ -3763,12 +3763,15 @@
 
   <script>
     // Page navigation
-    function showPage(pageId) {
+    function showPage(pageId, options = {}) {
+      const targetPage = document.getElementById('page-' + pageId);
+      if (!targetPage) return false;
+
       document.querySelectorAll('.page').forEach(page => {
         page.classList.remove('active');
       });
       
-      document.getElementById('page-' + pageId).classList.add('active');
+      targetPage.classList.add('active');
       
       document.querySelectorAll('.nav-item').forEach(item => {
         item.classList.remove('active');
@@ -3817,8 +3820,13 @@
         document.getElementById('sidebar').classList.remove('open');
         document.getElementById('navOverlay').classList.remove('open');
       }
+
+      if (!options.skipHashUpdate) {
+        window.location.hash = pageId;
+      }
       
       window.scrollTo(0, 0);
+      return true;
     }
 
     function toggleSidebar() {
@@ -3829,12 +3837,17 @@
     window.addEventListener('scroll', function() {
       const scrollTop = window.scrollY;
       const docHeight = document.body.scrollHeight - window.innerHeight;
-      const scrollPercent = (scrollTop / docHeight) * 100;
+      const scrollPercent = docHeight > 0 ? Math.min(100, Math.max(0, (scrollTop / docHeight) * 100)) : 0;
       document.getElementById('readingProgress').style.width = scrollPercent + '%';
     });
 
     document.getElementById('searchInput').addEventListener('input', function(e) {
-      const query = e.target.value.toLowerCase();
+      const query = e.target.value.trim().toLowerCase();
+      if (query.length === 0) {
+        const currentPage = document.querySelector('.page.active')?.id?.replace('page-', '') || 'intro';
+        showPage(currentPage, { skipHashUpdate: true });
+        return;
+      }
       if (query.length < 2) return;
       
       const pages = ['intro', 'history', 'anatomy', 'neuron', 'systems', 'cogpsych', 'memory', 
@@ -3844,7 +3857,9 @@
                      'assessment', 'neuroimaging', 'wiki', 'zakres', 'literatura', 'neurofarmakologia'];
       
       for (const page of pages) {
-        const content = document.getElementById('page-' + page).textContent.toLowerCase();
+        const pageEl = document.getElementById('page-' + page);
+        if (!pageEl) continue;
+        const content = pageEl.textContent.toLowerCase();
         if (content.includes(query)) {
           showPage(page);
           break;
@@ -3913,6 +3928,11 @@
 
     window.addEventListener('resize', function() {
       if (_viewer) _viewer._onResize();
+    });
+
+    window.addEventListener('DOMContentLoaded', function() {
+      const initialPage = window.location.hash ? window.location.hash.slice(1) : 'intro';
+      showPage(initialPage, { skipHashUpdate: true }) || showPage('intro', { skipHashUpdate: true });
     });
   </script>
 </body>

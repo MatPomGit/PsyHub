@@ -587,6 +587,70 @@
       line-height: 1.6;
     }
 
+    .article-roadmap {
+      display: grid;
+      gap: 0.9rem;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .article-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1rem 1.1rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .article-card-main {
+      min-width: 0;
+    }
+
+    .article-link {
+      display: inline-block;
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .article-link.disabled {
+      color: var(--text-muted);
+      cursor: not-allowed;
+      pointer-events: none;
+      opacity: 0.65;
+    }
+
+    .article-link.disabled:hover {
+      text-decoration: none;
+    }
+
+    .article-meta {
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+    }
+
+    .article-status {
+      flex-shrink: 0;
+      border-radius: 999px;
+      padding: 0.3rem 0.7rem;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      background: var(--bg-tertiary);
+      font-weight: 600;
+    }
+
+    .article-status.live {
+      color: #000;
+      background: var(--accent-gold);
+      border-color: var(--accent-gold);
+    }
+
     /* 3D Modal */
     .modal-overlay {
       position: fixed;
@@ -1097,6 +1161,7 @@
       <div class="nav-section">
         <div class="nav-section-title">Referencje</div>
         <a class="nav-item" data-page="wiki" onclick="showPage('wiki')">WIKI — Słownik</a>
+        <a class="nav-item" data-page="psych-diagnosis-wiki" onclick="showPage('psych-diagnosis-wiki')">WIKI — Diagnoza psychologiczna</a>
         <a class="nav-item" data-page="zakres" onclick="showPage('zakres')">Zakres wiedzy</a>
         <a class="nav-item" data-page="literatura" onclick="showPage('literatura')">Literatura</a>
       </div>
@@ -3332,6 +3397,177 @@
           <button class="btn-next" onclick="showPage('intro')">Powrót do strony głównej →</button>
         </div>
       </div>
+
+      <div class="page" id="page-psych-diagnosis-wiki">
+        <div class="page-hero">
+          <div class="chapter-number">WIKI specjalistyczne</div>
+          <h1>WIKI — Diagnoza psychologiczna</h1>
+          <p class="lead">Osobna strona wiki poświęcona procesowi diagnozy psychologicznej: od metod jakościowych i technik kontaktu z pacjentem, przez wymagania prawne i etyczne, aż po sporządzanie opinii psychologicznej.</p>
+        </div>
+
+        <div class="section">
+          <h2>Mapa artykułów tej wiki</h2>
+          <p>Niżej znajduje się pełna lista planowanych artykułów. Aktywny jest obecnie artykuł główny, a odnośniki do nieopublikowanych jeszcze tekstów pozostają wygaszone.</p>
+          <div class="article-roadmap">
+            <div class="article-card">
+              <div class="article-card-main">
+                <a class="article-link" href="#article-kompendium">Diagnoza psychologiczna — kompendium praktyczne</a>
+                <div class="article-meta">Artykuł opublikowany. Zawiera syntetyczne opracowanie całego procesu diagnostycznego oraz zasady redagowania opinii.</div>
+              </div>
+              <span class="article-status live">Opublikowany</span>
+            </div>
+            <div class="article-card">
+              <div class="article-card-main">
+                <span class="article-link disabled">Wywiad psychologiczny i analiza kontekstu życia pacjenta</span>
+                <div class="article-meta">Planowany artykuł o strukturze wywiadu, danych kontekstowych, historii rozwoju oraz źródłach informacji pośredniej.</div>
+              </div>
+              <span class="article-status">Planowany</span>
+            </div>
+            <div class="article-card">
+              <div class="article-card-main">
+                <span class="article-link disabled">Metody diagnozy jakościowej w praktyce klinicznej</span>
+                <div class="article-meta">Planowany artykuł o obserwacji, analizie narracji, studium przypadku i interpretacji funkcjonalnej.</div>
+              </div>
+              <span class="article-status">Planowany</span>
+            </div>
+            <div class="article-card">
+              <div class="article-card-main">
+                <span class="article-link disabled">Narzędzia standaryzowane i testy psychologiczne</span>
+                <div class="article-meta">Planowany artykuł o doborze testów, trafności, rzetelności i ograniczeniach interpretacyjnych.</div>
+              </div>
+              <span class="article-status">Planowany</span>
+            </div>
+            <div class="article-card">
+              <div class="article-card-main">
+                <span class="article-link disabled">Oddziaływania psychologiczne w kontakcie diagnostycznym</span>
+                <div class="article-meta">Planowany artykuł o projekcji, parafrazie, klaryfikacji, konfrontacji, normalizacji i psychoedukacji.</div>
+              </div>
+              <span class="article-status">Planowany</span>
+            </div>
+            <div class="article-card">
+              <div class="article-card-main">
+                <span class="article-link disabled">Wymogi prawne, dokumentacyjne i ochrona danych</span>
+                <div class="article-meta">Planowany artykuł o zgodzie, tajemnicy zawodowej, przechowywaniu dokumentacji i odpowiedzialności diagnosty.</div>
+              </div>
+              <span class="article-status">Planowany</span>
+            </div>
+            <div class="article-card">
+              <div class="article-card-main">
+                <span class="article-link disabled">Standardy etyczne diagnosty psychologicznego</span>
+                <div class="article-meta">Planowany artykuł o granicach kompetencji, bezstronności, dobrostanie pacjenta i unikaniu stygmatyzacji.</div>
+              </div>
+              <span class="article-status">Planowany</span>
+            </div>
+            <div class="article-card">
+              <div class="article-card-main">
+                <span class="article-link disabled">Jak pisać opinię psychologiczną i formułować wnioski</span>
+                <div class="article-meta">Planowany artykuł o strukturze opinii, języku opisu, wnioskach, rekomendacjach i granicach interpretacji.</div>
+              </div>
+              <span class="article-status">Planowany</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="article-kompendium">
+          <h2>Diagnoza psychologiczna — kompendium praktyczne</h2>
+          <p>Diagnoza psychologiczna jest procesem systematycznego zbierania, porządkowania i interpretowania danych o funkcjonowaniu człowieka w celu odpowiedzi na jasno postawione pytanie diagnostyczne. Może służyć rozpoznaniu problemu, opisowi mechanizmów funkcjonowania, planowaniu pomocy, ocenie ryzyka albo sformułowaniu opinii dla instytucji.</p>
+          <p>W praktyce dobra diagnoza łączy <strong>dane ilościowe</strong> (np. wyniki testów), <strong>dane jakościowe</strong> (np. obserwację, narrację pacjenta, analizę relacji) oraz <strong>kontekst funkcjonalny</strong> — sytuację rodzinną, edukacyjną, zawodową, zdrowotną i społeczną. Diagnosta nie opisuje wyłącznie objawów; interpretuje ich znaczenie, dynamikę i konsekwencje dla codziennego życia.</p>
+        </div>
+
+        <div class="section">
+          <h2>1. Cele i etapy procesu diagnostycznego</h2>
+          <ul>
+            <li><strong>Sformułowanie pytania diagnostycznego</strong> — ustalenie, czego dotyczy badanie: rozpoznania trudności, oceny zasobów, kwalifikacji do terapii, opinii dla szkoły, sądu lub pracodawcy.</li>
+            <li><strong>Kontrakt i poinformowanie pacjenta</strong> — wyjaśnienie celu badania, zasad poufności, przewidywanego czasu, sposobu wykorzystania wyników i ograniczeń diagnozy.</li>
+            <li><strong>Zebranie danych</strong> — wywiad, obserwacja, analiza dokumentacji, testy, konsultacje interdyscyplinarne oraz informacje od osób trzecich, jeśli są zasadne i legalnie pozyskane.</li>
+            <li><strong>Interpretacja</strong> — łączenie danych w spójne hipotezy, porównywanie informacji zgodnych i rozbieżnych, ocena alternatywnych wyjaśnień.</li>
+            <li><strong>Informacja zwrotna i dokumentacja</strong> — omówienie wyników z pacjentem oraz przygotowanie opinii, zaświadczenia lub planu dalszego postępowania.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>2. Metody psychologicznej diagnozy jakościowej</h2>
+          <p>Metody jakościowe są szczególnie użyteczne wtedy, gdy psycholog chce uchwycić znaczenie doświadczeń pacjenta, sposób budowania relacji, styl radzenia sobie, wzory komunikacji i indywidualny sens objawów. Nie zastępują testów, ale pozwalają zrozumieć <em>jak</em> i <em>dlaczego</em> dana osoba funkcjonuje w określony sposób.</p>
+          <ul>
+            <li><strong>Obserwacja kliniczna</strong> — obejmuje zachowanie niewerbalne, tempo pracy, kontakt wzrokowy, afekt, sposób reagowania na trudność, poziom samokontroli i organizację wypowiedzi.</li>
+            <li><strong>Wywiad swobodny i częściowo ustrukturyzowany</strong> — pozwala badać historię życia, aktualny problem, motywację, relacje i subiektywne znaczenie doświadczanych objawów.</li>
+            <li><strong>Analiza narracji</strong> — uwzględnia sposób opowiadania o sobie, spójność historii, luki, powtarzające się motywy, dominujące emocje i przypisywaną sprawczość.</li>
+            <li><strong>Studium przypadku</strong> — integruje informacje z wielu źródeł, pokazując indywidualną konfigurację czynników ryzyka, zasobów i mechanizmów podtrzymujących trudności.</li>
+            <li><strong>Analiza funkcjonalna zachowania</strong> — bada poprzedzające warunki, sam przebieg zachowania i jego konsekwencje, co pomaga planować adekwatne oddziaływania.</li>
+            <li><strong>Techniki projekcyjne</strong> — mogą być pomocniczym źródłem hipotez, ale wymagają ostrożności, wysokich kompetencji i nie powinny być jedyną podstawą rozstrzygnięć.</li>
+          </ul>
+          <blockquote>Diagnoza jakościowa jest najbardziej wartościowa wtedy, gdy opisuje mechanizmy funkcjonowania, a nie tylko etykietuje pacjenta.</blockquote>
+        </div>
+
+        <div class="section">
+          <h2>3. Przykłady oddziaływań psychologicznych w kontakcie diagnostycznym</h2>
+          <p>Kontakt diagnostyczny nie jest neutralnym „pobieraniem danych”. Sam sposób prowadzenia rozmowy wpływa na jakość materiału diagnostycznego i poczucie bezpieczeństwa pacjenta. Psycholog wykorzystuje interwencje mikropoziomu, które porządkują wypowiedź i wzmacniają współpracę.</p>
+          <ul>
+            <li><strong>Parafrazowanie</strong> — krótkie powtórzenie sensu wypowiedzi pacjenta własnymi słowami. Służy upewnieniu się, że psycholog dobrze rozumie przekaz, i pomaga pacjentowi doprecyzować treść.</li>
+            <li><strong>Klaryfikacja</strong> — prośba o doprecyzowanie pojęć, faktów lub relacji czasowych. Zmniejsza ryzyko nadinterpretacji i porządkuje materiał.</li>
+            <li><strong>Odzwierciedlenie emocji</strong> — nazwanie prawdopodobnego stanu emocjonalnego pacjenta, np. napięcia, wstydu, złości czy bezradności.</li>
+            <li><strong>Konfrontacja</strong> — delikatne wskazanie niespójności między deklaracjami, zachowaniem i danymi z innych źródeł. Powinna być stosowana oszczędnie i z poszanowaniem godności osoby badanej.</li>
+            <li><strong>Normalizacja</strong> — pokazanie, że pewne reakcje mogą być zrozumiałe w danej sytuacji, co obniża lęk i ułatwia ujawnianie trudnych treści.</li>
+            <li><strong>Psychoedukacja diagnostyczna</strong> — wyjaśnienie sensu procedury, rodzaju pytań czy znaczenia obserwowanych objawów.</li>
+          </ul>
+          <p><strong>Projekcja</strong> może być rozumiana dwojako. Po pierwsze jako mechanizm obronny pacjenta, gdy nieakceptowane treści przypisywane są innym osobom. Po drugie jako założenie części technik projekcyjnych, które opierają się na ujawnianiu treści wewnętrznych w odpowiedzi na bodziec niejednoznaczny. W obu przypadkach diagnosta powinien traktować materiał projekcyjny jako przesłankę do budowania hipotez, a nie jako samodzielny dowód.</p>
+        </div>
+
+        <div class="section">
+          <h2>4. Wymogi prawne dla pracy diagnosty</h2>
+          <ul>
+            <li><strong>Działanie w granicach uprawnień i kompetencji</strong> — psycholog podejmuje się tylko takich procedur, do których ma przygotowanie merytoryczne i praktyczne.</li>
+            <li><strong>Świadoma zgoda</strong> — osoba badana powinna znać cel diagnozy, możliwe konsekwencje, zakres poufności oraz to, komu zostanie przekazana opinia.</li>
+            <li><strong>Tajemnica zawodowa i ochrona danych</strong> — dokumentacja diagnostyczna zawiera dane wrażliwe i musi być odpowiednio zabezpieczona, archiwizowana i udostępniana wyłącznie uprawnionym podmiotom.</li>
+            <li><strong>Rzetelne dokumentowanie</strong> — psycholog powinien odnotować zastosowane metody, daty badania, warunki badania, ograniczenia interpretacyjne i podstawę wniosków.</li>
+            <li><strong>Rozróżnienie roli klinicznej i opiniodawczej</strong> — szczególnej ostrożności wymaga łączenie funkcji terapeuty, diagnosty i biegłego, bo może generować konflikt ról.</li>
+          </ul>
+          <p>W praktyce instytucjonalnej znaczenie mają także przepisy dotyczące dokumentacji medycznej, ochrony danych osobowych, praw pacjenta, procedur sądowych lub oświatowych. Zakres obowiązków psychologa zależy zatem nie tylko od etyki zawodu, ale i od kontekstu, w którym powstaje diagnoza.</p>
+        </div>
+
+        <div class="section">
+          <h2>5. Wymogi etyczne i standard jakości diagnozy</h2>
+          <ul>
+            <li><strong>Poszanowanie godności i autonomii osoby badanej</strong> — pacjent nie może być redukowany do wyniku testu lub etykiety diagnostycznej.</li>
+            <li><strong>Bezstronność</strong> — diagnosta powinien minimalizować wpływ własnych przekonań, oczekiwań instytucji i efektu pierwszego wrażenia.</li>
+            <li><strong>Minimalizacja szkody</strong> — sposób zadawania pytań, formułowania wniosków i przekazywania informacji nie powinien pogłębiać stygmatyzacji ani poczucia bezradności.</li>
+            <li><strong>Transparentność metodologiczna</strong> — wnioski muszą wynikać z przedstawionych danych; niedopuszczalne jest formułowanie rozstrzygnięć ponad materiał dowodowy.</li>
+            <li><strong>Uwzględnienie kontekstu kulturowego i społecznego</strong> — interpretacja powinna brać pod uwagę język, pochodzenie, normy środowiskowe, poziom edukacji oraz stan zdrowia.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>6. Jak sporządzać opinię psychologiczną</h2>
+          <p>Dobra opinia psychologiczna jest zwięzła, logiczna i odpowiada dokładnie na pytanie, dla którego została sporządzona. Nie jest zapisem całego badania słowo w słowo, lecz uporządkowaną syntezą danych istotnych dla odbiorcy.</p>
+          <ol>
+            <li><strong>Dane identyfikacyjne i cel opinii</strong> — kto był badany, kiedy, na czyj wniosek i w jakim celu.</li>
+            <li><strong>Źródła informacji</strong> — wywiad, obserwacja, dokumentacja, testy, konsultacje, dane od osób trzecich.</li>
+            <li><strong>Opis przebiegu badania</strong> — warunki, współpraca, czynniki mogące wpływać na wyniki, np. zmęczenie, kryzys, ból, leki.</li>
+            <li><strong>Wyniki i ich interpretacja</strong> — przedstawione rzeczowo, z rozróżnieniem obserwacji, danych testowych i hipotez interpretacyjnych.</li>
+            <li><strong>Wnioski końcowe</strong> — odpowiedź na pytanie diagnostyczne, najlepiej sformułowana prostym i jednoznacznym językiem.</li>
+            <li><strong>Rekomendacje</strong> — zalecenia dotyczące terapii, dalszej diagnostyki, wsparcia środowiskowego, edukacyjnego lub medycznego.</li>
+          </ol>
+          <p>W opinii warto unikać języka wartościującego, niejasnych skrótów myślowych i twierdzeń kategorycznych, jeśli materiał nie daje pełnej pewności. Lepiej pisać, że dane <em>wskazują</em>, <em>sugerują</em> albo <em>pozostają spójne z hipotezą</em>, niż deklarować więcej, niż naprawdę wynika z badania.</p>
+        </div>
+
+        <div class="section">
+          <h2>7. Najczęstsze błędy diagnostyczne</h2>
+          <ul>
+            <li>opieranie wniosków na pojedynczym źródle danych,</li>
+            <li>pomijanie kontekstu sytuacyjnego i środowiskowego,</li>
+            <li>mylenie opisu objawu z wyjaśnieniem jego mechanizmu,</li>
+            <li>nadmierna pewność interpretacyjna mimo niejednoznacznych danych,</li>
+            <li>stosowanie narzędzi niedostosowanych do wieku, języka lub celu badania,</li>
+            <li>nieprecyzyjne rekomendacje, których odbiorca nie umie wdrożyć.</li>
+          </ul>
+        </div>
+
+        <div class="page-footer">
+          <span class="footer-note">WIKI — Diagnoza psychologiczna</span>
+          <button class="btn-next" onclick="showPage('zakres')">Następny: Zakres wiedzy →</button>
+        </div>
+      </div>
+
       <!-- ═══════════════════════════════════════════════ ZAKRES WIEDZY -->
       <div class="page" id="page-zakres">
         <div class="page-hero">
@@ -3805,6 +4041,7 @@
         'assessment': 'Metody oceny',
         'neuroimaging': 'Neuroobrazowanie',
         'wiki': 'WIKI — Słownik',
+        'psych-diagnosis-wiki': 'WIKI — Diagnoza psychologiczna',
         'zakres': 'Zakres wiedzy',
         'literatura': 'Literatura',
         'neurofarmakologia': 'Neurofarmakologia'
@@ -3841,7 +4078,7 @@
                      'attention', 'language', 'executive', 'perception', 'aphasia', 'amnesia', 
                      'dementia', 'tbi', 'cases', 'case-hm', 'case-gage', 'case-tan', 'case-split',
                      'tests-overview', 'tests-screen', 'tests-memory', 'tests-executive', 
-                     'assessment', 'neuroimaging', 'wiki', 'zakres', 'literatura', 'neurofarmakologia'];
+                     'assessment', 'neuroimaging', 'wiki', 'psych-diagnosis-wiki', 'zakres', 'literatura', 'neurofarmakologia'];
       
       for (const page of pages) {
         const content = document.getElementById('page-' + page).textContent.toLowerCase();

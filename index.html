@@ -587,6 +587,71 @@
       line-height: 1.6;
     }
 
+    .article-directory {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .article-category {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+
+    .article-category h3 {
+      margin: 0 0 0.85rem;
+      font-size: 1.05rem;
+    }
+
+    .article-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+
+    .article-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      color: var(--accent-blue);
+      font-size: 0.92rem;
+    }
+
+    .article-link::before {
+      content: '•';
+      color: var(--accent-gold);
+    }
+
+    .article-link.disabled,
+    .article-link[aria-disabled='true'] {
+      color: var(--text-muted);
+      opacity: 0.62;
+      pointer-events: none;
+      cursor: default;
+      text-decoration: none;
+    }
+
+    .article-link.disabled::before,
+    .article-link[aria-disabled='true']::before {
+      color: var(--text-muted);
+    }
+
+    .article-status {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.1rem 0.45rem;
+    }
+
     /* 3D Modal */
     .modal-overlay {
       position: fixed;
@@ -1097,6 +1162,7 @@
       <div class="nav-section">
         <div class="nav-section-title">Referencje</div>
         <a class="nav-item" data-page="wiki" onclick="showPage('wiki')">WIKI — Słownik</a>
+        <a class="nav-item" data-page="wiki-addictions" onclick="showPage('wiki-addictions')">WIKI — Psychologia uzależnień</a>
         <a class="nav-item" data-page="zakres" onclick="showPage('zakres')">Zakres wiedzy</a>
         <a class="nav-item" data-page="literatura" onclick="showPage('literatura')">Literatura</a>
       </div>
@@ -3332,6 +3398,185 @@
           <button class="btn-next" onclick="showPage('intro')">Powrót do strony głównej →</button>
         </div>
       </div>
+
+      <div class="page" id="page-wiki-addictions">
+        <div class="page-hero">
+          <div class="chapter-number">Referencje</div>
+          <h1>WIKI — Psychologia uzależnień</h1>
+          <p class="lead">Osobna strona wiki poświęcona psychologii uzależnień: od mechanizmów rozwoju nałogu, przez diagnozę i terapię, po profilaktykę, rodzinę i kontekst społeczny.</p>
+        </div>
+
+        <div class="section">
+          <h2>Zakres dziedziny</h2>
+          <p><strong>Psychologia uzależnień</strong> bada, w jaki sposób substancje psychoaktywne i zachowania nałogowe wpływają na motywację, samokontrolę, emocje, relacje i tożsamość człowieka. Łączy wiedzę kliniczną, rozwojową, społeczną, poznawczą i neuropsychologiczną.</p>
+          <p>Dziedzina obejmuje zarówno <span class="term">uzależnienia od substancji</span> (alkohol, nikotyna, opioidy, stymulanty, kannabinoidy, leki), jak i <span class="term">uzależnienia behawioralne</span> oraz zachowania problemowe (hazard, gry, pornografia, kompulsywne zakupy, nadmierne korzystanie z internetu i mediów społecznościowych).</p>
+
+          <div class="callout callout-info">
+            <span class="callout-icon">🧭</span>
+            <p>Ta strona pełni funkcję <strong>mapy tematycznej</strong>. Artykuły istniejące są aktywne, a odsyłacze do materiałów planowanych zostały celowo <strong>wygaszone</strong>, aby jasno pokazać rozwój przyszłej bazy wiedzy.</p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Główne obszary psychologii uzależnień</h2>
+          <div class="card-grid">
+            <div class="card">
+              <div class="card-label">Mechanizmy</div>
+              <div class="card-title">Rozwój uzależnienia</div>
+              <p>Tolerancja, głód, wzmocnienia, uczenie nawykowe, impulsywność, regulacja emocji i utrata kontroli nad zachowaniem.</p>
+            </div>
+            <div class="card">
+              <div class="card-label">Diagnoza</div>
+              <div class="card-title">Ocena kliniczna</div>
+              <p>Wywiad, przesiew, rozpoznawanie czynników ryzyka, współwystępowania zaburzeń i poziomu gotowości do zmiany.</p>
+            </div>
+            <div class="card">
+              <div class="card-label">Leczenie</div>
+              <div class="card-title">Psychoterapia i wsparcie</div>
+              <p>Terapia motywująca, CBT, zapobieganie nawrotom, praca z rodziną, psychoedukacja i środowisko zdrowienia.</p>
+            </div>
+            <div class="card">
+              <div class="card-label">Kontekst</div>
+              <div class="card-title">Społeczeństwo i profilaktyka</div>
+              <p>Wpływ norm kulturowych, stresu, wykluczenia, traumy, dostępności substancji oraz działań profilaktycznych.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Pełna lista artykułów</h2>
+          <p>Poniżej znajduje się proponowana struktura osobnej wiki. Ułatwia ona objęcie szerokiego zakresu tematów należących do psychologii uzależnień — od podstawowych pojęć po specjalistyczne obszary interwencji.</p>
+
+          <div class="article-directory">
+            <div class="article-category">
+              <h3>Podstawy dziedziny</h3>
+              <ul class="article-list">
+                <li><a class="article-link" href="#page-wiki-addictions">Psychologia uzależnień — definicja i zakres</a></li>
+                <li><span class="article-link disabled" aria-disabled="true">Modele uzależnienia <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Klasyfikacja substancji i zachowań nałogowych <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Historia leczenia uzależnień <span class="article-status">planowane</span></span></li>
+              </ul>
+            </div>
+
+            <div class="article-category">
+              <h3>Mechanizmy psychologiczne</h3>
+              <ul class="article-list">
+                <li><span class="article-link disabled" aria-disabled="true">Mechanizmy nagrody i wzmocnienia <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Głód, craving i wyzwalacze <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Nawyk, kompulsja i utrata kontroli <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Regulacja emocji a używanie substancji <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Impulsywność i poszukiwanie doznań <span class="article-status">planowane</span></span></li>
+              </ul>
+            </div>
+
+            <div class="article-category">
+              <h3>Czynniki ryzyka i ochronne</h3>
+              <ul class="article-list">
+                <li><span class="article-link disabled" aria-disabled="true">Trauma i doświadczenia z dzieciństwa <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Rodzina dysfunkcyjna i wzorce przywiązania <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Stres, samotność i samoleczenie <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Czynniki ochronne i odporność psychiczna <span class="article-status">planowane</span></span></li>
+              </ul>
+            </div>
+
+            <div class="article-category">
+              <h3>Uzależnienia od substancji</h3>
+              <ul class="article-list">
+                <li><span class="article-link disabled" aria-disabled="true">Uzależnienie od alkoholu <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Uzależnienie od nikotyny <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Uzależnienie od opioidów <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Uzależnienie od stymulantów <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Uzależnienie od leków uspokajających i nasennych <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Kannabinoidy i używanie problemowe <span class="article-status">planowane</span></span></li>
+              </ul>
+            </div>
+
+            <div class="article-category">
+              <h3>Uzależnienia behawioralne</h3>
+              <ul class="article-list">
+                <li><span class="article-link disabled" aria-disabled="true">Hazard patologiczny <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Zaburzenie grania w gry <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Kompulsywne korzystanie z internetu i mediów społecznościowych <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Uzależnienie od pornografii i cyberseksu <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Kompulsywne zakupy i zachowania ryzykowne <span class="article-status">planowane</span></span></li>
+              </ul>
+            </div>
+
+            <div class="article-category">
+              <h3>Diagnoza i obraz kliniczny</h3>
+              <ul class="article-list">
+                <li><span class="article-link disabled" aria-disabled="true">Objawy uzależnienia i fazy rozwoju problemu <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Wywiad diagnostyczny w psychologii uzależnień <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Skale przesiewowe i narzędzia oceny <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Różnicowanie używania, nadużywania i uzależnienia <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Podwójna diagnoza <span class="article-status">planowane</span></span></li>
+              </ul>
+            </div>
+
+            <div class="article-category">
+              <h3>Leczenie i interwencja</h3>
+              <ul class="article-list">
+                <li><span class="article-link disabled" aria-disabled="true">Dialog motywujący <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">CBT w terapii uzależnień <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Zapobieganie nawrotom <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Programy grupowe i społeczności terapeutyczne <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Redukcja szkód i interwencje środowiskowe <span class="article-status">planowane</span></span></li>
+              </ul>
+            </div>
+
+            <div class="article-category">
+              <h3>Rodzina i relacje</h3>
+              <ul class="article-list">
+                <li><span class="article-link disabled" aria-disabled="true">Współuzależnienie <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">DDA/DDD i konsekwencje rozwojowe <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Przemoc, zaniedbanie i chaos rodzinny <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Wsparcie bliskich w procesie zdrowienia <span class="article-status">planowane</span></span></li>
+              </ul>
+            </div>
+
+            <div class="article-category">
+              <h3>Populacje i konteksty szczególne</h3>
+              <ul class="article-list">
+                <li><span class="article-link disabled" aria-disabled="true">Uzależnienia u młodzieży <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Uzależnienia u osób starszych <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Uzależnienia a płeć i seksualność <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Uzależnienia w środowisku pracy i akademickim <span class="article-status">planowane</span></span></li>
+              </ul>
+            </div>
+
+            <div class="article-category">
+              <h3>Profilaktyka i społeczeństwo</h3>
+              <ul class="article-list">
+                <li><span class="article-link disabled" aria-disabled="true">Profilaktyka uniwersalna, selektywna i wskazująca <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Stygmatyzacja osób uzależnionych <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Polityka zdrowotna i dostępność pomocy <span class="article-status">planowane</span></span></li>
+                <li><span class="article-link disabled" aria-disabled="true">Edukacja publiczna i komunikacja ryzyka <span class="article-status">planowane</span></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Szeroki zakres tematów należących do psychologii uzależnień</h2>
+          <h3>1. Człowiek, motywacja i cierpienie</h3>
+          <p>Psychologia uzależnień analizuje, dlaczego zachowanie początkowo dające ulgę, przyjemność albo poczucie kontroli z czasem staje się źródłem przymusu. Bada rolę potrzeb psychicznych, schematów poznawczych, napięcia, wstydu, lęku, pustki i deficytów regulacji emocji.</p>
+
+          <h3>2. Rozwój problemu w czasie</h3>
+          <p>W centrum tej dziedziny znajduje się przebieg uzależnienia: inicjacja, eksperymentowanie, utrwalanie wzorca, kryzysy, nawroty i zdrowienie. Dzięki temu można opisywać uzależnienie nie tylko jako etykietę diagnostyczną, ale jako <strong>proces dynamiczny</strong>, zależny od środowiska, historii życia i dostępnych zasobów.</p>
+
+          <h3>3. Relacje, rodzina i środowisko</h3>
+          <p>Do obszaru psychologii uzależnień należą również konsekwencje społeczne: konflikty, izolacja, współuzależnienie, zaburzenia ról rodzinnych, przemoc i transmisja międzypokoleniowa. Dziedzina opisuje też, jak otoczenie może podtrzymywać problem albo wspierać zmianę.</p>
+
+          <h3>4. Diagnoza, leczenie i profilaktyka</h3>
+          <p>To obszar obejmujący badanie gotowości do zmiany, planowanie interwencji, terapię indywidualną i grupową, psychoedukację, pracę nad nawrotami oraz profilaktykę na poziomie szkoły, rodziny, społeczności lokalnej i systemu ochrony zdrowia.</p>
+        </div>
+
+        <div class="page-footer">
+          <span class="footer-note">WIKI — Psychologia uzależnień</span>
+          <button class="btn-next" onclick="showPage('zakres')">Następny: Zakres wiedzy →</button>
+        </div>
+      </div>
+
       <!-- ═══════════════════════════════════════════════ ZAKRES WIEDZY -->
       <div class="page" id="page-zakres">
         <div class="page-hero">
@@ -3805,6 +4050,7 @@
         'assessment': 'Metody oceny',
         'neuroimaging': 'Neuroobrazowanie',
         'wiki': 'WIKI — Słownik',
+        'wiki-addictions': 'WIKI — Psychologia uzależnień',
         'zakres': 'Zakres wiedzy',
         'literatura': 'Literatura',
         'neurofarmakologia': 'Neurofarmakologia'
@@ -3841,7 +4087,7 @@
                      'attention', 'language', 'executive', 'perception', 'aphasia', 'amnesia', 
                      'dementia', 'tbi', 'cases', 'case-hm', 'case-gage', 'case-tan', 'case-split',
                      'tests-overview', 'tests-screen', 'tests-memory', 'tests-executive', 
-                     'assessment', 'neuroimaging', 'wiki', 'zakres', 'literatura', 'neurofarmakologia'];
+                     'assessment', 'neuroimaging', 'wiki', 'wiki-addictions', 'zakres', 'literatura', 'neurofarmakologia'];
       
       for (const page of pages) {
         const content = document.getElementById('page-' + page).textContent.toLowerCase();

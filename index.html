@@ -497,6 +497,130 @@
       background: rgba(255,255,255,0.02);
     }
 
+
+    /* Cultural Psychology Wiki */
+    .topic-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    .topic-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+
+    .topic-card h3 {
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      font-size: 1.05rem;
+    }
+
+    .topic-card p {
+      margin: 0;
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+    }
+
+    .article-index {
+      display: grid;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .article-category {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.4rem;
+    }
+
+    .article-category h3 {
+      margin-top: 0;
+      margin-bottom: 0.45rem;
+    }
+
+    .article-category > p {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+    }
+
+    .article-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .article-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 0.85rem 1rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.02);
+      color: var(--text-primary);
+      text-decoration: none;
+      transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+    }
+
+    .article-link:hover {
+      border-color: var(--accent-gold);
+      transform: translateY(-1px);
+      background: rgba(201, 162, 39, 0.08);
+    }
+
+    .article-link.disabled,
+    .article-link[aria-disabled="true"] {
+      color: var(--text-muted);
+      background: rgba(255,255,255,0.01);
+      border-style: dashed;
+      cursor: not-allowed;
+      pointer-events: none;
+      transform: none;
+    }
+
+    .article-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .article-title {
+      font-weight: 600;
+      color: inherit;
+    }
+
+    .article-desc {
+      font-size: 0.88rem;
+      color: inherit;
+      opacity: 0.9;
+    }
+
+    .status-pill {
+      flex-shrink: 0;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border-radius: 999px;
+      padding: 0.35rem 0.7rem;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      background: var(--bg-tertiary);
+    }
+
+    .status-pill.live {
+      color: var(--accent-gold);
+      border-color: rgba(201, 162, 39, 0.35);
+      background: rgba(201, 162, 39, 0.1);
+    }
+
     /* Page Footer */
     .page-footer {
       display: flex;
@@ -1096,6 +1220,7 @@
 
       <div class="nav-section">
         <div class="nav-section-title">Referencje</div>
+        <a class="nav-item" data-page="wiki-kulturowa" onclick="showPage('wiki-kulturowa')">WIKI — Psychologia kulturowa</a>
         <a class="nav-item" data-page="wiki" onclick="showPage('wiki')">WIKI — Słownik</a>
         <a class="nav-item" data-page="zakres" onclick="showPage('zakres')">Zakres wiedzy</a>
         <a class="nav-item" data-page="literatura" onclick="showPage('literatura')">Literatura</a>
@@ -2913,6 +3038,139 @@
       </div>
 
 
+      <div class="page" id="page-wiki-kulturowa">
+        <div class="page-hero">
+          <div class="chapter-number">Referencje</div>
+          <h1>WIKI — Psychologia kulturowa</h1>
+          <p class="lead">Osobna strona WIKI poświęcona temu, jak kultura współtworzy poznanie, emocje, Ja, relacje społeczne, język, normy oraz praktyki codziennego życia.</p>
+        </div>
+
+        <div class="definition-block">
+          <div class="def-term">Psychologia kulturowa</div>
+          <p>Dziedzina badająca wzajemne oddziaływanie procesów psychicznych i środowiska kulturowego. Zakłada, że umysł nie rozwija się w próżni: sposoby spostrzegania, wartościowania, pamiętania, regulacji emocji i budowania tożsamości są współkształtowane przez język, instytucje, praktyki wychowawcze, historię zbiorową oraz materialne warunki życia.</p>
+        </div>
+
+        <div class="section" id="pk-zakres">
+          <h2>Szeroki zakres tematyczny dyscypliny</h2>
+          <p>Psychologia kulturowa łączy perspektywy psychologii społecznej, rozwojowej, poznawczej, klinicznej, antropologii, socjologii, studiów postkolonialnych i badań nad komunikacją. Interesuje ją zarówno to, co dzieje się <strong>między kulturami</strong>, jak i to, <strong>w jaki sposób kultura działa od wewnątrz</strong> — poprzez symbole, normy, role, instytucje, rytuały i codzienne nawyki.</p>
+          <div class="topic-grid">
+            <div class="topic-card"><h3>Poznanie i percepcja</h3><p>Style myślenia analitycznego i holistycznego, uwaga, kategoryzacja, rozumowanie przyczynowe, pamięć autobiograficzna oraz kulturowe wzory interpretowania świata.</p></div>
+            <div class="topic-card"><h3>Ja i tożsamość</h3><p>Niezależne i współzależne Ja, role społeczne, płeć kulturowa, tożsamość narodowa, etniczna, religijna i diasporczna oraz napięcia między jednostką a wspólnotą.</p></div>
+            <div class="topic-card"><h3>Emocje i motywacja</h3><p>Skrypty emocjonalne, reguły ekspresji, wstyd, duma, poczucie obowiązku, dobrostan, motywacja osiągnięć oraz kulturowe definicje sukcesu i porażki.</p></div>
+            <div class="topic-card"><h3>Relacje społeczne</h3><p>Normy, zaufanie, autorytet, hierarchia, rodzina, wychowanie, moralność, komunikacja międzygrupowa, stereotypy, uprzedzenia i konflikty kulturowe.</p></div>
+            <div class="topic-card"><h3>Język i znaczenia</h3><p>Język jako narzędzie organizowania doświadczenia, narracje kulturowe, metafory, pamięć zbiorowa, dyskurs publiczny oraz transmisja wartości.</p></div>
+            <div class="topic-card"><h3>Zdrowie i zastosowania</h3><p>Różnice w rozumieniu zdrowia psychicznego, pomocy, cierpienia, traumy i terapii; kompetencje międzykulturowe w edukacji, medycynie, biznesie i polityce publicznej.</p></div>
+          </div>
+        </div>
+
+        <div class="section" id="pk-perspektywy">
+          <h2>Główne perspektywy badawcze</h2>
+          <div class="card-grid">
+            <div class="card">
+              <div class="card-label">Poziom makro</div>
+              <div class="card-title">Systemy kulturowe i instytucje</div>
+              <p>Analiza wartości społecznych, religii, edukacji, gospodarki, mediów i historii, które wyznaczają ramy dla codziennych wyborów psychologicznych.</p>
+            </div>
+            <div class="card">
+              <div class="card-label">Poziom mezo</div>
+              <div class="card-title">Praktyki i interakcje</div>
+              <p>Badanie rodzin, szkół, miejsc pracy, rytuałów i sieci społecznych jako środowisk, w których kultura staje się doświadczeniem jednostki.</p>
+            </div>
+            <div class="card">
+              <div class="card-label">Poziom mikro</div>
+              <div class="card-title">Procesy psychiczne</div>
+              <p>Opis mechanizmów uwagi, interpretacji, emocji, pamięci, samoregulacji i działania, które przyjmują różne formy zależnie od kontekstu kulturowego.</p>
+            </div>
+          </div>
+          <div class="callout callout-info">
+            <div class="callout-icon">🌍</div>
+            <p>Ta strona WIKI została zaprojektowana jako <strong>mapa redakcyjna</strong>: część haseł prowadzi do sekcji istniejących na stronie, a planowane artykuły są celowo wygaszone, aby odróżnić zasoby gotowe od tematów przewidzianych do rozwinięcia.</p>
+          </div>
+        </div>
+
+        <div class="section" id="pk-metody">
+          <h2>Metody i typowe pytania badawcze</h2>
+          <ul>
+            <li><strong>Porównania międzykulturowe</strong> — czy ten sam konstrukt psychologiczny działa podobnie w różnych społeczeństwach?</li>
+            <li><strong>Badania etnograficzne i jakościowe</strong> — jak uczestnicy sami opisują znaczenia, normy i doświadczenia?</li>
+            <li><strong>Analiza dyskursu i narracji</strong> — jakie opowieści kulturowe organizują pamięć, moralność i tożsamość?</li>
+            <li><strong>Badania rozwojowe</strong> — jak dzieci internalizują wzory kulturowe przez język, zabawę, edukację i rytuały?</li>
+            <li><strong>Psychologia stosowana</strong> — jak projektować diagnozę, terapię, edukację i komunikację publiczną wrażliwą kulturowo?</li>
+          </ul>
+        </div>
+
+        <div class="section" id="pk-artykuly">
+          <h2>Lista artykułów WIKI</h2>
+          <p>Poniżej znajduje się pełna lista artykułów dla działu psychologii kulturowej. Aktywne odnośniki prowadzą do sekcji już opracowanych na tej stronie; wygaszone pozycje oznaczają hasła zaplanowane do rozwinięcia w kolejnych aktualizacjach.</p>
+
+          <div class="article-index">
+            <div class="article-category">
+              <h3>Podstawy dyscypliny</h3>
+              <p>Hasła wprowadzające do definicji, historii i głównych sporów teoretycznych.</p>
+              <ul class="article-list">
+                <li><a class="article-link" href="#pk-zakres"><span class="article-meta"><span class="article-title">Czym jest psychologia kulturowa?</span><span class="article-desc">Definicja, zakres i relacje z psychologią międzykulturową.</span></span><span class="status-pill live">gotowe</span></a></li>
+                <li><a class="article-link disabled" aria-disabled="true"><span class="article-meta"><span class="article-title">Historia psychologii kulturowej</span><span class="article-desc">Od Wundta i psychologii ludów po współczesne podejścia konstruktywistyczne.</span></span><span class="status-pill">planowane</span></a></li>
+                <li><a class="article-link disabled" aria-disabled="true"><span class="article-meta"><span class="article-title">Psychologia kulturowa a psychologia międzykulturowa</span><span class="article-desc">Podobieństwa, różnice i odmienne strategie badawcze.</span></span><span class="status-pill">planowane</span></a></li>
+                <li><a class="article-link disabled" aria-disabled="true"><span class="article-meta"><span class="article-title">Kultura jako system znaczeń</span><span class="article-desc">Symbole, praktyki, instytucje i materialność życia społecznego.</span></span><span class="status-pill">planowane</span></a></li>
+              </ul>
+            </div>
+
+            <div class="article-category">
+              <h3>Poznanie, emocje i Ja</h3>
+              <p>Obszary pokazujące, jak kultura modeluje podstawowe procesy psychiczne.</p>
+              <ul class="article-list">
+                <li><a class="article-link" href="#pk-perspektywy"><span class="article-meta"><span class="article-title">Główne perspektywy badawcze</span><span class="article-desc">Poziom makro, mezo i mikro w badaniu relacji kultura–psychika.</span></span><span class="status-pill live">gotowe</span></a></li>
+                <li><a class="article-link disabled" aria-disabled="true"><span class="article-meta"><span class="article-title">Style poznawcze: holizm i analityczność</span><span class="article-desc">Różnice w uwadze, kategoryzacji i rozumowaniu.</span></span><span class="status-pill">planowane</span></a></li>
+                <li><a class="article-link disabled" aria-disabled="true"><span class="article-meta"><span class="article-title">Kulturowe modele Ja</span><span class="article-desc">Ja niezależne, współzależne i wielopoziomowe tożsamości.</span></span><span class="status-pill">planowane</span></a></li>
+                <li><a class="article-link disabled" aria-disabled="true"><span class="article-meta"><span class="article-title">Emocje w perspektywie kulturowej</span><span class="article-desc">Reguły ekspresji, skrypty emocjonalne i lokalne kategorie uczuć.</span></span><span class="status-pill">planowane</span></a></li>
+                <li><a class="article-link disabled" aria-disabled="true"><span class="article-meta"><span class="article-title">Motywacja, sukces i obowiązek</span><span class="article-desc">Kulturowe źródła sprawstwa, ambicji i odpowiedzialności.</span></span><span class="status-pill">planowane</span></a></li>
+              </ul>
+            </div>
+
+            <div class="article-category">
+              <h3>Socjalizacja i relacje społeczne</h3>
+              <p>Tematy związane z wychowaniem, rodziną, normami i życiem zbiorowym.</p>
+              <ul class="article-list">
+                <li><a class="article-link disabled" aria-disabled="true"><span class="article-meta"><span class="article-title">Rodzina i praktyki wychowawcze</span><span class="article-desc">Style opieki, autonomia, posłuszeństwo, wspólnotowość i obowiązki pokoleniowe.</span></span><span class="status-pill">planowane</span></a></li>
+                <li><a class="article-link disabled" aria-disabled="true"><span class="article-meta"><span class="article-title">Normy społeczne i sankcje</span><span class="article-desc">Jak kultura reguluje zachowanie przez oczekiwania, wstyd, honor i reputację.</span></span><span class="status-pill">planowane</span></a></li>
+                <li><a class="article-link disabled" aria-disabled="true"><span class="article-meta"><span class="article-title">Moralność i wartości kulturowe</span><span class="article-desc">Sprawiedliwość, lojalność, autorytet, świętość i troska.</span></span><span class="status-pill">planowane</span></a></li>
+                <li><a class="article-link disabled" aria-disabled="true"><span class="article-meta"><span class="article-title">Stereotypy, uprzedzenia i relacje międzygrupowe</span><span class="article-desc">Psychologia granic symbolicznych i napięć społecznych.</span></span><span class="status-pill">planowane</span></a></li>
+                <li><a class="article-link disabled" aria-disabled="true"><span class="article-meta"><span class="article-title">Migracja, akulturacja i tożsamość diaspor</span><span class="article-desc">Strategie przystosowania i koszty psychologiczne życia między kulturami.</span></span><span class="status-pill">planowane</span></a></li>
+              </ul>
+            </div>
+
+            <div class="article-category">
+              <h3>Język, narracje i metodologia</h3>
+              <p>Obszary koncentrujące się na znaczeniach, opowieściach i warsztacie badawczym.</p>
+              <ul class="article-list">
+                <li><a class="article-link" href="#pk-metody"><span class="article-meta"><span class="article-title">Metody badań w psychologii kulturowej</span><span class="article-desc">Porównania międzykulturowe, etnografia, badania jakościowe i podejścia mieszane.</span></span><span class="status-pill live">gotowe</span></a></li>
+                <li><a class="article-link disabled" aria-disabled="true"><span class="article-meta"><span class="article-title">Język a konstruowanie doświadczenia</span><span class="article-desc">Nazewnictwo emocji, metafory i kategorie społeczne.</span></span><span class="status-pill">planowane</span></a></li>
+                <li><a class="article-link disabled" aria-disabled="true"><span class="article-meta"><span class="article-title">Narracje tożsamościowe i pamięć zbiorowa</span><span class="article-desc">Jak wspólnoty organizują przeszłość, traumę i dumę.</span></span><span class="status-pill">planowane</span></a></li>
+                <li><a class="article-link disabled" aria-disabled="true"><span class="article-meta"><span class="article-title">Tłumaczenie narzędzi psychologicznych</span><span class="article-desc">Równoważność pomiaru, adaptacja skal i pułapki etnocentryzmu.</span></span><span class="status-pill">planowane</span></a></li>
+                <li><a class="article-link disabled" aria-disabled="true"><span class="article-meta"><span class="article-title">Etyka badań międzykulturowych</span><span class="article-desc">Partnerstwo badawcze, reprezentacja i odpowiedzialność wobec społeczności.</span></span><span class="status-pill">planowane</span></a></li>
+              </ul>
+            </div>
+
+            <div class="article-category">
+              <h3>Zastosowania praktyczne</h3>
+              <p>Wątki przydatne w edukacji, klinice, organizacjach i polityce publicznej.</p>
+              <ul class="article-list">
+                <li><a class="article-link disabled" aria-disabled="true"><span class="article-meta"><span class="article-title">Psychologia kulturowa w psychoterapii</span><span class="article-desc">Formułowanie problemu, relacja terapeutyczna i idiomy cierpienia.</span></span><span class="status-pill">planowane</span></a></li>
+                <li><a class="article-link disabled" aria-disabled="true"><span class="article-meta"><span class="article-title">Edukacja międzykulturowa</span><span class="article-desc">Uczenie, autorytet nauczyciela, inkluzja i style komunikacji w klasie.</span></span><span class="status-pill">planowane</span></a></li>
+                <li><a class="article-link disabled" aria-disabled="true"><span class="article-meta"><span class="article-title">Praca i organizacje wielokulturowe</span><span class="article-desc">Liderstwo, współpraca, konflikt i negocjowanie norm w zespołach.</span></span><span class="status-pill">planowane</span></a></li>
+                <li><a class="article-link disabled" aria-disabled="true"><span class="article-meta"><span class="article-title">Zdrowie publiczne i komunikacja społeczna</span><span class="article-desc">Projektowanie kampanii i interwencji z uwzględnieniem lokalnych wzorów znaczeń.</span></span><span class="status-pill">planowane</span></a></li>
+                <li><a class="article-link disabled" aria-disabled="true"><span class="article-meta"><span class="article-title">Nowe media i kultura cyfrowa</span><span class="article-desc">Platformy, algorytmy, tożsamość online i globalny obieg symboli.</span></span><span class="status-pill">planowane</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-footer">
+          <span class="footer-note">Psychologia kulturowa — mapa tematów</span>
+          <button class="btn-next" onclick="showPage('wiki')">Następny: WIKI — Słownik →</button>
+        </div>
+      </div>
+
       <div class="page" id="page-wiki">
         <div class="page-hero">
           <div class="chapter-number">Referencje</div>
@@ -3804,6 +4062,7 @@
         'tests-executive': 'Funkcje wykonawcze',
         'assessment': 'Metody oceny',
         'neuroimaging': 'Neuroobrazowanie',
+        'wiki-kulturowa': 'WIKI — Psychologia kulturowa',
         'wiki': 'WIKI — Słownik',
         'zakres': 'Zakres wiedzy',
         'literatura': 'Literatura',
@@ -3841,7 +4100,7 @@
                      'attention', 'language', 'executive', 'perception', 'aphasia', 'amnesia', 
                      'dementia', 'tbi', 'cases', 'case-hm', 'case-gage', 'case-tan', 'case-split',
                      'tests-overview', 'tests-screen', 'tests-memory', 'tests-executive', 
-                     'assessment', 'neuroimaging', 'wiki', 'zakres', 'literatura', 'neurofarmakologia'];
+                     'assessment', 'neuroimaging', 'wiki-kulturowa', 'wiki', 'zakres', 'literatura', 'neurofarmakologia'];
       
       for (const page of pages) {
         const content = document.getElementById('page-' + page).textContent.toLowerCase();

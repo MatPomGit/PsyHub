@@ -587,6 +587,84 @@
       line-height: 1.6;
     }
 
+
+    .article-directory {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .article-directory-group {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+
+    .article-directory-group h3 {
+      margin-top: 0;
+      margin-bottom: 0.9rem;
+    }
+
+    .article-directory-group ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .article-directory-group li {
+      margin: 0 0 0.55rem;
+      padding-bottom: 0.55rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .article-directory-group li:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .article-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      color: var(--accent-blue);
+      font-weight: 500;
+    }
+
+    .article-link.disabled,
+    .article-link[aria-disabled="true"] {
+      color: var(--text-muted);
+      opacity: 0.55;
+      cursor: not-allowed;
+      pointer-events: none;
+      text-decoration: none;
+    }
+
+    .article-status {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+    }
+
+    .topic-pill-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin: 1rem 0 1.5rem;
+    }
+
+    .topic-pill {
+      padding: 0.55rem 0.85rem;
+      border-radius: 999px;
+      background: rgba(91, 140, 184, 0.12);
+      border: 1px solid rgba(91, 140, 184, 0.25);
+      color: var(--text-primary);
+      font-size: 0.86rem;
+    }
+
     /* 3D Modal */
     .modal-overlay {
       position: fixed;
@@ -1097,6 +1175,7 @@
       <div class="nav-section">
         <div class="nav-section-title">Referencje</div>
         <a class="nav-item" data-page="wiki" onclick="showPage('wiki')">WIKI — Słownik</a>
+        <a class="nav-item" data-page="wiki-rozwojowa" onclick="showPage('wiki-rozwojowa')">WIKI — Psychologia rozwojowa</a>
         <a class="nav-item" data-page="zakres" onclick="showPage('zakres')">Zakres wiedzy</a>
         <a class="nav-item" data-page="literatura" onclick="showPage('literatura')">Literatura</a>
       </div>
@@ -3332,6 +3411,161 @@
           <button class="btn-next" onclick="showPage('intro')">Powrót do strony głównej →</button>
         </div>
       </div>
+
+      <!-- ═══════════════════════════════════════════════ WIKI: PSYCHOLOGIA ROZWOJOWA -->
+      <div class="page" id="page-wiki-rozwojowa">
+        <div class="page-hero">
+          <div class="chapter-number">WIKI specjalistyczne</div>
+          <h1>Psychologia rozwojowa — mapa dziedziny</h1>
+          <p class="lead">Osobna strona WIKI poświęcona psychologii rozwojowej: jej przedmiotowi badań, pełnej mapie planowanych artykułów oraz głównym obszarom opisu zmian zachodzących od okresu prenatalnego do późnej dorosłości.</p>
+        </div>
+
+        <div class="section">
+          <h2>Czym zajmuje się psychologia rozwojowa?</h2>
+          <p><span class="term">Psychologia rozwojowa</span> bada względnie trwałe i przejściowe zmiany w funkcjonowaniu człowieka w biegu życia. Obejmuje rozwój <strong>poznawczy, emocjonalny, społeczny, moralny, językowy, osobowościowy i biologiczny</strong>, a także czynniki, które ten rozwój wspierają, modyfikują albo zakłócają.</p>
+          <p>Dziedzina ta analizuje zarówno <strong>normatywne prawidłowości rozwojowe</strong>, jak i różnice indywidualne. Interesuje się mechanizmami dojrzewania, uczenia się, socjalizacji, przywiązania, kształtowania tożsamości oraz wpływu rodziny, szkoły, grup rówieśniczych, kultury i technologii na kolejne etapy życia.</p>
+
+          <div class="topic-pill-grid">
+            <span class="topic-pill">okres prenatalny i perinatalny</span>
+            <span class="topic-pill">niemowlęctwo i wczesne dzieciństwo</span>
+            <span class="topic-pill">wiek przedszkolny i szkolny</span>
+            <span class="topic-pill">dorastanie</span>
+            <span class="topic-pill">wczesna, średnia i późna dorosłość</span>
+            <span class="topic-pill">rozwój typowy i atypowy</span>
+            <span class="topic-pill">wpływ środowiska i kultury</span>
+            <span class="topic-pill">diagnoza i wspieranie rozwoju</span>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Pełna lista artykułów WIKI</h2>
+          <p>Poniżej znajduje się kompletna mapa artykułów dla tej strony. <strong>Aktywne linki</strong> prowadzą do treści już istniejących w portalu, natomiast <strong>wygaszone pozycje</strong> oznaczają artykuły planowane, które nie zostały jeszcze opracowane.</p>
+
+          <div class="article-directory">
+            <div class="article-directory-group">
+              <h3>Podstawy dziedziny</h3>
+              <ul>
+                <li><span class="article-link disabled" aria-disabled="true">Definicja psychologii rozwojowej</span><div class="article-status">planowany artykuł</div></li>
+                <li><span class="article-link disabled" aria-disabled="true">Przedmiot i zadania badań rozwojowych</span><div class="article-status">planowany artykuł</div></li>
+                <li><span class="article-link disabled" aria-disabled="true">Pojęcie zmiany, wzrostu, dojrzewania i uczenia się</span><div class="article-status">planowany artykuł</div></li>
+                <li><span class="article-link disabled" aria-disabled="true">Metody badań podłużnych i poprzecznych</span><div class="article-status">planowany artykuł</div></li>
+                <li><span class="article-link disabled" aria-disabled="true">Klasyczne i współczesne teorie rozwoju</span><div class="article-status">planowany artykuł</div></li>
+              </ul>
+            </div>
+
+            <div class="article-directory-group">
+              <h3>Biologiczne podstawy rozwoju</h3>
+              <ul>
+                <li><span class="article-link disabled" aria-disabled="true">Rozwój prenatalny</span><div class="article-status">planowany artykuł</div></li>
+                <li><span class="article-link disabled" aria-disabled="true">Okres okołoporodowy i czynniki ryzyka</span><div class="article-status">planowany artykuł</div></li>
+                <li><a class="article-link" href="#" onclick="showPage('anatomy'); return false;">Rozwój mózgu i dojrzewanie układu nerwowego</a><div class="article-status">powiązane z istniejącą stroną: Anatomia mózgu</div></li>
+                <li><a class="article-link" href="#" onclick="showPage('neuron'); return false;">Neuron, synapsa i plastyczność w rozwoju</a><div class="article-status">powiązane z istniejącą stroną: Neuron i synapsa</div></li>
+                <li><span class="article-link disabled" aria-disabled="true">Geny, epigenetyka i środowisko</span><div class="article-status">planowany artykuł</div></li>
+              </ul>
+            </div>
+
+            <div class="article-directory-group">
+              <h3>Rozwój poznawczy i językowy</h3>
+              <ul>
+                <li><span class="article-link disabled" aria-disabled="true">Rozwój spostrzegania</span><div class="article-status">planowany artykuł</div></li>
+                <li><a class="article-link" href="#" onclick="showPage('attention'); return false;">Rozwój uwagi</a><div class="article-status">powiązane z istniejącą stroną: Uwaga</div></li>
+                <li><a class="article-link" href="#" onclick="showPage('memory'); return false;">Rozwój pamięci</a><div class="article-status">powiązane z istniejącą stroną: Pamięć</div></li>
+                <li><a class="article-link" href="#" onclick="showPage('language'); return false;">Rozwój języka i komunikacji</a><div class="article-status">powiązane z istniejącą stroną: Język</div></li>
+                <li><a class="article-link" href="#" onclick="showPage('executive'); return false;">Rozwój funkcji wykonawczych</a><div class="article-status">powiązane z istniejącą stroną: Funkcje wykonawcze</div></li>
+                <li><span class="article-link disabled" aria-disabled="true">Myślenie symboliczne i teoria umysłu</span><div class="article-status">planowany artykuł</div></li>
+              </ul>
+            </div>
+
+            <div class="article-directory-group">
+              <h3>Rozwój emocjonalny i społeczny</h3>
+              <ul>
+                <li><span class="article-link disabled" aria-disabled="true">Temperament i samoregulacja</span><div class="article-status">planowany artykuł</div></li>
+                <li><span class="article-link disabled" aria-disabled="true">Przywiązanie i relacje z opiekunem</span><div class="article-status">planowany artykuł</div></li>
+                <li><span class="article-link disabled" aria-disabled="true">Rozwój emocji</span><div class="article-status">planowany artykuł</div></li>
+                <li><span class="article-link disabled" aria-disabled="true">Rozwój kompetencji społecznych</span><div class="article-status">planowany artykuł</div></li>
+                <li><span class="article-link disabled" aria-disabled="true">Rozwój moralny i prospołeczność</span><div class="article-status">planowany artykuł</div></li>
+                <li><span class="article-link disabled" aria-disabled="true">Tożsamość, autonomia i adolescencja</span><div class="article-status">planowany artykuł</div></li>
+              </ul>
+            </div>
+
+            <div class="article-directory-group">
+              <h3>Etapy życia</h3>
+              <ul>
+                <li><span class="article-link disabled" aria-disabled="true">Niemowlęctwo</span><div class="article-status">planowany artykuł</div></li>
+                <li><span class="article-link disabled" aria-disabled="true">Wczesne dzieciństwo</span><div class="article-status">planowany artykuł</div></li>
+                <li><span class="article-link disabled" aria-disabled="true">Średnie dzieciństwo</span><div class="article-status">planowany artykuł</div></li>
+                <li><span class="article-link disabled" aria-disabled="true">Adolescencja</span><div class="article-status">planowany artykuł</div></li>
+                <li><span class="article-link disabled" aria-disabled="true">Wczesna dorosłość</span><div class="article-status">planowany artykuł</div></li>
+                <li><span class="article-link disabled" aria-disabled="true">Średnia dorosłość</span><div class="article-status">planowany artykuł</div></li>
+                <li><span class="article-link disabled" aria-disabled="true">Późna dorosłość i starzenie się</span><div class="article-status">planowany artykuł</div></li>
+              </ul>
+            </div>
+
+            <div class="article-directory-group">
+              <h3>Rozwój atypowy i wsparcie</h3>
+              <ul>
+                <li><span class="article-link disabled" aria-disabled="true">Kamienie milowe i sygnały alarmowe</span><div class="article-status">planowany artykuł</div></li>
+                <li><span class="article-link disabled" aria-disabled="true">Opóźnienia i dysharmonie rozwojowe</span><div class="article-status">planowany artykuł</div></li>
+                <li><span class="article-link disabled" aria-disabled="true">Neuroróżnorodność i rozwój atypowy</span><div class="article-status">planowany artykuł</div></li>
+                <li><span class="article-link disabled" aria-disabled="true">Rola rodziny, szkoły i rówieśników</span><div class="article-status">planowany artykuł</div></li>
+                <li><span class="article-link disabled" aria-disabled="true">Diagnoza psychologiczna w biegu życia</span><div class="article-status">planowany artykuł</div></li>
+                <li><span class="article-link disabled" aria-disabled="true">Wspieranie rozwoju i profilaktyka</span><div class="article-status">planowany artykuł</div></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Szeroki zakres tematów należących do psychologii rozwojowej</h2>
+          <div class="card-grid">
+            <div class="card">
+              <div class="card-label">01 · mechanizmy zmiany</div>
+              <div class="card-title">Jak i dlaczego człowiek się zmienia?</div>
+              <p>Obszar ten obejmuje dojrzewanie biologiczne, uczenie się, wpływ doświadczenia, plastyczność, kryzysy rozwojowe oraz współdziałanie czynników genetycznych i środowiskowych.</p>
+            </div>
+            <div class="card">
+              <div class="card-label">02 · rozwój poznawczy</div>
+              <div class="card-title">Myślenie, pamięć, uwaga i język</div>
+              <p>Psychologia rozwojowa śledzi powstawanie reprezentacji umysłowych, rozwój pamięci roboczej i autobiograficznej, zmianę strategii uczenia się oraz dojrzewanie mowy i komunikacji.</p>
+            </div>
+            <div class="card">
+              <div class="card-label">03 · rozwój społeczno-emocjonalny</div>
+              <div class="card-title">Relacje, emocje i tożsamość</div>
+              <p>W tym nurcie bada się przywiązanie, temperament, samoregulację, empatię, kompetencje społeczne, rozwój moralny, role społeczne oraz formowanie się obrazu siebie.</p>
+            </div>
+            <div class="card">
+              <div class="card-label">04 · kontekst życia</div>
+              <div class="card-title">Rodzina, szkoła, kultura i media</div>
+              <p>Na rozwój wpływają style wychowania, klimat szkolny, status społeczno-ekonomiczny, normy kulturowe, język otoczenia, cyfryzacja oraz doświadczenia stresu i wsparcia.</p>
+            </div>
+            <div class="card">
+              <div class="card-label">05 · całe życie</div>
+              <div class="card-title">Od prenatalności do starości</div>
+              <p>Dziedzina nie ogranicza się do dzieciństwa. Opisuje też zadania rozwojowe dorosłości, zmiany ról rodzinnych i zawodowych, adaptację do starzenia się oraz bilans zysków i strat w późnym wieku.</p>
+            </div>
+            <div class="card">
+              <div class="card-label">06 · rozwój typowy i atypowy</div>
+              <div class="card-title">Norma, ryzyko i wsparcie</div>
+              <p>Ważną częścią psychologii rozwojowej jest rozpoznawanie sygnałów alarmowych, opisu trajektorii nieharmonijnych oraz planowania działań wspierających dzieci, młodzież, dorosłych i seniorów.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Jak czytać tę stronę WIKI?</h2>
+          <div class="callout callout-info">
+            <span class="callout-icon">🧭</span>
+            <p>Ta podstrona pełni rolę <strong>mapy redakcyjnej</strong>. Ma pokazać pełny plan rozbudowy działu psychologii rozwojowej, a zarazem od razu kierować czytelnika do tych obszarów portalu, które już częściowo pokrywają temat rozwoju poznawczego i neurobiologicznego.</p>
+          </div>
+          <p>Dzięki takiej konstrukcji można stopniowo rozwijać dział bez ukrywania braków: użytkownik widzi kompletny zakres tematyczny, a wygaszone pozycje jasno sygnalizują, które artykuły są dopiero przewidziane do przygotowania.</p>
+        </div>
+
+        <div class="page-footer">
+          <span class="footer-note">WIKI — Psychologia rozwojowa</span>
+          <button class="btn-next" onclick="showPage('wiki')">Powrót do słownika ogólnego →</button>
+        </div>
+      </div>
+
       <!-- ═══════════════════════════════════════════════ ZAKRES WIEDZY -->
       <div class="page" id="page-zakres">
         <div class="page-hero">
@@ -3805,6 +4039,7 @@
         'assessment': 'Metody oceny',
         'neuroimaging': 'Neuroobrazowanie',
         'wiki': 'WIKI — Słownik',
+        'wiki-rozwojowa': 'WIKI — Psychologia rozwojowa',
         'zakres': 'Zakres wiedzy',
         'literatura': 'Literatura',
         'neurofarmakologia': 'Neurofarmakologia'
@@ -3841,7 +4076,7 @@
                      'attention', 'language', 'executive', 'perception', 'aphasia', 'amnesia', 
                      'dementia', 'tbi', 'cases', 'case-hm', 'case-gage', 'case-tan', 'case-split',
                      'tests-overview', 'tests-screen', 'tests-memory', 'tests-executive', 
-                     'assessment', 'neuroimaging', 'wiki', 'zakres', 'literatura', 'neurofarmakologia'];
+                     'assessment', 'neuroimaging', 'wiki', 'wiki-rozwojowa', 'zakres', 'literatura', 'neurofarmakologia'];
       
       for (const page of pages) {
         const content = document.getElementById('page-' + page).textContent.toLowerCase();

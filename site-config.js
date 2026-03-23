@@ -30,6 +30,7 @@ window.SITE_CONFIG = {
         { id: 'neuro/anatomia', label: 'Anatomia mózgu',   file: 'wiki/neuro/anatomia.md'  },
         { id: 'neuro/neuron',   label: 'Neuron i synapsa', file: 'wiki/neuro/neuron.md'    },
         { id: 'neuro/systemy',  label: 'Układy i sieci',   file: 'wiki/neuro/systemy.md'   },
+        { id: 'neuro/przesilenie_wiosenne', label: 'Neurobiologia przesilenia wiosennego', file: 'wiki/neuro/przesilenie_wiosenne.md' },
       ]
     },
     {
@@ -242,6 +243,7 @@ window.SITE_CONFIG = {
       { file: 'wiki/neuro/lateralizacja.md',label: 'Lateralizacja funkcji',    status: 'planned' },
       { file: 'wiki/neuro/kora_prefrontalna.md', label: 'Kora przedczołowa',   status: 'planned' },
       { file: 'wiki/neuro/uklad_limbiczny.md', label: 'Układ limbiczny',       status: 'planned' },
+      { file: 'wiki/neuro/przesilenie_wiosenne.md', label: 'Neurobiologia przesilenia wiosennego', status: 'live' },
     ],
     cognitive: [
       { file: 'wiki/cognitive/pamiec.md',              label: 'Pamięć',               status: 'live' },

@@ -389,11 +389,14 @@ em{color:var(--goldl)}
 ══════════════════════════════════════════════════ */
 function md2html(src) {
   const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-  const inl = s => s
-    .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
-    .replace(/\*(.+?)\*/g,'<em>$1</em>')
-    .replace(/`(.+?)`/g,'<code>$1</code>')
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2">$1</a>');
+  const inl = s => {
+    s = esc(s);
+    return s
+      .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
+      .replace(/\*(.+?)\*/g,'<em>$1</em>')
+      .replace(/`(.+?)`/g,'<code>$1</code>')
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2">$1</a>');
+  };
 
   // tables
   src = src.replace(/((?:\|.+\|\n){2,})/g, blk => {
@@ -541,9 +544,7 @@ function renderMd(text, id, item) {
 /* plan list for a domain */
 function renderPlans(items, currentId) {
   const rows = items.map(it => {
-    const isMe = it.file && it.file.includes(currentId.split('/')[1]);
-    const cls  = ['plan-item', it.status].join(' ');
-    const click = it.status==='live' && it.id ? `onclick="navigate('${it.id}')"` : '';
+    const cls    = ['plan-item', it.status].join(' ');
     const fileId = it.file ? it.file.replace('wiki/','').replace('.md','') : null;
     const navTo  = fileId ? `onclick="navigate('${fileId}')"` : '';
     return `<div class="${cls}" ${it.status==='live' ? navTo : ''}>

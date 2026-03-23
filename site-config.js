@@ -31,6 +31,12 @@ window.SITE_CONFIG = {
         { id: 'neuro/neuron',   label: 'Neuron i synapsa', file: 'wiki/neuro/neuron.md'    },
         { id: 'neuro/systemy',  label: 'Układy i sieci',   file: 'wiki/neuro/systemy.md'   },
         { id: 'neuro/przesilenie_wiosenne', label: 'Neurobiologia przesilenia wiosennego', file: 'wiki/neuro/przesilenie_wiosenne.md' },
+        { id: 'neuro/myelinizacja',         label: 'Mielinizacja i istota biała',          file: 'wiki/neuro/myelinizacja.md'         },
+        { id: 'neuro/plastycznosc',         label: 'Neuroplastyczność',                    file: 'wiki/neuro/plastycznosc.md'         },
+        { id: 'neuro/neuroobrazowanie',     label: 'Neuroobrazowanie (fMRI, DTI)',          file: 'wiki/neuro/neuroobrazowanie.md'     },
+        { id: 'neuro/lateralizacja',        label: 'Lateralizacja funkcji',                file: 'wiki/neuro/lateralizacja.md'        },
+        { id: 'neuro/kora_prefrontalna',    label: 'Kora przedczołowa',                    file: 'wiki/neuro/kora_prefrontalna.md'    },
+        { id: 'neuro/uklad_limbiczny',      label: 'Układ limbiczny',                      file: 'wiki/neuro/uklad_limbiczny.md'      },
       ]
     },
     {
@@ -41,7 +47,12 @@ window.SITE_CONFIG = {
         { id: 'cognitive/jezyk',               label: 'Język',                file: 'wiki/cognitive/jezyk.md'               },
         { id: 'cognitive/funkcje_wykonawcze',  label: 'Funkcje wykonawcze',   file: 'wiki/cognitive/funkcje_wykonawcze.md'  },
         { id: 'cognitive/percepcja',           label: 'Percepcja i gnozja',   file: 'wiki/cognitive/percepcja.md'           },
-        { id: 'cognitive/zmeczenie_poznawcze', label: 'Zmęczenie poznawcze',  file: 'wiki/cognitive/zmeczenie_poznawcze.md' },
+        { id: 'cognitive/zmeczenie_poznawcze', label: 'Zmęczenie poznawcze',       file: 'wiki/cognitive/zmeczenie_poznawcze.md' },
+        { id: 'cognitive/myslenie',             label: 'Myślenie i rozumowanie',    file: 'wiki/cognitive/myslenie.md'             },
+        { id: 'cognitive/uczenie',              label: 'Uczenie się',               file: 'wiki/cognitive/uczenie.md'              },
+        { id: 'cognitive/wyobraznia',           label: 'Wyobraźnia i reprezentacje',file: 'wiki/cognitive/wyobraznia.md'           },
+        { id: 'cognitive/swiadomosc',           label: 'Świadomość i metapoznanie', file: 'wiki/cognitive/swiadomosc.md'           },
+        { id: 'cognitive/podejmowanie_decyzji', label: 'Podejmowanie decyzji',      file: 'wiki/cognitive/podejmowanie_decyzji.md' },
       ]
     },
     {
@@ -51,6 +62,11 @@ window.SITE_CONFIG = {
         { id: 'disorders/amnezje',   label: 'Amnezje',           file: 'wiki/disorders/amnezje.md'   },
         { id: 'disorders/otepienia', label: 'Otępienia',         file: 'wiki/disorders/otepienia.md' },
         { id: 'disorders/tbi',       label: 'Urazy głowy (TBI)', file: 'wiki/disorders/tbi.md'       },
+        { id: 'disorders/apraksja',  label: 'Apraksja',               file: 'wiki/disorders/apraksja.md'  },
+        { id: 'disorders/agnozja',   label: 'Agnozja wzrokowa',       file: 'wiki/disorders/agnozja.md'   },
+        { id: 'disorders/neglect',   label: 'Neglect przestrzenny',   file: 'wiki/disorders/neglect.md'   },
+        { id: 'disorders/adhd',      label: 'ADHD',                   file: 'wiki/disorders/adhd.md'      },
+        { id: 'disorders/asd',       label: 'Spektrum autyzmu (ASD)', file: 'wiki/disorders/asd.md'       },
       ]
     },
     {
@@ -68,6 +84,11 @@ window.SITE_CONFIG = {
         { id: 'diagnostics/testy_przeglad',   label: 'Testy — przegląd',      file: 'wiki/diagnostics/testy_przeglad.md'   },
         { id: 'diagnostics/mmse_moca',        label: 'Testy przesiewowe',     file: 'wiki/diagnostics/mmse_moca.md'        },
         { id: 'diagnostics/testy_wykonawcze', label: 'Testy wyk. — przegląd', file: 'wiki/diagnostics/testy_wykonawcze.md' },
+        { id: 'diagnostics/testy_pamieci',     label: 'Testy pamięci',              file: 'wiki/diagnostics/testy_pamieci.md'     },
+        { id: 'diagnostics/testy_uwagi',       label: 'Testy uwagi',                file: 'wiki/diagnostics/testy_uwagi.md'       },
+        { id: 'diagnostics/testy_jezyka',      label: 'Testy językowe',             file: 'wiki/diagnostics/testy_jezyka.md'      },
+        { id: 'diagnostics/wais',              label: 'Skale Wechslera (WAIS/WISC)',file: 'wiki/diagnostics/wais.md'              },
+        { id: 'diagnostics/neuropsych_battery',label: 'Baterie neuropsychologiczne',file: 'wiki/diagnostics/neuropsych_battery.md'},
       ]
     },
     {
@@ -79,6 +100,8 @@ window.SITE_CONFIG = {
         { id: 'psychometrics/normalizacja',  label: 'Normalizacja i normy',  file: 'wiki/psychometrics/normalizacja.md'  },
         { id: 'psychometrics/teoria_ct',     label: 'Klasyczna teoria testu',file: 'wiki/psychometrics/teoria_ct.md'     },
         { id: 'psychometrics/irt',           label: 'IRT i Rasch',           file: 'wiki/psychometrics/irt.md'           },
+        { id: 'psychometrics/cfa_efa',       label: 'Analiza czynnikowa',    file: 'wiki/psychometrics/cfa_efa.md'       },
+        { id: 'psychometrics/invariancja',   label: 'Inwariancja pomiarowa', file: 'wiki/psychometrics/invariancja.md'   },
       ]
     },
     {
@@ -90,6 +113,8 @@ window.SITE_CONFIG = {
         { id: 'pharmacology/anxiolityki',        label: 'Anksjolityki i nasenne',     file: 'wiki/pharmacology/anxiolityki.md'        },
         { id: 'pharmacology/stabilizatory',      label: 'Stabilizatory nastroju',     file: 'wiki/pharmacology/stabilizatory.md'      },
         { id: 'pharmacology/uzaleznienia_farm',  label: 'Farmakoterapia uzależnień',  file: 'wiki/pharmacology/uzaleznienia_farm.md'  },
+        { id: 'pharmacology/psychodeliki',       label: 'Psychodeliki w terapii',     file: 'wiki/pharmacology/psychodeliki.md'       },
+        { id: 'pharmacology/nootropiki',         label: 'Nootropiki i kognitywne',    file: 'wiki/pharmacology/nootropiki.md'         },
       ]
     },
     {
@@ -100,6 +125,8 @@ window.SITE_CONFIG = {
         { id: 'individual_diffs/osobowosc',             label: 'Osobowość',                   file: 'wiki/individual_diffs/osobowosc.md'             },
         { id: 'individual_diffs/kreatywnosc',           label: 'Kreatywność',                 file: 'wiki/individual_diffs/kreatywnosc.md'           },
         { id: 'individual_diffs/genetyka',              label: 'Uwarunkowania genetyczne',    file: 'wiki/individual_diffs/genetyka.md'              },
+        { id: 'individual_diffs/style_poznawcze',       label: 'Style poznawcze',             file: 'wiki/individual_diffs/style_poznawcze.md'       },
+        { id: 'individual_diffs/plec_psychologia',      label: 'Psychologia płci',            file: 'wiki/individual_diffs/plec_psychologia.md'      },
       ]
     },
     {
@@ -109,6 +136,7 @@ window.SITE_CONFIG = {
         { id: 'temperament/modele',      label: 'Modele temperamentu',   file: 'wiki/temperament/modele.md'      },
         { id: 'temperament/pomiar',      label: 'Pomiar temperamentu',   file: 'wiki/temperament/pomiar.md'      },
         { id: 'temperament/kliniczne',   label: 'Wymiar kliniczny',      file: 'wiki/temperament/kliniczne.md'   },
+        { id: 'temperament/razvoj',      label: 'Temperament a rozwój',  file: 'wiki/temperament/razvoj.md'      },
       ]
     },
     {
@@ -119,6 +147,8 @@ window.SITE_CONFIG = {
         { id: 'emotions/regulacja',           label: 'Regulacja emocjonalna',    file: 'wiki/emotions/regulacja.md'           },
         { id: 'emotions/motywacja',           label: 'Motywacja',                file: 'wiki/emotions/motywacja.md'           },
         { id: 'emotions/neurobiologia',       label: 'Neurobiologia emocji',     file: 'wiki/emotions/neurobiologia.md'       },
+        { id: 'emotions/wspolczucie',          label: 'Empatia i współczucie',    file: 'wiki/emotions/wspolczucie.md'         },
+        { id: 'emotions/aleksytymia',          label: 'Aleksytymia',              file: 'wiki/emotions/aleksytymia.md'         },
       ]
     },
     {
@@ -129,6 +159,8 @@ window.SITE_CONFIG = {
         { id: 'biology/hormony',               label: 'Hormony i zachowanie',          file: 'wiki/biology/hormony.md'               },
         { id: 'biology/ewolucja',              label: 'Ewolucja i psychologia ewol.',  file: 'wiki/biology/ewolucja.md'              },
         { id: 'biology/psychofizjologia',      label: 'Psychofizjologia',              file: 'wiki/biology/psychofizjologia.md'      },
+        { id: 'biology/chronobiologia',        label: 'Chronobiologia i sen',          file: 'wiki/biology/chronobiologia.md'        },
+        { id: 'biology/mikrobiom',             label: 'Oś jelita–mózg',               file: 'wiki/biology/mikrobiom.md'             },
       ]
     },
     {
@@ -141,6 +173,9 @@ window.SITE_CONFIG = {
         { id: 'psychotherapy/humanist',   label: 'Podejście humanistyczne',      file: 'wiki/psychotherapy/humanist.md'   },
         { id: 'psychotherapy/systemowa',  label: 'Terapia systemowa i rodzin.',  file: 'wiki/psychotherapy/systemowa.md'  },
         { id: 'psychotherapy/skutecznosc',label: 'Skuteczność psychoterapii',    file: 'wiki/psychotherapy/skutecznosc.md'},
+        { id: 'psychotherapy/sojusz',     label: 'Sojusz terapeutyczny',         file: 'wiki/psychotherapy/sojusz.md'    },
+        { id: 'psychotherapy/emdr',       label: 'EMDR',                         file: 'wiki/psychotherapy/emdr.md'      },
+        { id: 'psychotherapy/act',        label: 'Terapia akceptacji (ACT)',      file: 'wiki/psychotherapy/act.md'       },
       ]
     },
     {
@@ -155,6 +190,8 @@ window.SITE_CONFIG = {
         { id: 'psychopathology/trauma_ptsd',                  label: 'Trauma i PTSD',                  file: 'wiki/psychopathology/trauma_ptsd.md'                  },
         { id: 'psychopathology/zaburzenia_odzywiania',        label: 'Zaburzenia odżywiania',          file: 'wiki/psychopathology/zaburzenia_odzywiania.md'        },
         { id: 'psychopathology/neurorozwojowe',               label: 'Zaburzenia neurorozwojowe',      file: 'wiki/psychopathology/neurorozwojowe.md'               },
+        { id: 'psychopathology/ocd',                          label: 'OCD i pokrewne',                  file: 'wiki/psychopathology/ocd.md'                          },
+        { id: 'psychopathology/uzaleznienia_psych',           label: 'Uzależnienia — aspekt psych.',   file: 'wiki/psychopathology/uzaleznienia_psych.md'           },
       ]
     },
     {
@@ -167,6 +204,8 @@ window.SITE_CONFIG = {
         { id: 'suicidology/interwencja',               label: 'Interwencja kryzysowa',        file: 'wiki/suicidology/interwencja.md'               },
         { id: 'suicidology/profilaktyka',              label: 'Profilaktyka',                 file: 'wiki/suicidology/profilaktyka.md'              },
         { id: 'suicidology/nssi',                      label: 'Samookaleczenia (NSSI)',        file: 'wiki/suicidology/nssi.md'                      },
+        { id: 'suicidology/postvention',               label: 'Postvention',                  file: 'wiki/suicidology/postvention.md'               },
+        { id: 'suicidology/media',                     label: 'Efekt Wertera i Papageno',     file: 'wiki/suicidology/media.md'                     },
       ]
     },
     {
@@ -178,6 +217,8 @@ window.SITE_CONFIG = {
         { id: 'sexology/dysfunkcje',               label: 'Dysfunkcje seksualne',        file: 'wiki/sexology/dysfunkcje.md'               },
         { id: 'sexology/terapia_seksualna',        label: 'Terapia seksualna',           file: 'wiki/sexology/terapia_seksualna.md'        },
         { id: 'sexology/trauma_seksualna',         label: 'Trauma seksualna',            file: 'wiki/sexology/trauma_seksualna.md'         },
+        { id: 'sexology/rozw_seksualny',           label: 'Rozwój seksualny',            file: 'wiki/sexology/rozw_seksualny.md'           },
+        { id: 'sexology/modele_odpowiedzi',        label: 'Modele odpowiedzi seksualnej',file: 'wiki/sexology/modele_odpowiedzi.md'        },
       ]
     },
     {
@@ -188,7 +229,9 @@ window.SITE_CONFIG = {
         { id: 'artetherapy/muzykoterapia', label: 'Muzykoterapia',             file: 'wiki/artetherapy/muzykoterapia.md' },
         { id: 'artetherapy/dmt',           label: 'Choreoterapia (DMT)',       file: 'wiki/artetherapy/dmt.md'           },
         { id: 'artetherapy/drameterapia',  label: 'Drameterapia',              file: 'wiki/artetherapy/drameterapia.md'  },
-        { id: 'artetherapy/biblioterapia', label: 'Biblioterapia',             file: 'wiki/artetherapy/biblioterapia.md' },
+        { id: 'artetherapy/biblioterapia', label: 'Biblioterapia',          file: 'wiki/artetherapy/biblioterapia.md' },
+        { id: 'artetherapy/mechanizmy',   label: 'Mechanizmy działania',   file: 'wiki/artetherapy/mechanizmy.md'   },
+        { id: 'artetherapy/zastosowania', label: 'Zastosowania kliniczne', file: 'wiki/artetherapy/zastosowania.md' },
       ]
     },
     {
@@ -200,6 +243,7 @@ window.SITE_CONFIG = {
         { id: 'animaltherapy/felinoterapia',  label: 'Felinoterapia',          file: 'wiki/animaltherapy/felinoterapia.md'  },
         { id: 'animaltherapy/aat_zastosowania', label: 'AAT — zastosowania',   file: 'wiki/animaltherapy/aat_zastosowania.md' },
         { id: 'animaltherapy/etyka_aat',      label: 'Etyka i dobrostan',      file: 'wiki/animaltherapy/etyka_aat.md'      },
+        { id: 'animaltherapy/mechanizmy_aat', label: 'Mechanizmy AAT',         file: 'wiki/animaltherapy/mechanizmy_aat.md' },
       ]
     },
     {
@@ -237,12 +281,12 @@ window.SITE_CONFIG = {
       { file: 'wiki/neuro/anatomia.md',    label: 'Anatomia mózgu',             status: 'live' },
       { file: 'wiki/neuro/neuron.md',      label: 'Neuron i synapsa',           status: 'live' },
       { file: 'wiki/neuro/systemy.md',     label: 'Układy i sieci mózgowe',     status: 'live' },
-      { file: 'wiki/neuro/myelinizacja.md',label: 'Mielinizacja i istota biała',status: 'planned' },
-      { file: 'wiki/neuro/plastycznosc.md',label: 'Neuroplastyczność',          status: 'planned' },
-      { file: 'wiki/neuro/neuroobrazowanie.md', label: 'Neuroobrazowanie (fMRI, DTI)', status: 'planned' },
-      { file: 'wiki/neuro/lateralizacja.md',label: 'Lateralizacja funkcji',    status: 'planned' },
-      { file: 'wiki/neuro/kora_prefrontalna.md', label: 'Kora przedczołowa',   status: 'planned' },
-      { file: 'wiki/neuro/uklad_limbiczny.md', label: 'Układ limbiczny',       status: 'planned' },
+      { file: 'wiki/neuro/myelinizacja.md',label: 'Mielinizacja i istota biała',status: 'live' },
+      { file: 'wiki/neuro/plastycznosc.md',label: 'Neuroplastyczność',          status: 'live' },
+      { file: 'wiki/neuro/neuroobrazowanie.md', label: 'Neuroobrazowanie (fMRI, DTI)', status: 'live' },
+      { file: 'wiki/neuro/lateralizacja.md',label: 'Lateralizacja funkcji',    status: 'live' },
+      { file: 'wiki/neuro/kora_prefrontalna.md', label: 'Kora przedczołowa',   status: 'live' },
+      { file: 'wiki/neuro/uklad_limbiczny.md', label: 'Układ limbiczny',       status: 'live' },
       { file: 'wiki/neuro/przesilenie_wiosenne.md', label: 'Neurobiologia przesilenia wiosennego', status: 'live' },
     ],
     cognitive: [
@@ -252,32 +296,32 @@ window.SITE_CONFIG = {
       { file: 'wiki/cognitive/funkcje_wykonawcze.md',  label: 'Funkcje wykonawcze',   status: 'live' },
       { file: 'wiki/cognitive/percepcja.md',           label: 'Percepcja i gnozja',   status: 'live' },
       { file: 'wiki/cognitive/zmeczenie_poznawcze.md', label: 'Zmęczenie poznawcze',  status: 'live' },
-      { file: 'wiki/cognitive/myslenie.md',            label: 'Myślenie i rozumowanie', status: 'planned' },
-      { file: 'wiki/cognitive/uczenie.md',             label: 'Uczenie się',          status: 'planned' },
-      { file: 'wiki/cognitive/wyobraznia.md',          label: 'Wyobraźnia i reprezentacje', status: 'planned' },
-      { file: 'wiki/cognitive/swiadomosc.md',          label: 'Świadomość i metapoznanie', status: 'planned' },
-      { file: 'wiki/cognitive/podejmowanie_decyzji.md',label: 'Podejmowanie decyzji', status: 'planned' },
+      { file: 'wiki/cognitive/myslenie.md',            label: 'Myślenie i rozumowanie', status: 'live' },
+      { file: 'wiki/cognitive/uczenie.md',             label: 'Uczenie się',          status: 'live' },
+      { file: 'wiki/cognitive/wyobraznia.md',          label: 'Wyobraźnia i reprezentacje', status: 'live' },
+      { file: 'wiki/cognitive/swiadomosc.md',          label: 'Świadomość i metapoznanie', status: 'live' },
+      { file: 'wiki/cognitive/podejmowanie_decyzji.md',label: 'Podejmowanie decyzji', status: 'live' },
     ],
     disorders: [
       { file: 'wiki/disorders/afazje.md',    label: 'Afazje',                 status: 'live' },
       { file: 'wiki/disorders/amnezje.md',   label: 'Amnezje',                status: 'live' },
       { file: 'wiki/disorders/otepienia.md', label: 'Otępienia',              status: 'live' },
       { file: 'wiki/disorders/tbi.md',       label: 'Urazy głowy (TBI)',      status: 'live' },
-      { file: 'wiki/disorders/apraksja.md',  label: 'Apraksja',               status: 'planned' },
-      { file: 'wiki/disorders/agnozja.md',   label: 'Agnozja wzrokowa',       status: 'planned' },
-      { file: 'wiki/disorders/neglect.md',   label: 'Neglect przestrzenny',   status: 'planned' },
-      { file: 'wiki/disorders/adhd.md',      label: 'ADHD',                   status: 'planned' },
-      { file: 'wiki/disorders/asd.md',       label: 'Spektrum autyzmu (ASD)', status: 'planned' },
+      { file: 'wiki/disorders/apraksja.md',  label: 'Apraksja',               status: 'live' },
+      { file: 'wiki/disorders/agnozja.md',   label: 'Agnozja wzrokowa',       status: 'live' },
+      { file: 'wiki/disorders/neglect.md',   label: 'Neglect przestrzenny',   status: 'live' },
+      { file: 'wiki/disorders/adhd.md',      label: 'ADHD',                   status: 'live' },
+      { file: 'wiki/disorders/asd.md',       label: 'Spektrum autyzmu (ASD)', status: 'live' },
     ],
     diagnostics: [
       { file: 'wiki/diagnostics/testy_przeglad.md',   label: 'Testy — przegląd',      status: 'live' },
       { file: 'wiki/diagnostics/mmse_moca.md',        label: 'MMSE i MoCA',           status: 'live' },
       { file: 'wiki/diagnostics/testy_wykonawcze.md', label: 'Testy funkcji wyk.',    status: 'live' },
-      { file: 'wiki/diagnostics/testy_pamieci.md',    label: 'Testy pamięci',         status: 'planned' },
-      { file: 'wiki/diagnostics/testy_uwagi.md',      label: 'Testy uwagi',           status: 'planned' },
-      { file: 'wiki/diagnostics/testy_jezyka.md',     label: 'Testy językowe',        status: 'planned' },
-      { file: 'wiki/diagnostics/wais.md',             label: 'Skale Wechslera (WAIS/WISC)', status: 'planned' },
-      { file: 'wiki/diagnostics/neuropsych_battery.md',label: 'Baterie neuropsychologiczne', status: 'planned' },
+      { file: 'wiki/diagnostics/testy_pamieci.md',    label: 'Testy pamięci',         status: 'live' },
+      { file: 'wiki/diagnostics/testy_uwagi.md',      label: 'Testy uwagi',           status: 'live' },
+      { file: 'wiki/diagnostics/testy_jezyka.md',     label: 'Testy językowe',        status: 'live' },
+      { file: 'wiki/diagnostics/wais.md',             label: 'Skale Wechslera (WAIS/WISC)', status: 'live' },
+      { file: 'wiki/diagnostics/neuropsych_battery.md',label: 'Baterie neuropsychologiczne', status: 'live' },
     ],
     psychometrics: [
       { file: 'wiki/psychometrics/psychometria_wprowadzenie.md', label: 'Psychometria — wprowadzenie', status: 'live' },
@@ -296,8 +340,8 @@ window.SITE_CONFIG = {
       { file: 'wiki/pharmacology/anxiolityki.md',         label: 'Anksjolityki i nasenne',      status: 'live' },
       { file: 'wiki/pharmacology/stabilizatory.md',       label: 'Stabilizatory nastroju',      status: 'live' },
       { file: 'wiki/pharmacology/uzaleznienia_farm.md',   label: 'Farmakoterapia uzależnień',   status: 'live' },
-      { file: 'wiki/pharmacology/psychodeliki.md',        label: 'Psychodeliki w terapii',      status: 'planned' },
-      { file: 'wiki/pharmacology/nootropiki.md',          label: 'Nootropiki i kognitywne',     status: 'planned' },
+      { file: 'wiki/pharmacology/psychodeliki.md',        label: 'Psychodeliki w terapii',      status: 'live' },
+      { file: 'wiki/pharmacology/nootropiki.md',          label: 'Nootropiki i kognitywne',     status: 'live' },
     ],
     individual_diffs: [
       { file: 'wiki/individual_diffs/roznice_wprowadzenie.md', label: 'Różnice ind. — wprowadzenie', status: 'live' },
@@ -305,15 +349,15 @@ window.SITE_CONFIG = {
       { file: 'wiki/individual_diffs/osobowosc.md',     label: 'Osobowość (Wielka Piątka)', status: 'live' },
       { file: 'wiki/individual_diffs/kreatywnosc.md',   label: 'Kreatywność',              status: 'live' },
       { file: 'wiki/individual_diffs/genetyka.md',      label: 'Uwarunkowania genetyczne', status: 'live' },
-      { file: 'wiki/individual_diffs/style_poznawcze.md',label: 'Style poznawcze',         status: 'planned' },
-      { file: 'wiki/individual_diffs/plec_psychologia.md',label: 'Psychologia płci',       status: 'planned' },
+      { file: 'wiki/individual_diffs/style_poznawcze.md',label: 'Style poznawcze',         status: 'live' },
+      { file: 'wiki/individual_diffs/plec_psychologia.md',label: 'Psychologia płci',       status: 'live' },
     ],
     temperament: [
       { file: 'wiki/temperament/temperament_wprowadzenie.md', label: 'Temperament — wprowadzenie', status: 'live' },
       { file: 'wiki/temperament/modele.md',    label: 'Modele temperamentu',     status: 'live' },
       { file: 'wiki/temperament/pomiar.md',    label: 'Pomiar temperamentu',     status: 'live' },
       { file: 'wiki/temperament/kliniczne.md', label: 'Temperament w klinice',   status: 'live' },
-      { file: 'wiki/temperament/razvoj.md',    label: 'Temperament a rozwój',    status: 'planned' },
+      { file: 'wiki/temperament/razvoj.md',    label: 'Temperament a rozwój',    status: 'live' },
     ],
     emotions: [
       { file: 'wiki/emotions/emocje_wprowadzenie.md', label: 'Emocje — wprowadzenie',    status: 'live' },
@@ -321,8 +365,8 @@ window.SITE_CONFIG = {
       { file: 'wiki/emotions/regulacja.md',    label: 'Regulacja emocjonalna',   status: 'live' },
       { file: 'wiki/emotions/motywacja.md',    label: 'Motywacja',               status: 'live' },
       { file: 'wiki/emotions/neurobiologia.md',label: 'Neurobiologia emocji',    status: 'live' },
-      { file: 'wiki/emotions/wspolczucie.md',  label: 'Empatia i współczucie',   status: 'planned' },
-      { file: 'wiki/emotions/aleksytymia.md',  label: 'Aleksytymia',             status: 'planned' },
+      { file: 'wiki/emotions/wspolczucie.md',  label: 'Empatia i współczucie',   status: 'live' },
+      { file: 'wiki/emotions/aleksytymia.md',  label: 'Aleksytymia',             status: 'live' },
     ],
     biology: [
       { file: 'wiki/biology/biologiczne_podstawy.md', label: 'Biologiczne podstawy — wprow.', status: 'live' },
@@ -330,8 +374,8 @@ window.SITE_CONFIG = {
       { file: 'wiki/biology/hormony.md',          label: 'Hormony i zachowanie',       status: 'live' },
       { file: 'wiki/biology/ewolucja.md',         label: 'Ewolucja i psychologia ewol.',status: 'live' },
       { file: 'wiki/biology/psychofizjologia.md', label: 'Psychofizjologia',           status: 'live' },
-      { file: 'wiki/biology/chronobiologia.md',   label: 'Chronobiologia i sen',       status: 'planned' },
-      { file: 'wiki/biology/mikrobiom.md',        label: 'Oś jelita–mózg',            status: 'planned' },
+      { file: 'wiki/biology/chronobiologia.md',   label: 'Chronobiologia i sen',       status: 'live' },
+      { file: 'wiki/biology/mikrobiom.md',        label: 'Oś jelita–mózg',            status: 'live' },
     ],
     psychotherapy: [
       { file: 'wiki/psychotherapy/psychoterapia_wprowadzenie.md', label: 'Psychoterapia — wprowadzenie', status: 'live' },
@@ -341,9 +385,9 @@ window.SITE_CONFIG = {
       { file: 'wiki/psychotherapy/humanist.md',    label: 'Podejście humanistyczne',      status: 'live' },
       { file: 'wiki/psychotherapy/systemowa.md',   label: 'Terapia systemowa',            status: 'live' },
       { file: 'wiki/psychotherapy/skutecznosc.md', label: 'Skuteczność psychoterapii',    status: 'live' },
-      { file: 'wiki/psychotherapy/sojusz.md',      label: 'Sojusz terapeutyczny',         status: 'planned' },
-      { file: 'wiki/psychotherapy/emdr.md',        label: 'EMDR',                         status: 'planned' },
-      { file: 'wiki/psychotherapy/act.md',         label: 'Terapia akceptacji (ACT)',      status: 'planned' },
+      { file: 'wiki/psychotherapy/sojusz.md',      label: 'Sojusz terapeutyczny',         status: 'live' },
+      { file: 'wiki/psychotherapy/emdr.md',        label: 'EMDR',                         status: 'live' },
+      { file: 'wiki/psychotherapy/act.md',         label: 'Terapia akceptacji (ACT)',      status: 'live' },
     ],
     psychopathology: [
       { file: 'wiki/psychopathology/psychopatologia_wprowadzenie.md', label: 'Psychopatologia — wprowadzenie', status: 'live' },
@@ -355,8 +399,8 @@ window.SITE_CONFIG = {
       { file: 'wiki/psychopathology/trauma_ptsd.md',               label: 'Trauma i PTSD',               status: 'live' },
       { file: 'wiki/psychopathology/zaburzenia_odzywiania.md',     label: 'Zaburzenia odżywiania',       status: 'live' },
       { file: 'wiki/psychopathology/neurorozwojowe.md',            label: 'Zaburzenia neurorozwojowe',   status: 'live' },
-      { file: 'wiki/psychopathology/ocd.md',                       label: 'OCD i pokrewne',              status: 'planned' },
-      { file: 'wiki/psychopathology/uzaleznienia_psych.md',        label: 'Uzależnienia — aspekt psych.',status: 'planned' },
+      { file: 'wiki/psychopathology/ocd.md',                       label: 'OCD i pokrewne',              status: 'live' },
+      { file: 'wiki/psychopathology/uzaleznienia_psych.md',        label: 'Uzależnienia — aspekt psych.',status: 'live' },
     ],
     suicidology: [
       { file: 'wiki/suicidology/suicydologia_wprowadzenie.md', label: 'Suicydologia — wprowadzenie', status: 'live' },
@@ -366,8 +410,8 @@ window.SITE_CONFIG = {
       { file: 'wiki/suicidology/interwencja.md',    label: 'Interwencja kryzysowa',      status: 'live' },
       { file: 'wiki/suicidology/profilaktyka.md',   label: 'Profilaktyka (3 poziomy)',   status: 'live' },
       { file: 'wiki/suicidology/nssi.md',           label: 'Samookaleczenia (NSSI)',     status: 'live' },
-      { file: 'wiki/suicidology/postvention.md',    label: 'Postvention',                status: 'planned' },
-      { file: 'wiki/suicidology/media.md',          label: 'Efekt Wertera i Papageno',   status: 'planned' },
+      { file: 'wiki/suicidology/postvention.md',    label: 'Postvention',                status: 'live' },
+      { file: 'wiki/suicidology/media.md',          label: 'Efekt Wertera i Papageno',   status: 'live' },
     ],
     sexology: [
       { file: 'wiki/sexology/seksuologia_wprowadzenie.md', label: 'Seksuologia — wprowadzenie', status: 'live' },
@@ -376,8 +420,8 @@ window.SITE_CONFIG = {
       { file: 'wiki/sexology/dysfunkcje.md',         label: 'Dysfunkcje seksualne',      status: 'live' },
       { file: 'wiki/sexology/terapia_seksualna.md',  label: 'Terapia seksualna',         status: 'live' },
       { file: 'wiki/sexology/trauma_seksualna.md',   label: 'Trauma seksualna',          status: 'live' },
-      { file: 'wiki/sexology/rozw_seksualny.md',     label: 'Rozwój seksualny',          status: 'planned' },
-      { file: 'wiki/sexology/modele_odpowiedzi.md',  label: 'Modele odpowiedzi seksualnej', status: 'planned' },
+      { file: 'wiki/sexology/rozw_seksualny.md',     label: 'Rozwój seksualny',          status: 'live' },
+      { file: 'wiki/sexology/modele_odpowiedzi.md',  label: 'Modele odpowiedzi seksualnej', status: 'live' },
     ],
     artetherapy: [
       { file: 'wiki/artetherapy/arteterapia_wprowadzenie.md', label: 'Arteterapia — wprowadzenie', status: 'live' },
@@ -386,8 +430,8 @@ window.SITE_CONFIG = {
       { file: 'wiki/artetherapy/dmt.md',           label: 'Choreoterapia (DMT)',    status: 'live' },
       { file: 'wiki/artetherapy/drameterapia.md',  label: 'Drameterapia',           status: 'live' },
       { file: 'wiki/artetherapy/biblioterapia.md', label: 'Biblioterapia',          status: 'live' },
-      { file: 'wiki/artetherapy/mechanizmy.md',    label: 'Mechanizmy działania',   status: 'planned' },
-      { file: 'wiki/artetherapy/zastosowania.md',  label: 'Zastosowania kliniczne', status: 'planned' },
+      { file: 'wiki/artetherapy/mechanizmy.md',    label: 'Mechanizmy działania',   status: 'live' },
+      { file: 'wiki/artetherapy/zastosowania.md',  label: 'Zastosowania kliniczne', status: 'live' },
     ],
     animaltherapy: [
       { file: 'wiki/animaltherapy/animaloterapia_wprowadzenie.md', label: 'Animaloterapia — wprowadzenie', status: 'live' },

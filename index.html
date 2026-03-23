@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="anime.min.js"></script>
   <script src="site-config.js"></script>
   <style>
 /* ═══════════════════════════════════════════
@@ -534,6 +535,7 @@ function renderMd(text, id, item) {
   </div>`;
   window.scrollTo(0,0);
   document.getElementById('progFill').style.width='0%';
+  animateContentIn();
 }
 
 /* plan list for a domain */
@@ -594,6 +596,7 @@ function renderWiki(id, wikiKey) {
     ${body}
   </div>`;
   window.scrollTo(0,0);
+  animateWikiIn();
 }
 
 function artCard(art) {
@@ -671,6 +674,7 @@ function renderHome() {
     <div><div class="domains-h2">Działy tematyczne</div><div class="domain-grid">${cards}</div></div>
   </div>`;
   window.scrollTo(0,0);
+  animateHomeCards();
 }
 
 /* ── Breadcrumb ────────────────────────────── */
@@ -709,11 +713,99 @@ window.addEventListener('scroll',()=>{
 /* ── Keyboard ──────────────────────────────── */
 document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeSidebar(); });
 
+/* ── Anime.js Animations ───────────────────── */
+function animateContentIn() {
+  anime({
+    targets: '#content .rendered',
+    opacity: [0, 1],
+    translateY: [18, 0],
+    duration: 380,
+    easing: 'easeOutQuart'
+  });
+}
+
+function animateHomeCards() {
+  anime({
+    targets: '.domain-card',
+    opacity: [0, 1],
+    translateY: [24, 0],
+    delay: anime.stagger(60, { start: 120 }),
+    duration: 420,
+    easing: 'easeOutQuart'
+  });
+  anime({
+    targets: '.home-hero',
+    opacity: [0, 1],
+    translateY: [14, 0],
+    duration: 480,
+    easing: 'easeOutQuart'
+  });
+  const statEls = document.querySelectorAll('.stat-val');
+  statEls.forEach(el => {
+    const target = parseInt(el.textContent, 10) || 0;
+    el.textContent = '0';
+    anime({
+      targets: el,
+      innerHTML: [0, target],
+      round: 1,
+      duration: 900,
+      delay: 180,
+      easing: 'easeOutQuart',
+      update() { el.textContent = Math.round(parseFloat(el.textContent)); }
+    });
+  });
+}
+
+function animateWikiIn() {
+  anime({
+    targets: '.wiki-sec',
+    opacity: [0, 1],
+    translateY: [20, 0],
+    delay: anime.stagger(80, { start: 80 }),
+    duration: 400,
+    easing: 'easeOutQuart'
+  });
+  anime({
+    targets: '.wiki-hdr',
+    opacity: [0, 1],
+    translateY: [14, 0],
+    duration: 420,
+    easing: 'easeOutQuart'
+  });
+}
+
+function animateSidebar() {
+  anime({
+    targets: '.sidebar',
+    translateX: [-20, 0],
+    opacity: [0, 1],
+    duration: 500,
+    easing: 'easeOutQuart'
+  });
+  anime({
+    targets: '.s-logo',
+    opacity: [0, 1],
+    translateY: [-8, 0],
+    duration: 400,
+    delay: 100,
+    easing: 'easeOutBack'
+  });
+  anime({
+    targets: '.nav-group',
+    opacity: [0, 1],
+    translateX: [-12, 0],
+    delay: anime.stagger(30, { start: 200 }),
+    duration: 350,
+    easing: 'easeOutQuart'
+  });
+}
+
 /* ── Boot ──────────────────────────────────── */
 window.addEventListener('DOMContentLoaded', ()=>{
   buildPageMap();
   pageMap.set('__home__',{id:'__home__',label:'Strona główna',section:''});
   renderSidebar();
+  animateSidebar();
   const hash = window.location.hash.slice(1);
   navigate(hash && pageMap.has(hash) ? hash : SITE_CONFIG.defaultPage);
 });

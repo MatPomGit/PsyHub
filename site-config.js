@@ -442,6 +442,20 @@ window.SITE_CONFIG = {
       { file: 'wiki/animaltherapy/etyka_aat.md',       label: 'Etyka i dobrostan',   status: 'live' },
       { file: 'wiki/animaltherapy/mechanizmy_aat.md',  label: 'Mechanizmy AAT',      status: 'live' },
     ],
+    intro: [
+      { file: 'wiki/intro/definicja.md', label: 'Definicja i zakres',  status: 'live' },
+      { file: 'wiki/intro/historia.md',  label: 'Historia dyscypliny', status: 'live' },
+    ],
+    cases: [
+      { file: 'wiki/cases/hm.md',         label: 'H.M. — amnezja',  status: 'live' },
+      { file: 'wiki/cases/gage.md',        label: 'Phineas Gage',     status: 'live' },
+      { file: 'wiki/cases/tan.md',         label: '„Tan" — afazja',   status: 'live' },
+      { file: 'wiki/cases/split_brain.md', label: 'Rozdzielony mózg', status: 'live' },
+    ],
+    reference: [
+      { file: 'wiki/reference/zakres.md',    label: 'Zakres wiedzy', status: 'live' },
+      { file: 'wiki/reference/literatura.md',label: 'Literatura',    status: 'live' },
+    ],
   },
 
   // ─────────────────────────────────────────────────────────────
@@ -456,7 +470,7 @@ window.SITE_CONFIG = {
           title: 'Podstawy neuroanatomiczne',
           articles: [
             { label: 'Płaty kory mózgowej', id: 'neuro/anatomia', status: 'live' },
-            { label: 'Układ limbiczny', id: 'neuro/anatomia', status: 'xlink', desc: 'Hipokamp, ciało migdałowate, zakręt obręczy.' },
+            { label: 'Układ limbiczny', id: 'neuro/uklad_limbiczny', status: 'live', desc: 'Hipokamp, ciało migdałowate, zakręt obręczy.' },
             { label: 'Pień mózgu i móżdżek', id: null, status: 'planned', desc: 'Struktury podkorowe i ich funkcje kliniczne.' },
             { label: 'Istota biała — szlaki projekcyjne i asocjacyjne', id: null, status: 'planned', desc: 'Pęczek łukowaty, ciało modzelowate, szlaki piramidowe.' },
           ]
@@ -466,9 +480,9 @@ window.SITE_CONFIG = {
           articles: [
             { label: 'Afazje — klasyfikacja i diagnoza', id: 'disorders/afazje', status: 'live' },
             { label: 'Amnezje — typy i podłoże', id: 'disorders/amnezje', status: 'live' },
-            { label: 'Agnozja wzrokowa i prozopagnozja', id: null, status: 'planned' },
-            { label: 'Neglect przestrzenny', id: null, status: 'planned' },
-            { label: 'Apraksja', id: null, status: 'planned' },
+            { label: 'Agnozja wzrokowa i prozopagnozja', id: 'disorders/agnozja', status: 'live' },
+            { label: 'Neglect przestrzenny', id: 'disorders/neglect', status: 'live' },
+            { label: 'Apraksja', id: 'disorders/apraksja', status: 'live' },
           ]
         },
         {
@@ -540,9 +554,9 @@ window.SITE_CONFIG = {
           title: 'Procesy złożone',
           articles: [
             { label: 'Funkcje wykonawcze', id: 'cognitive/funkcje_wykonawcze', status: 'live' },
-            { label: 'Myślenie i rozumowanie', id: null, status: 'planned' },
-            { label: 'Podejmowanie decyzji', id: null, status: 'planned' },
-            { label: 'Świadomość i metapoznanie', id: null, status: 'planned' },
+            { label: 'Myślenie i rozumowanie', id: 'cognitive/myslenie', status: 'live' },
+            { label: 'Podejmowanie decyzji', id: 'cognitive/podejmowanie_decyzji', status: 'live' },
+            { label: 'Świadomość i metapoznanie', id: 'cognitive/swiadomosc', status: 'live' },
           ]
         },
         {

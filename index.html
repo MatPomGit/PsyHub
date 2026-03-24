@@ -435,6 +435,7 @@ function md2html(src) {
 const pageMap = new Map();
 const mdCache = new Map();
 let   current = null;
+const MOBILE_BREAKPOINT = 900; /* matches CSS @media(max-width:900px) */
 
 function buildPageMap() {
   for (const sec of SITE_CONFIG.nav)
@@ -480,12 +481,13 @@ function setActive(id) {
 }
 
 /* ── Navigate ──────────────────────────────── */
-function navigate(id) {
+function navigate(id, replaceHistory) {
   if (!id) return;
   const item = pageMap.get(id);
   if (!item) return;
   current = id;
-  history.replaceState(null,'','#'+id);
+  if (replaceHistory) history.replaceState({id},'','#'+id);
+  else                history.pushState({id},'','#'+id);
   setActive(id);
   closeSidebar();
   if (item.file)       loadMd(id, item);
@@ -640,7 +642,7 @@ window.filterGloss = function(l){
 /* ── Home ──────────────────────────────────── */
 function renderHome() {
   const area = document.getElementById('content');
-  setBreadcrumb({section:'',label:'Strona główna'});
+  setBreadcrumb(null);
   const totalMd   = SITE_CONFIG.nav.flatMap(s=>s.items).filter(i=>i.file).length;
   const totalWiki = Object.keys(SITE_CONFIG.wikis).length;
   const domains   = SITE_CONFIG.nav.filter(s=>!['Encyklopedie','Referencje','Wprowadzenie'].includes(s.section));
@@ -682,6 +684,7 @@ function renderHome() {
 /* ── Breadcrumb ────────────────────────────── */
 function setBreadcrumb(item) {
   const bc = document.getElementById('breadcrumb');
+  if (!item) { bc.innerHTML = `<a onclick="navigate(SITE_CONFIG.defaultPage)">PsyHub</a>`; return; }
   const s  = item?.section||'';
   const l  = item?.label||'';
   bc.innerHTML = `<a onclick="navigate(SITE_CONFIG.defaultPage)">PsyHub</a>`
@@ -699,6 +702,7 @@ document.getElementById('searchInput').addEventListener('input', function(){
     const any = [...g.querySelectorAll('.nav-item')].some(i=>i.style.display!=='none');
     g.style.display = any ? '' : 'none';
     if (q && any) g.classList.add('open');
+    if (!q && !g.querySelector('.nav-item.active')) g.classList.remove('open');
   });
 });
 
@@ -777,13 +781,15 @@ function animateWikiIn() {
 }
 
 function animateSidebar() {
-  anime({
-    targets: '.sidebar',
-    translateX: [-20, 0],
-    opacity: [0, 1],
-    duration: 500,
-    easing: 'easeOutQuart'
-  });
+  if (window.innerWidth > MOBILE_BREAKPOINT) {
+    anime({
+      targets: '.sidebar',
+      translateX: [-20, 0],
+      opacity: [0, 1],
+      duration: 500,
+      easing: 'easeOutQuart'
+    });
+  }
   anime({
     targets: '.s-logo',
     opacity: [0, 1],
@@ -809,7 +815,13 @@ window.addEventListener('DOMContentLoaded', ()=>{
   renderSidebar();
   animateSidebar();
   const hash = window.location.hash.slice(1);
-  navigate(hash && pageMap.has(hash) ? hash : SITE_CONFIG.defaultPage);
+  navigate(hash && pageMap.has(hash) ? hash : SITE_CONFIG.defaultPage, true);
+});
+
+/* ── Browser back/forward ──────────────────── */
+window.addEventListener('popstate', e => {
+  const id = e.state?.id || window.location.hash.slice(1) || SITE_CONFIG.defaultPage;
+  navigate(pageMap.has(id) ? id : SITE_CONFIG.defaultPage, true);
 });
 </script>
 </body>

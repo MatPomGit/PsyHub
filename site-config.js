@@ -247,6 +247,21 @@ window.SITE_CONFIG = {
       ]
     },
     {
+      section: 'Psychologia Zdrowia',
+      items: [
+        { id: 'health_psychology/zdrowie_wprowadzenie', label: 'Psychologia zdrowia — wprow.',  file: 'wiki/health_psychology/zdrowie_wprowadzenie.md' },
+        { id: 'health_psychology/stres',                label: 'Stres i zdrowie',               file: 'wiki/health_psychology/stres.md'                },
+        { id: 'health_psychology/radzenie_sobie',       label: 'Radzenie sobie ze stresem',     file: 'wiki/health_psychology/radzenie_sobie.md'       },
+        { id: 'health_psychology/zachowania_zdrowotne', label: 'Zachowania zdrowotne',          file: 'wiki/health_psychology/zachowania_zdrowotne.md' },
+        { id: 'health_psychology/bol',                  label: 'Psychologia bólu',              file: 'wiki/health_psychology/bol.md'                  },
+        { id: 'health_psychology/choroby_przewlekle',   label: 'Psychologia chorób przewlekłych', file: 'wiki/health_psychology/choroby_przewlekle.md' },
+        { id: 'health_psychology/promocja_zdrowia',     label: 'Promocja zdrowia i profilaktyka', file: 'wiki/health_psychology/promocja_zdrowia.md'  },
+        { id: 'health_psychology/placebo',              label: 'Efekt placebo',                 file: 'wiki/health_psychology/placebo.md'              },
+        { id: 'health_psychology/psychoneuroimmunologia', label: 'Psychoneuroimmunologia',      file: 'wiki/health_psychology/psychoneuroimmunologia.md' },
+        { id: 'health_psychology/wsparcie_spoleczne',   label: 'Wsparcie społeczne a zdrowie',  file: 'wiki/health_psychology/wsparcie_spoleczne.md'   },
+      ]
+    },
+    {
       section: 'Encyklopedie',
       items: [
         { id: 'wiki-index/neuropsychologia', label: 'WIKI — Neuropsychologia',      wiki: 'neuropsychologia' },
@@ -263,6 +278,7 @@ window.SITE_CONFIG = {
         { id: 'wiki-index/terapie_artystyczne', label: 'WIKI — Terapie artystyczne', wiki: 'terapie_artystyczne' },
         { id: 'wiki-index/etyka',            label: 'WIKI — Etyka zawodowa',        wiki: 'etyka'            },
         { id: 'wiki-index/slownik',          label: 'WIKI — Słownik terminów',      wiki: 'slownik'          },
+        { id: 'wiki-index/zdrowie',          label: 'WIKI — Psych. zdrowia',        wiki: 'zdrowie'          },
       ]
     },
     {
@@ -444,6 +460,18 @@ window.SITE_CONFIG = {
       { file: 'wiki/animaltherapy/aat_zastosowania.md',label: 'AAT — zastosowania',  status: 'live' },
       { file: 'wiki/animaltherapy/etyka_aat.md',       label: 'Etyka i dobrostan',   status: 'live' },
       { file: 'wiki/animaltherapy/mechanizmy_aat.md',  label: 'Mechanizmy AAT',      status: 'live' },
+    ],
+    health_psychology: [
+      { file: 'wiki/health_psychology/zdrowie_wprowadzenie.md',    label: 'Psychologia zdrowia — wprowadzenie', status: 'live' },
+      { file: 'wiki/health_psychology/stres.md',                   label: 'Stres i zdrowie',                    status: 'live' },
+      { file: 'wiki/health_psychology/radzenie_sobie.md',          label: 'Radzenie sobie ze stresem',          status: 'live' },
+      { file: 'wiki/health_psychology/zachowania_zdrowotne.md',    label: 'Zachowania zdrowotne',               status: 'live' },
+      { file: 'wiki/health_psychology/bol.md',                     label: 'Psychologia bólu',                   status: 'live' },
+      { file: 'wiki/health_psychology/choroby_przewlekle.md',      label: 'Psychologia chorób przewlekłych',    status: 'live' },
+      { file: 'wiki/health_psychology/promocja_zdrowia.md',        label: 'Promocja zdrowia i profilaktyka',    status: 'live' },
+      { file: 'wiki/health_psychology/placebo.md',                 label: 'Efekt placebo',                      status: 'live' },
+      { file: 'wiki/health_psychology/psychoneuroimmunologia.md',  label: 'Psychoneuroimmunologia',             status: 'live' },
+      { file: 'wiki/health_psychology/wsparcie_spoleczne.md',      label: 'Wsparcie społeczne a zdrowie',       status: 'live' },
     ],
     intro: [
       { file: 'wiki/intro/definicja.md', label: 'Definicja i zakres',  status: 'live' },
@@ -1020,6 +1048,49 @@ window.SITE_CONFIG = {
             { term: 'Wzgórze',         def: '"Brama świadomości" — przekaźnik zmysłów do kory, regulacja czujności. Uszkodzenie → amnezja wzgórzowa.', link: 'neuro/anatomia' },
           ]
         }
+      ]
+    },
+
+    zdrowie: {
+      title: 'WIKI — Psychologia zdrowia',
+      intro: 'Psychologiczne aspekty zdrowia i choroby — stres, zachowania zdrowotne, ból, choroby przewlekłe, promocja zdrowia i psychoneuroimmunologia.',
+      sections: [
+        {
+          title: 'Podstawy',
+          articles: [
+            { label: 'Psychologia zdrowia — wprowadzenie', id: 'health_psychology/zdrowie_wprowadzenie', status: 'live' },
+            { label: 'Model biopsychospołeczny',            id: null,                                     status: 'planned' },
+          ]
+        },
+        {
+          title: 'Stres i radzenie sobie',
+          articles: [
+            { label: 'Stres i zdrowie',              id: 'health_psychology/stres',          status: 'live' },
+            { label: 'Radzenie sobie ze stresem',    id: 'health_psychology/radzenie_sobie', status: 'live' },
+            { label: 'Wsparcie społeczne a zdrowie', id: 'health_psychology/wsparcie_spoleczne', status: 'live' },
+          ]
+        },
+        {
+          title: 'Zachowanie i zdrowie',
+          articles: [
+            { label: 'Zachowania zdrowotne',           id: 'health_psychology/zachowania_zdrowotne', status: 'live' },
+            { label: 'Promocja zdrowia i profilaktyka', id: 'health_psychology/promocja_zdrowia',    status: 'live' },
+          ]
+        },
+        {
+          title: 'Ból i choroba',
+          articles: [
+            { label: 'Psychologia bólu',                 id: 'health_psychology/bol',                status: 'live' },
+            { label: 'Psychologia chorób przewlekłych',  id: 'health_psychology/choroby_przewlekle', status: 'live' },
+          ]
+        },
+        {
+          title: 'Mechanizmy biologiczne',
+          articles: [
+            { label: 'Psychoneuroimmunologia', id: 'health_psychology/psychoneuroimmunologia', status: 'live' },
+            { label: 'Efekt placebo',          id: 'health_psychology/placebo',               status: 'live' },
+          ]
+        },
       ]
     },
   },

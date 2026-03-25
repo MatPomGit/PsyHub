@@ -465,7 +465,7 @@ function renderSidebar() {
   }
   nav.innerHTML = html;
 }
-function q(s){ return s.replace(/"/g,'&quot;') }
+function q(s){ return s.replace(/&/g,'&amp;').replace(/"/g,'&quot;') }
 
 function toggleGroup(hdr) { hdr.parentElement.classList.toggle('open') }
 

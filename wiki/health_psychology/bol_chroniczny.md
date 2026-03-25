@@ -1,0 +1,1 @@
+# Ból przewlekły — zarządzanie

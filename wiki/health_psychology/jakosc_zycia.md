@@ -1,0 +1,1 @@
+# Jakość życia a choroba

@@ -114,7 +114,7 @@ em{color:var(--goldl)}
 
 /* items */
 .nav-items{overflow:hidden;max-height:0;transition:max-height .26s ease}
-.nav-group.open .nav-items{max-height:1800px}
+.nav-group.open .nav-items{max-height:3000px}
 .nav-item{
   display:flex;align-items:center;
   padding:.26rem 1rem .26rem 1.35rem;
@@ -518,7 +518,12 @@ function renderSidebar() {
 }
 function q(s){ return s.replace(/&/g,'&amp;').replace(/"/g,'&quot;') }
 
-function toggleGroup(hdr) { hdr.parentElement.classList.toggle('open') }
+function toggleGroup(hdr) {
+  const group = hdr.parentElement;
+  const isOpen = group.classList.contains('open');
+  document.querySelectorAll('.nav-group').forEach(g => g.classList.remove('open'));
+  if (!isOpen) group.classList.add('open');
+}
 
 function setActive(id) {
   document.querySelectorAll('.nav-item').forEach(el =>
@@ -526,7 +531,9 @@ function setActive(id) {
   );
   const el = document.querySelector(`.nav-item[data-id="${id}"]`);
   if (el) {
-    el.closest('.nav-group')?.classList.add('open');
+    const group = el.closest('.nav-group');
+    document.querySelectorAll('.nav-group').forEach(g => g.classList.remove('open'));
+    group?.classList.add('open');
     el.scrollIntoView({ block:'nearest', behavior:'smooth' });
   }
 }

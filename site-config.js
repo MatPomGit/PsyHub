@@ -933,7 +933,7 @@ window.SITE_CONFIG = {
             { label: 'Arteterapia — wprowadzenie', id: 'artetherapy/arteterapia_wprowadzenie', status: 'live' },
             { label: 'Art therapy (plastyczna)', id: 'artetherapy/art_therapy', status: 'live' },
             { label: 'Muzykoterapia', id: 'artetherapy/muzykoterapia', status: 'live' },
-            { label: 'Dramoterapia', id: 'artetherapy/drameterapia', status: 'live' },
+            { label: 'Drameterapia', id: 'artetherapy/drameterapia', status: 'live' },
             { label: 'Taniec i ruch (DMT)', id: 'artetherapy/dmt', status: 'live' },
             { label: 'Biblioterapia', id: 'artetherapy/biblioterapia', status: 'live' },
             { label: 'Mechanizmy terapeutyczne', id: 'artetherapy/mechanizmy', status: 'live' },

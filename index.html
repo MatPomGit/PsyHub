@@ -313,6 +313,23 @@ em{color:var(--goldl)}
 .error-box{padding:3rem 1rem;text-align:center;color:var(--t3)}
 .error-box h2{color:var(--rose);margin-bottom:.5rem;font-family:var(--serif)}
 
+/* empty article indicator */
+.empty-banner{
+  display:flex;align-items:center;gap:.75rem;
+  background:rgba(184,107,123,.1);border:1px solid rgba(184,107,123,.3);
+  border-radius:var(--r);padding:1rem 1.2rem;margin-bottom:1.8rem;
+}
+.empty-banner-icon{font-size:1.15rem;flex-shrink:0}
+.empty-banner-text{font-size:.9rem;color:var(--rose);line-height:1.5}
+.art-dot.empty{background:var(--rose)}
+.art-badge.empty{background:rgba(184,107,123,.15);color:var(--rose);border-color:rgba(184,107,123,.3)}
+.art-card.empty{border-color:rgba(184,107,123,.22)}
+.art-card.empty:hover{border-color:var(--rose);background:rgba(184,107,123,.08)}
+.art-card.empty .art-lbl{color:var(--t2)}
+.plan-dot.empty{background:var(--rose)}
+.plan-badge.empty{background:rgba(184,107,123,.15);color:var(--rose);border-color:rgba(184,107,123,.3)}
+.plan-item.empty .plan-label{color:var(--t2)}
+
 /* ═══════════════════════════════════════════
    RESPONSIVE
 ═══════════════════════════════════════════ */
@@ -434,6 +451,7 @@ function md2html(src) {
 ══════════════════════════════════════════════════ */
 const pageMap = new Map();
 const mdCache = new Map();
+const emptyArticles = new Set();   /* IDs of articles whose files are empty or missing */
 let   current = null;
 const MOBILE_BREAKPOINT = 900; /* matches CSS @media(max-width:900px) */
 
@@ -441,6 +459,38 @@ function buildPageMap() {
   for (const sec of SITE_CONFIG.nav)
     for (const item of sec.items)
       pageMap.set(item.id, { ...item, section: sec.section });
+}
+
+/* ── Empty article indicator refresh ──────── */
+const EMPTY_BANNER_HTML = `<div class="empty-banner"><span class="empty-banner-icon">⚠</span><div class="empty-banner-text">Artykuł jeszcze nie zawiera treści — zostanie uzupełniony wkrótce.</div></div>`;
+
+function isBodyEmpty(text) {
+  const h1m = text.match(/^#\s+(.+)$/m);
+  const body = h1m ? text.slice(text.indexOf(h1m[0]) + h1m[0].length) : text;
+  return !body.trim();
+}
+
+function updateEmptyIndicators() {
+  emptyArticles.forEach(id => {
+    document.querySelectorAll(`.art-card[data-artid="${id}"]`).forEach(el => {
+      if (el.classList.contains('empty')) return;
+      el.classList.remove('live','xlink','wiki','planned');
+      el.classList.add('empty');
+      const dot = el.querySelector('.art-dot');
+      if (dot) dot.className = 'art-dot empty';
+      const badge = el.querySelector('.art-badge');
+      if (badge) { badge.className = 'art-badge empty'; badge.textContent = 'pusty'; }
+    });
+    document.querySelectorAll(`.plan-item[data-artid="${id}"]`).forEach(el => {
+      if (el.classList.contains('empty')) return;
+      el.classList.remove('live','planned');
+      el.classList.add('empty');
+      const dot = el.querySelector('.plan-dot');
+      if (dot) dot.className = 'plan-dot empty';
+      const badge = el.querySelector('.plan-badge');
+      if (badge) { badge.className = 'plan-badge empty'; badge.textContent = 'pusty'; }
+    });
+  });
 }
 
 /* ── Sidebar rendering ─────────────────────── */
@@ -506,10 +556,33 @@ async function loadMd(id, item) {
     if (!r.ok) throw new Error('HTTP '+r.status);
     const t = await r.text();
     mdCache.set(item.file, t);
+    if (isBodyEmpty(t)) { emptyArticles.add(id); updateEmptyIndicators(); }
     renderMd(t, id, item);
     prefetch(id);
   } catch(e) {
-    area.innerHTML = `<div class="error-box"><h2>Nie można wczytać artykułu</h2><p>Plik <code>${item.file}</code> jest niedostępny lub jeszcze nieistniejący.</p></div>`;
+    /* file missing — treat as empty stub rather than hard error */
+    emptyArticles.add(id);
+    updateEmptyIndicators();
+    const title = item.label;
+    const {prev,next} = prevNext(id);
+    const prevB = prev ? `<button class="pnav-btn" onclick="navigate('${prev.id}')"><span>← ${prev.label}</span></button>`
+                       : `<button class="pnav-btn" disabled><span>←</span></button>`;
+    const nextB = next ? `<button class="pnav-btn" onclick="navigate('${next.id}')"><span>${next.label} →</span></button>`
+                       : `<button class="pnav-btn" disabled><span>→</span></button>`;
+    const domainKey = id.split('/')[0];
+    const planItems = (SITE_CONFIG.plans || {})[domainKey] || [];
+    const plansHtml = planItems.length ? renderPlans(planItems, id) : '';
+    area.innerHTML = `<div class="rendered">
+      <div class="page-hero">
+        <span class="chapter-lbl">${item.section||''}</span>
+        <h1>${title}</h1>
+      </div>
+      ${EMPTY_BANNER_HTML}
+      ${plansHtml}
+      <div class="page-nav">${prevB}${nextB}</div>
+    </div>`;
+    window.scrollTo(0,0);
+    animateContentIn();
   }
 }
 
@@ -530,30 +603,41 @@ function renderMd(text, id, item) {
   const planItems = (SITE_CONFIG.plans || {})[domainKey] || [];
   const plansHtml = planItems.length ? renderPlans(planItems, id) : '';
 
+  // empty content detection
+  const isEmpty = isBodyEmpty(text);
+  if (isEmpty) emptyArticles.add(id);
+  const emptyBanner = isEmpty ? EMPTY_BANNER_HTML : '';
+
   area.innerHTML = `<div class="rendered">
     <div class="page-hero">
       <span class="chapter-lbl">${item.section||''}</span>
       <h1>${title}</h1>
     </div>
+    ${emptyBanner}
     <div class="md">${md2html(body)}</div>
     ${plansHtml}
     <div class="page-nav">${prevB}${nextB}</div>
   </div>`;
   window.scrollTo(0,0);
   document.getElementById('progFill').style.width='0%';
+  if (isEmpty) updateEmptyIndicators();
   animateContentIn();
 }
 
 /* plan list for a domain */
 function renderPlans(items, currentId) {
   const rows = items.map(it => {
-    const cls    = ['plan-item', it.status].join(' ');
     const fileId = it.file ? it.file.replace('wiki/','').replace('.md','') : null;
+    const isEmpty = fileId && emptyArticles.has(fileId);
+    const effectiveStatus = isEmpty ? 'empty' : it.status;
+    const cls    = ['plan-item', effectiveStatus].join(' ');
     const navTo  = fileId ? `onclick="navigate('${fileId}')"` : '';
-    return `<div class="${cls}" ${it.status==='live' ? navTo : ''}>
-      <div class="plan-dot ${it.status}"></div>
+    const artid  = fileId ? `data-artid="${fileId}"` : '';
+    const badge  = isEmpty ? 'pusty' : (it.status==='live' ? 'dostępny' : 'planowany');
+    return `<div class="${cls}" ${artid} ${effectiveStatus==='live'||effectiveStatus==='empty' ? navTo : ''}>
+      <div class="plan-dot ${effectiveStatus}"></div>
       <span class="plan-label">${it.label}</span>
-      <span class="plan-badge ${it.status}">${it.status==='live'?'dostępny':'planowany'}</span>
+      <span class="plan-badge ${effectiveStatus}">${badge}</span>
     </div>`;
   }).join('');
   return `<div class="plans-section">
@@ -572,7 +656,10 @@ function prefetch(id) {
   const {prev,next} = prevNext(id);
   for (const it of [prev,next]) {
     if (it?.file && !mdCache.has(it.file))
-      fetch(it.file).then(r=>r.text()).then(t=>mdCache.set(it.file,t)).catch(()=>{});
+      fetch(it.file).then(r=>r.ok?r.text():Promise.reject()).then(t=>{
+        mdCache.set(it.file,t);
+        if (isBodyEmpty(t)) { emptyArticles.add(it.id); updateEmptyIndicators(); }
+      }).catch(()=>{ emptyArticles.add(it.id); updateEmptyIndicators(); });
   }
 }
 
@@ -600,18 +687,22 @@ function renderWiki(id, wikiKey) {
     ${body}
   </div>`;
   window.scrollTo(0,0);
+  updateEmptyIndicators();
   animateWikiIn();
 }
 
 function artCard(art) {
-  const lbl = {live:'dostępny',planned:'planowany',wiki:'wiki',xlink:'wspólny ↗'};
-  const click = (art.status==='live'||art.status==='wiki'||art.status==='xlink') && art.id
-    ? `onclick="navigate('${art.id}')"` : '';
+  const isEmpty = art.id && emptyArticles.has(art.id);
+  const effectiveStatus = isEmpty ? 'empty' : art.status;
+  const lbl = {live:'dostępny',planned:'planowany',wiki:'wiki',xlink:'wspólny ↗',empty:'pusty'};
+  const clickable = (isEmpty || art.status==='live'||art.status==='wiki'||art.status==='xlink') && art.id;
+  const click = clickable ? `onclick="navigate('${art.id}')"` : '';
+  const artid = art.id ? `data-artid="${art.id}"` : '';
   const desc = art.desc ? `<div class="art-desc">${art.desc}</div>` : '';
-  return `<div class="art-card ${art.status}" ${click}>
-    <div class="art-dot ${art.status}"></div>
+  return `<div class="art-card ${effectiveStatus}" ${artid} ${click}>
+    <div class="art-dot ${effectiveStatus}"></div>
     <div class="art-body"><div class="art-lbl">${art.label}</div>${desc}</div>
-    <span class="art-badge ${art.status}">${lbl[art.status]||art.status}</span>
+    <span class="art-badge ${effectiveStatus}">${lbl[effectiveStatus]||effectiveStatus}</span>
   </div>`;
 }
 

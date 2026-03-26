@@ -176,6 +176,7 @@ window.SITE_CONFIG = {
         { id: 'psychotherapy/sojusz',     label: 'Sojusz terapeutyczny',         file: 'wiki/psychotherapy/sojusz.md'    },
         { id: 'psychotherapy/emdr',       label: 'EMDR',                         file: 'wiki/psychotherapy/emdr.md'      },
         { id: 'psychotherapy/act',        label: 'Terapia akceptacji (ACT)',      file: 'wiki/psychotherapy/act.md'       },
+        { id: 'psychotherapy/trening_umiejetnosci_spolecznych', label: 'Trening Umiejętności Społecznych (SST)', file: 'wiki/psychotherapy/trening_umiejetnosci_spolecznych.md' },
       ]
     },
     {
@@ -422,6 +423,7 @@ window.SITE_CONFIG = {
       { file: 'wiki/psychotherapy/sojusz.md',      label: 'Sojusz terapeutyczny',         status: 'live' },
       { file: 'wiki/psychotherapy/emdr.md',        label: 'EMDR',                         status: 'live' },
       { file: 'wiki/psychotherapy/act.md',         label: 'Terapia akceptacji (ACT)',      status: 'live' },
+      { file: 'wiki/psychotherapy/trening_umiejetnosci_spolecznych.md', label: 'Trening Umiejętności Społecznych (SST)', status: 'live' },
     ],
     psychopathology: [
       { file: 'wiki/psychopathology/psychopatologia_wprowadzenie.md', label: 'Psychopatologia — wprowadzenie', status: 'live' },
@@ -628,6 +630,7 @@ window.SITE_CONFIG = {
             { label: 'EMDR', id: 'psychotherapy/emdr', status: 'live' },
             { label: 'Skuteczność psychoterapii', id: 'psychotherapy/skutecznosc', status: 'live' },
             { label: 'Sojusz terapeutyczny', id: 'psychotherapy/sojusz', status: 'live' },
+            { label: 'Trening Umiejętności Społecznych (SST)', id: 'psychotherapy/trening_umiejetnosci_spolecznych', status: 'live' },
             { label: 'Interwencja kryzysowa', id: 'suicidology/interwencja', status: 'live' },
           ]
         },

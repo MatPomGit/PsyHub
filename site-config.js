@@ -43,6 +43,7 @@ window.SITE_CONFIG = {
       section: 'Funkcje Poznawcze',
       items: [
         { id: 'cognitive/pamiec',              label: 'Pamięć',               file: 'wiki/cognitive/pamiec.md'              },
+        { id: 'cognitive/pamiec_dlugotrwala',  label: 'Pamięć długotrwała',   file: 'wiki/cognitive/pamiec_dlugotrwala.md'  },
         { id: 'cognitive/uwaga',               label: 'Uwaga',                file: 'wiki/cognitive/uwaga.md'               },
         { id: 'cognitive/jezyk',               label: 'Język',                file: 'wiki/cognitive/jezyk.md'               },
         { id: 'cognitive/funkcje_wykonawcze',  label: 'Funkcje wykonawcze',   file: 'wiki/cognitive/funkcje_wykonawcze.md'  },
@@ -349,6 +350,7 @@ window.SITE_CONFIG = {
     ],
     cognitive: [
       { file: 'wiki/cognitive/pamiec.md',              label: 'Pamięć',               status: 'live' },
+      { file: 'wiki/cognitive/pamiec_dlugotrwala.md', label: 'Pamięć długotrwała',   status: 'live' },
       { file: 'wiki/cognitive/uwaga.md',               label: 'Uwaga',                status: 'live' },
       { file: 'wiki/cognitive/jezyk.md',               label: 'Język',                status: 'live' },
       { file: 'wiki/cognitive/funkcje_wykonawcze.md',  label: 'Funkcje wykonawcze',   status: 'live' },
@@ -707,6 +709,7 @@ window.SITE_CONFIG = {
           title: 'Procesy podstawowe',
           articles: [
             { label: 'Pamięć', id: 'cognitive/pamiec', status: 'live' },
+            { label: 'Pamięć długotrwała', id: 'cognitive/pamiec_dlugotrwala', status: 'live' },
             { label: 'Uwaga', id: 'cognitive/uwaga', status: 'live' },
             { label: 'Percepcja i gnozja', id: 'cognitive/percepcja', status: 'live' },
             { label: 'Język', id: 'cognitive/jezyk', status: 'live' },

@@ -1,5 +1,4 @@
-# ADOS-2 w ujęciu akademickim  
-## Struktura, zastosowanie, interpretacja i ograniczenia kliniczne
+# ADOS-2 w ujęciu
 
 ## Streszczenie
 

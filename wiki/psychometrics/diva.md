@@ -134,6 +134,96 @@ DIVA-5 jest jednym z najważniejszych ustrukturyzowanych wywiadów w diagnostyce
 
 Najbardziej dojrzałe użycie DIVA-5 polega na traktowaniu jej jako centralnego, lecz nie jedynego komponentu procesu diagnostycznego. Wywiad jest szczególnie użyteczny wtedy, gdy jest integrowany z dodatkowymi źródłami informacji, oceną współchorobowości, analizą różnicową i wiedzą kliniczną specjalisty. Właśnie wtedy DIVA-5 spełnia swoją podstawową funkcję: pomaga nie tylko „odnaleźć objawy”, ale zrozumieć, czy rzeczywiście układają się one w wiarygodny obraz dorosłego ADHD.
 
+## 19. Prowadzenie wywiadu DIVA-5 krok po kroku
+
+W praktyce klinicznej DIVA-5 najlepiej prowadzić jako wywiad ustrukturyzowany, ale nie mechaniczny. Rdzeniem procedury jest przejście przez wszystkie objawy DSM-5 w dwóch perspektywach czasowych, czyli w odniesieniu do dorosłości i dzieciństwa, a następnie ocena początku objawów przed 12. rokiem życia oraz ich wpływu na funkcjonowanie. Oficjalne opisy DIVA-5 podkreślają właśnie te trzy filary: obecne i dawne objawy, wiek początku oraz obszary upośledzenia.
+
+Praktycznie dobrze jest zacząć od krótkiego zbudowania ram badania. Pacjent powinien wiedzieć, że celem nie jest „udowodnienie ADHD”, ale sprawdzenie, czy jego trudności tworzą rozwojowo spójny wzorzec odpowiadający temu zaburzeniu. Na tym etapie warto też uprzedzić, że część pytań będzie dotyczyć dzieciństwa, szkoły, relacji rodzinnych i codziennego funkcjonowania, a nie tylko bieżących problemów z koncentracją.
+
+Kolejny krok to systematyczne omawianie dziewięciu objawów nieuwagi. Dla każdego z nich diagnosta powinien ustalić nie tylko, czy pacjent rozpoznaje go u siebie, ale też czy potrafi podać konkretne przykłady z życia dorosłego i z okresu dzieciństwa. DIVA-5 została zaprojektowana właśnie tak, by wspierać klinicystę przykładami codziennych sytuacji i nie ograniczać wywiadu do abstrakcyjnych deklaracji.
+
+Po części dotyczącej nieuwagi przechodzi się do dziewięciu objawów nadpobudliwości i impulsywności, zachowując tę samą logikę. W praktyce u dorosłych szczególnie ważne jest, by nie szukać wyłącznie „widocznej nadruchliwości”. Objawy hiperaktywno-impulsywne w dorosłości często przybierają bardziej subtelne formy, takie jak wewnętrzny niepokój, trudność z wytrzymaniem bez działania, przerywanie innym, impulsywne decyzje lub niecierpliwość.
+
+Po ocenie objawów przechodzi się do części funkcjonalnej, czyli do analizy wpływu trudności na pracę, edukację, relacje, organizację życia, finanse, samoocenę i codzienne obowiązki. W dobrze przeprowadzonym wywiadzie to właśnie ta część często przesądza o jakości diagnozy, ponieważ pozwala odróżnić obecność cech od rzeczywistego upośledzenia funkcjonowania. Opisy DIVA-5 akcentują, że samo nasilenie objawów nie wystarcza bez oceny wpływu na życie badanego. 2
+
+## 20. Jak zadawać pytania, żeby nie spłycić wywiadu
+
+Najczęstszy błąd początkujących polega na odczytywaniu pozycji jak listy kontrolnej i przyjmowaniu odpowiedzi pacjenta bez pogłębiania. Tymczasem DIVA-5 działa najlepiej wtedy, gdy każde twierdzenie zostaje osadzone w konkretnym zachowaniu. Jeżeli pacjent mówi „zawsze miałem problem z koncentracją”, diagnosta powinien dopytać: na czym to polegało, w jakich sytuacjach, od kiedy, jakie były konsekwencje, czy dotyczyło tylko nudnych zadań, czy także ważnych, i czy podobny wzorzec był obecny już w szkole.
+
+Dobre pytania pomocnicze zwykle dotyczą pięciu osi. Pierwsza to częstotliwość. Druga to przewlekłość. Trzecia to kontekst. Czwarta to konsekwencje funkcjonalne. Piąta to alternatywne wyjaśnienia. Taki sposób prowadzenia rozmowy zmniejsza ryzyko, że diagnosta pomyli zmęczenie, depresję, przeciążenie, bezsenność albo aktualny kryzys z rozwojowym ADHD.
+
+W praktyce szczególnie pomocne są pytania o codzienność. Zamiast pytać wyłącznie o „nieuwagę”, lepiej pytać, jak pacjent radzi sobie z kończeniem zadań, pilnowaniem terminów, gubieniem rzeczy, organizowaniem poranka, pamiętaniem o rachunkach, słuchaniem do końca, utrzymaniem uwagi na spotkaniu lub regulowaniem impulsywnych decyzji zakupowych. To właśnie ten poziom konkretyzacji odróżnia wywiad kliniczny od uproszczonego screeningu.
+
+## 21. Jak korzystać z informacji od osób bliskich
+
+Oficjalne opisy i badania walidacyjne DIVA-5 podkreślają, że tam, gdzie to możliwe, warto korzystać z informacji uzupełniających od osób znających badanego, szczególnie w odniesieniu do dzieciństwa. W koreańskiej walidacji DIVA-5 diagnoza była oparta na danych od pacjenta oraz collateral informants, a warunek rozpoznania obejmował objawy raportowane przez pacjenta i informatorów.
+
+W praktyce dane od rodzica, partnera lub rodzeństwa są najbardziej przydatne w trzech sytuacjach. Po pierwsze wtedy, gdy pacjent ma bardzo słabą pamięć autobiograficzną dotyczącą dzieciństwa. Po drugie wtedy, gdy obraz jest niejednoznaczny i trzeba ustalić przewlekłość wzorca. Po trzecie wtedy, gdy samoopis jest skrajnie minimalizujący albo przeciwnie, bardzo szeroki i mało selektywny.
+
+Nie należy jednak traktować informatora jako „ostatecznego arbitra prawdy”. Także osoby bliskie mają własne interpretacje, emocje i ograniczenia pamięci. Dane od informatora zwiększają trafność rozpoznania, ale nadal muszą być ważone klinicznie.
+
+## 22. Najczęstsze pułapki diagnostyczne
+
+Pierwsza pułapka polega na utożsamieniu obecnych problemów z koncentracją z ADHD. W rzeczywistości podobny obraz może występować w depresji, zaburzeniach lękowych, PTSD, bezsenności, przewlekłym przeciążeniu, wypaleniu, skutkach używania substancji, a także w niektórych zaburzeniach osobowości. DIVA-5 porządkuje kryteria, ale sama nie rozwiązuje całej diagnozy różnicowej.
+
+Druga pułapka to zbyt łatwe uznawanie retrospektywnego opisu dzieciństwa za dowód rozwojowej ciągłości. Pacjent może interpretować swoje dawne zachowanie przez pryzmat współczesnej wiedzy o ADHD albo aktualnych trudności. Dlatego dane szkolne, relacje rodziców, stare opinie i przykłady rozwojowe mają tak duże znaczenie.
+
+Trzecia pułapka to nieuwzględnianie wysokiej kompensacji. Część dorosłych, zwłaszcza osób inteligentnych, ambitnych albo funkcjonujących w bardzo strukturalnym środowisku, przez lata maskuje objawy. Nie oznacza to, że objawów nie było. Oznacza raczej, że koszt utrzymywania funkcjonowania był wysoki i dopiero później pojawiło się załamanie adaptacyjne.
+
+Czwarta pułapka to niedodiagnozowanie kobiet. W praktyce kobiety częściej prezentują mniej widowiskową nadpobudliwość, więcej objawów nieuwagi, przeciążenia i kompensacji, przez co ich obraz bywa przez lata opisywany jako lękowy, depresyjny albo osobowościowy. DIVA-5 może pomóc to uporządkować, ale tylko wtedy, gdy diagnosta nie szuka stereotypowego obrazu „nadpobudliwego chłopca”.
+
+Piąta pułapka to zbyt sztywne odróżnianie ADHD od współchorobowości. W praktyce bardzo częste jest współwystępowanie depresji, lęku, zaburzeń snu, używania substancji lub dysregulacji emocjonalnej. Celem diagnozy nie jest wybór jednego „głównego” zaburzenia za wszelką cenę, lecz ustalenie, czy ADHD jest jednym z istotnych i rozwojowo uzasadnionych komponentów obrazu klinicznego.
+
+## 23. Jak różnicować ADHD z innymi zaburzeniami
+
+Najczęściej różnicowanie dotyczy depresji, zaburzeń lękowych, choroby afektywnej dwubiegunowej, zaburzeń używania substancji, zaburzeń osobowości, zaburzeń snu oraz zaburzeń neurorozwojowych innych niż ADHD.
+
+W depresji trudności z koncentracją zwykle są bardziej epizodyczne, zależne od obniżenia napędu, ruminacji i wyczerpania. W ADHD wzorzec jest zazwyczaj bardziej przewlekły, obecny od dzieciństwa i widoczny także poza epizodami nastroju.
+
+W zaburzeniach lękowych problemy z uwagą są często wtórne do napięcia, zamartwiania i nadmiernej czujności. Pacjent bywa bardziej przeciążony własnym lękiem niż rozproszony w typowo ADHD-owy sposób.
+
+W chorobie afektywnej dwubiegunowej impulsywność, gonitwa myśli i nadaktywność zwykle mają charakter bardziej epizodyczny i związany ze zmianami nastroju. W ADHD objawy mają przebieg bardziej stały i mniej fazowy.
+
+W zaburzeniach osobowości dysregulacja może przypominać ADHD, ale częściej jest silniej związana z relacyjnym kontekstem emocjonalnym, lękiem przed odrzuceniem, niestabilnością obrazu siebie albo utrwalonym stylem interpersonalnym.
+
+W zaburzeniach używania substancji podstawowe pytanie brzmi, czy trudności z uwagą i impulsywnością poprzedzały używanie, czy też pojawiły się wtórnie do niego. DIVA-5 jest szczególnie przydatna właśnie przy tej osi różnicowania, bo wymusza pytania rozwojowe.
+
+## 24. Kiedy DIVA-5 jest szczególnie użyteczna
+
+DIVA-5 jest najbardziej użyteczna w czterech typach sytuacji klinicznych. Po pierwsze wtedy, gdy pacjent zgłasza długotrwałe problemy z organizacją, koncentracją i impulsywnością, ale wcześniejsza diagnostyka była fragmentaryczna. Po drugie wtedy, gdy obraz jest złożony i trzeba odróżnić ADHD od innych zaburzeń lub współchorobowości. Po trzecie wtedy, gdy istnieje podejrzenie, że trudności rozwojowe były latami kompensowane. Po czwarte wtedy, gdy klinicysta potrzebuje narzędzia porządkującego wywiad zgodnie z DSM-5, a nie chce opierać się wyłącznie na kwestionariuszach samoopisowych.
+
+W badaniach walidacyjnych DIVA-5 pokazywała dobrą trafność diagnostyczną w porównaniu z oceną psychiatrów oraz dobrą rzetelność międzyoceniającą i test–retest w różnych wersjach językowych. To wzmacnia jej wartość jako narzędzia porządkującego wywiad, ale nie zmienia faktu, że pozostaje częścią szerszego procesu diagnozy.
+
+## 25. Jak opisywać wynik DIVA-5 w opinii
+
+Wynik DIVA-5 najlepiej opisywać warstwowo. Najpierw należy zaznaczyć, czy wywiad wskazuje na spełnienie kryteriów objawowych w zakresie nieuwagi i/lub nadpobudliwości-impulsywności w dorosłości. Następnie trzeba opisać, czy obecny jest wiarygodny materiał przemawiający za obecnością podobnych trudności w dzieciństwie. Kolejny krok to ocena upośledzenia funkcjonowania. Dopiero po tym można formułować wniosek, czy wynik wywiadu wspiera rozpoznanie ADHD.
+
+Dobra formuła raportowa nie brzmi: „DIVA-5 wykazała ADHD”. Lepszy zapis to: „Wynik ustrukturyzowanego wywiadu DIVA-5 wskazuje na obecność wzorca objawów nieuwagi i impulsywności zgodnego z kryteriami DSM-5 dla ADHD, obecnego zarówno w dorosłości, jak i retrospektywnie w dzieciństwie, z istotnym wpływem na funkcjonowanie zawodowe i organizację życia codziennego. Wynik ten wspiera rozpoznanie ADHD, które należy interpretować łącznie z całością oceny klinicznej.”
+
+Jeżeli wynik jest niejednoznaczny, trzeba to jasno zapisać. Na przykład: „Wywiad DIVA-5 wskazuje na część obecnych objawów nieuwagi, ale brak wystarczająco wiarygodnych danych potwierdzających ich obecność w dzieciństwie. W związku z tym wynik nie daje wystarczających podstaw do potwierdzenia ADHD bez dalszej diagnostyki różnicowej.”
+
+## 26. Przykładowy schemat opisu wyniku
+
+### Wersja skrócona do opinii klinicznej
+
+„Przeprowadzono ustrukturyzowany wywiad DIVA-5 oparty na kryteriach DSM-5 dla ADHD u dorosłych. W wywiadzie stwierdzono obecność licznych objawów nieuwagi w aktualnym funkcjonowaniu, obejmujących trudności z utrzymaniem uwagi, organizacją zadań, kończeniem obowiązków i pamięcią prospektywną. Objawy te mają charakter przewlekły i są potwierdzane retrospektywnie od okresu szkolnego. Część hiperaktywno-impulsywna zaznacza się słabiej i ma obecnie bardziej wewnętrzny niż ruchowy charakter. Trudności istotnie wpływają na funkcjonowanie zawodowe, zarządzanie czasem oraz codzienną organizację. Wynik wywiadu wspiera rozpoznanie ADHD, obraz z przewagą zaburzeń uwagi.”
+
+### Wersja ostrożna diagnostycznie
+
+„Wywiad DIVA-5 ujawnia obecność trudności z koncentracją, organizacją i impulsywnością w dorosłości. Dane retrospektywne z dzieciństwa są częściowo niepełne i niejednoznaczne. Obraz kliniczny jest dodatkowo komplikowany przez współwystępujące objawy lękowo-depresyjne oraz przewlekłe zaburzenia snu. Z tego względu wynik wywiadu wskazuje na potrzebę pogłębionej diagnozy różnicowej ADHD, ale nie stanowi samodzielnej podstawy do jednoznacznego rozpoznania.”
+
+## 27. Najczęstsze błędy w raportowaniu
+
+Pierwszy błąd to traktowanie DIVA-5 jak testu z automatycznym wynikiem, zamiast jak wywiadu klinicznego. Drugi to brak rozróżnienia między objawami obecnymi a rozwojową ciągłością objawów. Trzeci to nieuwzględnianie współchorobowości. Czwarty to nadmierna pewność w sytuacjach niejednoznacznych. Piąty to używanie języka sugerującego, że samo narzędzie „rozpoznało” zaburzenie.
+
+W dobrze napisanej opinii DIVA-5 powinna być przedstawiona jako jedno z kluczowych, ale nie jedynych źródeł danych. Taki sposób raportowania jest metodologicznie mocniejszy i lepiej oddaje rzeczywistą rolę narzędzia.
+
+## 28. Podsumowanie praktyczne
+
+DIVA-5 jest bardzo użytecznym narzędziem do diagnostyki ADHD u dorosłych, ponieważ prowadzi klinicystę przez wszystkie kluczowe elementy rozpoznania: objawy obecne, objawy z dzieciństwa, wiek początku i upośledzenie funkcjonowania. Jej największa wartość nie polega jednak na tym, że „upraszcza diagnozę”, lecz na tym, że zmusza do myślenia rozwojowego i funkcjonalnego.
+
+Najlepiej działa wtedy, gdy jest prowadzona konkretnie, z przykładami, z dopytywaniem o konsekwencje i z możliwym udziałem informatorów. Najgorzej działa wtedy, gdy jest traktowana jak formalność albo checklistowy skrót myślowy. W praktyce najbardziej rzetelna diagnoza ADHD u dorosłych powstaje wtedy, gdy DIVA-5 jest połączona z wywiadem klinicznym, oceną współchorobowości, analizą funkcjonowania i dodatkowymi źródłami danych. Taki sposób użycia jest też zgodny z logiką narzędzia opisaną przez jego twórców oraz z wynikami badań walidacyjnych.
+
 ## Najważniejsza bibliografia
 
 Bron, T. I., Draisma, S., Ramos-Quiroga, J. A., & Kooij, J. J. S. (red.). *DIVA-5: Diagnostic Interview for ADHD in Adults*. DIVA Foundation.

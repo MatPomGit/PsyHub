@@ -57,6 +57,7 @@ window.SITE_CONFIG = {
         { id: 'cognitive/teoria_perspektywy',  label: 'Teoria perspektywy',         file: 'wiki/cognitive/teoria_perspektywy.md'  },
         { id: 'cognitive/efekt_ramowania',     label: 'Efekt ramowania',             file: 'wiki/cognitive/efekt_ramowania.md'     },
         { id: 'cognitive/nasa_tlx',            label: 'NASA Task Load Index (TLX)', file: 'wiki/cognitive/nasa_tlx.md'            },
+        { id: 'cognitive/iluzje',              label: 'Iluzje i błędy poznawcze',   file: 'wiki/cognitive/iluzje.md'              },
       ]
     },
     {
@@ -301,6 +302,23 @@ window.SITE_CONFIG = {
       ]
     },
     {
+      section: 'Psychologia Osób w Podeszłym Wieku',
+      items: [
+        { id: 'geropsychology/wprowadzenie',               label: 'Psychologia starości — wprow.',       file: 'wiki/geropsychology/wprowadzenie.md'               },
+        { id: 'geropsychology/starzenie_poznawcze',        label: 'Starzenie się poznawcze',             file: 'wiki/geropsychology/starzenie_poznawcze.md'        },
+        { id: 'geropsychology/demencja',                   label: 'Demencja i ch. neurodegeneracyjne',   file: 'wiki/geropsychology/demencja.md'                   },
+        { id: 'geropsychology/depresja_starszych',         label: 'Depresja u osób starszych',           file: 'wiki/geropsychology/depresja_starszych.md'         },
+        { id: 'geropsychology/samotnosc',                  label: 'Samotność i izolacja społeczna',      file: 'wiki/geropsychology/samotnosc.md'                  },
+        { id: 'geropsychology/jakosc_zycia_starszych',     label: 'Jakość życia w starości',             file: 'wiki/geropsychology/jakosc_zycia_starszych.md'     },
+        { id: 'geropsychology/aktywnosc_poznawcza',        label: 'Aktywność poznawcza i trening umysłu',file: 'wiki/geropsychology/aktywnosc_poznawcza.md'        },
+        { id: 'geropsychology/umieranie_smierc',           label: 'Psychologia umierania i śmierci',     file: 'wiki/geropsychology/umieranie_smierc.md'           },
+        { id: 'geropsychology/relacje_spoleczne_starszych',label: 'Relacje społeczne i wsparcie rodziny',file: 'wiki/geropsychology/relacje_spoleczne_starszych.md'},
+        { id: 'geropsychology/adaptacja_do_starosci',      label: 'Adaptacja do starości i rezyliencja', file: 'wiki/geropsychology/adaptacja_do_starosci.md'      },
+        { id: 'geropsychology/interwencje_terapeutyczne',  label: 'Interwencje terapeutyczne',           file: 'wiki/geropsychology/interwencje_terapeutyczne.md'  },
+        { id: 'geropsychology/opieka_nad_opiekunami',      label: 'Wypalenie i wsparcie opiekunów',      file: 'wiki/geropsychology/opieka_nad_opiekunami.md'      },
+      ]
+    },
+    {
       section: 'Encyklopedie',
       items: [
         { id: 'wiki-index/neuropsychologia', label: 'WIKI — Neuropsychologia',      wiki: 'neuropsychologia' },
@@ -320,6 +338,8 @@ window.SITE_CONFIG = {
         { id: 'wiki-index/zdrowie',          label: 'WIKI — Psych. zdrowia',        wiki: 'zdrowie'          },
         { id: 'wiki-index/psychosomatics',   label: 'WIKI — Psychosomatyka',            wiki: 'psychosomatics'   },
         { id: 'wiki-index/niepelnosprawnosc', label: 'WIKI — Psych. niepełnosprawności', wiki: 'niepelnosprawnosc' },
+        { id: 'wiki-index/psychosomatics',   label: 'WIKI — Psychosomatyka',        wiki: 'psychosomatics'   },
+        { id: 'wiki-index/geropsychology',   label: 'WIKI — Psych. osób starszych', wiki: 'geropsychology'   },
       ]
     },
     {
@@ -365,6 +385,7 @@ window.SITE_CONFIG = {
       { file: 'wiki/cognitive/teoria_perspektywy.md', label: 'Teoria perspektywy',    status: 'live' },
       { file: 'wiki/cognitive/efekt_ramowania.md',    label: 'Efekt ramowania',       status: 'live' },
       { file: 'wiki/cognitive/nasa_tlx.md',           label: 'NASA Task Load Index (TLX)', status: 'live' },
+      { file: 'wiki/cognitive/iluzje.md',             label: 'Iluzje i błędy poznawcze',   status: 'live' },
     ],
     disorders: [
       { file: 'wiki/disorders/afazje.md',    label: 'Afazje',                 status: 'live' },
@@ -578,6 +599,20 @@ window.SITE_CONFIG = {
       { file: 'wiki/reference/zakres.md',    label: 'Zakres wiedzy', status: 'live' },
       { file: 'wiki/reference/literatura.md',label: 'Literatura',    status: 'live' },
     ],
+    geropsychology: [
+      { file: 'wiki/geropsychology/wprowadzenie.md',               label: 'Psychologia starości — wprowadzenie',  status: 'live' },
+      { file: 'wiki/geropsychology/starzenie_poznawcze.md',        label: 'Starzenie się poznawcze',              status: 'live' },
+      { file: 'wiki/geropsychology/demencja.md',                   label: 'Demencja i choroby neurodegeneracyjne',status: 'live' },
+      { file: 'wiki/geropsychology/depresja_starszych.md',         label: 'Depresja u osób starszych',            status: 'live' },
+      { file: 'wiki/geropsychology/samotnosc.md',                  label: 'Samotność i izolacja społeczna',       status: 'live' },
+      { file: 'wiki/geropsychology/jakosc_zycia_starszych.md',     label: 'Jakość życia w starości',              status: 'live' },
+      { file: 'wiki/geropsychology/aktywnosc_poznawcza.md',        label: 'Aktywność poznawcza i trening umysłu', status: 'live' },
+      { file: 'wiki/geropsychology/umieranie_smierc.md',           label: 'Psychologia umierania i śmierci',      status: 'live' },
+      { file: 'wiki/geropsychology/relacje_spoleczne_starszych.md',label: 'Relacje społeczne i wsparcie rodziny', status: 'live' },
+      { file: 'wiki/geropsychology/adaptacja_do_starosci.md',      label: 'Adaptacja do starości i rezyliencja',  status: 'live' },
+      { file: 'wiki/geropsychology/interwencje_terapeutyczne.md',  label: 'Interwencje terapeutyczne',            status: 'live' },
+      { file: 'wiki/geropsychology/opieka_nad_opiekunami.md',      label: 'Wypalenie i wsparcie opiekunów',       status: 'live' },
+    ],
   },
 
   // ─────────────────────────────────────────────────────────────
@@ -743,6 +778,7 @@ window.SITE_CONFIG = {
             { label: 'Uczenie się', id: 'cognitive/uczenie', status: 'live' },
             { label: 'Wyobraźnia i reprezentacje', id: 'cognitive/wyobraznia', status: 'live' },
             { label: 'Zmęczenie poznawcze', id: 'cognitive/zmeczenie_poznawcze', status: 'live' },
+            { label: 'Iluzje i błędy poznawcze', id: 'cognitive/iluzje', status: 'live' },
           ]
         },
         {
@@ -1289,6 +1325,45 @@ window.SITE_CONFIG = {
             { label: 'Rodzina i opiekunowie',              id: null, status: 'planned', desc: 'Obciążenie opiekunów, interwencje wspierające rodzinę, rodzeństwo.' },
             { label: 'Rehabilitacja psychologiczna',       id: null, status: 'planned', desc: 'Modele i metody rehabilitacji — od biopsychospołecznej po środowiskową.' },
             { label: 'Inkluzja społeczna i prawa',         id: null, status: 'planned', desc: 'Konwencja ONZ o prawach osób z niepełnosprawnościami, antydyskryminacja, dostępność.' },
+    geropsychology: {
+      title: 'WIKI — Psychologia osób w podeszłym wieku',
+      intro: 'Psychologia osób w podeszłym wieku bada procesy starzenia się, zdrowie psychiczne, funkcjonowanie poznawcze i społeczne seniorów — od demencji i depresji po adaptację do starości i wsparcie opiekunów.',
+      sections: [
+        {
+          title: 'Podstawy i wprowadzenie',
+          articles: [
+            { label: 'Psychologia starości — wprowadzenie',   id: 'geropsychology/wprowadzenie',           status: 'live' },
+            { label: 'Starzenie się poznawcze',               id: 'geropsychology/starzenie_poznawcze',    status: 'live' },
+          ]
+        },
+        {
+          title: 'Zaburzenia i choroby',
+          articles: [
+            { label: 'Demencja i choroby neurodegeneracyjne', id: 'geropsychology/demencja',               status: 'live' },
+            { label: 'Depresja u osób starszych',             id: 'geropsychology/depresja_starszych',     status: 'live' },
+          ]
+        },
+        {
+          title: 'Funkcjonowanie społeczne i jakość życia',
+          articles: [
+            { label: 'Samotność i izolacja społeczna',        id: 'geropsychology/samotnosc',              status: 'live' },
+            { label: 'Jakość życia w starości',               id: 'geropsychology/jakosc_zycia_starszych', status: 'live' },
+            { label: 'Relacje społeczne i wsparcie rodziny',  id: 'geropsychology/relacje_spoleczne_starszych', status: 'live' },
+          ]
+        },
+        {
+          title: 'Aktywność i adaptacja',
+          articles: [
+            { label: 'Aktywność poznawcza i trening umysłu',  id: 'geropsychology/aktywnosc_poznawcza',    status: 'live' },
+            { label: 'Adaptacja do starości i rezyliencja',   id: 'geropsychology/adaptacja_do_starosci',  status: 'live' },
+          ]
+        },
+        {
+          title: 'Interwencje i opieka',
+          articles: [
+            { label: 'Interwencje terapeutyczne',             id: 'geropsychology/interwencje_terapeutyczne', status: 'live' },
+            { label: 'Psychologia umierania i śmierci',       id: 'geropsychology/umieranie_smierc',       status: 'live' },
+            { label: 'Wypalenie i wsparcie opiekunów',        id: 'geropsychology/opieka_nad_opiekunami',  status: 'live' },
           ]
         },
       ]

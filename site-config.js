@@ -57,6 +57,7 @@ window.SITE_CONFIG = {
         { id: 'cognitive/teoria_perspektywy',  label: 'Teoria perspektywy',         file: 'wiki/cognitive/teoria_perspektywy.md'  },
         { id: 'cognitive/efekt_ramowania',     label: 'Efekt ramowania',             file: 'wiki/cognitive/efekt_ramowania.md'     },
         { id: 'cognitive/nasa_tlx',            label: 'NASA Task Load Index (TLX)', file: 'wiki/cognitive/nasa_tlx.md'            },
+        { id: 'cognitive/iluzje',              label: 'Iluzje i błędy poznawcze',   file: 'wiki/cognitive/iluzje.md'              },
       ]
     },
     {
@@ -382,6 +383,7 @@ window.SITE_CONFIG = {
       { file: 'wiki/cognitive/teoria_perspektywy.md', label: 'Teoria perspektywy',    status: 'live' },
       { file: 'wiki/cognitive/efekt_ramowania.md',    label: 'Efekt ramowania',       status: 'live' },
       { file: 'wiki/cognitive/nasa_tlx.md',           label: 'NASA Task Load Index (TLX)', status: 'live' },
+      { file: 'wiki/cognitive/iluzje.md',             label: 'Iluzje i błędy poznawcze',   status: 'live' },
     ],
     disorders: [
       { file: 'wiki/disorders/afazje.md',    label: 'Afazje',                 status: 'live' },
@@ -760,6 +762,7 @@ window.SITE_CONFIG = {
             { label: 'Uczenie się', id: 'cognitive/uczenie', status: 'live' },
             { label: 'Wyobraźnia i reprezentacje', id: 'cognitive/wyobraznia', status: 'live' },
             { label: 'Zmęczenie poznawcze', id: 'cognitive/zmeczenie_poznawcze', status: 'live' },
+            { label: 'Iluzje i błędy poznawcze', id: 'cognitive/iluzje', status: 'live' },
           ]
         },
         {

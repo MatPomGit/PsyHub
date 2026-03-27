@@ -318,7 +318,8 @@ window.SITE_CONFIG = {
         { id: 'wiki-index/etyka',            label: 'WIKI — Etyka zawodowa',        wiki: 'etyka'            },
         { id: 'wiki-index/slownik',          label: 'WIKI — Słownik terminów',      wiki: 'slownik'          },
         { id: 'wiki-index/zdrowie',          label: 'WIKI — Psych. zdrowia',        wiki: 'zdrowie'          },
-        { id: 'wiki-index/psychosomatics',   label: 'WIKI — Psychosomatyka',        wiki: 'psychosomatics'   },
+        { id: 'wiki-index/psychosomatics',   label: 'WIKI — Psychosomatyka',            wiki: 'psychosomatics'   },
+        { id: 'wiki-index/niepelnosprawnosc', label: 'WIKI — Psych. niepełnosprawności', wiki: 'niepelnosprawnosc' },
       ]
     },
     {
@@ -548,6 +549,20 @@ window.SITE_CONFIG = {
       { file: 'wiki/psychosomatics/choroby_autoimmunologiczne.md', label: 'Choroby autoimmunologiczne',         status: 'live' },
       { file: 'wiki/psychosomatics/diagnoza_psychosomatyczna.md',  label: 'Diagnoza psychosomatyczna',          status: 'live' },
       { file: 'wiki/psychosomatics/terapia_psychosomatyczna.md',   label: 'Terapia psychosomatyczna',           status: 'live' },
+    ],
+    disability_psychology: [
+      { file: 'wiki/disability_psychology/wprowadzenie.md',                  label: 'Psychologia niepełnosprawności — wprow.',       status: 'planned' },
+      { file: 'wiki/disability_psychology/modele_niepelnosprawnosci.md',     label: 'Modele niepełnosprawności',                     status: 'planned' },
+      { file: 'wiki/disability_psychology/niepelnosprawnosc_intelektualna.md', label: 'Niepełnosprawność intelektualna',             status: 'planned' },
+      { file: 'wiki/disability_psychology/niepelnosprawnosc_ruchowa.md',     label: 'Niepełnosprawność ruchowa',                     status: 'planned' },
+      { file: 'wiki/disability_psychology/niepelnosprawnosc_wzrokowa.md',    label: 'Niepełnosprawność wzrokowa',                    status: 'planned' },
+      { file: 'wiki/disability_psychology/niepelnosprawnosc_sluchowa.md',    label: 'Niepełnosprawność słuchowa',                    status: 'planned' },
+      { file: 'wiki/disability_psychology/autyzm_niepelnosprawnosc.md',      label: 'Spektrum autyzmu i niepełnosprawność',          status: 'planned' },
+      { file: 'wiki/disability_psychology/jakosc_zycia.md',                  label: 'Jakość życia osób z niepełnosprawnością',       status: 'planned' },
+      { file: 'wiki/disability_psychology/stres_i_adaptacja.md',             label: 'Stres, adaptacja i radzenie sobie',             status: 'planned' },
+      { file: 'wiki/disability_psychology/rodzina_i_opiekunowie.md',         label: 'Rodzina i opiekunowie',                        status: 'planned' },
+      { file: 'wiki/disability_psychology/rehabilitacja_psychologiczna.md',  label: 'Rehabilitacja psychologiczna',                 status: 'planned' },
+      { file: 'wiki/disability_psychology/inkluzja_spoleczna.md',            label: 'Inkluzja społeczna i prawa',                   status: 'planned' },
     ],
     intro: [
       { file: 'wiki/intro/definicja.md', label: 'Definicja i zakres',  status: 'live' },
@@ -1235,6 +1250,45 @@ window.SITE_CONFIG = {
           articles: [
             { label: 'Diagnoza psychosomatyczna',       id: 'psychosomatics/diagnoza_psychosomatyczna', status: 'live' },
             { label: 'Terapia psychosomatyczna',        id: 'psychosomatics/terapia_psychosomatyczna',  status: 'live' },
+          ]
+        },
+      ]
+    },
+
+    niepelnosprawnosc: {
+      title: 'WIKI — Psychologia osób z niepełnosprawnością',
+      intro: 'Psychologiczne aspekty życia z niepełnosprawnością — od modeli i klasyfikacji przez specyfikę poszczególnych rodzajów niepełnosprawności po rehabilitację, jakość życia i inkluzję społeczną.',
+      sections: [
+        {
+          title: 'Podstawy',
+          articles: [
+            { label: 'Psychologia niepełnosprawności — wprowadzenie', id: null, status: 'planned', desc: 'Definicje, zakres dyscypliny, historia podejść do niepełnosprawności.' },
+            { label: 'Modele niepełnosprawności',                     id: null, status: 'planned', desc: 'Model medyczny, społeczny, biopsychospołeczny i ICF (WHO).' },
+          ]
+        },
+        {
+          title: 'Rodzaje niepełnosprawności',
+          articles: [
+            { label: 'Niepełnosprawność intelektualna',  id: null, status: 'planned', desc: 'Klasyfikacja, diagnoza (IQ, adaptacja), wsparcie i terapia.' },
+            { label: 'Niepełnosprawność ruchowa',        id: null, status: 'planned', desc: 'Psychologiczne konsekwencje ograniczeń motorycznych i bólu przewlekłego.' },
+            { label: 'Niepełnosprawność wzrokowa',       id: null, status: 'planned', desc: 'Specyfika funkcjonowania poznawczego i społecznego przy dysfunkcjach wzroku.' },
+            { label: 'Niepełnosprawność słuchowa',       id: null, status: 'planned', desc: 'Tożsamość głuchych, komunikacja, wsparcie psychologiczne.' },
+            { label: 'Spektrum autyzmu i niepełnosprawność', id: null, status: 'planned', desc: 'ASD w kontekście niepełnosprawności — neurodywersja i wsparcie.' },
+          ]
+        },
+        {
+          title: 'Funkcjonowanie psychiczne',
+          articles: [
+            { label: 'Jakość życia osób z niepełnosprawnością', id: null, status: 'planned', desc: 'Pomiar jakości życia, czynniki ochronne i ryzyka, dobrostan.' },
+            { label: 'Stres, adaptacja i radzenie sobie',        id: null, status: 'planned', desc: 'Modele stresu i kryzysu po nabytej niepełnosprawności, resilience.' },
+          ]
+        },
+        {
+          title: 'Środowisko i wsparcie',
+          articles: [
+            { label: 'Rodzina i opiekunowie',              id: null, status: 'planned', desc: 'Obciążenie opiekunów, interwencje wspierające rodzinę, rodzeństwo.' },
+            { label: 'Rehabilitacja psychologiczna',       id: null, status: 'planned', desc: 'Modele i metody rehabilitacji — od biopsychospołecznej po środowiskową.' },
+            { label: 'Inkluzja społeczna i prawa',         id: null, status: 'planned', desc: 'Konwencja ONZ o prawach osób z niepełnosprawnościami, antydyskryminacja, dostępność.' },
           ]
         },
       ]

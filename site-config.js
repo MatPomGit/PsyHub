@@ -59,6 +59,7 @@ window.SITE_CONFIG = {
         { id: 'cognitive/efekt_ramowania',     label: 'Efekt ramowania',             file: 'wiki/cognitive/efekt_ramowania.md'     },
         { id: 'cognitive/nasa_tlx',            label: 'NASA Task Load Index (TLX)', file: 'wiki/cognitive/nasa_tlx.md'            },
         { id: 'cognitive/iluzje',              label: 'Iluzje i błędy poznawcze',   file: 'wiki/cognitive/iluzje.md'              },
+        { id: 'cognitive/uwaga_mimowolna',     label: 'Uwaga mimowolna',             file: 'wiki/cognitive/uwaga_mimowolna.md'     },
       ]
     },
     {
@@ -388,6 +389,7 @@ window.SITE_CONFIG = {
       { file: 'wiki/cognitive/efekt_ramowania.md',    label: 'Efekt ramowania',       status: 'live' },
       { file: 'wiki/cognitive/nasa_tlx.md',           label: 'NASA Task Load Index (TLX)', status: 'live' },
       { file: 'wiki/cognitive/iluzje.md',             label: 'Iluzje i błędy poznawcze',   status: 'live' },
+      { file: 'wiki/cognitive/uwaga_mimowolna.md',    label: 'Uwaga mimowolna',             status: 'live' },
     ],
     disorders: [
       { file: 'wiki/disorders/afazje.md',    label: 'Afazje',                 status: 'live' },
@@ -782,6 +784,7 @@ window.SITE_CONFIG = {
             { label: 'Wyobraźnia i reprezentacje', id: 'cognitive/wyobraznia', status: 'live' },
             { label: 'Zmęczenie poznawcze', id: 'cognitive/zmeczenie_poznawcze', status: 'live' },
             { label: 'Iluzje i błędy poznawcze', id: 'cognitive/iluzje', status: 'live' },
+            { label: 'Uwaga mimowolna', id: 'cognitive/uwaga_mimowolna', status: 'live' },
           ]
         },
         {

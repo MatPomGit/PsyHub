@@ -1325,6 +1325,11 @@ window.SITE_CONFIG = {
             { label: 'Rodzina i opiekunowie',              id: null, status: 'planned', desc: 'Obciążenie opiekunów, interwencje wspierające rodzinę, rodzeństwo.' },
             { label: 'Rehabilitacja psychologiczna',       id: null, status: 'planned', desc: 'Modele i metody rehabilitacji — od biopsychospołecznej po środowiskową.' },
             { label: 'Inkluzja społeczna i prawa',         id: null, status: 'planned', desc: 'Konwencja ONZ o prawach osób z niepełnosprawnościami, antydyskryminacja, dostępność.' },
+          ]
+        },
+      ]
+    },
+
     geropsychology: {
       title: 'WIKI — Psychologia osób w podeszłym wieku',
       intro: 'Psychologia osób w podeszłym wieku bada procesy starzenia się, zdrowie psychiczne, funkcjonowanie poznawcze i społeczne seniorów — od demencji i depresji po adaptację do starości i wsparcie opiekunów.',

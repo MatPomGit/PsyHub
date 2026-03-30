@@ -37,6 +37,7 @@ window.SITE_CONFIG = {
         { id: 'neuro/lateralizacja',        label: 'Lateralizacja funkcji',                file: 'wiki/neuro/lateralizacja.md'        },
         { id: 'neuro/kora_prefrontalna',    label: 'Kora przedczołowa',                    file: 'wiki/neuro/kora_prefrontalna.md'    },
         { id: 'neuro/uklad_limbiczny',      label: 'Układ limbiczny',                      file: 'wiki/neuro/uklad_limbiczny.md'      },
+        { id: 'neuro/cykl_miesiaczkowy',    label: 'Neuropsychologia cyklu miesiączkowego', file: 'wiki/neuro/cykl_miesiaczkowy.md'    },
       ]
     },
     {
@@ -58,6 +59,7 @@ window.SITE_CONFIG = {
         { id: 'cognitive/efekt_ramowania',     label: 'Efekt ramowania',             file: 'wiki/cognitive/efekt_ramowania.md'     },
         { id: 'cognitive/nasa_tlx',            label: 'NASA Task Load Index (TLX)', file: 'wiki/cognitive/nasa_tlx.md'            },
         { id: 'cognitive/iluzje',              label: 'Iluzje i błędy poznawcze',   file: 'wiki/cognitive/iluzje.md'              },
+        { id: 'cognitive/uwaga_mimowolna',     label: 'Uwaga mimowolna',             file: 'wiki/cognitive/uwaga_mimowolna.md'     },
       ]
     },
     {
@@ -198,6 +200,7 @@ window.SITE_CONFIG = {
         { id: 'psychopathology/neurorozwojowe',               label: 'Zaburzenia neurorozwojowe',      file: 'wiki/psychopathology/neurorozwojowe.md'               },
         { id: 'psychopathology/ocd',                          label: 'OCD i pokrewne',                  file: 'wiki/psychopathology/ocd.md'                          },
         { id: 'psychopathology/uzaleznienia_psych',           label: 'Uzależnienia — aspekt psych.',   file: 'wiki/psychopathology/uzaleznienia_psych.md'           },
+        { id: 'psychopathology/depresja_poporodowa',          label: 'Depresja poporodowa',             file: 'wiki/psychopathology/depresja_poporodowa.md'          },
       ]
     },
     {
@@ -368,6 +371,7 @@ window.SITE_CONFIG = {
       { file: 'wiki/neuro/kora_prefrontalna.md', label: 'Kora przedczołowa',   status: 'live' },
       { file: 'wiki/neuro/uklad_limbiczny.md', label: 'Układ limbiczny',       status: 'live' },
       { file: 'wiki/neuro/przesilenie_wiosenne.md', label: 'Neurobiologia przesilenia wiosennego', status: 'live' },
+      { file: 'wiki/neuro/cykl_miesiaczkowy.md', label: 'Neuropsychologia cyklu miesiączkowego', status: 'live' },
     ],
     cognitive: [
       { file: 'wiki/cognitive/pamiec.md',              label: 'Pamięć',               status: 'live' },
@@ -386,6 +390,7 @@ window.SITE_CONFIG = {
       { file: 'wiki/cognitive/efekt_ramowania.md',    label: 'Efekt ramowania',       status: 'live' },
       { file: 'wiki/cognitive/nasa_tlx.md',           label: 'NASA Task Load Index (TLX)', status: 'live' },
       { file: 'wiki/cognitive/iluzje.md',             label: 'Iluzje i błędy poznawcze',   status: 'live' },
+      { file: 'wiki/cognitive/uwaga_mimowolna.md',    label: 'Uwaga mimowolna',             status: 'live' },
     ],
     disorders: [
       { file: 'wiki/disorders/afazje.md',    label: 'Afazje',                 status: 'live' },
@@ -487,6 +492,7 @@ window.SITE_CONFIG = {
       { file: 'wiki/psychopathology/neurorozwojowe.md',            label: 'Zaburzenia neurorozwojowe',   status: 'live' },
       { file: 'wiki/psychopathology/ocd.md',                       label: 'OCD i pokrewne',              status: 'live' },
       { file: 'wiki/psychopathology/uzaleznienia_psych.md',        label: 'Uzależnienia — aspekt psych.',status: 'live' },
+      { file: 'wiki/psychopathology/depresja_poporodowa.md',       label: 'Depresja poporodowa',         status: 'live' },
     ],
     suicidology: [
       { file: 'wiki/suicidology/suicydologia_wprowadzenie.md', label: 'Suicydologia — wprowadzenie', status: 'live' },
@@ -636,6 +642,7 @@ window.SITE_CONFIG = {
             { label: 'Lateralizacja funkcji', id: 'neuro/lateralizacja', status: 'live' },
             { label: 'Kora przedczołowa', id: 'neuro/kora_prefrontalna', status: 'live' },
             { label: 'Neurobiologia przesilenia wiosennego', id: 'neuro/przesilenie_wiosenne', status: 'live' },
+            { label: 'Neuropsychologia cyklu miesiączkowego', id: 'neuro/cykl_miesiaczkowy', status: 'live', desc: 'Wpływ estradiolu i progesteronu na poznanie, nastrój i mózg.' },
             { label: 'Pień mózgu i móżdżek', id: null, status: 'planned', desc: 'Struktury podkorowe i ich funkcje kliniczne.' },
           ]
         },
@@ -709,6 +716,7 @@ window.SITE_CONFIG = {
             { label: 'Zaburzenia odżywiania', id: 'psychopathology/zaburzenia_odzywiania', status: 'live' },
             { label: 'Zaburzenia neurorozwojowe', id: 'psychopathology/neurorozwojowe', status: 'live' },
             { label: 'Uzależnienia — aspekt psychologiczny', id: 'psychopathology/uzaleznienia_psych', status: 'live' },
+            { label: 'Depresja poporodowa', id: 'psychopathology/depresja_poporodowa', status: 'live' },
           ]
         },
         {
@@ -779,6 +787,7 @@ window.SITE_CONFIG = {
             { label: 'Wyobraźnia i reprezentacje', id: 'cognitive/wyobraznia', status: 'live' },
             { label: 'Zmęczenie poznawcze', id: 'cognitive/zmeczenie_poznawcze', status: 'live' },
             { label: 'Iluzje i błędy poznawcze', id: 'cognitive/iluzje', status: 'live' },
+            { label: 'Uwaga mimowolna', id: 'cognitive/uwaga_mimowolna', status: 'live' },
           ]
         },
         {

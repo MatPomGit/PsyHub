@@ -322,6 +322,40 @@ window.SITE_CONFIG = {
       ]
     },
     {
+      section: 'Psychologia Gier Wideo',
+      items: [
+        { id: 'game_psychology/wprowadzenie',          label: 'Psychologia gier wideo — wprow.', file: 'wiki/game_psychology/wprowadzenie.md'          },
+        { id: 'game_psychology/uzaleznienie_od_gier',  label: 'Uzależnienie od gier (IGD)',      file: 'wiki/game_psychology/uzaleznienie_od_gier.md'  },
+        { id: 'game_psychology/agresja_a_gry',         label: 'Agresja a gry wideo',             file: 'wiki/game_psychology/agresja_a_gry.md'         },
+        { id: 'game_psychology/efekty_poznawcze',      label: 'Efekty poznawcze grania',         file: 'wiki/game_psychology/efekty_poznawcze.md'      },
+        { id: 'game_psychology/motywacja_gracza',      label: 'Motywacja gracza',                file: 'wiki/game_psychology/motywacja_gracza.md'      },
+        { id: 'game_psychology/flow_i_immersja',       label: 'Przepływ (flow) i immersja',      file: 'wiki/game_psychology/flow_i_immersja.md'       },
+        { id: 'game_psychology/gry_spolecznosciowe',   label: 'Gry wieloosobowe i aspekty społ.',file: 'wiki/game_psychology/gry_spolecznosciowe.md'   },
+        { id: 'game_psychology/esport',                label: 'Esport i psychologia zawodnika',  file: 'wiki/game_psychology/esport.md'                },
+        { id: 'game_psychology/gry_a_dzieci',          label: 'Gry wideo a dzieci i nastolatki', file: 'wiki/game_psychology/gry_a_dzieci.md'          },
+        { id: 'game_psychology/gender_w_grach',        label: 'Płeć i tożsamość w grach',        file: 'wiki/game_psychology/gender_w_grach.md'        },
+        { id: 'game_psychology/gry_terapeutyczne',     label: 'Gry w terapii i rehabilitacji',   file: 'wiki/game_psychology/gry_terapeutyczne.md'     },
+        { id: 'game_psychology/klasyfikacja_gier',     label: 'Klasyfikacja gier (PEGI, ESRB)',  file: 'wiki/game_psychology/klasyfikacja_gier.md'     },
+      ]
+    },
+    {
+      section: 'Odporność Psychiczna, Mobbing i Wypalenie',
+      items: [
+        { id: 'resilience_mobbing/odpornosc_wprowadzenie',   label: 'Odporność psychiczna — wprow.',        file: 'wiki/resilience_mobbing/odpornosc_wprowadzenie.md'   },
+        { id: 'resilience_mobbing/modele_odpornosci',        label: 'Modele i teorie odporności',           file: 'wiki/resilience_mobbing/modele_odpornosci.md'        },
+        { id: 'resilience_mobbing/budowanie_odpornosci',     label: 'Budowanie odporności psychicznej',     file: 'wiki/resilience_mobbing/budowanie_odpornosci.md'     },
+        { id: 'resilience_mobbing/przemoc_psychiczna',       label: 'Przemoc psychiczna — definicja',       file: 'wiki/resilience_mobbing/przemoc_psychiczna.md'       },
+        { id: 'resilience_mobbing/mobbing_definicja',        label: 'Mobbing — definicja, rodzaje, fazy',   file: 'wiki/resilience_mobbing/mobbing_definicja.md'        },
+        { id: 'resilience_mobbing/mobbing_skutki',           label: 'Skutki psychologiczne mobbingu',       file: 'wiki/resilience_mobbing/mobbing_skutki.md'           },
+        { id: 'resilience_mobbing/mobbing_interwencja',      label: 'Interwencja i zapobieganie mobbingowi',file: 'wiki/resilience_mobbing/mobbing_interwencja.md'      },
+        { id: 'resilience_mobbing/wypalenie_zawodowe',       label: 'Wypalenie zawodowe — definicja',       file: 'wiki/resilience_mobbing/wypalenie_zawodowe.md'       },
+        { id: 'resilience_mobbing/fazy_wypalenia',           label: 'Fazy i wymiary wypalenia',             file: 'wiki/resilience_mobbing/fazy_wypalenia.md'           },
+        { id: 'resilience_mobbing/wypalenie_zawody',         label: 'Wypalenie w wybranych zawodach',       file: 'wiki/resilience_mobbing/wypalenie_zawody.md'         },
+        { id: 'resilience_mobbing/profilaktyka_wypalenia',   label: 'Profilaktyka wypalenia zawodowego',    file: 'wiki/resilience_mobbing/profilaktyka_wypalenia.md'   },
+        { id: 'resilience_mobbing/wsparcie_psychologiczne',  label: 'Wsparcie psychologiczne ofiar',        file: 'wiki/resilience_mobbing/wsparcie_psychologiczne.md'  },
+      ]
+    },
+    {
       section: 'Encyklopedie',
       items: [
         { id: 'wiki-index/neuropsychologia', label: 'WIKI — Neuropsychologia',      wiki: 'neuropsychologia' },
@@ -338,18 +372,20 @@ window.SITE_CONFIG = {
         { id: 'wiki-index/terapie_artystyczne', label: 'WIKI — Terapie artystyczne', wiki: 'terapie_artystyczne' },
         { id: 'wiki-index/etyka',            label: 'WIKI — Etyka zawodowa',        wiki: 'etyka'            },
         { id: 'wiki-index/slownik',          label: 'WIKI — Słownik terminów',      wiki: 'slownik'          },
-        { id: 'wiki-index/zdrowie',          label: 'WIKI — Psych. zdrowia',        wiki: 'zdrowie'          },
-        { id: 'wiki-index/psychosomatics',   label: 'WIKI — Psychosomatyka',            wiki: 'psychosomatics'   },
-        { id: 'wiki-index/niepelnosprawnosc', label: 'WIKI — Psych. niepełnosprawności', wiki: 'niepelnosprawnosc' },
-        { id: 'wiki-index/psychosomatics',   label: 'WIKI — Psychosomatyka',        wiki: 'psychosomatics'   },
-        { id: 'wiki-index/geropsychology',   label: 'WIKI — Psych. osób starszych', wiki: 'geropsychology'   },
+        { id: 'wiki-index/zdrowie',          label: 'WIKI — Psych. zdrowia',              wiki: 'zdrowie'          },
+        { id: 'wiki-index/psychosomatics',   label: 'WIKI — Psychosomatyka',              wiki: 'psychosomatics'   },
+        { id: 'wiki-index/niepelnosprawnosc', label: 'WIKI — Psych. niepełnosprawności',  wiki: 'niepelnosprawnosc' },
+        { id: 'wiki-index/geropsychology',   label: 'WIKI — Psych. osób starszych',       wiki: 'geropsychology'   },
+        { id: 'wiki-index/gry_wideo',        label: 'WIKI — Psych. gier wideo',           wiki: 'gry_wideo'        },
+        { id: 'wiki-index/odpornosc_mobbing',label: 'WIKI — Odporność, mobbing, wypalenie', wiki: 'odpornosc_mobbing' },
       ]
     },
     {
       section: 'Referencje',
       items: [
-        { id: 'reference/zakres',    label: 'Zakres wiedzy', file: 'wiki/reference/zakres.md'    },
-        { id: 'reference/literatura',label: 'Literatura',    file: 'wiki/reference/literatura.md'},
+        { id: 'reference/zakres',          label: 'Zakres wiedzy',                 file: 'wiki/reference/zakres.md'          },
+        { id: 'reference/literatura',      label: 'Literatura',                    file: 'wiki/reference/literatura.md'      },
+        { id: 'reference/przepisy_zawod',  label: 'Przepisy i zasady pracy psychologa', file: 'wiki/reference/przepisy_zawod.md'  },
       ]
     },
   ],
@@ -602,8 +638,9 @@ window.SITE_CONFIG = {
       { file: 'wiki/cases/split_brain.md', label: 'Rozdzielony mózg', status: 'live' },
     ],
     reference: [
-      { file: 'wiki/reference/zakres.md',    label: 'Zakres wiedzy', status: 'live' },
-      { file: 'wiki/reference/literatura.md',label: 'Literatura',    status: 'live' },
+      { file: 'wiki/reference/zakres.md',         label: 'Zakres wiedzy',                      status: 'live' },
+      { file: 'wiki/reference/literatura.md',     label: 'Literatura',                         status: 'live' },
+      { file: 'wiki/reference/przepisy_zawod.md', label: 'Przepisy i zasady pracy psychologa', status: 'live' },
     ],
     geropsychology: [
       { file: 'wiki/geropsychology/wprowadzenie.md',               label: 'Psychologia starości — wprowadzenie',  status: 'live' },
@@ -618,6 +655,34 @@ window.SITE_CONFIG = {
       { file: 'wiki/geropsychology/adaptacja_do_starosci.md',      label: 'Adaptacja do starości i rezyliencja',  status: 'live' },
       { file: 'wiki/geropsychology/interwencje_terapeutyczne.md',  label: 'Interwencje terapeutyczne',            status: 'live' },
       { file: 'wiki/geropsychology/opieka_nad_opiekunami.md',      label: 'Wypalenie i wsparcie opiekunów',       status: 'live' },
+    ],
+    game_psychology: [
+      { file: 'wiki/game_psychology/wprowadzenie.md',         label: 'Psychologia gier wideo — wprowadzenie', status: 'live' },
+      { file: 'wiki/game_psychology/uzaleznienie_od_gier.md', label: 'Uzależnienie od gier (IGD)',            status: 'live' },
+      { file: 'wiki/game_psychology/agresja_a_gry.md',        label: 'Agresja a gry wideo',                  status: 'live' },
+      { file: 'wiki/game_psychology/efekty_poznawcze.md',     label: 'Efekty poznawcze grania',              status: 'live' },
+      { file: 'wiki/game_psychology/motywacja_gracza.md',     label: 'Motywacja gracza',                     status: 'live' },
+      { file: 'wiki/game_psychology/flow_i_immersja.md',      label: 'Przepływ (flow) i immersja',           status: 'live' },
+      { file: 'wiki/game_psychology/gry_spolecznosciowe.md',  label: 'Gry wieloosobowe i aspekty społeczne', status: 'live' },
+      { file: 'wiki/game_psychology/esport.md',               label: 'Esport i psychologia zawodnika',       status: 'live' },
+      { file: 'wiki/game_psychology/gry_a_dzieci.md',         label: 'Gry wideo a dzieci i nastolatki',      status: 'live' },
+      { file: 'wiki/game_psychology/gender_w_grach.md',       label: 'Płeć i tożsamość w grach',             status: 'live' },
+      { file: 'wiki/game_psychology/gry_terapeutyczne.md',    label: 'Gry w terapii i rehabilitacji',        status: 'live' },
+      { file: 'wiki/game_psychology/klasyfikacja_gier.md',    label: 'Klasyfikacja gier (PEGI, ESRB)',        status: 'live' },
+    ],
+    resilience_mobbing: [
+      { file: 'wiki/resilience_mobbing/odpornosc_wprowadzenie.md',  label: 'Odporność psychiczna — wprowadzenie',      status: 'live' },
+      { file: 'wiki/resilience_mobbing/modele_odpornosci.md',       label: 'Modele i teorie odporności',               status: 'live' },
+      { file: 'wiki/resilience_mobbing/budowanie_odpornosci.md',    label: 'Budowanie odporności psychicznej',         status: 'live' },
+      { file: 'wiki/resilience_mobbing/przemoc_psychiczna.md',      label: 'Przemoc psychiczna — definicja i formy',   status: 'live' },
+      { file: 'wiki/resilience_mobbing/mobbing_definicja.md',       label: 'Mobbing — definicja, rodzaje i fazy',      status: 'live' },
+      { file: 'wiki/resilience_mobbing/mobbing_skutki.md',          label: 'Skutki psychologiczne mobbingu',           status: 'live' },
+      { file: 'wiki/resilience_mobbing/mobbing_interwencja.md',     label: 'Interwencja i zapobieganie mobbingowi',    status: 'live' },
+      { file: 'wiki/resilience_mobbing/wypalenie_zawodowe.md',      label: 'Wypalenie zawodowe — definicja i modele',  status: 'live' },
+      { file: 'wiki/resilience_mobbing/fazy_wypalenia.md',          label: 'Fazy i wymiary wypalenia zawodowego',      status: 'live' },
+      { file: 'wiki/resilience_mobbing/wypalenie_zawody.md',        label: 'Wypalenie w wybranych zawodach',           status: 'live' },
+      { file: 'wiki/resilience_mobbing/profilaktyka_wypalenia.md',  label: 'Profilaktyka wypalenia zawodowego',        status: 'live' },
+      { file: 'wiki/resilience_mobbing/wsparcie_psychologiczne.md', label: 'Wsparcie psychologiczne ofiar',            status: 'live' },
     ],
   },
 
@@ -1139,6 +1204,7 @@ window.SITE_CONFIG = {
         {
           title: 'Praktyka',
           articles: [
+            { label: 'Przepisy i zasady pracy psychologa w Polsce i NFZ', id: 'reference/przepisy_zawod', status: 'live' },
             { label: 'Tajemnica zawodowa i jej granice', id: null, status: 'planned' },
             { label: 'Świadoma zgoda', id: null, status: 'planned' },
             { label: 'Granice relacji terapeutycznej', id: null, status: 'planned' },
@@ -1378,6 +1444,84 @@ window.SITE_CONFIG = {
             { label: 'Interwencje terapeutyczne',             id: 'geropsychology/interwencje_terapeutyczne', status: 'live' },
             { label: 'Psychologia umierania i śmierci',       id: 'geropsychology/umieranie_smierc',       status: 'live' },
             { label: 'Wypalenie i wsparcie opiekunów',        id: 'geropsychology/opieka_nad_opiekunami',  status: 'live' },
+          ]
+        },
+      ]
+    },
+
+    gry_wideo: {
+      title: 'WIKI — Psychologia gier wideo',
+      intro: 'Psychologia gier wideo bada wpływ gier komputerowych i elektronicznych na procesy poznawcze, emocjonalne i społeczne — od uzależnień i agresji przez motywację i flow po zastosowania terapeutyczne.',
+      sections: [
+        {
+          title: 'Podstawy i wprowadzenie',
+          articles: [
+            { label: 'Psychologia gier wideo — wprowadzenie', id: 'game_psychology/wprowadzenie',         status: 'live' },
+            { label: 'Klasyfikacja gier (PEGI, ESRB)',         id: 'game_psychology/klasyfikacja_gier',    status: 'live' },
+          ]
+        },
+        {
+          title: 'Efekty psychologiczne grania',
+          articles: [
+            { label: 'Agresja a gry wideo',            id: 'game_psychology/agresja_a_gry',       status: 'live' },
+            { label: 'Efekty poznawcze grania',         id: 'game_psychology/efekty_poznawcze',    status: 'live' },
+            { label: 'Przepływ (flow) i immersja',      id: 'game_psychology/flow_i_immersja',     status: 'live' },
+          ]
+        },
+        {
+          title: 'Motywacja i zachowanie gracza',
+          articles: [
+            { label: 'Motywacja gracza',                    id: 'game_psychology/motywacja_gracza',      status: 'live' },
+            { label: 'Uzależnienie od gier (IGD)',           id: 'game_psychology/uzaleznienie_od_gier',  status: 'live' },
+            { label: 'Płeć i tożsamość w grach',            id: 'game_psychology/gender_w_grach',        status: 'live' },
+          ]
+        },
+        {
+          title: 'Kontekst społeczny i wiekowy',
+          articles: [
+            { label: 'Gry wieloosobowe i aspekty społeczne', id: 'game_psychology/gry_spolecznosciowe',  status: 'live' },
+            { label: 'Esport i psychologia zawodnika',        id: 'game_psychology/esport',               status: 'live' },
+            { label: 'Gry wideo a dzieci i nastolatki',       id: 'game_psychology/gry_a_dzieci',         status: 'live' },
+          ]
+        },
+        {
+          title: 'Zastosowania terapeutyczne',
+          articles: [
+            { label: 'Gry w terapii i rehabilitacji', id: 'game_psychology/gry_terapeutyczne', status: 'live' },
+          ]
+        },
+      ]
+    },
+
+    odpornosc_mobbing: {
+      title: 'WIKI — Odporność psychiczna, mobbing i wypalenie zawodowe',
+      intro: 'Encyklopedia obejmuje trzy powiązane obszary: odporność psychiczną (resilience) jako zasób chroniący, psychologiczne aspekty przemocy psychicznej i mobbingu w miejscu pracy oraz wypalenie zawodowe — mechanizmy, skutki i profilaktykę.',
+      sections: [
+        {
+          title: 'Odporność psychiczna',
+          articles: [
+            { label: 'Odporność psychiczna — wprowadzenie',  id: 'resilience_mobbing/odpornosc_wprowadzenie', status: 'live' },
+            { label: 'Modele i teorie odporności',            id: 'resilience_mobbing/modele_odpornosci',      status: 'live' },
+            { label: 'Budowanie odporności psychicznej',      id: 'resilience_mobbing/budowanie_odpornosci',   status: 'live' },
+          ]
+        },
+        {
+          title: 'Przemoc psychiczna i mobbing',
+          articles: [
+            { label: 'Przemoc psychiczna — definicja i formy',   id: 'resilience_mobbing/przemoc_psychiczna',    status: 'live' },
+            { label: 'Mobbing — definicja, rodzaje i fazy',      id: 'resilience_mobbing/mobbing_definicja',     status: 'live' },
+            { label: 'Skutki psychologiczne mobbingu',           id: 'resilience_mobbing/mobbing_skutki',        status: 'live' },
+            { label: 'Interwencja i zapobieganie mobbingowi',    id: 'resilience_mobbing/mobbing_interwencja',   status: 'live' },
+            { label: 'Wsparcie psychologiczne ofiar',            id: 'resilience_mobbing/wsparcie_psychologiczne', status: 'live' },
+          ]
+        },
+        {
+          title: 'Wypalenie zawodowe',
+          articles: [
+            { label: 'Wypalenie zawodowe — definicja i modele',  id: 'resilience_mobbing/wypalenie_zawodowe',    status: 'live' },
+            { label: 'Fazy i wymiary wypalenia zawodowego',      id: 'resilience_mobbing/fazy_wypalenia',        status: 'live' },
+            { label: 'Wypalenie w wybranych zawodach',           id: 'resilience_mobbing/wypalenie_zawody',      status: 'live' },
+            { label: 'Profilaktyka wypalenia zawodowego',        id: 'resilience_mobbing/profilaktyka_wypalenia', status: 'live' },
           ]
         },
       ]

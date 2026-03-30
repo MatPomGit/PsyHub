@@ -348,8 +348,9 @@ window.SITE_CONFIG = {
     {
       section: 'Referencje',
       items: [
-        { id: 'reference/zakres',    label: 'Zakres wiedzy', file: 'wiki/reference/zakres.md'    },
-        { id: 'reference/literatura',label: 'Literatura',    file: 'wiki/reference/literatura.md'},
+        { id: 'reference/zakres',          label: 'Zakres wiedzy',                 file: 'wiki/reference/zakres.md'          },
+        { id: 'reference/literatura',      label: 'Literatura',                    file: 'wiki/reference/literatura.md'      },
+        { id: 'reference/przepisy_zawod',  label: 'Przepisy i zasady pracy psychologa', file: 'wiki/reference/przepisy_zawod.md'  },
       ]
     },
   ],
@@ -602,8 +603,9 @@ window.SITE_CONFIG = {
       { file: 'wiki/cases/split_brain.md', label: 'Rozdzielony mózg', status: 'live' },
     ],
     reference: [
-      { file: 'wiki/reference/zakres.md',    label: 'Zakres wiedzy', status: 'live' },
-      { file: 'wiki/reference/literatura.md',label: 'Literatura',    status: 'live' },
+      { file: 'wiki/reference/zakres.md',         label: 'Zakres wiedzy',                      status: 'live' },
+      { file: 'wiki/reference/literatura.md',     label: 'Literatura',                         status: 'live' },
+      { file: 'wiki/reference/przepisy_zawod.md', label: 'Przepisy i zasady pracy psychologa', status: 'live' },
     ],
     geropsychology: [
       { file: 'wiki/geropsychology/wprowadzenie.md',               label: 'Psychologia starości — wprowadzenie',  status: 'live' },
@@ -1139,6 +1141,7 @@ window.SITE_CONFIG = {
         {
           title: 'Praktyka',
           articles: [
+            { label: 'Przepisy i zasady pracy psychologa w Polsce i NFZ', id: 'reference/przepisy_zawod', status: 'live' },
             { label: 'Tajemnica zawodowa i jej granice', id: null, status: 'planned' },
             { label: 'Świadoma zgoda', id: null, status: 'planned' },
             { label: 'Granice relacji terapeutycznej', id: null, status: 'planned' },

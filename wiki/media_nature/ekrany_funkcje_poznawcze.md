@@ -12,7 +12,7 @@ Odpowiedź nie jest prosta. Badania ujawniają zarówno korzyści, jak i koszty 
 
 Uwaga jest zasobem ograniczonym. Modele poznawcze, od klasycznego modelu Atkinson-Shiffrin po współczesne teorie uwagi kierowanej, zgodnie podkreślają, że zdolność do świadomego, celowego skupienia jest podatna na wyczerpanie.
 
-Środowisko cyfrowe jest zaprojektowane tak, by stale konkurować o tę uwagę. Powiadomienia, autoplay, nieskończone przewijanie — mechanizmy te kradną zasoby uwagi, które mogłyby zostać przeznaczone na głębsze przetwarzanie informacji. Badania Gloii Mark z UC Irvine wykazały, że po każdej przerwie spowodowanej powiadomieniem potrzebujemy średnio 23 minut, by w pełni powrócić do poprzedniego zadania.
+Środowisko cyfrowe jest zaprojektowane tak, by stale konkurować o tę uwagę. Powiadomienia, autoplay, nieskończone przewijanie — mechanizmy te kradną zasoby uwagi, które mogłyby zostać przeznaczone na głębsze przetwarzanie informacji. Badania Glorii Mark z UC Irvine wykazały, że po każdej przerwie spowodowanej powiadomieniem potrzebujemy średnio 23 minut, by w pełni powrócić do poprzedniego zadania.
 
 Szczególnie istotne jest pojęcie **uwagi kierowanej** (directed attention) w kontekście teorii Kaplana: jest to rodzaj uwagi wymagający wysiłku, niezbędny do pracy i nauki. Ekrany cyfrowe angażują głównie uwagę mimowolną (bodźce nowości, ruchu, kontrastu), co daje chwilowe poczucie stymulacji, ale nie regeneruje zasobów uwagi kierowanej.
 

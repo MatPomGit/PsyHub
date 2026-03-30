@@ -44,7 +44,7 @@ Badania Batson i in. wykazały, że czytanie narracji z perspektywy postaci z ma
 
 ## Fikcja literacka a fikcja popularna
 
-Czy *Harry Potter* i Dostojewski działają tak samo? Badania wskazują, że nie. David Comer Kidd i Emanuele Castano z New School for Social Research przeprowadzili w 2013 roku serię eksperymentów, w których uczestnicy losowo przypisywani byli do czytania fragementu fikcji literackiej, fikcji popularnej, non-fiction lub braku czytania.
+Czy *Harry Potter* i Dostojewski działają tak samo? Badania wskazują, że nie. David Comer Kidd i Emanuele Castano z New School for Social Research przeprowadzili w 2013 roku serię eksperymentów, w których uczestnicy losowo przypisywani byli do czytania fragmentu fikcji literackiej, fikcji popularnej, non-fiction lub braku czytania.
 
 **Wyniki:**
 

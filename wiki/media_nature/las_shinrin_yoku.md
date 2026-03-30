@@ -2,7 +2,7 @@
 
 ## Czym jest shinrin-yoku?
 
-**Shinrin-yoku** (森林浴) — dosłownie „kąpiel leśna" lub „wchłanianie lasu" — to praktyka originating w Japonii w latach 80. XX wieku. Nie jest sportem, medytacją ani turystyką. Jest świadomym, uważnym przebywaniem w środowisku leśnym: powolnym spacerem, oddychaniem leśnym powietrzem, angażowaniem wszystkich zmysłów — wzroku, słuchu, węchu, dotyku.
+**Shinrin-yoku** (森林浴) — dosłownie „kąpiel leśna" lub „wchłanianie lasu" — to praktyka wywodząca się z Japonii, rozwinięta w latach 80. XX wieku. Nie jest sportem, medytacją ani turystyką. Jest świadomym, uważnym przebywaniem w środowisku leśnym: powolnym spacerem, oddychaniem leśnym powietrzem, angażowaniem wszystkich zmysłów — wzroku, słuchu, węchu, dotyku.
 
 W 1982 roku japońska Agencja Leśnictwa (*Rincho*) oficjalnie promowała shinrin-yoku jako element polityki zdrowia publicznego. Profesor Yoshifumi Miyazaki z Chiba University i doktor Qing Li z Nippon Medical School poświęcili dekady na naukowe badanie jej efektów fizjologicznych i psychologicznych. Dziś shinrin-yoku jest tematem setek publikacji naukowych i rosnącej liczby programów terapeutycznych na całym świecie.
 

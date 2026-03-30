@@ -22,7 +22,7 @@ Mechanizm jest prosty, ale niszczący dla produktywności: każde przerwanie uwa
 
 ## Pamięć i efekt cyfrowej amnezji
 
-Smartfon stał się zewnętrzną pamięcią. Nie zapamiętujemy numerów telefonów, dat, tras, bo wiemy, że możemy je natychmiast odnaleźć. Badanie przeprowadzone przez Kaspersky Lab w 2015 roku wprowdziło pojęcie **cyfrowej amnezji**: 91% respondentów przyznało, że zdarza im się nie pamiętać informacji, bo wiedzą, że telefon je przechowa.
+Smartfon stał się zewnętrzną pamięcią. Nie zapamiętujemy numerów telefonów, dat, tras, bo wiemy, że możemy je natychmiast odnaleźć. Badanie przeprowadzone przez Kaspersky Lab w 2015 roku wprowadziło pojęcie **cyfrowej amnezji**: 91% respondentów przyznało, że zdarza im się nie pamiętać informacji, bo wiedzą, że telefon je przechowa.
 
 Efekt ten jest psychologicznie głębszy niż zwykłe zapominanie. Betsy Sparrow i Daniel Wegner wykazali, że:
 
@@ -44,7 +44,7 @@ Badania Jean Twenge prowadzone na próbach przekraczających milion nastolatków
 
 ## Dopamina i pętle nagradzania
 
-Smartfony są zaprojektowane w oparciu o mechanizmy wzmocnienia — te same, które regulują zachowania uzależniające. Tristan Harris, były specjalista ds. etyki projektu w Google, opisuje, jak aplikacje wykorzystują **harmonogramy wzmocnienia zmiennego** (*variable ratio reinforcement*): nigdy nie wiadomo, czy przy kolejnym przesuunięciu kciukiem w górę pojawi się nowa wiadomość, polubienie czy ciekawy post.
+Smartfony są zaprojektowane w oparciu o mechanizmy wzmocnienia — te same, które regulują zachowania uzależniające. Tristan Harris, były specjalista ds. etyki projektu w Google, opisuje, jak aplikacje wykorzystują **harmonogramy wzmocnienia zmiennego** (*variable ratio reinforcement*): nigdy nie wiadomo, czy przy kolejnym przesunięciu kciukiem w górę pojawi się nowa wiadomość, polubienie czy ciekawy post.
 
 Ten typ harmonogramu jest najsilniejszym wzmacniaczem zachowania — silniejszym nawet niż stała nagroda. Slot machine działa na tej samej zasadzie. Wynikiem jest:
 

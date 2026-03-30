@@ -100,7 +100,7 @@ W Polsce psychologia gier wideo zyskuje coraz więcej uwagi akademickiej. Polski
 
 Specyfika polskiego rynku obejmuje:
 
-- Wysokie penetrowanie gier PC, szczególnie wśród mężczyzn
+- Wysoka penetracja rynku gier PC, szczególnie wśród mężczyzn
 - Silna scena esportowa (m.in. drużyny w CS2 i League of Legends)
 - Rosnące zainteresowanie gier polskich deweloperów (CD Projekt RED z serią *Wiedźmin* i *Cyberpunk 2077*)
 - Aktywne środowiska twórcze i akademickie skupione wokół game studies

@@ -206,6 +206,7 @@ window.SITE_CONFIG = {
         { id: 'psychopathology/przymus_powtarzania',          label: 'Przymus powtarzania',             file: 'wiki/psychopathology/przymus_powtarzania.md'          },
         { id: 'psychopathology/wiktymizacja',                 label: 'Wiktymizacja',                    file: 'wiki/psychopathology/wiktymizacja.md'                  },
         { id: 'psychopathology/wyuczona_bezradnosc',          label: 'Wyuczona bezradność',             file: 'wiki/psychopathology/wyuczona_bezradnosc.md'           },
+        { id: 'psychopathology/dezintegracja_pozytywna',      label: 'Dezintegracja pozytywna',         file: 'wiki/psychopathology/dezintegracja_pozytywna.md'       },
       ]
     },
     {
@@ -555,6 +556,7 @@ window.SITE_CONFIG = {
       { file: 'wiki/psychopathology/przymus_powtarzania.md',       label: 'Przymus powtarzania',         status: 'live' },
       { file: 'wiki/psychopathology/wiktymizacja.md',               label: 'Wiktymizacja',                status: 'live' },
       { file: 'wiki/psychopathology/wyuczona_bezradnosc.md',        label: 'Wyuczona bezradność',         status: 'live' },
+      { file: 'wiki/psychopathology/dezintegracja_pozytywna.md',    label: 'Dezintegracja pozytywna',     status: 'live' },
     ],
     suicidology: [
       { file: 'wiki/suicidology/suicydologia_wprowadzenie.md', label: 'Suicydologia — wprowadzenie', status: 'live' },
@@ -826,6 +828,7 @@ window.SITE_CONFIG = {
             { label: 'Przymus powtarzania', id: 'psychopathology/przymus_powtarzania', status: 'live' },
             { label: 'Wiktymizacja', id: 'psychopathology/wiktymizacja', status: 'live' },
             { label: 'Wyuczona bezradność', id: 'psychopathology/wyuczona_bezradnosc', status: 'live' },
+            { label: 'Dezintegracja pozytywna', id: 'psychopathology/dezintegracja_pozytywna', status: 'live' },
           ]
         },
         {

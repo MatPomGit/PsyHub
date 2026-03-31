@@ -1,1 +1,1 @@
-# Model biopsychospołeczny
+# Model biopsychospo≈Çeczny

@@ -1,1 +1,1 @@
-# Wsparcie społeczne a zdrowie
+# Wsparcie spo≈Çeczne a zdrowie

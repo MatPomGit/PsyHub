@@ -397,6 +397,23 @@ window.SITE_CONFIG = {
       ]
     },
     {
+      section: 'Psychologia Sztucznej Inteligencji',
+      items: [
+        { id: 'ai_psychology/wprowadzenie',           label: 'Psychologia AI — wprowadzenie',             file: 'wiki/ai_psychology/wprowadzenie.md'           },
+        { id: 'ai_psychology/historia_ai',            label: 'Historia AI i psychologia',                 file: 'wiki/ai_psychology/historia_ai.md'            },
+        { id: 'ai_psychology/czlowiek_a_ai',          label: 'Interakcja człowiek-AI',                    file: 'wiki/ai_psychology/czlowiek_a_ai.md'          },
+        { id: 'ai_psychology/zaufanie_do_ai',         label: 'Zaufanie do sztucznej inteligencji',        file: 'wiki/ai_psychology/zaufanie_do_ai.md'         },
+        { id: 'ai_psychology/uprzedzenia_ai',         label: 'Uprzedzenia i błędy poznawcze w AI',        file: 'wiki/ai_psychology/uprzedzenia_ai.md'         },
+        { id: 'ai_psychology/etyka_ai',               label: 'Etyka AI z perspektywy psychologicznej',    file: 'wiki/ai_psychology/etyka_ai.md'               },
+        { id: 'ai_psychology/ai_emocje',              label: 'AI a emocje i rozumienie emocji',           file: 'wiki/ai_psychology/ai_emocje.md'              },
+        { id: 'ai_psychology/decyzje_ai',             label: 'AI a podejmowanie decyzji',                 file: 'wiki/ai_psychology/decyzje_ai.md'             },
+        { id: 'ai_psychology/ai_w_terapii',           label: 'AI w psychoterapii i diagnostyce',          file: 'wiki/ai_psychology/ai_w_terapii.md'           },
+        { id: 'ai_psychology/ai_poznawcze',           label: 'Poznawcze aspekty działania AI',            file: 'wiki/ai_psychology/ai_poznawcze.md'           },
+        { id: 'ai_psychology/antropomorfizacja_ai',   label: 'Antropomorfizacja AI',                      file: 'wiki/ai_psychology/antropomorfizacja_ai.md'   },
+        { id: 'ai_psychology/przyszlosc_ai',          label: 'Przyszłość relacji człowiek-AI',            file: 'wiki/ai_psychology/przyszlosc_ai.md'          },
+      ]
+    },
+    {
       section: 'Encyklopedie',
       items: [
         { id: 'wiki-index/neuropsychologia', label: 'WIKI — Neuropsychologia',      wiki: 'neuropsychologia' },
@@ -421,6 +438,7 @@ window.SITE_CONFIG = {
         { id: 'wiki-index/odpornosc_mobbing',label: 'WIKI — Odporność, mobbing, wypalenie', wiki: 'odpornosc_mobbing' },
         { id: 'wiki-index/media_natura',     label: 'WIKI — Ekrany, książki i natura',      wiki: 'media_natura'      },
         { id: 'wiki-index/psych_pozytywna',  label: 'WIKI — Psychologia pozytywna',         wiki: 'psych_pozytywna'   },
+        { id: 'wiki-index/psych_ai',         label: 'WIKI — Psychologia AI',                wiki: 'psych_ai'          },
       ]
     },
     {
@@ -761,6 +779,20 @@ window.SITE_CONFIG = {
       { file: 'wiki/positive_psychology/sens_i_cel.md',             label: 'Sens życia i poczucie celu',             status: 'live' },
       { file: 'wiki/positive_psychology/relacje_pozytywne.md',      label: 'Pozytywne relacje i miłość',             status: 'live' },
       { file: 'wiki/positive_psychology/interwencje_pozytywne.md',  label: 'Interwencje psychologii pozytywnej',     status: 'live' },
+    ],
+    ai_psychology: [
+      { file: 'wiki/ai_psychology/wprowadzenie.md',          label: 'Psychologia AI — wprowadzenie',             status: 'live' },
+      { file: 'wiki/ai_psychology/historia_ai.md',           label: 'Historia AI i psychologia',                 status: 'live' },
+      { file: 'wiki/ai_psychology/czlowiek_a_ai.md',         label: 'Interakcja człowiek-AI',                    status: 'live' },
+      { file: 'wiki/ai_psychology/zaufanie_do_ai.md',        label: 'Zaufanie do sztucznej inteligencji',        status: 'live' },
+      { file: 'wiki/ai_psychology/uprzedzenia_ai.md',        label: 'Uprzedzenia i błędy poznawcze w AI',        status: 'live' },
+      { file: 'wiki/ai_psychology/etyka_ai.md',              label: 'Etyka AI z perspektywy psychologicznej',    status: 'live' },
+      { file: 'wiki/ai_psychology/ai_emocje.md',             label: 'AI a emocje i rozumienie emocji',           status: 'live' },
+      { file: 'wiki/ai_psychology/decyzje_ai.md',            label: 'AI a podejmowanie decyzji',                 status: 'live' },
+      { file: 'wiki/ai_psychology/ai_w_terapii.md',          label: 'AI w psychoterapii i diagnostyce',          status: 'live' },
+      { file: 'wiki/ai_psychology/ai_poznawcze.md',          label: 'Poznawcze aspekty działania AI',            status: 'live' },
+      { file: 'wiki/ai_psychology/antropomorfizacja_ai.md',  label: 'Antropomorfizacja AI',                      status: 'live' },
+      { file: 'wiki/ai_psychology/przyszlosc_ai.md',         label: 'Przyszłość relacji człowiek-AI',            status: 'live' },
     ],
   },
 
@@ -1678,6 +1710,45 @@ window.SITE_CONFIG = {
           title: 'Interwencje',
           articles: [
             { label: 'Interwencje psychologii pozytywnej', id: 'positive_psychology/interwencje_pozytywne', status: 'live' },
+          ]
+        },
+      ]
+    },
+
+    psych_ai: {
+      title: 'WIKI — Psychologia sztucznej inteligencji',
+      intro: 'Psychologia sztucznej inteligencji bada psychologiczne aspekty systemów AI — od procesów poznawczych i antropomorfizacji po etykę, zaufanie i przyszłość relacji człowiek-maszyna. Encyklopedia obejmuje zarówno wpływ AI na człowieka, jak i psychologiczne mechanizmy projektowania i użytkowania systemów inteligentnych.',
+      sections: [
+        {
+          title: 'Podstawy i historia',
+          articles: [
+            { label: 'Psychologia AI — wprowadzenie',   id: 'ai_psychology/wprowadzenie',  status: 'live' },
+            { label: 'Historia AI i psychologia',       id: 'ai_psychology/historia_ai',   status: 'live' },
+          ]
+        },
+        {
+          title: 'Procesy poznawcze i decyzje',
+          articles: [
+            { label: 'Poznawcze aspekty działania AI',  id: 'ai_psychology/ai_poznawcze',  status: 'live' },
+            { label: 'AI a podejmowanie decyzji',       id: 'ai_psychology/decyzje_ai',    status: 'live' },
+          ]
+        },
+        {
+          title: 'Relacja człowiek-AI',
+          articles: [
+            { label: 'Interakcja człowiek-AI',                  id: 'ai_psychology/czlowiek_a_ai',        status: 'live' },
+            { label: 'Zaufanie do sztucznej inteligencji',      id: 'ai_psychology/zaufanie_do_ai',       status: 'live' },
+            { label: 'Antropomorfizacja AI',                    id: 'ai_psychology/antropomorfizacja_ai', status: 'live' },
+            { label: 'AI a emocje i rozumienie emocji',         id: 'ai_psychology/ai_emocje',            status: 'live' },
+          ]
+        },
+        {
+          title: 'Etyka, uprzedzenia i zastosowania',
+          articles: [
+            { label: 'Uprzedzenia i błędy poznawcze w AI',      id: 'ai_psychology/uprzedzenia_ai', status: 'live' },
+            { label: 'Etyka AI z perspektywy psychologicznej',  id: 'ai_psychology/etyka_ai',       status: 'live' },
+            { label: 'AI w psychoterapii i diagnostyce',        id: 'ai_psychology/ai_w_terapii',   status: 'live' },
+            { label: 'Przyszłość relacji człowiek-AI',          id: 'ai_psychology/przyszlosc_ai',  status: 'live' },
           ]
         },
       ]

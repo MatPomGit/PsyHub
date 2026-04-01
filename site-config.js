@@ -414,6 +414,23 @@ window.SITE_CONFIG = {
       ]
     },
     {
+      section: 'Robotyka Afektywna i Kognitywistyka',
+      items: [
+        { id: 'affective_robotics/wprowadzenie',                    label: 'Robotyka afektywna — wprowadzenie',         file: 'wiki/affective_robotics/wprowadzenie.md'                    },
+        { id: 'affective_robotics/historia_robotyki_afektywnej',    label: 'Historia robotyki afektywnej',              file: 'wiki/affective_robotics/historia_robotyki_afektywnej.md'    },
+        { id: 'affective_robotics/emocje_robotow',                  label: 'Emocje w robotach',                         file: 'wiki/affective_robotics/emocje_robotow.md'                  },
+        { id: 'affective_robotics/dolina_niesamowitosci',           label: 'Dolina niesamowitości',                     file: 'wiki/affective_robotics/dolina_niesamowitosci.md'           },
+        { id: 'affective_robotics/roboty_spoleczne',                label: 'Roboty społeczne i HRI',                    file: 'wiki/affective_robotics/roboty_spoleczne.md'                },
+        { id: 'affective_robotics/kognitywistyka_obliczeniowa',     label: 'Kognitywistyka obliczeniowa',               file: 'wiki/affective_robotics/kognitywistyka_obliczeniowa.md'     },
+        { id: 'affective_robotics/percepcja_robotow',               label: 'Percepcja i ocena robotów przez ludzi',     file: 'wiki/affective_robotics/percepcja_robotow.md'               },
+        { id: 'affective_robotics/roboty_w_opiece',                 label: 'Roboty w opiece i terapii',                 file: 'wiki/affective_robotics/roboty_w_opiece.md'                 },
+        { id: 'affective_robotics/swiadomosc_maszyn',               label: 'Świadomość i podmiotowość maszyn',          file: 'wiki/affective_robotics/swiadomosc_maszyn.md'               },
+        { id: 'affective_robotics/wspolpraca_czlowiek_robot',       label: 'Współpraca człowiek–robot (HRC)',            file: 'wiki/affective_robotics/wspolpraca_czlowiek_robot.md'       },
+        { id: 'affective_robotics/interfejsy_mozg_maszyna',         label: 'Interfejsy mózg–maszyna (BCI)',              file: 'wiki/affective_robotics/interfejsy_mozg_maszyna.md'         },
+        { id: 'affective_robotics/przyszlosc_robotyki_afektywnej',  label: 'Przyszłość robotyki afektywnej',            file: 'wiki/affective_robotics/przyszlosc_robotyki_afektywnej.md'  },
+      ]
+    },
+    {
       section: 'Encyklopedie',
       items: [
         { id: 'wiki-index/neuropsychologia', label: 'WIKI — Neuropsychologia',      wiki: 'neuropsychologia' },
@@ -439,6 +456,7 @@ window.SITE_CONFIG = {
         { id: 'wiki-index/media_natura',     label: 'WIKI — Ekrany, książki i natura',      wiki: 'media_natura'      },
         { id: 'wiki-index/psych_pozytywna',  label: 'WIKI — Psychologia pozytywna',         wiki: 'psych_pozytywna'   },
         { id: 'wiki-index/psych_ai',         label: 'WIKI — Psychologia AI',                wiki: 'psych_ai'          },
+        { id: 'wiki-index/robotyka_afektywna', label: 'WIKI — Robotyka afektywna',          wiki: 'robotyka_afektywna' },
       ]
     },
     {
@@ -793,6 +811,20 @@ window.SITE_CONFIG = {
       { file: 'wiki/ai_psychology/ai_poznawcze.md',          label: 'Poznawcze aspekty działania AI',            status: 'live' },
       { file: 'wiki/ai_psychology/antropomorfizacja_ai.md',  label: 'Antropomorfizacja AI',                      status: 'live' },
       { file: 'wiki/ai_psychology/przyszlosc_ai.md',         label: 'Przyszłość relacji człowiek-AI',            status: 'live' },
+    ],
+    affective_robotics: [
+      { file: 'wiki/affective_robotics/wprowadzenie.md',                    label: 'Robotyka afektywna — wprowadzenie',         status: 'live' },
+      { file: 'wiki/affective_robotics/historia_robotyki_afektywnej.md',    label: 'Historia robotyki afektywnej',              status: 'live' },
+      { file: 'wiki/affective_robotics/emocje_robotow.md',                  label: 'Emocje w robotach',                         status: 'live' },
+      { file: 'wiki/affective_robotics/dolina_niesamowitosci.md',           label: 'Dolina niesamowitości',                     status: 'live' },
+      { file: 'wiki/affective_robotics/roboty_spoleczne.md',                label: 'Roboty społeczne i HRI',                    status: 'live' },
+      { file: 'wiki/affective_robotics/kognitywistyka_obliczeniowa.md',     label: 'Kognitywistyka obliczeniowa',               status: 'live' },
+      { file: 'wiki/affective_robotics/percepcja_robotow.md',               label: 'Percepcja i ocena robotów przez ludzi',     status: 'live' },
+      { file: 'wiki/affective_robotics/roboty_w_opiece.md',                 label: 'Roboty w opiece i terapii',                 status: 'live' },
+      { file: 'wiki/affective_robotics/swiadomosc_maszyn.md',               label: 'Świadomość i podmiotowość maszyn',          status: 'live' },
+      { file: 'wiki/affective_robotics/wspolpraca_czlowiek_robot.md',       label: 'Współpraca człowiek–robot (HRC)',            status: 'live' },
+      { file: 'wiki/affective_robotics/interfejsy_mozg_maszyna.md',         label: 'Interfejsy mózg–maszyna (BCI)',              status: 'live' },
+      { file: 'wiki/affective_robotics/przyszlosc_robotyki_afektywnej.md',  label: 'Przyszłość robotyki afektywnej',            status: 'live' },
     ],
   },
 
@@ -1749,6 +1781,45 @@ window.SITE_CONFIG = {
             { label: 'Etyka AI z perspektywy psychologicznej',  id: 'ai_psychology/etyka_ai',       status: 'live' },
             { label: 'AI w psychoterapii i diagnostyce',        id: 'ai_psychology/ai_w_terapii',   status: 'live' },
             { label: 'Przyszłość relacji człowiek-AI',          id: 'ai_psychology/przyszlosc_ai',  status: 'live' },
+          ]
+        },
+      ]
+    },
+
+    robotyka_afektywna: {
+      title: 'WIKI — Robotyka afektywna i kognitywistyka',
+      intro: 'Robotyka afektywna i kognitywistyka badają emocjonalne i poznawcze aspekty maszyn oraz interakcji człowiek–robot. Encyklopedia obejmuje zagadnienia od historii robotyki afektywnej, przez doliny niesamowitości i roboty społeczne, po interfejsy mózg–maszyna i filozofię świadomości maszyn.',
+      sections: [
+        {
+          title: 'Podstawy i historia',
+          articles: [
+            { label: 'Robotyka afektywna — wprowadzenie',  id: 'affective_robotics/wprowadzenie',                 status: 'live' },
+            { label: 'Historia robotyki afektywnej',       id: 'affective_robotics/historia_robotyki_afektywnej', status: 'live' },
+            { label: 'Kognitywistyka obliczeniowa',        id: 'affective_robotics/kognitywistyka_obliczeniowa',  status: 'live' },
+          ]
+        },
+        {
+          title: 'Emocje i percepcja',
+          articles: [
+            { label: 'Emocje w robotach',                      id: 'affective_robotics/emocje_robotow',           status: 'live' },
+            { label: 'Dolina niesamowitości',                  id: 'affective_robotics/dolina_niesamowitosci',    status: 'live' },
+            { label: 'Percepcja i ocena robotów przez ludzi',  id: 'affective_robotics/percepcja_robotow',        status: 'live' },
+          ]
+        },
+        {
+          title: 'Interakcja i zastosowania',
+          articles: [
+            { label: 'Roboty społeczne i HRI',           id: 'affective_robotics/roboty_spoleczne',          status: 'live' },
+            { label: 'Roboty w opiece i terapii',        id: 'affective_robotics/roboty_w_opiece',           status: 'live' },
+            { label: 'Współpraca człowiek–robot (HRC)',  id: 'affective_robotics/wspolpraca_czlowiek_robot', status: 'live' },
+          ]
+        },
+        {
+          title: 'Świadomość, BCI i przyszłość',
+          articles: [
+            { label: 'Świadomość i podmiotowość maszyn',  id: 'affective_robotics/swiadomosc_maszyn',              status: 'live' },
+            { label: 'Interfejsy mózg–maszyna (BCI)',     id: 'affective_robotics/interfejsy_mozg_maszyna',         status: 'live' },
+            { label: 'Przyszłość robotyki afektywnej',    id: 'affective_robotics/przyszlosc_robotyki_afektywnej',  status: 'live' },
           ]
         },
       ]

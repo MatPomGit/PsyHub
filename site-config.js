@@ -83,6 +83,7 @@ window.SITE_CONFIG = {
         { id: 'biology/ewolucja',             label: 'Ewolucja i psychologia ewol.',   file: 'wiki/biology/ewolucja.md'              },
         { id: 'biology/psychofizjologia',     label: 'Psychofizjologia',               file: 'wiki/biology/psychofizjologia.md'      },
         { id: 'biology/chronobiologia',       label: 'Chronobiologia i sen',           file: 'wiki/biology/chronobiologia.md'        },
+        { id: 'biology/chronopsychologia',     label: 'Chronopsychologia',              file: 'wiki/biology/chronopsychologia.md'      },
         { id: 'biology/mikrobiom',            label: 'Oś jelita–mózg',                file: 'wiki/biology/mikrobiom.md'             },
       ]
     },
@@ -742,6 +743,7 @@ window.SITE_CONFIG = {
       { file: 'wiki/biology/ewolucja.md',         label: 'Ewolucja i psychologia ewol.',status: 'live' },
       { file: 'wiki/biology/psychofizjologia.md', label: 'Psychofizjologia',           status: 'live' },
       { file: 'wiki/biology/chronobiologia.md',   label: 'Chronobiologia i sen',       status: 'live' },
+      { file: 'wiki/biology/chronopsychologia.md', label: 'Chronopsychologia',          status: 'live' },
       { file: 'wiki/biology/mikrobiom.md',        label: 'Oś jelita–mózg',            status: 'live' },
     ],
     psychotherapy: [
@@ -1494,6 +1496,7 @@ window.SITE_CONFIG = {
           articles: [
             { label: 'Hormony a zachowanie', id: 'biology/hormony', status: 'live' },
             { label: 'Chronobiologia', id: 'biology/chronobiologia', status: 'live' },
+            { label: 'Chronopsychologia', id: 'biology/chronopsychologia', status: 'live' },
             { label: 'Mikrobiom a mózg', id: 'biology/mikrobiom', status: 'live' },
             { label: 'Ewolucja zachowania', id: 'biology/ewolucja', status: 'live' },
           ]

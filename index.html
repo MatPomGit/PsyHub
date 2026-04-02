@@ -11,6 +11,7 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
   <script src="anime.min.js" defer></script>
   <script src="site-config.js" defer></script>
+  <script src="specialization-test.js" defer></script>
   <style>
 /* ═══════════════════════════════════════════
    DESIGN TOKENS
@@ -196,6 +197,36 @@ em{color:var(--goldl)}
 .md th{background:var(--bg3);font-weight:600;color:var(--t1);padding:.6rem .9rem;text-align:left;font-size:.76rem;text-transform:uppercase;letter-spacing:.05em;border-bottom:1px solid var(--border)}
 .md td{padding:.55rem .9rem;color:var(--t2);border-bottom:1px solid var(--border)}
 .md tr:hover td{background:rgba(255,255,255,.015)}
+
+/* test specjalności */
+.test-wrap{max-width:920px}
+.test-intro{color:var(--t2);margin-bottom:1.2rem}
+.test-meta{font-size:.8rem;color:var(--t3);margin-bottom:1rem}
+.test-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:1.1rem 1.2rem;margin-bottom:1rem}
+.test-q{font-family:var(--serif);font-size:1.2rem;line-height:1.35;margin-bottom:.9rem}
+.test-opts{display:grid;gap:.55rem}
+.test-opt{background:var(--bg3);border:1px solid var(--border);border-radius:8px;color:var(--t2);text-align:left;padding:.72rem .85rem;cursor:pointer;transition:all var(--ease)}
+.test-opt:hover{border-color:var(--gold);color:var(--t1)}
+.test-opt.sel{border-color:var(--gold);background:var(--goldt);color:var(--goldl)}
+.test-actions{display:flex;gap:.6rem;flex-wrap:wrap;margin:.9rem 0 1.3rem}
+.test-btn{background:var(--bg3);border:1px solid var(--border);color:var(--t2);border-radius:8px;padding:.56rem .85rem;cursor:pointer}
+.test-btn:hover:not(:disabled){border-color:var(--gold);color:var(--gold)}
+.test-btn:disabled{opacity:.5;cursor:not-allowed}
+.test-btn.primary{background:rgba(91,140,184,.17);border-color:var(--blue);color:#b3d1ea}
+.result-box{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:1.1rem 1.2rem}
+.result-title{font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:var(--t3)}
+.result-main{font-family:var(--serif);font-size:1.6rem;line-height:1.2;margin:.35rem 0 .3rem}
+.fit-grid{display:grid;gap:.55rem;margin-top:1rem}
+.fit-row{display:grid;grid-template-columns:minmax(190px,260px) 1fr 48px;gap:.65rem;align-items:center}
+.fit-lbl{font-size:.84rem;color:var(--t2)}
+.fit-bar{height:11px;border-radius:999px;background:var(--bg3);border:1px solid var(--border);overflow:hidden}
+.fit-fill{height:100%}
+.fit-num{font-size:.76rem;color:var(--t3);text-align:right}
+.axis-grid{display:grid;gap:.75rem;margin-top:1.2rem}
+.axis-row{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:.62rem .72rem}
+.axis-head{display:flex;justify-content:space-between;font-size:.74rem;color:var(--t3);margin-bottom:.42rem}
+.axis-track{position:relative;height:10px;background:linear-gradient(90deg,rgba(184,107,123,.5) 0%, rgba(155,155,176,.18) 50%, rgba(90,158,111,.45) 100%);border-radius:999px;border:1px solid var(--border)}
+.axis-marker{position:absolute;top:-4px;width:3px;height:18px;background:var(--goldl);box-shadow:0 0 0 1px rgba(0,0,0,.4)}
 
 /* page hero */
 .page-hero{padding-bottom:1.9rem;margin-bottom:2.3rem;border-bottom:1px solid var(--border)}
@@ -454,6 +485,7 @@ function md2html(src) {
 const pageMap = new Map();
 const mdCache = new Map();
 const emptyArticles = new Set();   /* IDs of articles whose files are empty or missing */
+const testAnswers = [];
 let   current = null;
 const MOBILE_BREAKPOINT = 900; /* matches CSS @media(max-width:900px) */
 
@@ -550,6 +582,7 @@ function navigate(id, replaceHistory) {
   setActive(id);
   closeSidebar();
   if (item.file)       loadMd(id, item);
+  else if (item.custom === 'specialization_test') renderSpecializationTest(id, item);
   else if (item.wiki)  renderWiki(id, item.wiki);
   else                 renderHome();
 }
@@ -632,6 +665,99 @@ function renderMd(text, id, item) {
   if (isEmpty) updateEmptyIndicators();
   animateContentIn();
 }
+
+function renderSpecializationTest(id, item) {
+  const area = document.getElementById('content');
+  setBreadcrumb(item);
+  const test = window.SPECIALIZATION_TEST;
+  if (!test) {
+    area.innerHTML = '<div class="error-box"><h2>Błąd ładowania testu</h2><p>Nie udało się wczytać logiki testu specjalności.</p></div>';
+    return;
+  }
+
+  const total = test.QUESTIONS.length;
+  const answered = testAnswers.filter(v => typeof v === 'number').length;
+  const currentQ = test.QUESTIONS.map((question, idx) => {
+    const options = question.options.map((opt, oIdx) => {
+      const selected = testAnswers[idx] === oIdx ? 'sel' : '';
+      return `<button class="test-opt ${selected}" onclick="selectTestAnswer(${idx},${oIdx})">${opt.text}</button>`;
+    }).join('');
+    return `<div class="test-card">
+      <div class="test-meta">Pytanie ${idx + 1} / ${total}</div>
+      <div class="test-q">${question.text}</div>
+      <div class="test-opts">${options}</div>
+    </div>`;
+  }).join('');
+
+  const resultsBlock = answered === total ? renderTestResults(test.evaluate(testAnswers)) : '';
+
+  area.innerHTML = `<div class="rendered test-wrap">
+    <div class="page-hero">
+      <span class="chapter-lbl">${item.section || ''}</span>
+      <h1>Test wyboru specjalności</h1>
+      <p class="lead">Odpowiedz na 20 pytań, aby uzyskać rekomendację specjalności, poziom dopasowania do pozostałych obszarów oraz profil na trzech osiach decyzyjnych.</p>
+    </div>
+    <p class="test-intro">Pytania są celowo nieoczywiste i zawierają scenki oraz dylematy etyczno-praktyczne (m.in. medycyna, farmakologia, diagnostyka, statystyka, neurologia i kompetencje miękkie).</p>
+    <div class="test-meta">Udzielone odpowiedzi: <strong>${answered}/${total}</strong></div>
+    <div class="test-actions">
+      <button class="test-btn" onclick="resetSpecializationTest()">Wyczyść odpowiedzi</button>
+      <button class="test-btn primary" onclick="jumpToFirstUnanswered()" ${answered===total?'disabled':''}>Przejdź do pierwszego nieuzupełnionego</button>
+    </div>
+    ${currentQ}
+    ${resultsBlock}
+  </div>`;
+  window.scrollTo(0,0);
+  animateContentIn();
+}
+
+function renderTestResults(result) {
+  const bars = result.ranking.map(r => `
+    <div class="fit-row">
+      <div class="fit-lbl">${r.name}</div>
+      <div class="fit-bar"><div class="fit-fill" style="width:${r.percent}%;background:${r.color}"></div></div>
+      <div class="fit-num">${r.percent}%</div>
+    </div>`).join('');
+
+  const axes = result.axes.map(axis => {
+    const markerLeft = 50 + (axis.value / 2);
+    return `<div class="axis-row">
+      <div class="axis-head"><span>${axis.left}</span><span>${axis.right}</span></div>
+      <div class="axis-track"><span class="axis-marker" style="left:calc(${markerLeft}% - 1px)"></span></div>
+    </div>`;
+  }).join('');
+
+  return `<div class="result-box">
+    <div class="result-title">Rekomendowana specjalność</div>
+    <div class="result-main">${result.recommended.name}</div>
+    <p>${result.recommended.desc}</p>
+    <h3>Poziom dopasowania do wszystkich specjalności</h3>
+    <div class="fit-grid">${bars}</div>
+    <h3>Profil decyzyjny (osie dwubiegunowe)</h3>
+    <div class="axis-grid">${axes}</div>
+  </div>`;
+}
+
+window.selectTestAnswer = function(questionIndex, optionIndex) {
+  testAnswers[questionIndex] = optionIndex;
+  if (current === 'students/test_specjalnosci') {
+    renderSpecializationTest(current, pageMap.get(current));
+  }
+};
+
+window.resetSpecializationTest = function() {
+  testAnswers.length = 0;
+  if (current === 'students/test_specjalnosci') {
+    renderSpecializationTest(current, pageMap.get(current));
+  }
+};
+
+window.jumpToFirstUnanswered = function() {
+  const test = window.SPECIALIZATION_TEST;
+  const missingIdx = test.QUESTIONS.findIndex((_, idx) => typeof testAnswers[idx] !== 'number');
+  if (missingIdx < 0) return;
+  const cards = document.querySelectorAll('.test-card');
+  cards[missingIdx]?.scrollIntoView({ behavior:'smooth', block:'center' });
+};
 
 /* plan list for a domain */
 function renderPlans(items, currentId) {
@@ -749,6 +875,7 @@ function renderHome() {
   const totalPlan = Object.values(SITE_CONFIG.plans||{}).flat().filter(p=>p.status==='planned').length;
 
   const icons = {'Neurobiologia':'🧬','Funkcje Poznawcze':'🧩','Zaburzenia Kliniczne':'⚕️',
+    'Dla Studentów':'🎓',
     'Przypadki Kliniczne':'📋','Diagnostyka':'📊','Psychometria':'📏','Farmakologia':'💊',
     'Różnice Indywidualne':'👤','Temperament':'🌡️','Emocje i Motywacja':'❤️',
     'Biologiczne Podstawy':'🔬','Psychoterapia':'🛋️','Psychopatologia':'🔍',

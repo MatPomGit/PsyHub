@@ -27,6 +27,13 @@ window.SITE_CONFIG = {
       ]
     },
     {
+      section: 'Dla Studentów',
+      items: [
+        { id: 'students/wybor_specjalnosci', label: 'Wybór specjalności', file: 'wiki/students/wybor_specjalnosci.md' },
+        { id: 'students/test_specjalnosci',  label: 'Test wyboru specjalności', custom: 'specialization_test' },
+      ]
+    },
+    {
       section: 'Neurobiologia',
       items: [
         { id: 'neuro/anatomia', label: 'Anatomia mózgu',   file: 'wiki/neuro/anatomia.md'  },

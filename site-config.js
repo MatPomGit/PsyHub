@@ -27,7 +27,48 @@ window.SITE_CONFIG = {
       ]
     },
     {
-      section: 'Biologiczne Podstawy',
+      section: 'Neurobiologia',
+      items: [
+        { id: 'neuro/anatomia', label: 'Anatomia mózgu',   file: 'wiki/neuro/anatomia.md'  },
+        { id: 'neuro/neuron',   label: 'Neuron i synapsa', file: 'wiki/neuro/neuron.md'    },
+        { id: 'neuro/systemy',  label: 'Układy i sieci',   file: 'wiki/neuro/systemy.md'   },
+        { id: 'neuro/przesilenie_wiosenne', label: 'Neurobiologia przesilenia wiosennego', file: 'wiki/neuro/przesilenie_wiosenne.md' },
+        { id: 'neuro/myelinizacja',         label: 'Mielinizacja i istota biała',          file: 'wiki/neuro/myelinizacja.md'         },
+        { id: 'neuro/plastycznosc',         label: 'Neuroplastyczność',                    file: 'wiki/neuro/plastycznosc.md'         },
+        { id: 'neuro/neuroobrazowanie',     label: 'Neuroobrazowanie (fMRI, DTI)',          file: 'wiki/neuro/neuroobrazowanie.md'     },
+        { id: 'neuro/lateralizacja',        label: 'Lateralizacja funkcji',                file: 'wiki/neuro/lateralizacja.md'        },
+        { id: 'neuro/kora_prefrontalna',    label: 'Kora przedczołowa',                    file: 'wiki/neuro/kora_prefrontalna.md'    },
+        { id: 'neuro/uklad_limbiczny',      label: 'Układ limbiczny',                      file: 'wiki/neuro/uklad_limbiczny.md'      },
+        { id: 'neuro/cykl_miesiaczkowy',                  label: 'Neuropsychologia cyklu miesiączkowego',  file: 'wiki/neuro/cykl_miesiaczkowy.md'                  },
+        { id: 'neuro/rehabilitacja_neuropsychologiczna',  label: 'Rehabilitacja neuropsychologiczna',      file: 'wiki/neuro/rehabilitacja_neuropsychologiczna.md'  },
+        { id: 'neuro/neuronauka_poznawcza',               label: 'Neuronauka poznawcza',                   file: 'wiki/neuro/neuronauka_poznawcza.md'               },
+        { id: 'neuro/podstawy_neurologii',  label: 'Podstawy neurologii',                  file: 'wiki/neuro/podstawy_neurologii.md'  },
+      ]
+    },
+    {
+      section: 'Funkcje Poznawcze',
+      items: [
+        { id: 'cognitive/pamiec',              label: 'Pamięć',               file: 'wiki/cognitive/pamiec.md'              },
+        { id: 'cognitive/pamiec_dlugotrwala',  label: 'Pamięć długotrwała',   file: 'wiki/cognitive/pamiec_dlugotrwala.md'  },
+        { id: 'cognitive/uwaga',               label: 'Uwaga',                file: 'wiki/cognitive/uwaga.md'               },
+        { id: 'cognitive/jezyk',               label: 'Język',                file: 'wiki/cognitive/jezyk.md'               },
+        { id: 'cognitive/funkcje_wykonawcze',  label: 'Funkcje wykonawcze',   file: 'wiki/cognitive/funkcje_wykonawcze.md'  },
+        { id: 'cognitive/percepcja',           label: 'Percepcja i gnozja',   file: 'wiki/cognitive/percepcja.md'           },
+        { id: 'cognitive/zmeczenie_poznawcze', label: 'Zmęczenie poznawcze',       file: 'wiki/cognitive/zmeczenie_poznawcze.md' },
+        { id: 'cognitive/myslenie',             label: 'Myślenie i rozumowanie',    file: 'wiki/cognitive/myslenie.md'             },
+        { id: 'cognitive/uczenie',              label: 'Uczenie się',               file: 'wiki/cognitive/uczenie.md'              },
+        { id: 'cognitive/wyobraznia',           label: 'Wyobraźnia i reprezentacje',file: 'wiki/cognitive/wyobraznia.md'           },
+        { id: 'cognitive/swiadomosc',           label: 'Świadomość i metapoznanie', file: 'wiki/cognitive/swiadomosc.md'           },
+        { id: 'cognitive/podejmowanie_decyzji', label: 'Podejmowanie decyzji',      file: 'wiki/cognitive/podejmowanie_decyzji.md' },
+        { id: 'cognitive/teoria_perspektywy',  label: 'Teoria perspektywy',         file: 'wiki/cognitive/teoria_perspektywy.md'  },
+        { id: 'cognitive/efekt_ramowania',     label: 'Efekt ramowania',             file: 'wiki/cognitive/efekt_ramowania.md'     },
+        { id: 'cognitive/nasa_tlx',            label: 'NASA Task Load Index (TLX)', file: 'wiki/cognitive/nasa_tlx.md'            },
+        { id: 'cognitive/iluzje',              label: 'Iluzje i błędy poznawcze',   file: 'wiki/cognitive/iluzje.md'              },
+        { id: 'cognitive/eksperyment_posnera', label: 'Eksperyment Posnera',         file: 'wiki/cognitive/eksperyment_posnera.md' },
+      ]
+    },
+    {
+      section: 'Zaburzenia Kliniczne',
       items: [
         { id: 'biology/biologiczne_podstawy', label: 'Biologiczne podstawy — wprow.', file: 'wiki/biology/biologiczne_podstawy.md' },
         { id: 'biology/genetyka_beh',         label: 'Genetyka behawioralna',          file: 'wiki/biology/genetyka_beh.md'          },
@@ -494,34 +535,70 @@ window.SITE_CONFIG = {
       ]
     },
     {
+      section: 'Psychologia Szkolna i Edukacyjna',
+      items: [
+        { id: 'school_psychology/wprowadzenie',                  label: 'Psych. szkolna — wprowadzenie',            file: 'wiki/school_psychology/wprowadzenie.md'                  },
+        { id: 'school_psychology/teorie_uczenia_sie',            label: 'Teorie uczenia się',                       file: 'wiki/school_psychology/teorie_uczenia_sie.md'            },
+        { id: 'school_psychology/strefa_najblizszego_rozwoju',   label: 'Strefa najbliższego rozwoju (ZPD)',        file: 'wiki/school_psychology/strefa_najblizszego_rozwoju.md'   },
+        { id: 'school_psychology/motywacja_szkolna',             label: 'Motywacja szkolna',                        file: 'wiki/school_psychology/motywacja_szkolna.md'             },
+        { id: 'school_psychology/inteligencja_wieloraka',        label: 'Inteligencje wielorakie (Gardner)',        file: 'wiki/school_psychology/inteligencja_wieloraka.md'        },
+        { id: 'school_psychology/trudnosci_w_uczeniu_sie',       label: 'Trudności w uczeniu się',                 file: 'wiki/school_psychology/trudnosci_w_uczeniu_sie.md'       },
+        { id: 'school_psychology/adhd_w_szkole',                 label: 'ADHD w szkole',                            file: 'wiki/school_psychology/adhd_w_szkole.md'                 },
+        { id: 'school_psychology/relacje_nauczyciel_uczen',      label: 'Relacje nauczyciel–uczeń',                file: 'wiki/school_psychology/relacje_nauczyciel_uczen.md'      },
+        { id: 'school_psychology/klimat_szkolny',                label: 'Klimat szkolny',                           file: 'wiki/school_psychology/klimat_szkolny.md'                },
+        { id: 'school_psychology/ocenianie_i_feedback',          label: 'Ocenianie i informacja zwrotna',           file: 'wiki/school_psychology/ocenianie_i_feedback.md'          },
+        { id: 'school_psychology/stres_szkolny',                 label: 'Stres szkolny i lęk egzaminacyjny',       file: 'wiki/school_psychology/stres_szkolny.md'                 },
+        { id: 'school_psychology/interwencje_szkolne',           label: 'Interwencje psychologiczne w szkole',      file: 'wiki/school_psychology/interwencje_szkolne.md'           },
+      ]
+    },
+    {
+      section: 'Neuroróżnorodność',
+      items: [
+        { id: 'neurodiversity/wprowadzenie',               label: 'Neuroróżnorodność — wprowadzenie',    file: 'wiki/neurodiversity/wprowadzenie.md'               },
+        { id: 'neurodiversity/adhd',                       label: 'ADHD jako wariant neuroróżnorodności', file: 'wiki/neurodiversity/adhd.md'                       },
+        { id: 'neurodiversity/spektrum_autyzmu',           label: 'Spektrum autyzmu (ASD)',               file: 'wiki/neurodiversity/spektrum_autyzmu.md'           },
+        { id: 'neurodiversity/dysleksja',                  label: 'Dysleksja',                            file: 'wiki/neurodiversity/dysleksja.md'                  },
+        { id: 'neurodiversity/dyskalkulia',                label: 'Dyskalkulia',                          file: 'wiki/neurodiversity/dyskalkulia.md'                },
+        { id: 'neurodiversity/dyspraksja',                 label: 'Dyspraksja i DCD',                     file: 'wiki/neurodiversity/dyspraksja.md'                 },
+        { id: 'neurodiversity/tourette',                   label: 'Zespół Tourette\'a i tiki',            file: 'wiki/neurodiversity/tourette.md'                   },
+        { id: 'neurodiversity/hiperleksja',                label: 'Hiperleksja i wyjątkowe zdolności',    file: 'wiki/neurodiversity/hiperleksja.md'                },
+        { id: 'neurodiversity/model_mocnych_stron',        label: 'Model mocnych stron',                  file: 'wiki/neurodiversity/model_mocnych_stron.md'        },
+        { id: 'neurodiversity/wsparcie_interwencje',       label: 'Wsparcie i interwencje',               file: 'wiki/neurodiversity/wsparcie_interwencje.md'       },
+        { id: 'neurodiversity/neurozroznorodnosc_w_pracy', label: 'Neuroróżnorodność w miejscu pracy',   file: 'wiki/neurodiversity/neurozroznorodnosc_w_pracy.md' },
+        { id: 'neurodiversity/identyfikacja_i_diagnoza',   label: 'Identyfikacja i diagnoza',             file: 'wiki/neurodiversity/identyfikacja_i_diagnoza.md'   },
+      ]
+    },
+    {
       section: 'Encyklopedie',
       items: [
-        { id: 'wiki-index/neuropsychologia',   label: 'WIKI — Neuropsychologia',                   wiki: 'neuropsychologia'    },
-        { id: 'wiki-index/kliniczna',          label: 'WIKI — Psych. kliniczna',                   wiki: 'kliniczna'           },
-        { id: 'wiki-index/poznawcza',          label: 'WIKI — Psych. poznawcza',                   wiki: 'poznawcza'           },
-        { id: 'wiki-index/spoleczna',          label: 'WIKI — Psych. społeczna',                   wiki: 'spoleczna'           },
-        { id: 'wiki-index/kulturowa',          label: 'WIKI — Psych. kulturowa',                   wiki: 'kulturowa'           },
-        { id: 'wiki-index/rozwojowa',          label: 'WIKI — Psych. rozwojowa',                   wiki: 'rozwojowa'           },
-        { id: 'wiki-index/uzaleznienia',       label: 'WIKI — Uzależnienia',                       wiki: 'uzaleznienia'        },
-        { id: 'wiki-index/relacje',            label: 'WIKI — Relacje i związki',                  wiki: 'relacje'             },
-        { id: 'wiki-index/diagnoza',           label: 'WIKI — Diagnoza psychologiczna',            wiki: 'diagnoza'            },
-        { id: 'wiki-index/biologia',           label: 'WIKI — Biologia zachowania',               wiki: 'biologia'            },
-        { id: 'wiki-index/roznice_ind',        label: 'WIKI — Różnice indywidualne',               wiki: 'roznice_ind'         },
-        { id: 'wiki-index/terapie_artystyczne',label: 'WIKI — Terapie artystyczne',               wiki: 'terapie_artystyczne' },
-        { id: 'wiki-index/etyka',              label: 'WIKI — Etyka zawodowa',                    wiki: 'etyka'               },
-        { id: 'wiki-index/slownik',            label: 'WIKI — Słownik terminów',                  wiki: 'slownik'             },
-        { id: 'wiki-index/zdrowie',            label: 'WIKI — Psych. zdrowia',                    wiki: 'zdrowie'             },
-        { id: 'wiki-index/psychosomatics',     label: 'WIKI — Psychosomatyka',                    wiki: 'psychosomatics'      },
-        { id: 'wiki-index/niepelnosprawnosc',  label: 'WIKI — Psych. niepełnosprawności',          wiki: 'niepelnosprawnosc'   },
-        { id: 'wiki-index/geropsychology',     label: 'WIKI — Psych. osób starszych',              wiki: 'geropsychology'      },
-        { id: 'wiki-index/gry_wideo',          label: 'WIKI — Psych. gier wideo',                 wiki: 'gry_wideo'           },
-        { id: 'wiki-index/odpornosc_mobbing',  label: 'WIKI — Odporność, mobbing, wypalenie',     wiki: 'odpornosc_mobbing'   },
-        { id: 'wiki-index/media_natura',       label: 'WIKI — Ekrany, książki i natura',           wiki: 'media_natura'        },
-        { id: 'wiki-index/psych_pozytywna',    label: 'WIKI — Psychologia pozytywna',              wiki: 'psych_pozytywna'     },
-        { id: 'wiki-index/psych_ai',           label: 'WIKI — Psychologia AI',                    wiki: 'psych_ai'            },
+        { id: 'wiki-index/neuropsychologia',     label: 'WIKI — Neuropsychologia',                   wiki: 'neuropsychologia'     },
+        { id: 'wiki-index/kliniczna',            label: 'WIKI — Psych. kliniczna',                   wiki: 'kliniczna'            },
+        { id: 'wiki-index/poznawcza',            label: 'WIKI — Psych. poznawcza',                   wiki: 'poznawcza'            },
+        { id: 'wiki-index/spoleczna',            label: 'WIKI — Psych. społeczna',                   wiki: 'spoleczna'            },
+        { id: 'wiki-index/kulturowa',            label: 'WIKI — Psych. kulturowa',                   wiki: 'kulturowa'            },
+        { id: 'wiki-index/rozwojowa',            label: 'WIKI — Psych. rozwojowa',                   wiki: 'rozwojowa'            },
+        { id: 'wiki-index/uzaleznienia',         label: 'WIKI — Uzależnienia',                       wiki: 'uzaleznienia'         },
+        { id: 'wiki-index/relacje',              label: 'WIKI — Relacje i związki',                  wiki: 'relacje'              },
+        { id: 'wiki-index/diagnoza',             label: 'WIKI — Diagnoza psychologiczna',            wiki: 'diagnoza'             },
+        { id: 'wiki-index/biologia',             label: 'WIKI — Biologia zachowania',               wiki: 'biologia'             },
+        { id: 'wiki-index/roznice_ind',          label: 'WIKI — Różnice indywidualne',               wiki: 'roznice_ind'          },
+        { id: 'wiki-index/terapie_artystyczne',  label: 'WIKI — Terapie artystyczne',               wiki: 'terapie_artystyczne'  },
+        { id: 'wiki-index/etyka',                label: 'WIKI — Etyka zawodowa',                    wiki: 'etyka'                },
+        { id: 'wiki-index/slownik',              label: 'WIKI — Słownik terminów',                  wiki: 'slownik'              },
+        { id: 'wiki-index/zdrowie',              label: 'WIKI — Psych. zdrowia',                    wiki: 'zdrowie'              },
+        { id: 'wiki-index/psychosomatics',       label: 'WIKI — Psychosomatyka',                    wiki: 'psychosomatics'       },
+        { id: 'wiki-index/niepelnosprawnosc',    label: 'WIKI — Psych. niepełnosprawności',          wiki: 'niepelnosprawnosc'    },
+        { id: 'wiki-index/geropsychology',       label: 'WIKI — Psych. osób starszych',              wiki: 'geropsychology'       },
+        { id: 'wiki-index/gry_wideo',            label: 'WIKI — Psych. gier wideo',                 wiki: 'gry_wideo'            },
+        { id: 'wiki-index/odpornosc_mobbing',    label: 'WIKI — Odporność, mobbing, wypalenie',     wiki: 'odpornosc_mobbing'    },
+        { id: 'wiki-index/media_natura',         label: 'WIKI — Ekrany, książki i natura',           wiki: 'media_natura'         },
+        { id: 'wiki-index/psych_pozytywna',      label: 'WIKI — Psychologia pozytywna',              wiki: 'psych_pozytywna'      },
+        { id: 'wiki-index/psych_ai',             label: 'WIKI — Psychologia AI',                    wiki: 'psych_ai'             },
         { id: 'wiki-index/robotyka_afektywna',   label: 'WIKI — Robotyka afektywna',                wiki: 'robotyka_afektywna'   },
-        { id: 'wiki-index/psych_sadowa',           label: 'WIKI — Psychologia sądowa',                wiki: 'psych_sadowa'          },
-        { id: 'wiki-index/e_terapia',              label: 'WIKI — E-terapia',                         wiki: 'e_terapia'             },
+        { id: 'wiki-index/psych_szkolna',        label: 'WIKI — Psych. szkolna i edukacyjna',       wiki: 'psych_szkolna'        },
+        { id: 'wiki-index/neurozroznorodnosc',   label: 'WIKI — Neuroróżnorodność',                 wiki: 'neurozroznorodnosc'   },
+        { id: 'wiki-index/psych_sadowa',         label: 'WIKI — Psychologia sądowa',                wiki: 'psych_sadowa'         },
+        { id: 'wiki-index/e_terapia',            label: 'WIKI — E-terapia',                         wiki: 'e_terapia'            },
       ]
     },
     {
@@ -554,6 +631,9 @@ window.SITE_CONFIG = {
       { file: 'wiki/neuro/cykl_miesiaczkowy.md', label: 'Neuropsychologia cyklu miesiączkowego', status: 'live' },
       { file: 'wiki/neuro/eye_tracking.md',        label: 'Eye tracking — śledzenie wzroku',         status: 'live' },
       { file: 'wiki/neuro/Muse.md',                label: 'Muse S — neurofeedback i EEG',            status: 'live' },
+      { file: 'wiki/neuro/rehabilitacja_neuropsychologiczna.md', label: 'Rehabilitacja neuropsychologiczna', status: 'live' },
+      { file: 'wiki/neuro/neuronauka_poznawcza.md', label: 'Neuronauka poznawcza', status: 'live' },
+      { file: 'wiki/neuro/podstawy_neurologii.md', label: 'Podstawy neurologii',                 status: 'live' },
     ],
     cognitive: [
       { file: 'wiki/cognitive/pamiec.md',              label: 'Pamięć',               status: 'live' },
@@ -901,6 +981,34 @@ window.SITE_CONFIG = {
       { file: 'wiki/affective_robotics/interfejsy_mozg_maszyna.md',         label: 'Interfejsy mózg–maszyna (BCI)',              status: 'live' },
       { file: 'wiki/affective_robotics/przyszlosc_robotyki_afektywnej.md',  label: 'Przyszłość robotyki afektywnej',            status: 'live' },
     ],
+    school_psychology: [
+      { file: 'wiki/school_psychology/wprowadzenie.md',                 label: 'Psychologia szkolna — wprowadzenie',        status: 'live' },
+      { file: 'wiki/school_psychology/teorie_uczenia_sie.md',           label: 'Teorie uczenia się',                        status: 'live' },
+      { file: 'wiki/school_psychology/strefa_najblizszego_rozwoju.md',  label: 'Strefa najbliższego rozwoju (ZPD)',         status: 'live' },
+      { file: 'wiki/school_psychology/motywacja_szkolna.md',            label: 'Motywacja szkolna',                         status: 'live' },
+      { file: 'wiki/school_psychology/inteligencja_wieloraka.md',       label: 'Inteligencje wielorakie (Gardner)',         status: 'live' },
+      { file: 'wiki/school_psychology/trudnosci_w_uczeniu_sie.md',      label: 'Trudności w uczeniu się',                  status: 'live' },
+      { file: 'wiki/school_psychology/adhd_w_szkole.md',                label: 'ADHD w środowisku szkolnym',               status: 'live' },
+      { file: 'wiki/school_psychology/relacje_nauczyciel_uczen.md',     label: 'Relacje nauczyciel–uczeń',                 status: 'live' },
+      { file: 'wiki/school_psychology/klimat_szkolny.md',               label: 'Klimat szkolny',                            status: 'live' },
+      { file: 'wiki/school_psychology/ocenianie_i_feedback.md',         label: 'Ocenianie i informacja zwrotna',            status: 'live' },
+      { file: 'wiki/school_psychology/stres_szkolny.md',                label: 'Stres szkolny i lęk egzaminacyjny',        status: 'live' },
+      { file: 'wiki/school_psychology/interwencje_szkolne.md',          label: 'Interwencje psychologiczne w szkole',       status: 'live' },
+    ],
+    neurodiversity: [
+      { file: 'wiki/neurodiversity/wprowadzenie.md',               label: 'Neuroróżnorodność — wprowadzenie',    status: 'live' },
+      { file: 'wiki/neurodiversity/adhd.md',                       label: 'ADHD jako wariant neuroróżnorodności', status: 'live' },
+      { file: 'wiki/neurodiversity/spektrum_autyzmu.md',           label: 'Spektrum autyzmu (ASD)',               status: 'live' },
+      { file: 'wiki/neurodiversity/dysleksja.md',                  label: 'Dysleksja',                            status: 'live' },
+      { file: 'wiki/neurodiversity/dyskalkulia.md',                label: 'Dyskalkulia',                          status: 'live' },
+      { file: 'wiki/neurodiversity/dyspraksja.md',                 label: 'Dyspraksja i DCD',                     status: 'live' },
+      { file: 'wiki/neurodiversity/tourette.md',                   label: "Zespół Tourette'a i tiki",             status: 'live' },
+      { file: 'wiki/neurodiversity/hiperleksja.md',                label: 'Hiperleksja i wyjątkowe zdolności',    status: 'live' },
+      { file: 'wiki/neurodiversity/model_mocnych_stron.md',        label: 'Model mocnych stron',                  status: 'live' },
+      { file: 'wiki/neurodiversity/wsparcie_interwencje.md',       label: 'Wsparcie i interwencje',               status: 'live' },
+      { file: 'wiki/neurodiversity/neurozroznorodnosc_w_pracy.md', label: 'Neuroróżnorodność w miejscu pracy',   status: 'live' },
+      { file: 'wiki/neurodiversity/identyfikacja_i_diagnoza.md',   label: 'Identyfikacja i diagnoza',             status: 'live' },
+    ],
     forensic_psychology: [
       { file: 'wiki/forensic_psychology/wprowadzenie.md',            label: 'Biegły psycholog — wprowadzenie',       status: 'live' },
       { file: 'wiki/forensic_psychology/rola_bieglego.md',           label: 'Rola i status biegłego',                status: 'live' },
@@ -915,7 +1023,6 @@ window.SITE_CONFIG = {
       { file: 'wiki/forensic_psychology/opiniowanie_nieletnich.md',  label: 'Opiniowanie nieletnich i dzieci',       status: 'live' },
       { file: 'wiki/forensic_psychology/biegly_a_sad.md',            label: 'Biegły a sąd — komunikacja',            status: 'live' },
     ],
-
     e_therapy: [
       { file: 'wiki/e_therapy/wprowadzenie.md',                   label: 'E-terapia — wprowadzenie',               status: 'live' },
       { file: 'wiki/e_therapy/historia_e_terapii.md',             label: 'Historia e-terapii',                     status: 'live' },
@@ -930,7 +1037,6 @@ window.SITE_CONFIG = {
       { file: 'wiki/e_therapy/dostepnosc_cyfrowa.md',             label: 'Dostępność i wykluczenie cyfrowe',       status: 'live' },
       { file: 'wiki/e_therapy/przyszlosc_e_terapii.md',           label: 'Przyszłość e-terapii',                   status: 'live' },
     ],
-
   },
 
   // ─────────────────────────────────────────────────────────────
@@ -955,6 +1061,8 @@ window.SITE_CONFIG = {
             { label: 'Kora przedczołowa', id: 'neuro/kora_prefrontalna', status: 'live' },
             { label: 'Neurobiologia przesilenia wiosennego', id: 'neuro/przesilenie_wiosenne', status: 'live' },
             { label: 'Neuropsychologia cyklu miesiączkowego', id: 'neuro/cykl_miesiaczkowy', status: 'live', desc: 'Wpływ estradiolu i progesteronu na poznanie, nastrój i mózg.' },
+            { label: 'Neuronauka poznawcza', id: 'neuro/neuronauka_poznawcza', status: 'live', desc: 'Biologiczne mechanizmy procesów poznawczych — percepcja, pamięć, uwaga, świadomość.' },
+            { label: 'Podstawy neurologii', id: 'neuro/podstawy_neurologii', status: 'live', desc: 'Organizacja OUN/PNS, neurony, glej, drogi nerwowe, badanie neurologiczne.' },
             { label: 'Pień mózgu i móżdżek', id: null, status: 'planned', desc: 'Struktury podkorowe i ich funkcje kliniczne.' },
           ]
         },
@@ -991,6 +1099,12 @@ window.SITE_CONFIG = {
             { label: 'Phineas Gage', id: 'cases/gage', status: 'live' },
             { label: '„Tan" — afazja Broki', id: 'cases/tan', status: 'live' },
             { label: 'Rozdzielony mózg', id: 'cases/split_brain', status: 'live' },
+          ]
+        },
+        {
+          title: 'Rehabilitacja neuropsychologiczna',
+          articles: [
+            { label: 'Rehabilitacja neuropsychologiczna', id: 'neuro/rehabilitacja_neuropsychologiczna', status: 'live', desc: 'Metody, modele i praktyka rehabilitacji po uszkodzeniach mózgu.' },
           ]
         },
         {
@@ -1925,6 +2039,83 @@ window.SITE_CONFIG = {
             { label: 'Świadomość i podmiotowość maszyn',  id: 'affective_robotics/swiadomosc_maszyn',              status: 'live' },
             { label: 'Interfejsy mózg–maszyna (BCI)',     id: 'affective_robotics/interfejsy_mozg_maszyna',         status: 'live' },
             { label: 'Przyszłość robotyki afektywnej',    id: 'affective_robotics/przyszlosc_robotyki_afektywnej',  status: 'live' },
+          ]
+        },
+      ]
+    },
+
+    psych_szkolna: {
+      title: 'WIKI — Psychologia szkolna i edukacyjna',
+      intro: 'Psychologia szkolna i edukacyjna bada procesy uczenia się, nauczania i rozwoju w kontekście instytucji edukacyjnych. Encyklopedia obejmuje teorie uczenia się, motywację akademicką, trudności szkolne, relacje nauczyciel–uczeń, klimat szkolny oraz interwencje psychologiczne w placówkach oświatowych.',
+      sections: [
+        {
+          title: 'Podstawy i teorie',
+          articles: [
+            { label: 'Psychologia szkolna — wprowadzenie',  id: 'school_psychology/wprowadzenie',                status: 'live' },
+            { label: 'Teorie uczenia się',                  id: 'school_psychology/teorie_uczenia_sie',          status: 'live' },
+            { label: 'Strefa najbliższego rozwoju (ZPD)',   id: 'school_psychology/strefa_najblizszego_rozwoju', status: 'live' },
+          ]
+        },
+        {
+          title: 'Motywacja i zdolności',
+          articles: [
+            { label: 'Motywacja szkolna',               id: 'school_psychology/motywacja_szkolna',      status: 'live' },
+            { label: 'Inteligencje wielorakie (Gardner)', id: 'school_psychology/inteligencja_wieloraka', status: 'live' },
+          ]
+        },
+        {
+          title: 'Trudności i zaburzenia',
+          articles: [
+            { label: 'Trudności w uczeniu się',  id: 'school_psychology/trudnosci_w_uczeniu_sie', status: 'live' },
+            { label: 'ADHD w środowisku szkolnym', id: 'school_psychology/adhd_w_szkole',          status: 'live' },
+            { label: 'Stres szkolny i lęk egzaminacyjny', id: 'school_psychology/stres_szkolny',   status: 'live' },
+          ]
+        },
+        {
+          title: 'Środowisko szkolne i interwencje',
+          articles: [
+            { label: 'Relacje nauczyciel–uczeń',           id: 'school_psychology/relacje_nauczyciel_uczen', status: 'live' },
+            { label: 'Klimat szkolny',                      id: 'school_psychology/klimat_szkolny',           status: 'live' },
+            { label: 'Ocenianie i informacja zwrotna',      id: 'school_psychology/ocenianie_i_feedback',     status: 'live' },
+            { label: 'Interwencje psychologiczne w szkole', id: 'school_psychology/interwencje_szkolne',      status: 'live' },
+          ]
+        },
+      ]
+    },
+    neurozroznorodnosc: {
+      title: 'WIKI — Neuroróżnorodność',
+      intro: 'Neuroróżnorodność to koncepcja uznająca naturalne różnice neurologiczne — takie jak autyzm, ADHD, dysleksja, dyskalkulia czy dyspraksja — za warianty ludzkiego mózgu, a nie zaburzenia wymagające "naprawy". Encyklopedia obejmuje zagadnienia od podstaw teoretycznych neuroróżnorodności, przez poszczególne profile neurologiczne, po modele mocnych stron, wsparcie, interwencje i inkluzję zawodową.',
+      sections: [
+        {
+          title: 'Podstawy i profile',
+          articles: [
+            { label: 'Neuroróżnorodność — wprowadzenie',     id: 'neurodiversity/wprowadzenie',     status: 'live' },
+            { label: 'ADHD jako wariant neuroróżnorodności', id: 'neurodiversity/adhd',             status: 'live' },
+            { label: 'Spektrum autyzmu (ASD)',                id: 'neurodiversity/spektrum_autyzmu', status: 'live' },
+          ]
+        },
+        {
+          title: 'Trudności uczenia się',
+          articles: [
+            { label: 'Dysleksja',        id: 'neurodiversity/dysleksja',   status: 'live' },
+            { label: 'Dyskalkulia',      id: 'neurodiversity/dyskalkulia', status: 'live' },
+            { label: 'Dyspraksja i DCD', id: 'neurodiversity/dyspraksja',  status: 'live' },
+          ]
+        },
+        {
+          title: 'Inne profile i zdolności',
+          articles: [
+            { label: 'Zespół Tourette\'a i tiki',         id: 'neurodiversity/tourette',    status: 'live' },
+            { label: 'Hiperleksja i wyjątkowe zdolności', id: 'neurodiversity/hiperleksja', status: 'live' },
+          ]
+        },
+        {
+          title: 'Wsparcie i inkluzja',
+          articles: [
+            { label: 'Model mocnych stron',                id: 'neurodiversity/model_mocnych_stron',        status: 'live' },
+            { label: 'Wsparcie i interwencje',             id: 'neurodiversity/wsparcie_interwencje',       status: 'live' },
+            { label: 'Neuroróżnorodność w miejscu pracy', id: 'neurodiversity/neurozroznorodnosc_w_pracy', status: 'live' },
+            { label: 'Identyfikacja i diagnoza',           id: 'neurodiversity/identyfikacja_i_diagnoza',   status: 'live' },
           ]
         },
       ]

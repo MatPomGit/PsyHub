@@ -451,6 +451,23 @@ window.SITE_CONFIG = {
       ]
     },
     {
+      section: 'Neuroróżnorodność',
+      items: [
+        { id: 'neurodiversity/wprowadzenie',               label: 'Neuroróżnorodność — wprowadzenie',    file: 'wiki/neurodiversity/wprowadzenie.md'               },
+        { id: 'neurodiversity/adhd',                       label: 'ADHD jako wariant neuroróżnorodności', file: 'wiki/neurodiversity/adhd.md'                       },
+        { id: 'neurodiversity/spektrum_autyzmu',           label: 'Spektrum autyzmu (ASD)',               file: 'wiki/neurodiversity/spektrum_autyzmu.md'           },
+        { id: 'neurodiversity/dysleksja',                  label: 'Dysleksja',                            file: 'wiki/neurodiversity/dysleksja.md'                  },
+        { id: 'neurodiversity/dyskalkulia',                label: 'Dyskalkulia',                          file: 'wiki/neurodiversity/dyskalkulia.md'                },
+        { id: 'neurodiversity/dyspraksja',                 label: 'Dyspraksja i DCD',                     file: 'wiki/neurodiversity/dyspraksja.md'                 },
+        { id: 'neurodiversity/tourette',                   label: 'Zespół Tourette\'a i tiki',            file: 'wiki/neurodiversity/tourette.md'                   },
+        { id: 'neurodiversity/hiperleksja',                label: 'Hiperleksja i wyjątkowe zdolności',    file: 'wiki/neurodiversity/hiperleksja.md'                },
+        { id: 'neurodiversity/model_mocnych_stron',        label: 'Model mocnych stron',                  file: 'wiki/neurodiversity/model_mocnych_stron.md'        },
+        { id: 'neurodiversity/wsparcie_interwencje',       label: 'Wsparcie i interwencje',               file: 'wiki/neurodiversity/wsparcie_interwencje.md'       },
+        { id: 'neurodiversity/neurozroznorodnosc_w_pracy', label: 'Neuroróżnorodność w miejscu pracy',   file: 'wiki/neurodiversity/neurozroznorodnosc_w_pracy.md' },
+        { id: 'neurodiversity/identyfikacja_i_diagnoza',   label: 'Identyfikacja i diagnoza',             file: 'wiki/neurodiversity/identyfikacja_i_diagnoza.md'   },
+      ]
+    },
+    {
       section: 'Encyklopedie',
       items: [
         { id: 'wiki-index/neuropsychologia', label: 'WIKI — Neuropsychologia',      wiki: 'neuropsychologia' },
@@ -478,6 +495,7 @@ window.SITE_CONFIG = {
         { id: 'wiki-index/psych_ai',         label: 'WIKI — Psychologia AI',                wiki: 'psych_ai'          },
         { id: 'wiki-index/robotyka_afektywna', label: 'WIKI — Robotyka afektywna',          wiki: 'robotyka_afektywna' },
         { id: 'wiki-index/psych_szkolna',      label: 'WIKI — Psych. szkolna i edukacyjna', wiki: 'psych_szkolna'      },
+        { id: 'wiki-index/neurozroznorodnosc', label: 'WIKI — Neuroróżnorodność', wiki: 'neurozroznorodnosc' },
       ]
     },
     {
@@ -863,6 +881,20 @@ window.SITE_CONFIG = {
       { file: 'wiki/school_psychology/ocenianie_i_feedback.md',         label: 'Ocenianie i informacja zwrotna',            status: 'live' },
       { file: 'wiki/school_psychology/stres_szkolny.md',                label: 'Stres szkolny i lęk egzaminacyjny',        status: 'live' },
       { file: 'wiki/school_psychology/interwencje_szkolne.md',          label: 'Interwencje psychologiczne w szkole',       status: 'live' },
+    ],
+    neurodiversity: [
+      { file: 'wiki/neurodiversity/wprowadzenie.md',               label: 'Neuroróżnorodność — wprowadzenie',    status: 'live' },
+      { file: 'wiki/neurodiversity/adhd.md',                       label: 'ADHD jako wariant neuroróżnorodności', status: 'live' },
+      { file: 'wiki/neurodiversity/spektrum_autyzmu.md',           label: 'Spektrum autyzmu (ASD)',               status: 'live' },
+      { file: 'wiki/neurodiversity/dysleksja.md',                  label: 'Dysleksja',                            status: 'live' },
+      { file: 'wiki/neurodiversity/dyskalkulia.md',                label: 'Dyskalkulia',                          status: 'live' },
+      { file: 'wiki/neurodiversity/dyspraksja.md',                 label: 'Dyspraksja i DCD',                     status: 'live' },
+      { file: 'wiki/neurodiversity/tourette.md',                   label: 'Zespół Tourette\'a i tiki',            status: 'live' },
+      { file: 'wiki/neurodiversity/hiperleksja.md',                label: 'Hiperleksja i wyjątkowe zdolności',    status: 'live' },
+      { file: 'wiki/neurodiversity/model_mocnych_stron.md',        label: 'Model mocnych stron',                  status: 'live' },
+      { file: 'wiki/neurodiversity/wsparcie_interwencje.md',       label: 'Wsparcie i interwencje',               status: 'live' },
+      { file: 'wiki/neurodiversity/neurozroznorodnosc_w_pracy.md', label: 'Neuroróżnorodność w miejscu pracy',   status: 'live' },
+      { file: 'wiki/neurodiversity/identyfikacja_i_diagnoza.md',   label: 'Identyfikacja i diagnoza',             status: 'live' },
     ],
   },
 
@@ -1905,6 +1937,44 @@ window.SITE_CONFIG = {
             { label: 'Klimat szkolny',                      id: 'school_psychology/klimat_szkolny',           status: 'live' },
             { label: 'Ocenianie i informacja zwrotna',      id: 'school_psychology/ocenianie_i_feedback',     status: 'live' },
             { label: 'Interwencje psychologiczne w szkole', id: 'school_psychology/interwencje_szkolne',      status: 'live' },
+          ]
+        },
+      ]
+    },
+    neurozroznorodnosc: {
+      title: 'WIKI — Neuroróżnorodność',
+      intro: 'Neuroróżnorodność to koncepcja uznająca naturalne różnice neurologiczne — takie jak autyzm, ADHD, dysleksja, dyskalkulia czy dyspraksja — za warianty ludzkiego mózgu, a nie zaburzenia wymagające "naprawy". Encyklopedia obejmuje zagadnienia od podstaw teoretycznych neuroróżnorodności, przez poszczególne profile neurologiczne, po modele mocnych stron, wsparcie, interwencje i inkluzję zawodową.',
+      sections: [
+        {
+          title: 'Podstawy i profile',
+          articles: [
+            { label: 'Neuroróżnorodność — wprowadzenie',     id: 'neurodiversity/wprowadzenie',     status: 'live' },
+            { label: 'ADHD jako wariant neuroróżnorodności', id: 'neurodiversity/adhd',             status: 'live' },
+            { label: 'Spektrum autyzmu (ASD)',                id: 'neurodiversity/spektrum_autyzmu', status: 'live' },
+          ]
+        },
+        {
+          title: 'Trudności uczenia się',
+          articles: [
+            { label: 'Dysleksja',        id: 'neurodiversity/dysleksja',   status: 'live' },
+            { label: 'Dyskalkulia',      id: 'neurodiversity/dyskalkulia', status: 'live' },
+            { label: 'Dyspraksja i DCD', id: 'neurodiversity/dyspraksja',  status: 'live' },
+          ]
+        },
+        {
+          title: 'Inne profile i zdolności',
+          articles: [
+            { label: 'Zespół Tourette\'a i tiki',         id: 'neurodiversity/tourette',    status: 'live' },
+            { label: 'Hiperleksja i wyjątkowe zdolności', id: 'neurodiversity/hiperleksja', status: 'live' },
+          ]
+        },
+        {
+          title: 'Wsparcie i inkluzja',
+          articles: [
+            { label: 'Model mocnych stron',                id: 'neurodiversity/model_mocnych_stron',        status: 'live' },
+            { label: 'Wsparcie i interwencje',             id: 'neurodiversity/wsparcie_interwencje',       status: 'live' },
+            { label: 'Neuroróżnorodność w miejscu pracy', id: 'neurodiversity/neurozroznorodnosc_w_pracy', status: 'live' },
+            { label: 'Identyfikacja i diagnoza',           id: 'neurodiversity/identyfikacja_i_diagnoza',   status: 'live' },
           ]
         },
       ]

@@ -131,8 +131,12 @@
       html += `<svg class="ng-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>`;
       html += `</div><div class="nav-items">`;
       for (const item of sec.items) {
-        const cls = ['nav-item', item.wiki?'is-wiki':'', item.id===active?'active':''].filter(Boolean).join(' ');
-        html += `<div class="${cls}" data-id="${item.id}" onclick="navigate('${item.id}')">${item.label}</div>`;
+        if (item.href) {
+          html += `<a class="nav-item nav-item-external" href="${q(item.href)}" target="_blank" rel="noopener noreferrer">${item.label} ↗</a>`;
+        } else {
+          const cls = ['nav-item', item.wiki?'is-wiki':'', item.id===active?'active':''].filter(Boolean).join(' ');
+          html += `<div class="${cls}" data-id="${item.id}" onclick="navigate('${item.id}')">${item.label}</div>`;
+        }
       }
       html += `</div></div>`;
     }

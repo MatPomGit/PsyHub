@@ -114,6 +114,7 @@ em{color:var(--goldl)}
 .nav-item.is-wiki{font-size:.76rem;color:var(--t3);padding-left:1.65rem}
 .nav-item.is-wiki:hover{color:var(--goldl)}
 .nav-item.is-wiki.active{color:var(--gold);border-left-color:var(--gold)}
+.nav-item-external{text-decoration:none;display:block}
 
 /* footer */
 .s-footer{

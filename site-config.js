@@ -40,6 +40,7 @@ window.SITE_CONFIG = {
         { id: 'neuro/kora_prefrontalna',    label: 'Kora przedczołowa',                    file: 'wiki/neuro/kora_prefrontalna.md'    },
         { id: 'neuro/uklad_limbiczny',      label: 'Układ limbiczny',                      file: 'wiki/neuro/uklad_limbiczny.md'      },
         { id: 'neuro/cykl_miesiaczkowy',    label: 'Neuropsychologia cyklu miesiączkowego', file: 'wiki/neuro/cykl_miesiaczkowy.md'    },
+        { id: 'neuro/podstawy_neurologii',  label: 'Podstawy neurologii',                  file: 'wiki/neuro/podstawy_neurologii.md'  },
       ]
     },
     {
@@ -487,6 +488,7 @@ window.SITE_CONFIG = {
       { file: 'wiki/neuro/uklad_limbiczny.md', label: 'Układ limbiczny',       status: 'live' },
       { file: 'wiki/neuro/przesilenie_wiosenne.md', label: 'Neurobiologia przesilenia wiosennego', status: 'live' },
       { file: 'wiki/neuro/cykl_miesiaczkowy.md', label: 'Neuropsychologia cyklu miesiączkowego', status: 'live' },
+      { file: 'wiki/neuro/podstawy_neurologii.md', label: 'Podstawy neurologii',                 status: 'live' },
     ],
     cognitive: [
       { file: 'wiki/cognitive/pamiec.md',              label: 'Pamięć',               status: 'live' },
@@ -850,6 +852,7 @@ window.SITE_CONFIG = {
             { label: 'Kora przedczołowa', id: 'neuro/kora_prefrontalna', status: 'live' },
             { label: 'Neurobiologia przesilenia wiosennego', id: 'neuro/przesilenie_wiosenne', status: 'live' },
             { label: 'Neuropsychologia cyklu miesiączkowego', id: 'neuro/cykl_miesiaczkowy', status: 'live', desc: 'Wpływ estradiolu i progesteronu na poznanie, nastrój i mózg.' },
+            { label: 'Podstawy neurologii', id: 'neuro/podstawy_neurologii', status: 'live', desc: 'Organizacja OUN/PNS, neurony, glej, drogi nerwowe, badanie neurologiczne.' },
             { label: 'Pień mózgu i móżdżek', id: null, status: 'planned', desc: 'Struktury podkorowe i ich funkcje kliniczne.' },
           ]
         },

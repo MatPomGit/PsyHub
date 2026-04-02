@@ -431,6 +431,23 @@ window.SITE_CONFIG = {
       ]
     },
     {
+      section: 'Psychologia Szkolna i Edukacyjna',
+      items: [
+        { id: 'school_psychology/wprowadzenie',                  label: 'Psych. szkolna — wprowadzenie',            file: 'wiki/school_psychology/wprowadzenie.md'                  },
+        { id: 'school_psychology/teorie_uczenia_sie',            label: 'Teorie uczenia się',                       file: 'wiki/school_psychology/teorie_uczenia_sie.md'            },
+        { id: 'school_psychology/strefa_najblizszego_rozwoju',   label: 'Strefa najbliższego rozwoju (ZPD)',        file: 'wiki/school_psychology/strefa_najblizszego_rozwoju.md'   },
+        { id: 'school_psychology/motywacja_szkolna',             label: 'Motywacja szkolna',                        file: 'wiki/school_psychology/motywacja_szkolna.md'             },
+        { id: 'school_psychology/inteligencja_wieloraka',        label: 'Inteligencje wielorakie (Gardner)',        file: 'wiki/school_psychology/inteligencja_wieloraka.md'        },
+        { id: 'school_psychology/trudnosci_w_uczeniu_sie',       label: 'Trudności w uczeniu się',                 file: 'wiki/school_psychology/trudnosci_w_uczeniu_sie.md'       },
+        { id: 'school_psychology/adhd_w_szkole',                 label: 'ADHD w szkole',                            file: 'wiki/school_psychology/adhd_w_szkole.md'                 },
+        { id: 'school_psychology/relacje_nauczyciel_uczen',      label: 'Relacje nauczyciel–uczeń',                file: 'wiki/school_psychology/relacje_nauczyciel_uczen.md'      },
+        { id: 'school_psychology/klimat_szkolny',                label: 'Klimat szkolny',                           file: 'wiki/school_psychology/klimat_szkolny.md'                },
+        { id: 'school_psychology/ocenianie_i_feedback',          label: 'Ocenianie i informacja zwrotna',           file: 'wiki/school_psychology/ocenianie_i_feedback.md'          },
+        { id: 'school_psychology/stres_szkolny',                 label: 'Stres szkolny i lęk egzaminacyjny',       file: 'wiki/school_psychology/stres_szkolny.md'                 },
+        { id: 'school_psychology/interwencje_szkolne',           label: 'Interwencje psychologiczne w szkole',      file: 'wiki/school_psychology/interwencje_szkolne.md'           },
+      ]
+    },
+    {
       section: 'Encyklopedie',
       items: [
         { id: 'wiki-index/neuropsychologia', label: 'WIKI — Neuropsychologia',      wiki: 'neuropsychologia' },
@@ -457,6 +474,7 @@ window.SITE_CONFIG = {
         { id: 'wiki-index/psych_pozytywna',  label: 'WIKI — Psychologia pozytywna',         wiki: 'psych_pozytywna'   },
         { id: 'wiki-index/psych_ai',         label: 'WIKI — Psychologia AI',                wiki: 'psych_ai'          },
         { id: 'wiki-index/robotyka_afektywna', label: 'WIKI — Robotyka afektywna',          wiki: 'robotyka_afektywna' },
+        { id: 'wiki-index/psych_szkolna',      label: 'WIKI — Psych. szkolna i edukacyjna', wiki: 'psych_szkolna'      },
       ]
     },
     {
@@ -825,6 +843,20 @@ window.SITE_CONFIG = {
       { file: 'wiki/affective_robotics/wspolpraca_czlowiek_robot.md',       label: 'Współpraca człowiek–robot (HRC)',            status: 'live' },
       { file: 'wiki/affective_robotics/interfejsy_mozg_maszyna.md',         label: 'Interfejsy mózg–maszyna (BCI)',              status: 'live' },
       { file: 'wiki/affective_robotics/przyszlosc_robotyki_afektywnej.md',  label: 'Przyszłość robotyki afektywnej',            status: 'live' },
+    ],
+    school_psychology: [
+      { file: 'wiki/school_psychology/wprowadzenie.md',                 label: 'Psychologia szkolna — wprowadzenie',        status: 'live' },
+      { file: 'wiki/school_psychology/teorie_uczenia_sie.md',           label: 'Teorie uczenia się',                        status: 'live' },
+      { file: 'wiki/school_psychology/strefa_najblizszego_rozwoju.md',  label: 'Strefa najbliższego rozwoju (ZPD)',         status: 'live' },
+      { file: 'wiki/school_psychology/motywacja_szkolna.md',            label: 'Motywacja szkolna',                         status: 'live' },
+      { file: 'wiki/school_psychology/inteligencja_wieloraka.md',       label: 'Inteligencje wielorakie (Gardner)',         status: 'live' },
+      { file: 'wiki/school_psychology/trudnosci_w_uczeniu_sie.md',      label: 'Trudności w uczeniu się',                  status: 'live' },
+      { file: 'wiki/school_psychology/adhd_w_szkole.md',                label: 'ADHD w środowisku szkolnym',               status: 'live' },
+      { file: 'wiki/school_psychology/relacje_nauczyciel_uczen.md',     label: 'Relacje nauczyciel–uczeń',                 status: 'live' },
+      { file: 'wiki/school_psychology/klimat_szkolny.md',               label: 'Klimat szkolny',                            status: 'live' },
+      { file: 'wiki/school_psychology/ocenianie_i_feedback.md',         label: 'Ocenianie i informacja zwrotna',            status: 'live' },
+      { file: 'wiki/school_psychology/stres_szkolny.md',                label: 'Stres szkolny i lęk egzaminacyjny',        status: 'live' },
+      { file: 'wiki/school_psychology/interwencje_szkolne.md',          label: 'Interwencje psychologiczne w szkole',       status: 'live' },
     ],
   },
 
@@ -1820,6 +1852,45 @@ window.SITE_CONFIG = {
             { label: 'Świadomość i podmiotowość maszyn',  id: 'affective_robotics/swiadomosc_maszyn',              status: 'live' },
             { label: 'Interfejsy mózg–maszyna (BCI)',     id: 'affective_robotics/interfejsy_mozg_maszyna',         status: 'live' },
             { label: 'Przyszłość robotyki afektywnej',    id: 'affective_robotics/przyszlosc_robotyki_afektywnej',  status: 'live' },
+          ]
+        },
+      ]
+    },
+
+    psych_szkolna: {
+      title: 'WIKI — Psychologia szkolna i edukacyjna',
+      intro: 'Psychologia szkolna i edukacyjna bada procesy uczenia się, nauczania i rozwoju w kontekście instytucji edukacyjnych. Encyklopedia obejmuje teorie uczenia się, motywację akademicką, trudności szkolne, relacje nauczyciel–uczeń, klimat szkolny oraz interwencje psychologiczne w placówkach oświatowych.',
+      sections: [
+        {
+          title: 'Podstawy i teorie',
+          articles: [
+            { label: 'Psychologia szkolna — wprowadzenie',  id: 'school_psychology/wprowadzenie',                status: 'live' },
+            { label: 'Teorie uczenia się',                  id: 'school_psychology/teorie_uczenia_sie',          status: 'live' },
+            { label: 'Strefa najbliższego rozwoju (ZPD)',   id: 'school_psychology/strefa_najblizszego_rozwoju', status: 'live' },
+          ]
+        },
+        {
+          title: 'Motywacja i zdolności',
+          articles: [
+            { label: 'Motywacja szkolna',               id: 'school_psychology/motywacja_szkolna',      status: 'live' },
+            { label: 'Inteligencje wielorakie (Gardner)', id: 'school_psychology/inteligencja_wieloraka', status: 'live' },
+          ]
+        },
+        {
+          title: 'Trudności i zaburzenia',
+          articles: [
+            { label: 'Trudności w uczeniu się',  id: 'school_psychology/trudnosci_w_uczeniu_sie', status: 'live' },
+            { label: 'ADHD w środowisku szkolnym', id: 'school_psychology/adhd_w_szkole',          status: 'live' },
+            { label: 'Stres szkolny i lęk egzaminacyjny', id: 'school_psychology/stres_szkolny',   status: 'live' },
+          ]
+        },
+        {
+          title: 'Środowisko szkolne i interwencje',
+          articles: [
+            { label: 'Relacje nauczyciel–uczeń',           id: 'school_psychology/relacje_nauczyciel_uczen', status: 'live' },
+            { label: 'Klimat szkolny',                      id: 'school_psychology/klimat_szkolny',           status: 'live' },
+            { label: 'Ocenianie i informacja zwrotna',      id: 'school_psychology/ocenianie_i_feedback',     status: 'live' },
+            { label: 'Interwencje psychologiczne w szkole', id: 'school_psychology/interwencje_szkolne',      status: 'live' },
           ]
         },
       ]

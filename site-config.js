@@ -1,5 +1,5 @@
 /**
- * site-config.js — PsyHub v3.0 "ATLAS"
+ * site-config.js — PsyHub v3.1 "Knedlozarł"
  * Jedyne źródło prawdy: nawigacja, mapowanie plików MD, definicje WIKI.
  *
  * Konwencja statusów artykułu:

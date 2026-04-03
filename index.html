@@ -42,6 +42,52 @@
   --sw: 292px;   /* sidebar width */
   --hh: 56px;    /* header height */
   --ease: 0.18s ease;
+  --topbar-bg: rgba(9,9,15,.93);
+  --hover-subtle: rgba(255,255,255,.03);
+}
+
+[data-theme="light"] {
+  --bg:      #f5f5f0;
+  --bg2:     #eeeeed;
+  --bg3:     #e6e5e0;
+  --bg4:     #dddcd6;
+  --border:  #cccbc4;
+  --bord2:   #bebdb6;
+  --t1: #1c1c2e;
+  --t2: #4a4a6a;
+  --t3: #8a8a9e;
+  --gold:    #a07a10;
+  --goldt:   rgba(160,122,16,0.1);
+  --goldl:   #c9a227;
+  --blue:    #2e6098;
+  --teal:    #2e7b7b;
+  --rose:    #993050;
+  --green:   #396b45;
+  --purple:  #5e4e96;
+  --topbar-bg: rgba(245,245,240,.93);
+  --hover-subtle: rgba(0,0,0,.04);
+}
+
+[data-theme="sepia"] {
+  --bg:      #1a1510;
+  --bg2:     #221c14;
+  --bg3:     #2c241a;
+  --bg4:     #362c20;
+  --border:  #40321e;
+  --bord2:   #4e3e28;
+  --t1: #f0e8d8;
+  --t2: #c0aa88;
+  --t3: #806850;
+  --gold:    #d4a030;
+  --goldt:   rgba(212,160,48,0.14);
+  --goldl:   #e8bc5a;
+  --blue:    #7aaccc;
+  --teal:    #6ab8a0;
+  --rose:    #c88070;
+  --green:   #80a858;
+  --purple:  #a890c8;
+  --topbar-bg: rgba(26,21,16,.93);
+  --hover-subtle: rgba(255,255,255,.04);
 }
 
 /* ═══════════════════════════════════════════
@@ -125,7 +171,7 @@ em{color:var(--goldl)}
   cursor:pointer;border-left:2px solid transparent;
   transition:all var(--ease);
 }
-.nav-item:hover{color:var(--t1);background:rgba(255,255,255,.03)}
+.nav-item:hover{color:var(--t1);background:var(--hover-subtle)}
 .nav-item.active{color:var(--gold);border-left-color:var(--gold);background:var(--goldt)}
 .nav-item.is-wiki{font-size:.76rem;color:var(--t3);padding-left:1.65rem}
 .nav-item.is-wiki:hover{color:var(--goldl)}
@@ -138,6 +184,17 @@ em{color:var(--goldl)}
   font-size:.6rem;color:var(--t3);
 }
 .ver{background:var(--goldt);color:var(--gold);border:1px solid rgba(201,162,39,.25);border-radius:99px;padding:.13rem .5rem;font-weight:700;font-size:.6rem}
+.theme-btns{display:flex;gap:.28rem;align-items:center}
+.theme-btn{
+  width:16px;height:16px;border-radius:50%;border:2px solid var(--border);
+  cursor:pointer;padding:0;transition:border-color var(--ease),transform var(--ease);
+  flex-shrink:0;
+}
+.theme-btn:hover{transform:scale(1.2);border-color:var(--gold)}
+.theme-btn.active{border-color:var(--gold);transform:scale(1.15)}
+.theme-btn[data-theme="dark"]{background:#09090f}
+.theme-btn[data-theme="light"]{background:#f5f5f0}
+.theme-btn[data-theme="sepia"]{background:#1a1510}
 
 /* ═══════════════════════════════════════════
    MAIN
@@ -147,7 +204,7 @@ em{color:var(--goldl)}
 /* topbar */
 .topbar{
   height:var(--hh);position:sticky;top:0;
-  background:rgba(9,9,15,.93);backdrop-filter:blur(14px);
+  background:var(--topbar-bg);backdrop-filter:blur(14px);
   border-bottom:1px solid var(--border);
   display:flex;align-items:center;justify-content:space-between;
   padding:0 1.75rem;z-index:100;flex-shrink:0;
@@ -404,8 +461,13 @@ em{color:var(--goldl)}
   <nav class="s-nav" id="sidebarNav"></nav>
 
   <div class="s-footer">
-    <span>PsyHub v3.0</span>
-    <span class="ver">ATLAS</span>
+    <span>PsyHub v3.1</span>
+    <div class="theme-btns">
+      <button class="theme-btn active" data-theme="dark"  title="Motyw ciemny"></button>
+      <button class="theme-btn"        data-theme="light" title="Motyw jasny"></button>
+      <button class="theme-btn"        data-theme="sepia" title="Motyw sepia"></button>
+    </div>
+    <span class="ver">Knedlozarł</span>
   </div>
 </aside>
 
@@ -1085,7 +1147,35 @@ window.addEventListener('DOMContentLoaded', ()=>{
   navigate(hash && pageMap.has(hash) ? hash : SITE_CONFIG.defaultPage, true);
 });
 
-/* ── Browser back/forward ──────────────────── */
+/* ── Theme switcher ────────────────────────── */
+(function() {
+  const DEFAULT_THEME = 'dark';
+  const THEMES = [DEFAULT_THEME, 'light', 'sepia'];
+  const stored = localStorage.getItem('psyhub-theme') || DEFAULT_THEME;
+  const active  = THEMES.includes(stored) ? stored : DEFAULT_THEME;
+
+  function themeAttr(theme) { return theme === DEFAULT_THEME ? '' : theme; }
+
+  function applyTheme(theme) {
+    document.documentElement.dataset.theme = themeAttr(theme);
+    document.querySelectorAll('.theme-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.theme === theme);
+    });
+    localStorage.setItem('psyhub-theme', theme);
+  }
+
+  // Apply immediately (before DOMContentLoaded to avoid flash)
+  document.documentElement.dataset.theme = themeAttr(active);
+
+  window.addEventListener('DOMContentLoaded', () => {
+    // Sync button states
+    document.querySelectorAll('.theme-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.theme === active);
+      btn.addEventListener('click', () => applyTheme(btn.dataset.theme));
+    });
+  });
+})();
+
 window.addEventListener('popstate', e => {
   const id = e.state?.id || window.location.hash.slice(1) || SITE_CONFIG.defaultPage;
   navigate(pageMap.has(id) ? id : SITE_CONFIG.defaultPage, true);

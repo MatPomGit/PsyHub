@@ -73,8 +73,9 @@ window.SITE_CONFIG = {
         { id: 'cognitive/efekt_ramowania',     label: 'Efekt ramowania',             file: 'wiki/cognitive/efekt_ramowania.md'     },
         { id: 'cognitive/nasa_tlx',            label: 'NASA Task Load Index (TLX)', file: 'wiki/cognitive/nasa_tlx.md'            },
         { id: 'cognitive/iluzje',              label: 'Iluzje i błędy poznawcze',   file: 'wiki/cognitive/iluzje.md'              },
-        { id: 'cognitive/eksperyment_posnera', label: 'Eksperyment Posnera',         file: 'wiki/cognitive/eksperyment_posnera.md' },
-        { id: 'cognitive/system1_system2',     label: 'System 1 i System 2 (Kahneman)', file: 'wiki/cognitive/system1_system2.md' },
+        { id: 'cognitive/eksperyment_posnera',        label: 'Eksperyment Posnera',            file: 'wiki/cognitive/eksperyment_posnera.md'        },
+        { id: 'cognitive/system1_system2',            label: 'System 1 i System 2 (Kahneman)', file: 'wiki/cognitive/system1_system2.md'            },
+        { id: 'cognitive/przetwarzanie_predyktywne', label: 'Predictive processing',           file: 'wiki/cognitive/przetwarzanie_predyktywne.md' },
       ]
     },
     {
@@ -134,6 +135,7 @@ window.SITE_CONFIG = {
         { id: 'cognitive/architektury_kognitywne',label: 'Architektury kognitywne',         file: 'wiki/cognitive/architektury_kognitywne.md'},
         { id: 'cognitive/hda',                    label: 'Human Decision Accuracy (HDA)',   file: 'wiki/cognitive/hda.md'                    },
         { id: 'cognitive/system1_system2',        label: 'System 1 i System 2 (Kahneman)',  file: 'wiki/cognitive/system1_system2.md'        },
+        { id: 'cognitive/przetwarzanie_predyktywne', label: 'Predictive processing',        file: 'wiki/cognitive/przetwarzanie_predyktywne.md' },
       ]
     },
     {
@@ -582,6 +584,12 @@ window.SITE_CONFIG = {
         { id: 'affective_robotics/przyszlosc_robotyki_afektywnej', label: 'Przyszłość robotyki afektywnej',            file: 'wiki/affective_robotics/przyszlosc_robotyki_afektywnej.md'  },
       ]
     },
+    {
+      section: 'Psychologia Społeczna',
+      items: [
+        { id: 'spoleczna/percepcja_spoleczna', label: 'Percepcja społeczna i atrybucje', file: 'wiki/spoleczna/percepcja_spoleczna.md' },
+      ]
+    },
     
     {
       section: 'Encyklopedie',
@@ -674,6 +682,10 @@ window.SITE_CONFIG = {
       { file: 'wiki/cognitive/architektury_kognitywne.md', label: 'Architektury kognitywne',      status: 'live' },
       { file: 'wiki/cognitive/hda.md',                     label: 'Human Decision Accuracy (HDA)',status: 'live' },
       { file: 'wiki/cognitive/system1_system2.md',        label: 'System 1 i System 2 (Kahneman)', status: 'live' },
+      { file: 'wiki/cognitive/przetwarzanie_predyktywne.md', label: 'Predictive processing',        status: 'live' },
+    ],
+    spoleczna: [
+      { file: 'wiki/spoleczna/percepcja_spoleczna.md', label: 'Percepcja społeczna i atrybucje', status: 'live' },
     ],
     disorders: [
       { file: 'wiki/disorders/afazje.md',    label: 'Afazje',                 status: 'live' },
@@ -1244,7 +1256,7 @@ window.SITE_CONFIG = {
           title: 'Modele i teorie',
           articles: [
             { label: 'System 1 i System 2 (Kahneman)', id: 'cognitive/system1_system2', status: 'live' },
-            { label: 'Predictive processing', id: null, status: 'planned' },
+            { label: 'Predictive processing', id: 'cognitive/przetwarzanie_predyktywne', status: 'live' },
             { label: 'Ucieleśnione poznanie', id: null, status: 'planned' },
           ]
         },
@@ -1258,7 +1270,7 @@ window.SITE_CONFIG = {
         {
           title: 'Poznanie społeczne',
           articles: [
-            { label: 'Percepcja społeczna i atrybucje', id: null, status: 'planned' },
+            { label: 'Percepcja społeczna i atrybucje', id: 'spoleczna/percepcja_spoleczna', status: 'live' },
             { label: 'Stereotypy i uprzedzenia', id: null, status: 'planned' },
             { label: 'Ja i samoocena', id: null, status: 'planned' },
             { label: 'Postawy i zmiana postaw', id: null, status: 'planned' },

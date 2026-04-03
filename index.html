@@ -1149,12 +1149,15 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
 /* ── Theme switcher ────────────────────────── */
 (function() {
-  const THEMES = ['dark', 'light', 'sepia'];
-  const stored = localStorage.getItem('psyhub-theme') || 'dark';
-  const active  = THEMES.includes(stored) ? stored : 'dark';
+  const DEFAULT_THEME = 'dark';
+  const THEMES = [DEFAULT_THEME, 'light', 'sepia'];
+  const stored = localStorage.getItem('psyhub-theme') || DEFAULT_THEME;
+  const active  = THEMES.includes(stored) ? stored : DEFAULT_THEME;
+
+  function themeAttr(theme) { return theme === DEFAULT_THEME ? '' : theme; }
 
   function applyTheme(theme) {
-    document.documentElement.dataset.theme = (theme === 'dark') ? '' : theme;
+    document.documentElement.dataset.theme = themeAttr(theme);
     document.querySelectorAll('.theme-btn').forEach(btn => {
       btn.classList.toggle('active', btn.dataset.theme === theme);
     });
@@ -1162,7 +1165,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
   }
 
   // Apply immediately (before DOMContentLoaded to avoid flash)
-  document.documentElement.dataset.theme = (active === 'dark') ? '' : active;
+  document.documentElement.dataset.theme = themeAttr(active);
 
   window.addEventListener('DOMContentLoaded', () => {
     // Sync button states

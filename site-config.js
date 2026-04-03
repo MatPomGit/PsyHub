@@ -51,6 +51,7 @@ window.SITE_CONFIG = {
         { id: 'neuro/rehabilitacja_neuropsychologiczna',  label: 'Rehabilitacja neuropsychologiczna',      file: 'wiki/neuro/rehabilitacja_neuropsychologiczna.md'  },
         { id: 'neuro/neuronauka_poznawcza',               label: 'Neuronauka poznawcza',                   file: 'wiki/neuro/neuronauka_poznawcza.md'               },
         { id: 'neuro/podstawy_neurologii',  label: 'Podstawy neurologii',                  file: 'wiki/neuro/podstawy_neurologii.md'  },
+        { id: 'neuro/pien_mozgu',           label: 'Pień mózgu i móżdżek',                file: 'wiki/neuro/pien_mozgu.md'           },
       ]
     },
     {
@@ -73,6 +74,7 @@ window.SITE_CONFIG = {
         { id: 'cognitive/nasa_tlx',            label: 'NASA Task Load Index (TLX)', file: 'wiki/cognitive/nasa_tlx.md'            },
         { id: 'cognitive/iluzje',              label: 'Iluzje i błędy poznawcze',   file: 'wiki/cognitive/iluzje.md'              },
         { id: 'cognitive/eksperyment_posnera',        label: 'Eksperyment Posnera',            file: 'wiki/cognitive/eksperyment_posnera.md'        },
+        { id: 'cognitive/system1_system2',            label: 'System 1 i System 2 (Kahneman)', file: 'wiki/cognitive/system1_system2.md'            },
         { id: 'cognitive/przetwarzanie_predyktywne', label: 'Predictive processing',           file: 'wiki/cognitive/przetwarzanie_predyktywne.md' },
       ]
     },
@@ -105,6 +107,7 @@ window.SITE_CONFIG = {
         { id: 'neuro/cykl_miesiaczkowy',     label: 'Neuropsychologia cyklu miesiączkowego',  file: 'wiki/neuro/cykl_miesiaczkowy.md'     },
         { id: 'neuro/eye_tracking',          label: 'Eye tracking — śledzenie wzroku',         file: 'wiki/neuro/eye_tracking.md'          },
         { id: 'neuro/Muse',                  label: 'Muse S — neurofeedback i EEG',            file: 'wiki/neuro/Muse.md'                  },
+        { id: 'neuro/pien_mozgu',            label: 'Pień mózgu i móżdżek',                   file: 'wiki/neuro/pien_mozgu.md'            },
       ]
     },
     {
@@ -131,6 +134,7 @@ window.SITE_CONFIG = {
         { id: 'cognitive/nauki_kognitywne',       label: 'Nauki kognitywne',                file: 'wiki/cognitive/nauki_kognitywne.md'       },
         { id: 'cognitive/architektury_kognitywne',label: 'Architektury kognitywne',         file: 'wiki/cognitive/architektury_kognitywne.md'},
         { id: 'cognitive/hda',                    label: 'Human Decision Accuracy (HDA)',   file: 'wiki/cognitive/hda.md'                    },
+        { id: 'cognitive/system1_system2',        label: 'System 1 i System 2 (Kahneman)',  file: 'wiki/cognitive/system1_system2.md'        },
         { id: 'cognitive/przetwarzanie_predyktywne', label: 'Predictive processing',        file: 'wiki/cognitive/przetwarzanie_predyktywne.md' },
       ]
     },
@@ -241,6 +245,7 @@ window.SITE_CONFIG = {
         { id: 'psychopathology/wyuczona_bezradnosc',          label: 'Wyuczona bezradność',             file: 'wiki/psychopathology/wyuczona_bezradnosc.md'           },
         { id: 'psychopathology/intelektualizacja',            label: 'Intelektualizacja emocji',        file: 'wiki/psychopathology/intelektualizacja.md'             },
         { id: 'psychopathology/dezintegracja_pozytywna',      label: 'Dezintegracja pozytywna',         file: 'wiki/psychopathology/dezintegracja_pozytywna.md'       },
+        { id: 'psychopathology/klasyfikacje',                 label: 'Klasyfikacje ICD-11 i DSM-5-TR',  file: 'wiki/psychopathology/klasyfikacje.md'                  },
       ]
     },
     {
@@ -652,6 +657,7 @@ window.SITE_CONFIG = {
       { file: 'wiki/neuro/rehabilitacja_neuropsychologiczna.md', label: 'Rehabilitacja neuropsychologiczna', status: 'live' },
       { file: 'wiki/neuro/neuronauka_poznawcza.md', label: 'Neuronauka poznawcza', status: 'live' },
       { file: 'wiki/neuro/podstawy_neurologii.md', label: 'Podstawy neurologii',                 status: 'live' },
+      { file: 'wiki/neuro/pien_mozgu.md',          label: 'Pień mózgu i móżdżek',               status: 'live' },
     ],
     cognitive: [
       { file: 'wiki/cognitive/pamiec.md',              label: 'Pamięć',               status: 'live' },
@@ -675,6 +681,7 @@ window.SITE_CONFIG = {
       { file: 'wiki/cognitive/nauki_kognitywne.md',        label: 'Nauki kognitywne',             status: 'live' },
       { file: 'wiki/cognitive/architektury_kognitywne.md', label: 'Architektury kognitywne',      status: 'live' },
       { file: 'wiki/cognitive/hda.md',                     label: 'Human Decision Accuracy (HDA)',status: 'live' },
+      { file: 'wiki/cognitive/system1_system2.md',        label: 'System 1 i System 2 (Kahneman)', status: 'live' },
       { file: 'wiki/cognitive/przetwarzanie_predyktywne.md', label: 'Predictive processing',        status: 'live' },
     ],
     spoleczna: [
@@ -791,6 +798,7 @@ window.SITE_CONFIG = {
       { file: 'wiki/psychopathology/wyuczona_bezradnosc.md',        label: 'Wyuczona bezradność',         status: 'live' },
       { file: 'wiki/psychopathology/intelektualizacja.md',          label: 'Intelektualizacja emocji',    status: 'live' },
       { file: 'wiki/psychopathology/dezintegracja_pozytywna.md',    label: 'Dezintegracja pozytywna',     status: 'live' },
+      { file: 'wiki/psychopathology/klasyfikacje.md',               label: 'Klasyfikacje ICD-11 i DSM-5-TR', status: 'live' },
     ],
     suicidology: [
       { file: 'wiki/suicidology/suicydologia_wprowadzenie.md', label: 'Suicydologia — wprowadzenie', status: 'live' },
@@ -1086,7 +1094,7 @@ window.SITE_CONFIG = {
             { label: 'Neuropsychologia cyklu miesiączkowego', id: 'neuro/cykl_miesiaczkowy', status: 'live', desc: 'Wpływ estradiolu i progesteronu na poznanie, nastrój i mózg.' },
             { label: 'Neuronauka poznawcza', id: 'neuro/neuronauka_poznawcza', status: 'live', desc: 'Biologiczne mechanizmy procesów poznawczych — percepcja, pamięć, uwaga, świadomość.' },
             { label: 'Podstawy neurologii', id: 'neuro/podstawy_neurologii', status: 'live', desc: 'Organizacja OUN/PNS, neurony, glej, drogi nerwowe, badanie neurologiczne.' },
-            { label: 'Pień mózgu i móżdżek', id: null, status: 'planned', desc: 'Struktury podkorowe i ich funkcje kliniczne.' },
+            { label: 'Pień mózgu i móżdżek', id: 'neuro/pien_mozgu', status: 'live', desc: 'Struktury podkorowe i ich funkcje kliniczne.' },
           ]
         },
         {
@@ -1149,7 +1157,7 @@ window.SITE_CONFIG = {
           articles: [
             { label: 'Psychopatologia ogólna', id: 'psychopathology/psychopatologia_wprowadzenie', status: 'live' },
             { label: 'Badanie stanu psychicznego (MSE)', id: 'psychopathology/objawy_ogolne', status: 'live' },
-            { label: 'Klasyfikacje ICD-11 i DSM-5-TR', id: null, status: 'planned' },
+            { label: 'Klasyfikacje ICD-11 i DSM-5-TR', id: 'psychopathology/klasyfikacje', status: 'live' },
             { label: 'Formułowanie przypadku', id: null, status: 'planned' },
           ]
         },
@@ -1247,7 +1255,7 @@ window.SITE_CONFIG = {
         {
           title: 'Modele i teorie',
           articles: [
-            { label: 'System 1 i System 2 (Kahneman)', id: null, status: 'planned' },
+            { label: 'System 1 i System 2 (Kahneman)', id: 'cognitive/system1_system2', status: 'live' },
             { label: 'Predictive processing', id: 'cognitive/przetwarzanie_predyktywne', status: 'live' },
             { label: 'Ucieleśnione poznanie', id: null, status: 'planned' },
           ]

@@ -45,15 +45,15 @@ Następujące klucze są odwoływane przez nawigację (`wiki-index/...`), ale br
 ## 🟡 Artykuły zaplanowane do napisania (71 łącznie)
 
 ### WIKI — Neuropsychologia kliniczna (`neuropsychologia`)
-- [ ] Pień mózgu i móżdżek *(Podstawy neuroanatomiczne)*
+- [x] Pień mózgu i móżdżek *(Podstawy neuroanatomiczne)* ✓
 
 ### WIKI — Psychologia kliniczna (`kliniczna`)
-- [ ] Klasyfikacje ICD-11 i DSM-5-TR *(Podstawy diagnostyki)*
+- [x] Klasyfikacje ICD-11 i DSM-5-TR *(Podstawy diagnostyki)* ✓
 - [ ] Formułowanie przypadku *(Podstawy diagnostyki)*
 - [ ] Narzędzia kliniczne — PHQ-9, GAD-7, PCL-5 *(Psychometria)*
 
 ### WIKI — Psychologia poznawcza (`poznawcza`)
-- [ ] System 1 i System 2 — Kahneman *(Modele i teorie)*
+- [x] System 1 i System 2 — Kahneman *(Modele i teorie)* ✓
 - [ ] Predictive processing *(Modele i teorie)*
 - [ ] Ucieleśnione poznanie *(Modele i teorie)*
 

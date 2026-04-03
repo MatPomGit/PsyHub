@@ -1,7 +1,7 @@
 # PsyHub — Lista zadań (TODO)
 
-> Ostatnia aktualizacja: 2026-04-02  
-> Stan bazy: **355 plików MD**, **658 artykułów live**, **71 zaplanowanych**, **26 encyklopedii wiki**
+> Ostatnia aktualizacja: 2026-04-03  
+> Stan bazy: **357 plików MD**, **664 artykułów live**, **69 zaplanowanych**, **26 encyklopedii wiki**
 
 ---
 
@@ -35,30 +35,28 @@ Poniższe pliki istnieją w repozytorium, ale zawierają tylko tytuł (1 wiersz)
 
 ### 2. Dodaj brakujące definicje wiki w `site-config.js`
 
-Następujące klucze są odwoływane przez nawigację (`wiki-index/...`), ale brak ich definicji w obiekcie `wikis {}`:
-
-- [ ] `e_terapia` — brakuje wpisu `wikis.e_terapia` (nawigacja wskazuje `wiki-index/e_terapia`, pliki MD istnieją)
-- [ ] `psych_sadowa` — brakuje wpisu `wikis.psych_sadowa` (nawigacja wskazuje `wiki-index/psych_sadowa`, pliki MD istnieją)
+- [x] `e_terapia` — wpis `wikis.e_terapia` dodany ✓
+- [x] `psych_sadowa` — wpis `wikis.psych_sadowa` dodany ✓
 
 ---
 
-## 🟡 Artykuły zaplanowane do napisania (71 łącznie)
+## 🟡 Artykuły zaplanowane do napisania (69 łącznie)
 
 ### WIKI — Neuropsychologia kliniczna (`neuropsychologia`)
-- [ ] Pień mózgu i móżdżek *(Podstawy neuroanatomiczne)*
+- [x] Pień mózgu i móżdżek *(Podstawy neuroanatomiczne)* ✓ `wiki/neuro/pien_mozgu.md`
 
 ### WIKI — Psychologia kliniczna (`kliniczna`)
-- [ ] Klasyfikacje ICD-11 i DSM-5-TR *(Podstawy diagnostyki)*
+- [x] Klasyfikacje ICD-11 i DSM-5-TR *(Podstawy diagnostyki)* ✓ `wiki/psychopathology/klasyfikacje.md`
 - [ ] Formułowanie przypadku *(Podstawy diagnostyki)*
 - [ ] Narzędzia kliniczne — PHQ-9, GAD-7, PCL-5 *(Psychometria)*
 
 ### WIKI — Psychologia poznawcza (`poznawcza`)
-- [ ] System 1 i System 2 — Kahneman *(Modele i teorie)*
-- [ ] Predictive processing *(Modele i teorie)*
+- [x] System 1 i System 2 — Kahneman *(Modele i teorie)* ✓ `wiki/cognitive/system1_system2.md`
+- [x] Predictive processing *(Modele i teorie)* ✓ `wiki/cognitive/przetwarzanie_predyktywne.md`
 - [ ] Ucieleśnione poznanie *(Modele i teorie)*
 
 ### WIKI — Psychologia społeczna (`spoleczna`)
-- [ ] Percepcja społeczna i atrybucje
+- [x] Percepcja społeczna i atrybucje ✓ `wiki/spoleczna/percepcja_spoleczna.md`
 - [ ] Stereotypy i uprzedzenia
 - [ ] Ja i samoocena
 - [ ] Postawy i zmiana postaw
@@ -141,9 +139,7 @@ Następujące klucze są odwoływane przez nawigację (`wiki-index/...`), ale br
 
 ## 🟢 Nowe sekcje / domeny do rozważenia
 
-Istniejące foldery wiki nie mają jeszcze pełnego pokrycia w nawigacji lub planach:
-
-- [ ] **Psychologia społeczna** — brak sekcji nav dla `spoleczna` (artykuły tylko w wiki-index)
+- [x] **Psychologia społeczna** — dodano sekcję nav `Psychologia Społeczna` i `plans.spoleczna` ✓
 - [ ] **Psychologia kulturowa** — brak sekcji nav dla `kulturowa`
 - [ ] **Psychologia rozwojowa** — brak sekcji nav dla `rozwojowa`
 - [ ] **Psychologia uzależnień** — brak sekcji nav dla `uzaleznienia`
@@ -166,7 +162,7 @@ Istniejące foldery wiki nie mają jeszcze pełnego pokrycia w nawigacji lub pla
 
 ### `site-config.js`
 - [ ] Ujednolicić klucze planów: `disability_psychology` nie ma wpisu w `plans {}` (tylko w `wikis`)
-- [ ] Dodać `plans.spoleczna`, `plans.kulturowa`, `plans.rozwojowa`, `plans.uzaleznienia`, `plans.relacje`, `plans.etyka` — tak by ich artykuły pojawiały się na stronach domenowych
+- [ ] Dodać `plans.kulturowa`, `plans.rozwojowa`, `plans.uzaleznienia`, `plans.relacje`, `plans.etyka` — tak by ich artykuły pojawiały się na stronach domenowych
 
 ### SEO / metadane
 - [ ] Dodać dynamiczne `<title>` i `<meta description>` przy nawigacji (history.pushState)
@@ -199,6 +195,7 @@ Działy z małą liczbą artykułów — kandydaci do rozbudowy:
 | `diagnostics` | 8 | Diagnoza różnicowa, protokoły diagnostyczne |
 | `suicidology` | 9 | Prewencja, interwencja kryzysowa, postvencja |
 | `pharmacology` | 10 | Interakcje lekowe, farmakogenetyka, nowe leki |
+| `spoleczna` | 1 | Stereotypy, konformizm, wpływ społeczny, atrakcyjność |
 
 ---
 
@@ -221,3 +218,4 @@ Przypomnienie workflow (patrz też `README.md`):
    - `plans.<domena>` → status `'live'`
    - `wikis.<klucz>` → odpowiednia sekcja encyklopedii
 3. Zmień status z `'planned'` → `'live'` we wszystkich miejscach
+

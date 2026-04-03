@@ -26,6 +26,8 @@
   --sw: 292px;   /* sidebar width */
   --hh: 56px;    /* header height */
   --ease: 0.18s ease;
+  --topbar-bg: rgba(9,9,15,.93);
+  --hover-subtle: rgba(255,255,255,.03);
 }
 
 /* ═══════════════════════════════════════════
@@ -109,7 +111,7 @@ em{color:var(--goldl)}
   cursor:pointer;border-left:2px solid transparent;
   transition:all var(--ease);
 }
-.nav-item:hover{color:var(--t1);background:rgba(255,255,255,.03)}
+.nav-item:hover{color:var(--t1);background:var(--hover-subtle)}
 .nav-item.active{color:var(--gold);border-left-color:var(--gold);background:var(--goldt)}
 .nav-item.is-wiki{font-size:.76rem;color:var(--t3);padding-left:1.65rem}
 .nav-item.is-wiki:hover{color:var(--goldl)}
@@ -132,7 +134,7 @@ em{color:var(--goldl)}
 /* topbar */
 .topbar{
   height:var(--hh);position:sticky;top:0;
-  background:rgba(9,9,15,.93);backdrop-filter:blur(14px);
+  background:var(--topbar-bg);backdrop-filter:blur(14px);
   border-bottom:1px solid var(--border);
   display:flex;align-items:center;justify-content:space-between;
   padding:0 1.75rem;z-index:100;flex-shrink:0;

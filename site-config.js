@@ -35,6 +35,23 @@ window.SITE_CONFIG = {
       ]
     },
     {
+      section: 'Filozofia',
+      items: [
+        { id: 'philosophy/wprowadzenie',        label: 'Filozofia — wprowadzenie',       file: 'wiki/philosophy/wprowadzenie.md'        },
+        { id: 'philosophy/ontologia',           label: 'Ontologia i metafizyka',          file: 'wiki/philosophy/ontologia.md'           },
+        { id: 'philosophy/epistemologia',       label: 'Epistemologia i teoria poznania', file: 'wiki/philosophy/epistemologia.md'       },
+        { id: 'philosophy/etyka',               label: 'Etyka i filozofia moralna',       file: 'wiki/philosophy/etyka.md'               },
+        { id: 'philosophy/filozofia_umyslu',    label: 'Filozofia umysłu',                file: 'wiki/philosophy/filozofia_umyslu.md'    },
+        { id: 'philosophy/filozofia_nauki',     label: 'Filozofia nauki',                 file: 'wiki/philosophy/filozofia_nauki.md'     },
+        { id: 'philosophy/egzystencjalizm',     label: 'Egzystencjalizm',                 file: 'wiki/philosophy/egzystencjalizm.md'     },
+        { id: 'philosophy/fenomenologia',       label: 'Fenomenologia',                   file: 'wiki/philosophy/fenomenologia.md'       },
+        { id: 'philosophy/hermeneutyka',        label: 'Hermeneutyka i interpretacja',    file: 'wiki/philosophy/hermeneutyka.md'        },
+        { id: 'philosophy/logika',              label: 'Logika i argumentacja',           file: 'wiki/philosophy/logika.md'              },
+        { id: 'philosophy/filozofia_jezyka',    label: 'Filozofia języka',                file: 'wiki/philosophy/filozofia_jezyka.md'    },
+        { id: 'philosophy/filozofia_czlowieka', label: 'Filozofia człowieka',             file: 'wiki/philosophy/filozofia_czlowieka.md' },
+      ]
+    },
+    {
       section: 'Neurobiologia',
       items: [
         { id: 'neuro/anatomia', label: 'Anatomia mózgu',   file: 'wiki/neuro/anatomia.md'  },
@@ -622,6 +639,7 @@ window.SITE_CONFIG = {
         { id: 'wiki-index/neurozroznorodnosc',   label: 'WIKI — Neuroróżnorodność',                 wiki: 'neurozroznorodnosc'   },
         { id: 'wiki-index/psych_sadowa',         label: 'WIKI — Psychologia sądowa',                wiki: 'psych_sadowa'         },
         { id: 'wiki-index/e_terapia',            label: 'WIKI — E-terapia',                         wiki: 'e_terapia'            },
+        { id: 'wiki-index/filozofia',            label: 'WIKI — Filozofia',                         wiki: 'filozofia'            },
       ]
     },
     {
@@ -1067,6 +1085,20 @@ window.SITE_CONFIG = {
       { file: 'wiki/e_therapy/e_terapia_dzieci.md',               label: 'E-terapia dzieci i młodzieży',           status: 'live' },
       { file: 'wiki/e_therapy/dostepnosc_cyfrowa.md',             label: 'Dostępność i wykluczenie cyfrowe',       status: 'live' },
       { file: 'wiki/e_therapy/przyszlosc_e_terapii.md',           label: 'Przyszłość e-terapii',                   status: 'live' },
+    ],
+    philosophy: [
+      { file: 'wiki/philosophy/wprowadzenie.md',        label: 'Filozofia — wprowadzenie',       status: 'live' },
+      { file: 'wiki/philosophy/ontologia.md',           label: 'Ontologia i metafizyka',          status: 'live' },
+      { file: 'wiki/philosophy/epistemologia.md',       label: 'Epistemologia i teoria poznania', status: 'live' },
+      { file: 'wiki/philosophy/etyka.md',               label: 'Etyka i filozofia moralna',       status: 'live' },
+      { file: 'wiki/philosophy/filozofia_umyslu.md',    label: 'Filozofia umysłu',                status: 'live' },
+      { file: 'wiki/philosophy/filozofia_nauki.md',     label: 'Filozofia nauki',                 status: 'live' },
+      { file: 'wiki/philosophy/egzystencjalizm.md',     label: 'Egzystencjalizm',                 status: 'live' },
+      { file: 'wiki/philosophy/fenomenologia.md',       label: 'Fenomenologia',                   status: 'live' },
+      { file: 'wiki/philosophy/hermeneutyka.md',        label: 'Hermeneutyka i interpretacja',    status: 'live' },
+      { file: 'wiki/philosophy/logika.md',              label: 'Logika i argumentacja',           status: 'live' },
+      { file: 'wiki/philosophy/filozofia_jezyka.md',    label: 'Filozofia języka',                status: 'live' },
+      { file: 'wiki/philosophy/filozofia_czlowieka.md', label: 'Filozofia człowieka',             status: 'live' },
     ],
   },
 
@@ -2148,6 +2180,39 @@ window.SITE_CONFIG = {
             { label: 'Wsparcie i interwencje',             id: 'neurodiversity/wsparcie_interwencje',       status: 'live' },
             { label: 'Neuroróżnorodność w miejscu pracy', id: 'neurodiversity/neurozroznorodnosc_w_pracy', status: 'live' },
             { label: 'Identyfikacja i diagnoza',           id: 'neurodiversity/identyfikacja_i_diagnoza',   status: 'live' },
+          ]
+        },
+      ]
+    },
+    filozofia: {
+      title: 'WIKI — Filozofia',
+      intro: 'Filozofia jest matką wszystkich nauk — bada fundamentalne pytania o rzeczywistość, poznanie, wartości i naturę człowieka. Encyklopedia obejmuje główne działy filozofii (ontologię, epistemologię, etykę, filozofię umysłu) oraz kierunki szczególnie bliskie psychologii: egzystencjalizm, fenomenologię, hermeneutykę i filozofię języka.',
+      sections: [
+        {
+          title: 'Podstawy filozofii',
+          articles: [
+            { label: 'Filozofia — wprowadzenie',       id: 'philosophy/wprowadzenie',  status: 'live' },
+            { label: 'Ontologia i metafizyka',          id: 'philosophy/ontologia',     status: 'live' },
+            { label: 'Epistemologia i teoria poznania', id: 'philosophy/epistemologia', status: 'live' },
+            { label: 'Etyka i filozofia moralna',       id: 'philosophy/etyka',         status: 'live' },
+          ]
+        },
+        {
+          title: 'Filozofia umysłu i nauki',
+          articles: [
+            { label: 'Filozofia umysłu',  id: 'philosophy/filozofia_umyslu', status: 'live' },
+            { label: 'Filozofia nauki',   id: 'philosophy/filozofia_nauki',  status: 'live' },
+            { label: 'Logika i argumentacja', id: 'philosophy/logika',       status: 'live' },
+          ]
+        },
+        {
+          title: 'Kierunki bliskie psychologii',
+          articles: [
+            { label: 'Egzystencjalizm',                id: 'philosophy/egzystencjalizm',     status: 'live' },
+            { label: 'Fenomenologia',                   id: 'philosophy/fenomenologia',       status: 'live' },
+            { label: 'Hermeneutyka i interpretacja',    id: 'philosophy/hermeneutyka',        status: 'live' },
+            { label: 'Filozofia języka',                id: 'philosophy/filozofia_jezyka',    status: 'live' },
+            { label: 'Filozofia człowieka',             id: 'philosophy/filozofia_czlowieka', status: 'live' },
           ]
         },
       ]

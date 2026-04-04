@@ -55,4 +55,4 @@ Wpływy hermeneutyki na praktykę psychologiczną są rozległe:
 
 ## Podsumowanie
 
-Hermeneutyka uczy pokory wobec złożoności rozumienia. Psycholog, który wierzy, że „obiektywnie odczytuje" dane z wywiadu klinicznego, ignoruje własne przedrozumienie — i przez to jego „rozumienie" jest mniej krytyczne, nie bardziej. Świadomość hermeneutyczna oznacza gotowość do rewizji własnych interpretacji, otwartość na to, że pacjent może być niespodziank — i że koło hermeneutyczne nigdy się nie zamyka.
+Hermeneutyka uczy pokory wobec złożoności rozumienia. Psycholog, który wierzy, że „obiektywnie odczytuje" dane z wywiadu klinicznego, ignoruje własne przedrozumienie — i przez to jego „rozumienie" jest mniej krytyczne, nie bardziej. Świadomość hermeneutyczna oznacza gotowość do rewizji własnych interpretacji, otwartość na to, że pacjent może być niespodzianką — i że koło hermeneutyczne nigdy się nie zamyka.

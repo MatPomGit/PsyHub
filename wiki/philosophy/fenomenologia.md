@@ -23,7 +23,7 @@ Kluczowe pojęcia Husserla:
 
 Heidegger przekształcił fenomenologię w kierunku **hermeneutycznym**: zamiast czystego opisu doświadczenia, akcentuje **rozumienie** (*Verstehen*) jako podstawowy sposób ludzkiego bycia-w-świecie. Dasein (jestestwo) nie jest czystą świadomością — jest zawsze już osadzone w praktykach, językach i tradycjach, które umożliwiają rozumienie.
 
-Dla psychologii ważna jest Heideggerowska analiza **nastrojów** (*Stimmungen*): nastrój nie jest jedynie stanem psychicznym — jest sposobem, w jaki cały świat nas nastrajia, zanim cokolwiek pomyślimy.
+Dla psychologii ważna jest Heideggerowska analiza **nastrojów** (*Stimmungen*): nastrój nie jest jedynie stanem psychicznym — jest sposobem, w jaki cały świat nas nastraja, zanim cokolwiek pomyślimy.
 
 ## Maurice Merleau-Ponty — fenomenologia ciała
 
@@ -33,7 +33,7 @@ Kluczowe wkłady Merleau-Ponty'ego:
 
 - **Schemat ciała** (*schéma corporel*) — nieświadoma mapa własnego ciała i jego możliwości działania w otoczeniu.
 - **Habitus motoryczny** — umiejętności są zinternalizowane w ciele, nie tylko w umyśle (np. gra na fortepianie, jazda na rowerze).
-- **Fenomen kończyny fantomowej** — poamputowaiana kończyna nadal jest obecna jako część schematu ciała — dowód na to, że ciało-podmiot jest nieredukowalne do ciała fizycznego.
+- **Fenomen kończyny fantomowej** — poamputowana kończyna nadal jest obecna jako część schematu ciała — dowód na to, że ciało-podmiot jest nieredukowalne do ciała fizycznego.
 
 > **Cytat:** „Ciało jest naszym środkiem posiadania świata." — Maurice Merleau-Ponty, *Fenomenologia percepcji* (1945)
 
@@ -55,4 +55,4 @@ Metoda ta jest szczególnie wartościowa w badaniu doświadczeń trudno wymierny
 
 ## Podsumowanie
 
-Fenomenologia przypomina psychologowi, że nauka o człowieku musi uwzględniać **pierwszoosobową perspektywę** — doświadczenie subiektywne jest danych empirycznych nie mniej wartościowym, lecz zaledwie trudniejszym do mierzenia. Psycholog, który potrafi uważnie towarzyszyć doświadczeniu pacjenta, zanim je zaklasyfikuje i wyjaśni, jest bliżej prawdy o człowieku niż ten, kto operuje wyłącznie kategoriami diagnostycznymi.
+Fenomenologia przypomina psychologowi, że nauka o człowieku musi uwzględniać **pierwszoosobową perspektywę** — doświadczenie subiektywne jest nie mniej wartościowe niż dane empiryczne — jedynie trudniejsze do mierzenia. Psycholog, który potrafi uważnie towarzyszyć doświadczeniu pacjenta, zanim je zaklasyfikuje i wyjaśni, jest bliżej prawdy o człowieku niż ten, kto operuje wyłącznie kategoriami diagnostycznymi.

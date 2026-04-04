@@ -38,7 +38,7 @@ Pytanie o **tożsamość osobową w czasie** — czym jest ten sam człowiek na 
 - **Eliminatywizm** — pojęcia potocznej psychologii (przekonania, pragnienia) zostaną ostatecznie zastąpione przez neuronauki (Paul Churchland).
 - **Fizykalizm niedukcyjny** — własności mentalne są zrealizowane fizycznie, lecz nie dają się zredukować do opisu czysto fizycznego (*multiple realizability*).
 
-### Emergenntyzm i własnościowy dualizm
+### Emergentyzm i własnościowy dualizm
 
 **Emergentyzm** zakłada, że świadomość pojawia się jako nowa jakość z dostatecznie złożonych procesów fizycznych — nie daje się jednak do nich sprowadzić. David Chalmers wyróżnia **„trudny problem świadomości"** (*hard problem of consciousness*): nawet gdybyśmy w pełni wyjaśnili mechanizmy neuronalne, wciąż pozostawałoby pytanie, *dlaczego* towarzyszą im subiektywne odczucia — **qualia**.
 

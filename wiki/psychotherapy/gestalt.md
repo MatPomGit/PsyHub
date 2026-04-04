@@ -1,6 +1,6 @@
 # Płodna pustka (fertile void) w terapii Gestalt
 
-Centralny paradoks terapii Gestalt: twórcza moc drzemie nie w działaniu, lecz w chwili świadomej niewiedzywania — w przestrzeni między rozwiązaniem jednej figury a narodzinami następnej.
+Centralny paradoks terapii Gestalt: twórcza moc drzemie nie w działaniu, lecz w chwili świadomej niewiedzenia — w przestrzeni między rozwiązaniem jednej figury a narodzinami następnej.
 
 ## Korzenie pojęcia
 
@@ -52,7 +52,7 @@ Terapeuta gestaltowski zachęca pacjenta, by **zatrzymał się** zamiast ucieka�
 
 ### Praca z ciałem i oddechem
 
-Wejście w płodną pustkę jest ułatwiane przez spowolnienie oddechu i **somatyczne zakorzenienie** (*grounding*): stopienie stóp z podłożem, świadomość postawy, śledzenie doznań napływających w ciszy. Perls mawiał: *„Trać głowę i wróć do zmysłów"* (*lose your mind and come to your senses*).
+Wejście w płodną pustkę jest ułatwiane przez spowolnienie oddechu i **somatyczne zakorzenienie** (*grounding*): stopy na podłożu, świadomość postawy, śledzenie doznań napływających w ciszy. Perls mawiał: *„Trać głowę i wróć do zmysłów"* (*lose your mind and come to your senses*).
 
 ### Technika pustego krzesła (*empty chair*)
 

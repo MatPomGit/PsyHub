@@ -298,6 +298,7 @@ window.SITE_CONFIG = {
         { id: 'psychotherapy/gestalt',    label: 'Płodna pustka (Gestalt)',       file: 'wiki/psychotherapy/gestalt.md'    },
         { id: 'psychotherapy/logoterapia_frankl',      label: 'Logoterapia (Frankl)',          file: 'wiki/psychotherapy/logoterapia_frankl.md'      },
         { id: 'psychotherapy/psychoanaliza_fromma',    label: 'Psychoanaliza humanistyczna (Fromm)', file: 'wiki/psychotherapy/psychoanaliza_fromma.md' },
+        { id: 'psychotherapy/psychologia_zimbardo',    label: 'Psychologia społeczna (Zimbardo)',    file: 'wiki/psychotherapy/psychologia_zimbardo.md' },
       ]
     },
     {
@@ -820,6 +821,7 @@ window.SITE_CONFIG = {
       { file: 'wiki/psychotherapy/gestalt.md',     label: 'Płodna pustka (fertile void) — Gestalt', status: 'live' },
       { file: 'wiki/psychotherapy/logoterapia_frankl.md',   label: 'Logoterapia (Frankl)',                  status: 'live' },
       { file: 'wiki/psychotherapy/psychoanaliza_fromma.md', label: 'Psychoanaliza humanistyczna (Fromm)',   status: 'live' },
+      { file: 'wiki/psychotherapy/psychologia_zimbardo.md', label: 'Psychologia społeczna (Zimbardo)',      status: 'live' },
     ],
     psychopathology: [
       { file: 'wiki/psychopathology/psychopatologia_wprowadzenie.md', label: 'Psychopatologia — wprowadzenie', status: 'live' },
@@ -1267,6 +1269,7 @@ window.SITE_CONFIG = {
             { label: 'Płodna pustka (fertile void) — Gestalt', id: 'psychotherapy/gestalt', status: 'live' },
             { label: 'Logoterapia (Frankl)', id: 'psychotherapy/logoterapia_frankl', status: 'live' },
             { label: 'Psychoanaliza humanistyczna (Fromm)', id: 'psychotherapy/psychoanaliza_fromma', status: 'live' },
+            { label: 'Psychologia społeczna (Zimbardo)', id: 'psychotherapy/psychologia_zimbardo', status: 'live' },
             { label: 'Interwencja kryzysowa', id: 'suicidology/interwencja', status: 'live' },
           ]
         },

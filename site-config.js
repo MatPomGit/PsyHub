@@ -105,6 +105,7 @@ window.SITE_CONFIG = {
         { id: 'cognitive/nasa_tlx',            label: 'NASA Task Load Index (TLX)', file: 'wiki/cognitive/nasa_tlx.md'            },
         { id: 'cognitive/iluzje',              label: 'Iluzje i błędy poznawcze',   file: 'wiki/cognitive/iluzje.md'              },
         { id: 'cognitive/eksperyment_posnera',        label: 'Eksperyment Posnera',            file: 'wiki/cognitive/eksperyment_posnera.md'        },
+        { id: 'cognitive/maly_albert',               label: 'Eksperyment Małego Alberta',     file: 'wiki/cognitive/maly_albert.md'               },
         { id: 'cognitive/system1_system2',            label: 'System 1 i System 2 (Kahneman)', file: 'wiki/cognitive/system1_system2.md'            },
         { id: 'cognitive/przetwarzanie_predyktywne', label: 'Predictive processing',           file: 'wiki/cognitive/przetwarzanie_predyktywne.md' },
       ]
@@ -162,6 +163,7 @@ window.SITE_CONFIG = {
         { id: 'cognitive/nasa_tlx',               label: 'NASA Task Load Index (TLX)',      file: 'wiki/cognitive/nasa_tlx.md'               },
         { id: 'cognitive/iluzje',                 label: 'Iluzje i błędy poznawcze',        file: 'wiki/cognitive/iluzje.md'                 },
         { id: 'cognitive/eksperyment_posnera',    label: 'Eksperyment Posnera',             file: 'wiki/cognitive/eksperyment_posnera.md'    },
+        { id: 'cognitive/maly_albert',            label: 'Eksperyment Małego Alberta',      file: 'wiki/cognitive/maly_albert.md'            },
         { id: 'cognitive/nauki_kognitywne',       label: 'Nauki kognitywne',                file: 'wiki/cognitive/nauki_kognitywne.md'       },
         { id: 'cognitive/architektury_kognitywne',label: 'Architektury kognitywne',         file: 'wiki/cognitive/architektury_kognitywne.md'},
         { id: 'cognitive/hda',                    label: 'Human Decision Accuracy (HDA)',   file: 'wiki/cognitive/hda.md'                    },
@@ -710,6 +712,7 @@ window.SITE_CONFIG = {
       { file: 'wiki/cognitive/nasa_tlx.md',           label: 'NASA Task Load Index (TLX)', status: 'live' },
       { file: 'wiki/cognitive/iluzje.md',             label: 'Iluzje i błędy poznawcze',   status: 'live' },
       { file: 'wiki/cognitive/eksperyment_posnera.md',    label: 'Eksperyment Posnera',          status: 'live' },
+      { file: 'wiki/cognitive/maly_albert.md',            label: 'Eksperyment Małego Alberta',   status: 'live' },
       { file: 'wiki/cognitive/uwaga_mimowolna.md',         label: 'Uwaga mimowolna',              status: 'live' },
       { file: 'wiki/cognitive/nauki_kognitywne.md',        label: 'Nauki kognitywne',             status: 'live' },
       { file: 'wiki/cognitive/architektury_kognitywne.md', label: 'Architektury kognitywne',      status: 'live' },
@@ -1313,6 +1316,7 @@ window.SITE_CONFIG = {
             { label: 'Zmęczenie poznawcze', id: 'cognitive/zmeczenie_poznawcze', status: 'live' },
             { label: 'Iluzje i błędy poznawcze', id: 'cognitive/iluzje', status: 'live' },
             { label: 'Eksperyment Posnera', id: 'cognitive/eksperyment_posnera', status: 'live' },
+            { label: 'Eksperyment Małego Alberta', id: 'cognitive/maly_albert', status: 'live' },
           ]
         },
         {

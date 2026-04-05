@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "question": "Kora mózgowa jest podzielona na cztery główne płaty. Który z nich odpowiada za ruch dowolny?",
+    "options": [
+      "Płat skroniowy",
+      "Płat ciemieniowy",
+      "Płat czołowy",
+      "Płat potyliczny"
+    ],
+    "correct": 2,
+    "difficulty": 1
+  },
+  {
+    "id": 2,
+    "question": "Hipokamp jest strukturą kluczową przede wszystkim dla:",
+    "options": [
+      "Regulacji emocji i reakcji strachu",
+      "Konsolidacji pamięci deklaratywnej i nawigacji przestrzennej",
+      "Koordynacji ruchów precyzyjnych",
+      "Regulacji rytmów dobowych"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 3,
+    "question": "Ciało migdałowate (amygdala) pełni kluczową rolę w:",
+    "options": [
+      "Planowaniu i podejmowaniu decyzji",
+      "Przetwarzaniu emocji, szczególnie strachu i reagowaniu na zagrożenie",
+      "Integracji informacji sensorycznych",
+      "Regulacji rytmu dobowego"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 4,
+    "question": "Uszkodzenie obszaru Broki prowadzi do:",
+    "options": [
+      "Afazji recepcyjnej (trudności w rozumieniu mowy)",
+      "Afazji ekspresyjnej (trudności w produkcji mowy przy zachowanym rozumieniu)",
+      "Całkowitej niemożności mówienia i rozumienia",
+      "Zaburzeń pamięci semantycznej"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 5,
+    "question": "Dopamina jest neuroprzekaźnikiem szczególnie ważnym dla:",
+    "options": [
+      "Regulacji snu i czuwania przez jądra szwu",
+      "Układu nagrody, motywacji i kontroli ruchów",
+      "Hamowania pobudzenia w korze mózgowej",
+      "Przewodzenia bólu w rdzeniu kręgowym"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 6,
+    "question": "Test Trailmaking (TMT) część B ocenia przede wszystkim:",
+    "options": [
+      "Pamięć roboczą werbalną",
+      "Elastyczność poznawczą i kontrolę uwagi (przełączanie między zestawami)",
+      "Prędkość przetwarzania informacji wzrokowo-przestrzennych",
+      "Pamięć epizodyczną długoterminową"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 7,
+    "question": "Uszkodzenie kory wzrokowej pierwszorzędowej (V1) w płacie potylicznym powoduje:",
+    "options": [
+      "Prozopagnozję (niemożność rozpoznawania twarzy)",
+      "Ślepotę korową w przeciwległym polu widzenia",
+      "Zaburzenia rozumienia języka pisanego",
+      "Nieuwagę przestrzenną po stronie przeciwnej do uszkodzenia"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 8,
+    "question": "Który neuroprzekaźnik jest głównym mediatorem hamującym w ośrodkowym układzie nerwowym?",
+    "options": [
+      "Glutaminian",
+      "Dopamina",
+      "GABA (kwas gamma-aminomasłowy)",
+      "Acetylocholina"
+    ],
+    "correct": 2,
+    "difficulty": 1
+  },
+  {
+    "id": 9,
+    "question": "Skrzyżowanie wzrokowe (chiazma opticum) sprawia, że:",
+    "options": [
+      "Informacje z lewego oka trafiają wyłącznie do lewej półkuli",
+      "Informacje z lewej połowy pola widzenia obu oczu trafiają do prawej półkuli wzrokowej",
+      "Każde oko przesyła informacje wyłącznie do tej samej półkuli",
+      "Prawa połowa siatkówki obu oczu przetwarza lewa stronę pola widzenia"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 10,
+    "question": "Nieuwaga stronna (neglect przestrzenny) po uszkodzeniu prawego płata ciemieniowego objawia się:",
+    "options": [
+      "Ignorowaniem bodźców po prawej stronie",
+      "Ignorowaniem bodźców po lewej stronie",
+      "Utratą rozumienia mowy",
+      "Zaburzeniami pamięci prospektywnej"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 11,
+    "question": "Pamięć procedualna (implicit) jest przechowywana przede wszystkim w:",
+    "options": [
+      "Hipokampie i korze śródwęchowej",
+      "Móżdżku, jądrach podstawy i korze motorycznej",
+      "Ciele migdałowatym i korze oczodołowo-czołowej",
+      "Wzgórzu i podwzgórzu"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 12,
+    "question": "Zespół dysegzekutywny po uszkodzeniu kory przedczołowej obejmuje:",
+    "options": [
+      "Zaburzenia mowy ekspresyjnej i rozumienia",
+      "Deficyty planowania, inicjowania, monitorowania i elastycznego przełączania działań",
+      "Głęboką amnezję dla nowych informacji",
+      "Zaburzenia percepcji wzrokowo-przestrzennej"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 13,
+    "question": "Uszkodzenie kory skroniowej dolnej prawej prowadzi do:",
+    "options": [
+      "Afazji sensorycznej Wernickego",
+      "Prozopagnozji – niemożności rozpoznawania znanych twarzy przy zachowanej percepcji innych wzorców",
+      "Astereognozji – niemożności rozpoznawania przedmiotów przez dotyk",
+      "Akalkulii – niemożności wykonywania obliczeń"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 14,
+    "question": "Plastyczność synaptyczna (LTP – long-term potentiation) jest uważana za kluczowy mechanizm:",
+    "options": [
+      "Regulacji rytmu dobowego",
+      "Komórkowe podłoże uczenia się i pamięci",
+      "Hamowania bólu w rdzeniu kręgowym",
+      "Dojrzewania aksonów podczas rozwoju prenatalnego"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 15,
+    "question": "Bateria LURIA-Nebraska służy w neuropsychologii do:",
+    "options": [
+      "Oceny wyłącznie pamięci i funkcji wykonawczych",
+      "Kompleksowej oceny funkcji neuropsychologicznych: motoryki, rytmu, dotykowych, wzrokowych, mowy, pamięci i inteligencji",
+      "Diagnozy zaburzeń osobowości u pacjentów z urazami mózgu",
+      "Pomiaru szybkości przewodnictwa nerwowego"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 16,
+    "question": "Amnezja Korsakowska wiąże się przede wszystkim z niedoborem:",
+    "options": [
+      "Witaminy B12 i uszkodzeniem kory skroniowej przyśrodkowej",
+      "Tiaminy (witamina B1) i uszkodzeniem ciał suteczkowatych oraz wzgórza – typowo u osób uzależnionych od alkoholu",
+      "Kwasu foliowego i uszkodzeniem płatów czołowych",
+      "Dopaminy i uszkodzeniem jąder podstawy"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 17,
+    "question": "Teoria lokalizacji funkcji a holizmu w neuropsychologii dotyczy sporu o:",
+    "options": [
+      "To, czy funkcje psychiczne są dokładnie zlokalizowane w określonych obszarach mózgu, czy też stanowią własność całego mózgu",
+      "Pierwszeństwo metod neuroobrazowania nad testami neuropsychologicznymi",
+      "Dziedziczność zdolności intelektualnych",
+      "Wpływ środowiska na plastyczność mózgu"
+    ],
+    "correct": 0,
+    "difficulty": 2
+  },
+  {
+    "id": 18,
+    "question": "Neuropsychologia rehabilitacyjna zakłada, że po uszkodzeniu mózgu poprawa funkcji jest możliwa m.in. dzięki:",
+    "options": [
+      "Wyłącznie spontanicznemu zrostowi neuronów w miejscu uszkodzenia",
+      "Neuroplastyczności – reorganizacji połączeń mózgowych i kompensacji przez niezajęte obszary",
+      "Wyłącznie farmakoterapii neuroprotekcyjnej",
+      "Braku aktywności umysłowej w celu regeneracji"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 19,
+    "question": "Objaw \"anterograde amnesia\" (amnezja następcza) oznacza:",
+    "options": [
+      "Niemożność przypomnienia sobie zdarzeń sprzed urazu",
+      "Niemożność tworzenia nowych wspomnień po epizodzie uszkadzającym",
+      "Zaburzenie rozpoznawania znanych twarzy",
+      "Niemożność przypomnienia sobie procedur i umiejętności"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 20,
+    "question": "Badania split-brain (rozdzielony mózg, Sperry i Gazzaniga) wykazały, że:",
+    "options": [
+      "Prawa półkula odpowiada za mowę u większości praworęcznych",
+      "Po przecięciu spoidła wielkiego każda półkula przetwarza informacje niezależnie, ujawniając lateralizację funkcji",
+      "Obie półkule mają identyczne funkcje i mogą wzajemnie się zastępować",
+      "Spoidło wielkie nie odgrywa roli w komunikacji międzypółkulowej"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 21,
+    "question": "Koncepcja \"ekwipotelności\" Lashleya w historii neuropsychologii zakładała, że:",
+    "options": [
+      "Różne obszary kory mają ściśle wyspecjalizowane funkcje, które nie mogą być przejęte przez inne regiony",
+      "Kora mózgowa ma równorzędny potencjał funkcjonalny – pamięć zależy od masy uszkodzonego obszaru, a nie jego lokalizacji (prawo masy)",
+      "Lewa półkula dominuje we wszystkich funkcjach poznawczych",
+      "Mózgowie działa wyłącznie jako homogeniczna całość bez modułowej organizacji"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 22,
+    "question": "Efekt \"crowding\" (tłoczenia) w neuropsychologii rozwojowej oznacza, że:",
+    "options": [
+      "Im więcej neuronów w danym obszarze, tym lepsza funkcja z nim związana",
+      "Wczesne uszkodzenie jednej półkuli może spowodować przeniesienie funkcji do drugiej, lecz kosztem jej normalnych funkcji (pogorszona lateralizacja)",
+      "Stymulacja sensoryczna w środowisku wzbogaconym przyspiesza mielinizację",
+      "Gęstość połączeń synaptycznych maleje po przycięciu synaptycznym (synaptic pruning)"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 23,
+    "question": "Sieć wykonawcza (executive network, frontoparietal network) w spoczynkowej fMRI wykazuje aktywację antykorelacyjną z DMN, co oznacza, że:",
+    "options": [
+      "Obie sieci działają synchronicznie podczas zadań wymagających uwagi",
+      "Gdy sieć wykonawcza jest aktywna podczas koncentracji na zadaniu, sieć domyślna ulega supresji, i odwrotnie",
+      "Aktywność sieci wykonawczej nie zależy od wymagań zadania",
+      "Sieci spoczynkowe nie mają związku z funkcjami poznawczymi"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 24,
+    "question": "Hipoteza znacznika somatycznego (somatic marker hypothesis) Damasio zakłada, że:",
+    "options": [
+      "Emocje zaburzają racjonalne podejmowanie decyzji i powinny być eliminowane",
+      "Sygnały somatyczne (emocjonalne) z przeszłych doświadczeń są konieczne do efektywnego podejmowania decyzji – ich brak prowadzi do złych wyborów",
+      "Pamięć ciała (somatyczna) jest niezależna od procesów korowych",
+      "Kora somatosensoryczna odpowiada wyłącznie za percepcję bólu"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 25,
+    "question": "Technika TMS (przezczaszkowa stymulacja magnetyczna) w neuropsychologii eksperymentalnej pozwala na:",
+    "options": [
+      "Trwałe uszkodzenie badanego obszaru kory w celach terapeutycznych",
+      "Chwilowe zakłócenie lub pobudzenie aktywności konkretnego obszaru kory, umożliwiając wnioskowanie o przyczynowości funkcji",
+      "Rejestrację aktywności elektrycznej pojedynczych neuronów",
+      "Obrazowanie metabolizmu glukozy z rozdzielczością milisekundową"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 26,
+    "question": "Zjawisko \"blindsight\" (ślepowidzenie) po uszkodzeniu kory V1 polega na:",
+    "options": [
+      "Halucynacjach wzrokowych przy braku bodźców zewnętrznych",
+      "Zdolności do reagowania na bodźce wzrokowe bez świadomego ich widzenia – za pośrednictwem podkorowych dróg wzrokowych",
+      "Nierozpoznawaniu kolorów przy zachowanej percepcji kształtów",
+      "Nadwrażliwości wzrokowej na poruszające się bodźce"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 27,
+    "question": "W kontekście neuropsychologii klinicznej, \"dysocjacja\" między testem a codziennym funkcjonowaniem (ecological validity) oznacza, że:",
+    "options": [
+      "Wyniki testów laboratoryjnych zawsze odzwierciedlają codzienne trudności",
+      "Wyniki testów neuropsychologicznych mogą nie odpowiadać stopniowi trudności w naturalnych warunkach – testy mierzą izolowane zdolności, a życie wymaga ich integracji",
+      "Testy neuropsychologiczne są zbyt trudne dla klinicznych grup pacjentów",
+      "Środowisko testowe lepiej odzwierciedla możliwości pacjenta niż środowisko domowe"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 28,
+    "question": "Oksytocyna jako neuropeptyd jest szczególnie powiązana z:",
+    "options": [
+      "Agresją i rywalizacją w grupie własnej",
+      "Bondem społecznym, zaufaniem i zachowaniami opiekuńczymi, ale też z etnocentryzmem i wrogością wobec outgrupy",
+      "Wyłącznie reakcją stresową osi HPA",
+      "Procesami uczenia się motorycznego w móżdżku"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 29,
+    "question": "Podejście \"sieciowe\" (network approach) do psychopatologii Borsboom i Cramer różni się od modelu biomedycznego tym, że:",
+    "options": [
+      "Zakłada, że objawy są wyłącznie wskaźnikami ukrytej choroby mózgu",
+      "Traktuje objawy jako wzajemnie powiązane węzły sieci – aktywacja jednego objawu wzmacnia inne, a zaburzenie wyłania się z dynamiki całej sieci, nie z jednej przyczyny",
+      "Skupia się wyłącznie na genetycznych podstawach zaburzeń",
+      "Neguje rolę czynników środowiskowych w powstawaniu zaburzeń"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 30,
+    "question": "Triada Hackera w neuropsychologii (uszkodzenie, upośledzenie, niepełnosprawność) odpowiada klasyfikacji WHO:",
+    "options": [
+      "Patologia → diagnoza → rokowanie",
+      "Impairment (zmiana biologiczna) → disability (ograniczenie funkcjonalne) → handicap (ograniczenie społeczne)",
+      "Objawy → syndrom → zaburzenie",
+      "Diagnoza → interwencja → rehabilitacja"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  }
+]

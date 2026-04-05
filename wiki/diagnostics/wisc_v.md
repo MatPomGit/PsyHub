@@ -9,7 +9,7 @@ WISC-V (2014) to piąta edycja skali Wechslera dla dzieci — jedno z najczęśc
 **Czas badania:** 45–65 minut (bateria podstawowa); 60–90 minut z bateriami uzupełniającymi
 **Autorzy oryginału:** David Wechsler (wersja źródłowa); opracowanie WISC-V: Pearson Clinical
 
-WISC-V zastąpił WISC-IV, rozszerzając model o piąty indeks — Rozumowanie Przestrzenne (VSI) — i zmieniając strukturę baterię podstawową z 10 na 10 podtestów w nowym układzie pięciu domenowych indeksów.
+WISC-V zastąpił WISC-IV, rozszerzając model o piąty indeks — Rozumowanie Przestrzenne (VSI) — i zmieniając strukturę baterii podstawowej z 10 na 10 podtestów w nowym układzie pięciu domenowych indeksów.
 
 ## Struktura testu — pięć indeksów
 
@@ -45,7 +45,7 @@ Mierzy: indukcyjne i dedukcyjne rozumowanie abstrakcyjne, myślenie analogiczne,
 
 Podtesty podstawowe:
 - **Powtarzanie cyfr (Digit Span)** — wprost, wspak i rosnąco (nowy warunek w WISC-V);
-- **Liczby i litery (Picture Span)** — zapamiętywanie i wskazywanie sekwencji obrazków.
+- **Zakres pamięci obrazkowej (Picture Span)** — zapamiętywanie i wskazywanie sekwencji obrazków.
 
 Podtesty uzupełniające: *Sekwencje liter i cyfr, Arytmetyka*.
 

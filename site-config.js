@@ -80,7 +80,24 @@ window.SITE_CONFIG = {
         { id: 'biology/chronopsychologia',    label: 'Chronopsychologia',              file: 'wiki/biology/chronopsychologia.md'      },
         { id: 'biology/mikrobiom',            label: 'Oś jelita–mózg',                file: 'wiki/biology/mikrobiom.md'             },
       ]
-    }, 
+    },
+    {
+      section: 'Psychologia Rozwojowa',
+      items: [
+        { id: 'rozwojowa/teorie_rozwoju',     label: 'Główne teorie rozwoju',                   file: 'wiki/rozwojowa/teorie_rozwoju.md'     },
+        { id: 'rozwojowa/metody_podluzne',    label: 'Metody badań podłużnych',                  file: 'wiki/rozwojowa/metody_podluzne.md'    },
+        { id: 'rozwojowa/niemowlectwo',       label: 'Niemowlęctwo i wczesne dzieciństwo',        file: 'wiki/rozwojowa/niemowlectwo.md'       },
+        { id: 'rozwojowa/wiek_szkolny',       label: 'Wiek szkolny',                             file: 'wiki/rozwojowa/wiek_szkolny.md'       },
+        { id: 'rozwojowa/adolescencja',       label: 'Adolescencja',                             file: 'wiki/rozwojowa/adolescencja.md'       },
+        { id: 'rozwojowa/doroslosc',          label: 'Dorosłość i starzenie się',                file: 'wiki/rozwojowa/doroslosc.md'          },
+        { id: 'rozwojowa/plastycznosc_mozgu', label: 'Plastyczność mózgu a okresy krytyczne',    file: 'wiki/rozwojowa/plastycznosc_mozgu.md' },
+        { id: 'rozwojowa/przywiazanie',       label: 'Teoria przywiązania',                      file: 'wiki/rozwojowa/przywiazanie.md'       },
+        { id: 'rozwojowa/rozwoj_jezyka',      label: 'Rozwój języka i komunikacji',              file: 'wiki/rozwojowa/rozwoj_jezyka.md'      },
+        { id: 'rozwojowa/rodzicielstwo',      label: 'Style rodzicielskie',                      file: 'wiki/rozwojowa/rodzicielstwo.md'      },
+        { id: 'rozwojowa/trauma_rozwojowa',   label: 'Trauma rozwojowa',                         file: 'wiki/rozwojowa/trauma_rozwojowa.md'   },
+        { id: 'rozwojowa/tozsamosc',          label: 'Kształtowanie tożsamości',                 file: 'wiki/rozwojowa/tozsamosc.md'          },
+      ]
+    },
     {
       section: 'Psychologia Społeczna',
       items: [
@@ -1305,13 +1322,18 @@ window.SITE_CONFIG = {
       { file: 'wiki/diagnoza/diagnoza_stygmatyzacja.md',         label: 'Diagnoza a stygmatyzacja',           status: 'live' },
     ],
     rozwojowa: [
-      { file: 'wiki/rozwojowa/teorie_rozwoju.md',                label: 'Główne teorie rozwoju',              status: 'live' },
-      { file: 'wiki/rozwojowa/metody_podluzne.md',               label: 'Metody badań podłużnych',            status: 'live' },
-      { file: 'wiki/rozwojowa/niemowlectwo.md',                  label: 'Niemowlęctwo i wczesne dzieciństwo', status: 'live' },
-      { file: 'wiki/rozwojowa/wiek_szkolny.md',                  label: 'Wiek szkolny',                       status: 'live' },
-      { file: 'wiki/rozwojowa/adolescencja.md',                  label: 'Adolescencja',                       status: 'live' },
-      { file: 'wiki/rozwojowa/doroslosc.md',                     label: 'Dorosłość i starzenie się',          status: 'live' },
-      { file: 'wiki/rozwojowa/plastycznosc_mozgu.md',            label: 'Plastyczność mózgu a okresy krytyczne', status: 'live' },
+      { file: 'wiki/rozwojowa/teorie_rozwoju.md',                label: 'Główne teorie rozwoju',                   status: 'live' },
+      { file: 'wiki/rozwojowa/metody_podluzne.md',               label: 'Metody badań podłużnych',                 status: 'live' },
+      { file: 'wiki/rozwojowa/niemowlectwo.md',                  label: 'Niemowlęctwo i wczesne dzieciństwo',      status: 'live' },
+      { file: 'wiki/rozwojowa/wiek_szkolny.md',                  label: 'Wiek szkolny',                            status: 'live' },
+      { file: 'wiki/rozwojowa/adolescencja.md',                  label: 'Adolescencja',                            status: 'live' },
+      { file: 'wiki/rozwojowa/doroslosc.md',                     label: 'Dorosłość i starzenie się',               status: 'live' },
+      { file: 'wiki/rozwojowa/plastycznosc_mozgu.md',            label: 'Plastyczność mózgu a okresy krytyczne',   status: 'live' },
+      { file: 'wiki/rozwojowa/przywiazanie.md',                  label: 'Teoria przywiązania',                     status: 'live' },
+      { file: 'wiki/rozwojowa/rozwoj_jezyka.md',                 label: 'Rozwój języka i komunikacji',             status: 'live' },
+      { file: 'wiki/rozwojowa/rodzicielstwo.md',                 label: 'Style rodzicielskie',                     status: 'live' },
+      { file: 'wiki/rozwojowa/trauma_rozwojowa.md',              label: 'Trauma rozwojowa',                        status: 'live' },
+      { file: 'wiki/rozwojowa/tozsamosc.md',                     label: 'Kształtowanie tożsamości',                status: 'live' },
     ],
   },
 
@@ -1611,6 +1633,21 @@ window.SITE_CONFIG = {
           articles: [
             { label: 'Neurobiologia — podstawy', id: 'neuro/anatomia', status: 'xlink' },
             { label: 'Plastyczność mózgu a okresy krytyczne', id: 'rozwojowa/plastycznosc_mozgu', status: 'live' },
+          ]
+        },
+        {
+          title: 'Relacje i środowisko',
+          articles: [
+            { label: 'Teoria przywiązania', id: 'rozwojowa/przywiazanie', status: 'live' },
+            { label: 'Style rodzicielskie', id: 'rozwojowa/rodzicielstwo', status: 'live' },
+            { label: 'Trauma rozwojowa', id: 'rozwojowa/trauma_rozwojowa', status: 'live' },
+          ]
+        },
+        {
+          title: 'Język, tożsamość i samorozwój',
+          articles: [
+            { label: 'Rozwój języka i komunikacji', id: 'rozwojowa/rozwoj_jezyka', status: 'live' },
+            { label: 'Kształtowanie tożsamości', id: 'rozwojowa/tozsamosc', status: 'live' },
           ]
         },
       ]

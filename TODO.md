@@ -85,6 +85,12 @@ Następujące klucze są odwoływane przez nawigację (`wiki-index/...`), ale br
 - [x] Adolescencja ✓ `wiki/rozwojowa/adolescencja.md`
 - [x] Dorosłość i starzenie się ✓ `wiki/rozwojowa/doroslosc.md`
 - [x] Plastyczność mózgu a okresy krytyczne ✓ `wiki/rozwojowa/plastycznosc_mozgu.md`
+- [x] Teoria przywiązania ✓ `wiki/rozwojowa/przywiazanie.md`
+- [x] Rozwój języka i komunikacji ✓ `wiki/rozwojowa/rozwoj_jezyka.md`
+- [x] Style rodzicielskie ✓ `wiki/rozwojowa/rodzicielstwo.md`
+- [x] Trauma rozwojowa ✓ `wiki/rozwojowa/trauma_rozwojowa.md`
+- [x] Kształtowanie tożsamości ✓ `wiki/rozwojowa/tozsamosc.md`
+- [x] Nav section 'Psychologia Rozwojowa' dodana na pozycji 5 w nawigacji ✓
 
 ### WIKI — Psychologia uzależnień (`uzaleznienia`)
 - [x] Kryteria diagnostyczne uzależnień ✓ `wiki/uzaleznienia/kryteria_diagnostyczne.md`

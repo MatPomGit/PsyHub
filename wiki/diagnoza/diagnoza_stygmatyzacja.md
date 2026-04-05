@@ -31,7 +31,7 @@ Trzy wymiary stygmatyzacji:
 
 ---
 
-## Skutki stygmatyzacji dla osoby diagnozy
+## Skutki stygmatyzacji dla osoby z diagnozą
 
 ### Autostygmatyzacja i jej konsekwencje
 

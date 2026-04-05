@@ -1,7 +1,7 @@
 # PsyHub — Lista zadań (TODO)
 
-> Ostatnia aktualizacja: 2026-04-03  
-> Stan bazy: **357 plików MD**, **664 artykułów live**, **69 zaplanowanych**, **26 encyklopedii wiki**
+> Ostatnia aktualizacja: 2026-04-05  
+> Stan bazy: **357 plików MD**, **733 artykułów live**, **2 zaplanowanych**, **26 encyklopedii wiki**
 
 ---
 
@@ -49,104 +49,104 @@ Następujące klucze są odwoływane przez nawigację (`wiki-index/...`), ale br
 
 ### WIKI — Psychologia kliniczna (`kliniczna`)
 - [x] Klasyfikacje ICD-11 i DSM-5-TR *(Podstawy diagnostyki)* ✓ `wiki/psychopathology/klasyfikacje.md`
-- [ ] Formułowanie przypadku *(Podstawy diagnostyki)*
-- [ ] Narzędzia kliniczne — PHQ-9, GAD-7, PCL-5 *(Psychometria)*
+- [x] Formułowanie przypadku *(Podstawy diagnostyki)* ✓ `wiki/psychopathology/formulowanie_przypadku.md`
+- [x] Narzędzia kliniczne — PHQ-9, GAD-7, PCL-5 *(Psychometria)* ✓ `wiki/psychometrics/narzedzia_kliniczne.md`
 
 ### WIKI — Psychologia poznawcza (`poznawcza`)
 - [x] System 1 i System 2 — Kahneman *(Modele i teorie)* ✓ `wiki/cognitive/system1_system2.md`
 - [x] Predictive processing *(Modele i teorie)* ✓ `wiki/cognitive/przetwarzanie_predyktywne.md`
-- [ ] Ucieleśnione poznanie *(Modele i teorie)*
+- [x] Ucieleśnione poznanie *(Modele i teorie)* ✓ `wiki/cognitive/ucielesnienie.md`
 
 ### WIKI — Psychologia społeczna (`spoleczna`)
 - [x] Percepcja społeczna i atrybucje ✓ `wiki/spoleczna/percepcja_spoleczna.md`
-- [ ] Stereotypy i uprzedzenia
-- [ ] Ja i samoocena
-- [ ] Postawy i zmiana postaw
-- [ ] Konformizm i posłuszeństwo
-- [ ] Perswazja i propaganda
-- [ ] Dynamika grupowa
-- [ ] Atrakcyjność interpersonalna
-- [ ] Agresja
-- [ ] Zachowania prospołeczne
+- [x] Stereotypy i uprzedzenia ✓ `wiki/spoleczna/stereotypy.md`
+- [x] Ja i samoocena ✓ `wiki/spoleczna/ja_i_samoocena.md`
+- [x] Postawy i zmiana postaw ✓ `wiki/spoleczna/postawy.md`
+- [x] Konformizm i posłuszeństwo ✓ `wiki/spoleczna/konformizm.md`
+- [x] Perswazja i propaganda ✓ `wiki/spoleczna/perswazja.md`
+- [x] Dynamika grupowa ✓ `wiki/spoleczna/dynamika_grupowa.md`
+- [x] Atrakcyjność interpersonalna ✓ `wiki/spoleczna/atrakcyjnosc.md`
+- [x] Agresja ✓ `wiki/spoleczna/agresja.md`
+- [x] Zachowania prospołeczne ✓ `wiki/spoleczna/zachowania_prospoleczne.md`
 
 ### WIKI — Psychologia kulturowa (`kulturowa`)
-- [ ] Czym jest psychologia kulturowa?
-- [ ] Metody: emic vs. etic
-- [ ] Wymiar indywidualizm–kolektywizm
-- [ ] Kultura a percepcja i uwaga
-- [ ] Kulturowe modele Ja
-- [ ] Kultura a zdrowie psychiczne
+- [x] Czym jest psychologia kulturowa? ✓ `wiki/kulturowa/wprowadzenie.md`
+- [x] Metody: emic vs. etic ✓ `wiki/kulturowa/metody.md`
+- [x] Wymiar indywidualizm–kolektywizm ✓ `wiki/kulturowa/indywidualizm_kolektywizm.md`
+- [x] Kultura a percepcja i uwaga ✓ `wiki/kulturowa/kultura_percepcja.md`
+- [x] Kulturowe modele Ja ✓ `wiki/kulturowa/kulturowe_modele_ja.md`
+- [x] Kultura a zdrowie psychiczne ✓ `wiki/kulturowa/kultura_zdrowie.md`
 
 ### WIKI — Psychologia rozwojowa (`rozwojowa`)
-- [ ] Główne teorie rozwoju
-- [ ] Metody badań podłużnych
-- [ ] Niemowlęctwo i wczesne dzieciństwo
-- [ ] Wiek szkolny
-- [ ] Adolescencja
-- [ ] Dorosłość i starzenie się
-- [ ] Plastyczność mózgu a okresy krytyczne
+- [x] Główne teorie rozwoju ✓ `wiki/rozwojowa/teorie_rozwoju.md`
+- [x] Metody badań podłużnych ✓ `wiki/rozwojowa/metody_podluzne.md`
+- [x] Niemowlęctwo i wczesne dzieciństwo ✓ `wiki/rozwojowa/niemowlectwo.md`
+- [x] Wiek szkolny ✓ `wiki/rozwojowa/wiek_szkolny.md`
+- [x] Adolescencja ✓ `wiki/rozwojowa/adolescencja.md`
+- [x] Dorosłość i starzenie się ✓ `wiki/rozwojowa/doroslosc.md`
+- [x] Plastyczność mózgu a okresy krytyczne ✓ `wiki/rozwojowa/plastycznosc_mozgu.md`
 
 ### WIKI — Psychologia uzależnień (`uzaleznienia`)
-- [ ] Kryteria diagnostyczne uzależnień
-- [ ] Dialog motywujący
-- [ ] Zapobieganie nawrotom
-- [ ] Uzależnienia u młodzieży
-- [ ] Współuzależnienie
-- [ ] Profilaktyka uzależnień
+- [x] Kryteria diagnostyczne uzależnień ✓ `wiki/uzaleznienia/kryteria_diagnostyczne.md`
+- [x] Dialog motywujący ✓ `wiki/uzaleznienia/dialog_motywujacy.md`
+- [x] Zapobieganie nawrotom ✓ `wiki/uzaleznienia/zapobieganie_nawrotom.md`
+- [x] Uzależnienia u młodzieży ✓ `wiki/uzaleznienia/uzaleznienia_mlodziezy.md`
+- [x] Współuzależnienie ✓ `wiki/uzaleznienia/wspoluzaleznienie.md`
+- [x] Profilaktyka uzależnień ✓ `wiki/uzaleznienia/profilaktyka.md`
 
 ### WIKI — Relacje i związki (`relacje`)
-- [ ] Style przywiązania u dorosłych
-- [ ] Triangularna teoria miłości
-- [ ] Dobór partnera
-- [ ] Komunikacja w parze
-- [ ] Konflikty i ich rozwiązywanie
-- [ ] Zdrada i odbudowa zaufania
-- [ ] Terapia par
-- [ ] Przemoc w związkach
+- [x] Style przywiązania u dorosłych ✓ `wiki/relacje/przywiezanie_doroslych.md`
+- [x] Triangularna teoria miłości ✓ `wiki/relacje/trojkatna_teoria_milosci.md`
+- [x] Dobór partnera ✓ `wiki/relacje/dobor_partnera.md`
+- [x] Komunikacja w parze ✓ `wiki/relacje/komunikacja_para.md`
+- [x] Konflikty i ich rozwiązywanie ✓ `wiki/relacje/konflikty.md`
+- [x] Zdrada i odbudowa zaufania ✓ `wiki/relacje/zdrada.md`
+- [x] Terapia par ✓ `wiki/relacje/terapia_par.md`
+- [x] Przemoc w związkach ✓ `wiki/relacje/przemoc_zwiazki.md`
 
 ### WIKI — Diagnoza psychologiczna (`diagnoza`)
-- [ ] Etapy i cele diagnozy
-- [ ] Wywiad psychologiczny
-- [ ] Obserwacja kliniczna
-- [ ] Formułowanie przypadku (kliniczne)
-- [ ] Techniki projekcyjne
-- [ ] Opinia psychologiczna
-- [ ] Tajemnica zawodowa (diagnoza)
-- [ ] Diagnoza a stygmatyzacja
+- [x] Etapy i cele diagnozy ✓ `wiki/diagnoza/etapy_diagnozy.md`
+- [x] Wywiad psychologiczny ✓ `wiki/diagnoza/wywiad_psychologiczny.md`
+- [x] Obserwacja kliniczna ✓ `wiki/diagnoza/obserwacja_kliniczna.md`
+- [x] Formułowanie przypadku (kliniczne) ✓ `wiki/diagnoza/formulowanie_przypadku.md`
+- [x] Techniki projekcyjne ✓ `wiki/diagnoza/techniki_projekcyjne.md`
+- [x] Opinia psychologiczna ✓ `wiki/diagnoza/opinia_psychologiczna.md`
+- [x] Tajemnica zawodowa (diagnoza) ✓ `wiki/diagnoza/tajemnica_zawodowa.md`
+- [x] Diagnoza a stygmatyzacja ✓ `wiki/diagnoza/diagnoza_stygmatyzacja.md`
 
 ### WIKI — Etyka zawodowa (`etyka`)
 - [ ] Kodeksy etyczne — przegląd
-- [ ] Zasady APA i PTP
-- [ ] Dobro i nieszkodzenie
-- [ ] Tajemnica zawodowa i jej granice
-- [ ] Świadoma zgoda
-- [ ] Granice relacji terapeutycznej
+- [x] Zasady APA i PTP ✓ `wiki/etyka/zasady_apa_ptp.md`
+- [x] Dobro i nieszkodzenie ✓ `wiki/etyka/dobro_nieszkodzenie.md`
+- [x] Tajemnica zawodowa i jej granice ✓ `wiki/etyka/tajemnica_zawodowa_granice.md`
+- [x] Świadoma zgoda ✓ `wiki/etyka/swiadoma_zgoda.md`
+- [x] Granice relacji terapeutycznej ✓ `wiki/etyka/granice_relacji.md`
 - [ ] Superwizja i odpowiedzialność
 
 ### WIKI — Psychologia osób z niepełnosprawnością (`niepelnosprawnosc`)
-- [ ] Psychologia niepełnosprawności — wprowadzenie
-- [ ] Modele niepełnosprawności
-- [ ] Niepełnosprawność intelektualna
-- [ ] Niepełnosprawność ruchowa
-- [ ] Niepełnosprawność wzrokowa
-- [ ] Niepełnosprawność słuchowa
-- [ ] Spektrum autyzmu i niepełnosprawność
-- [ ] Jakość życia osób z niepełnosprawnością
-- [ ] Stres, adaptacja i radzenie sobie
-- [ ] Rodzina i opiekunowie
-- [ ] Rehabilitacja psychologiczna
-- [ ] Inkluzja społeczna i prawa
+- [x] Psychologia niepełnosprawności — wprowadzenie ✓ `wiki/disability_psychology/wprowadzenie.md`
+- [x] Modele niepełnosprawności ✓ `wiki/disability_psychology/modele_niepelnosprawnosci.md`
+- [x] Niepełnosprawność intelektualna ✓ `wiki/disability_psychology/niepelnosprawnosc_intelektualna.md`
+- [x] Niepełnosprawność ruchowa ✓ `wiki/disability_psychology/niepelnosprawnosc_ruchowa.md`
+- [x] Niepełnosprawność wzrokowa ✓ `wiki/disability_psychology/niepelnosprawnosc_wzrokowa.md`
+- [x] Niepełnosprawność słuchowa ✓ `wiki/disability_psychology/niepelnosprawnosc_sluchowa.md`
+- [x] Spektrum autyzmu i niepełnosprawność ✓ `wiki/disability_psychology/autyzm_niepelnosprawnosc.md`
+- [x] Jakość życia osób z niepełnosprawnością ✓ `wiki/disability_psychology/jakosc_zycia.md`
+- [x] Stres, adaptacja i radzenie sobie ✓ `wiki/disability_psychology/stres_i_adaptacja.md`
+- [x] Rodzina i opiekunowie ✓ `wiki/disability_psychology/rodzina_i_opiekunowie.md`
+- [x] Rehabilitacja psychologiczna ✓ `wiki/disability_psychology/rehabilitacja_psychologiczna.md`
+- [x] Inkluzja społeczna i prawa ✓ `wiki/disability_psychology/inkluzja_spoleczna.md`
 
 ---
 
 ## 🟢 Nowe sekcje / domeny do rozważenia
 
 - [x] **Psychologia społeczna** — dodano sekcję nav `Psychologia Społeczna` i `plans.spoleczna` ✓
-- [ ] **Psychologia kulturowa** — brak sekcji nav dla `kulturowa`
-- [ ] **Psychologia rozwojowa** — brak sekcji nav dla `rozwojowa`
-- [ ] **Psychologia uzależnień** — brak sekcji nav dla `uzaleznienia`
-- [ ] **Relacje i związki** — brak sekcji nav dla `relacje`
-- [ ] **Etyka zawodowa** — brak sekcji nav dla `etyka`
+- [x] **Psychologia kulturowa** — dodano sekcję nav `Psychologia Kulturowa` i `plans.kulturowa` ✓
+- [x] **Psychologia rozwojowa** — dodano `plans.rozwojowa` ✓
+- [x] **Psychologia uzależnień** — dodano sekcję nav `Psychologia Uzależnień` i `plans.uzaleznienia` ✓
+- [x] **Relacje i związki** — dodano sekcję nav `Relacje i związki` i `plans.relacje` ✓
+- [x] **Etyka zawodowa** — dodano sekcję nav `Etyka zawodowa` i `plans.etyka` ✓
 - [ ] **Słownik terminów** — encyklopedia `slownik` istnieje, ale wymaga uzupełnienia haseł
 
 ---
@@ -164,7 +164,7 @@ Następujące klucze są odwoływane przez nawigację (`wiki-index/...`), ale br
 
 ### `site-config.js`
 - [ ] Ujednolicić klucze planów: `disability_psychology` nie ma wpisu w `plans {}` (tylko w `wikis`) — *do weryfikacji, wpis plans.disability_psychology istnieje*
-- [ ] Dodać `plans.spoleczna`, `plans.kulturowa`, `plans.rozwojowa`, `plans.uzaleznienia`, `plans.relacje`, `plans.etyka` — tak by ich artykuły pojawiały się na stronach domenowych
+- [x] Dodać `plans.spoleczna`, `plans.kulturowa`, `plans.rozwojowa`, `plans.uzaleznienia`, `plans.relacje`, `plans.etyka` — dodano wszystkie ✓
 
 ### SEO / metadane
 - [ ] Dodać dynamiczne `<title>` i `<meta description>` przy nawigacji (history.pushState)

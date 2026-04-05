@@ -44,7 +44,7 @@ Nawet bardzo doświadczeni terapeuci korzystają z superwizji — nie jako z kon
 
 ### Superwizja indywidualna
 
-Jeden superwizant, jeden superwizor. Najintensywniejsza i najbardziej spersonalizowana forma. Pozwala na głębokiej refleksji nad konkretnymi przypadkami, historią i stylem pracy superwizanta.
+Jeden superwizant, jeden superwizor. Najintensywniejsza i najbardziej spersonalizowana forma. Pozwala na głęboką refleksję nad konkretnymi przypadkami, historią i stylem pracy superwizanta.
 
 **Typowy przebieg sesji (60–90 minut):**
 1. Superwizant przedstawia przypadek lub sytuację (nagranie, relacja werbalna, opis pisemny)
@@ -55,7 +55,7 @@ Jeden superwizant, jeden superwizor. Najintensywniejsza i najbardziej spersonali
 
 ### Superwizja grupowa
 
-Grupa 4–8 terapeutów spotyka się regularnie pod kierunkiem superwizora. Każdy sesję prezentuje inny uczestnik; pozostali uczą się z jego przypadku.
+Grupa 4–8 terapeutów spotyka się regularnie pod kierunkiem superwizora. Każdą sesję prezentuje inny uczestnik; pozostali uczą się z jego przypadku.
 
 **Zalety:**
 - Ekonomiczna — jeden superwizor dla wielu superwizantów

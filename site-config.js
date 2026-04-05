@@ -666,6 +666,7 @@ window.SITE_CONFIG = {
       items: [
         { id: 'spoleczna/percepcja_spoleczna', label: 'Percepcja społeczna i atrybucje', file: 'wiki/spoleczna/percepcja_spoleczna.md' },
         { id: 'spoleczna/eksperyment_wiezienny', label: 'Stanfordzki Eksperyment Więzienny', file: 'wiki/spoleczna/eksperyment_wiezienny.md' },
+        { id: 'spoleczna/manipulacja', label: 'Manipulacja — mechanizmy i metody wpływu', file: 'wiki/spoleczna/manipulacja.md' },
       ]
     },
     
@@ -769,6 +770,7 @@ window.SITE_CONFIG = {
     spoleczna: [
       { file: 'wiki/spoleczna/percepcja_spoleczna.md', label: 'Percepcja społeczna i atrybucje', status: 'live' },
       { file: 'wiki/spoleczna/eksperyment_wiezienny.md', label: 'Stanfordzki Eksperyment Więzienny', status: 'live' },
+      { file: 'wiki/spoleczna/manipulacja.md', label: 'Manipulacja — mechanizmy i metody wpływu', status: 'live' },
     ],
     disorders: [
       { file: 'wiki/disorders/afazje.md',    label: 'Afazje',                 status: 'live' },
@@ -1432,6 +1434,7 @@ window.SITE_CONFIG = {
           title: 'Wpływ społeczny',
           articles: [
             { label: 'Stanfordzki Eksperyment Więzienny', id: 'spoleczna/eksperyment_wiezienny', status: 'live' },
+            { label: 'Manipulacja — mechanizmy i metody wpływu', id: 'spoleczna/manipulacja', status: 'live' },
             { label: 'Konformizm i posłuszeństwo', id: null, status: 'planned' },
             { label: 'Perswazja i propaganda', id: null, status: 'planned' },
             { label: 'Dynamika grupowa', id: null, status: 'planned' },

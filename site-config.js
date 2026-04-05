@@ -207,6 +207,7 @@ window.SITE_CONFIG = {
         { id: 'individual_diffs/genetyka',             label: 'Uwarunkowania genetyczne',    file: 'wiki/individual_diffs/genetyka.md'              },
         { id: 'individual_diffs/style_poznawcze',      label: 'Style poznawcze',             file: 'wiki/individual_diffs/style_poznawcze.md'       },
         { id: 'individual_diffs/plec_psychologia',     label: 'Psychologia płci',            file: 'wiki/individual_diffs/plec_psychologia.md'      },
+        { id: 'individual_diffs/ciemna_triada',        label: 'Ciemna Triada',               file: 'wiki/individual_diffs/ciemna_triada.md'          },
       ]
     },
     {
@@ -824,7 +825,8 @@ window.SITE_CONFIG = {
       { file: 'wiki/individual_diffs/kreatywnosc.md',   label: 'Kreatywność',              status: 'live' },
       { file: 'wiki/individual_diffs/genetyka.md',      label: 'Uwarunkowania genetyczne', status: 'live' },
       { file: 'wiki/individual_diffs/style_poznawcze.md',label: 'Style poznawcze',         status: 'live' },
-      { file: 'wiki/individual_diffs/plec_psychologia.md',label: 'Psychologia płci',       status: 'live' },
+      { file: 'wiki/individual_diffs/plec_psychologia.md', label: 'Psychologia płci',       status: 'live' },
+      { file: 'wiki/individual_diffs/ciemna_triada.md',   label: 'Ciemna Triada',           status: 'live' },
     ],
     temperament: [
       { file: 'wiki/temperament/temperament_wprowadzenie.md', label: 'Temperament — wprowadzenie', status: 'live' },
@@ -1696,6 +1698,7 @@ window.SITE_CONFIG = {
             { label: 'Genetyka osobowości', id: 'individual_diffs/genetyka', status: 'live' },
             { label: 'Style poznawcze', id: 'individual_diffs/style_poznawcze', status: 'live' },
             { label: 'Psychologia płci', id: 'individual_diffs/plec_psychologia', status: 'live' },
+            { label: 'Ciemna Triada', id: 'individual_diffs/ciemna_triada', status: 'live' },
           ]
         },
         {

@@ -17,14 +17,17 @@
      MINI MARKDOWN PARSER
   ══════════════════════════════════════════════════ */
   function md2html(src) {
-    const esc    = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    const esc     = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    const escAttr = s => esc(s).replace(/"/g,'&quot;');
     const safeUrl = url => /^(https?:\/\/|#|\/|mailto:)/.test(url) ? url : '#';
     const inl = s => {
       s = esc(s);
       return s
         .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
         .replace(/\*(.+?)\*/g,'<em>$1</em>')
+        .replace(/~~(.+?)~~/g,'<del>$1</del>')
         .replace(/`(.+?)`/g,'<code>$1</code>')
+        .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (_, alt, url) => `<img src="${safeUrl(url)}" alt="${escAttr(alt)}" loading="lazy">`)
         .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, text, url) => `<a href="${safeUrl(url)}">${text}</a>`);
     };
 
@@ -41,7 +44,7 @@
       const bd = rows.slice(1).map(r=>'<tr>'+r.split('|').slice(1,-1).map(c=>`<td>${inl(c.trim())}</td>`).join('')+'</tr>').join('');
       return `<div class="table-wrap"><table><thead><tr>${hd}</tr></thead><tbody>${bd}</tbody></table></div>`;
     });
-    src = src.replace(/^---+$/gm,'<hr>');
+    src = src.replace(/^([*_-])\1{2,}$/gm,'<hr>');
     src = src.replace(/^#{4}\s+(.+)$/gm,(_,t)=>`<h4>${inl(t)}</h4>`);
     src = src.replace(/^#{3}\s+(.+)$/gm,(_,t)=>`<h3>${inl(t)}</h3>`);
     src = src.replace(/^#{2}\s+(.+)$/gm,(_,t)=>`<h2>${inl(t)}</h2>`);
@@ -196,6 +199,7 @@
       prefetch(id);
     } catch(e) {
       /* file missing — treat as empty stub rather than hard error */
+      console.error('[PsyHub] Failed to load', item.file, e);
       state.emptyArticles.add(id);
       updateEmptyIndicators();
       const {prev, next} = prevNext(id);
@@ -443,6 +447,8 @@
   function closeSidebar() {
     document.getElementById('sidebar').classList.remove('open');
     document.getElementById('overlay').classList.remove('open');
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) { searchInput.value = ''; searchInput.dispatchEvent(new Event('input')); }
   }
 
   /* ── Progress bar ──────────────────────────── */

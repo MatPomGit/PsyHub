@@ -66,6 +66,7 @@ window.SITE_CONFIG = {
       ]
     },
     {
+      section: 'Biologiczne Podstawy',
       section: 'Neurobiologia',
       items: [
         { id: 'neuro/anatomia', label: 'Anatomia mózgu',   file: 'wiki/neuro/anatomia.md'  },
@@ -136,10 +137,12 @@ window.SITE_CONFIG = {
         { id: 'neuro/kora_prefrontalna',     label: 'Kora przedczołowa',                       file: 'wiki/neuro/kora_prefrontalna.md'     },
         { id: 'neuro/uklad_limbiczny',       label: 'Układ limbiczny',                         file: 'wiki/neuro/uklad_limbiczny.md'       },
         { id: 'neuro/przesilenie_wiosenne',  label: 'Neurobiologia przesilenia wiosennego',    file: 'wiki/neuro/przesilenie_wiosenne.md'  },
-        { id: 'neuro/cykl_miesiaczkowy',     label: 'Neuropsychologia cyklu miesiączkowego',  file: 'wiki/neuro/cykl_miesiaczkowy.md'     },
-        { id: 'neuro/eye_tracking',          label: 'Eye tracking — śledzenie wzroku',         file: 'wiki/neuro/eye_tracking.md'          },
-        { id: 'neuro/Muse',                  label: 'Muse S — neurofeedback i EEG',            file: 'wiki/neuro/Muse.md'                  },
-        { id: 'neuro/pien_mozgu',            label: 'Pień mózgu i móżdżek',                   file: 'wiki/neuro/pien_mozgu.md'            },
+        { id: 'neuro/cykl_miesiaczkowy',                 label: 'Neuropsychologia cyklu miesiączkowego', file: 'wiki/neuro/cykl_miesiaczkowy.md'                 },
+        { id: 'neuro/rehabilitacja_neuropsychologiczna', label: 'Rehabilitacja neuropsychologiczna',      file: 'wiki/neuro/rehabilitacja_neuropsychologiczna.md' },
+        { id: 'neuro/neuronauka_poznawcza',              label: 'Neuronauka poznawcza',                   file: 'wiki/neuro/neuronauka_poznawcza.md'              },
+        { id: 'neuro/podstawy_neurologii',               label: 'Podstawy neurologii',                    file: 'wiki/neuro/podstawy_neurologii.md'               },
+        { id: 'neuro/eye_tracking',                      label: 'Eye tracking — śledzenie wzroku',        file: 'wiki/neuro/eye_tracking.md'                      },
+        { id: 'neuro/Muse',                              label: 'Muse S — neurofeedback i EEG',           file: 'wiki/neuro/Muse.md'                              },
       ]
     },
     {
@@ -2228,6 +2231,75 @@ window.SITE_CONFIG = {
         },
       ]
     },
+
+    psych_sadowa: {
+      title: 'WIKI — Psychologia sądowa i opiniowanie',
+      intro: 'Psychologia sądowa zajmuje się stosowaniem wiedzy i metod psychologicznych w postępowaniach prawnych — karnych, cywilnych i rodzinnych. Encyklopedia obejmuje rolę biegłego psychologa, podstawy prawne opiniowania, metodologię sporządzania opinii, ocenę wiarygodności zeznań, specjalistyczne narzędzia diagnostyczne oraz etykę zawodową w pracy sądowej.',
+      sections: [
+        {
+          title: 'Podstawy i rola biegłego',
+          articles: [
+            { label: 'Biegły psycholog — wprowadzenie',  id: 'forensic_psychology/wprowadzenie',   status: 'live' },
+            { label: 'Rola i status biegłego',           id: 'forensic_psychology/rola_bieglego',  status: 'live' },
+            { label: 'Podstawy prawne opiniowania',      id: 'forensic_psychology/podstawy_prawne', status: 'live' },
+            { label: 'Metodologia sporządzania opinii',  id: 'forensic_psychology/metodologia_opinii', status: 'live' },
+          ]
+        },
+        {
+          title: 'Ocena i opiniowanie',
+          articles: [
+            { label: 'Ocena wiarygodności zeznań',         id: 'forensic_psychology/ocena_wiarygodnosci',    status: 'live' },
+            { label: 'Opiniowanie w sprawach karnych',     id: 'forensic_psychology/opinia_karna',           status: 'live' },
+            { label: 'Opiniowanie w sprawach cywilnych',   id: 'forensic_psychology/opinia_cywilna',         status: 'live' },
+            { label: 'Opiniowanie w sprawach rodzinnych',  id: 'forensic_psychology/opinia_rodzinna',        status: 'live' },
+            { label: 'Opiniowanie nieletnich i dzieci',    id: 'forensic_psychology/opiniowanie_nieletnich', status: 'live' },
+          ]
+        },
+        {
+          title: 'Narzędzia i etyka',
+          articles: [
+            { label: 'Narzędzia diagnostyczne (sądowe)', id: 'forensic_psychology/narzedzia_diagnostyczne', status: 'live' },
+            { label: 'Etyka opiniowania sądowego',       id: 'forensic_psychology/etyka_opiniowania',       status: 'live' },
+            { label: 'Biegły a sąd — komunikacja',       id: 'forensic_psychology/biegly_a_sad',            status: 'live' },
+          ]
+        },
+      ]
+    },
+
+    e_terapia: {
+      title: 'WIKI — E-terapia',
+      intro: 'E-terapia (terapia online, telemedycyna psychologiczna) obejmuje świadczenie pomocy psychologicznej i terapeutycznej za pośrednictwem technologii cyfrowych — wideo, czatu, aplikacji mobilnych oraz rzeczywistości wirtualnej. Encyklopedia opisuje historię, formy, skuteczność, etykę oraz przyszłość zdalnej opieki psychologicznej.',
+      sections: [
+        {
+          title: 'Podstawy i historia',
+          articles: [
+            { label: 'E-terapia — wprowadzenie',  id: 'e_therapy/wprowadzenie',      status: 'live' },
+            { label: 'Historia e-terapii',        id: 'e_therapy/historia_e_terapii', status: 'live' },
+          ]
+        },
+        {
+          title: 'Formy i narzędzia',
+          articles: [
+            { label: 'Terapia online (wideo, telefon, czat)',      id: 'e_therapy/terapia_online',                 status: 'live' },
+            { label: 'Platformy i narzędzia e-terapii',           id: 'e_therapy/platformy_e_terapii',            status: 'live' },
+            { label: 'Chatboty terapeutyczne i AI',               id: 'e_therapy/chatboty_terapeutyczne',         status: 'live' },
+            { label: 'Aplikacje zdrowia psychicznego (mHealth)',  id: 'e_therapy/aplikacje_zdrowia_psychicznego', status: 'live' },
+            { label: 'Wirtualna rzeczywistość (VR) w terapii',   id: 'e_therapy/vr_terapia',                     status: 'live' },
+          ]
+        },
+        {
+          title: 'Skuteczność i etyka',
+          articles: [
+            { label: 'Skuteczność e-terapii',              id: 'e_therapy/skutecznosc_e_terapii', status: 'live' },
+            { label: 'Etyka e-terapii',                    id: 'e_therapy/etyka_e_terapii',       status: 'live' },
+            { label: 'Dostępność i wykluczenie cyfrowe',   id: 'e_therapy/dostepnosc_cyfrowa',    status: 'live' },
+          ]
+        },
+        {
+          title: 'Grupy szczególne i przyszłość',
+          articles: [
+            { label: 'E-terapia dzieci i młodzieży', id: 'e_therapy/e_terapia_dzieci',     status: 'live' },
+            { label: 'Przyszłość e-terapii',         id: 'e_therapy/przyszlosc_e_terapii', status: 'live' },
     filozofia: {
       title: 'WIKI — Filozofia',
       intro: 'Filozofia jest matką wszystkich nauk — bada fundamentalne pytania o rzeczywistość, poznanie, wartości i naturę człowieka. Encyklopedia obejmuje główne działy filozofii (ontologię, epistemologię, etykę, filozofię umysłu) oraz kierunki szczególnie bliskie psychologii: egzystencjalizm, fenomenologię, hermeneutykę i filozofię języka.',

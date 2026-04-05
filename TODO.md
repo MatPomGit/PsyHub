@@ -35,8 +35,10 @@ Poniższe pliki istnieją w repozytorium, ale zawierają tylko tytuł (1 wiersz)
 
 ### 2. Dodaj brakujące definicje wiki w `site-config.js`
 
-- [x] `e_terapia` — wpis `wikis.e_terapia` dodany ✓
-- [x] `psych_sadowa` — wpis `wikis.psych_sadowa` dodany ✓
+Następujące klucze są odwoływane przez nawigację (`wiki-index/...`), ale brak ich definicji w obiekcie `wikis {}`:
+
+- [x] `e_terapia` — dodano wpis `wikis.e_terapia` ✓
+- [x] `psych_sadowa` — dodano wpis `wikis.psych_sadowa` ✓
 
 ---
 
@@ -161,8 +163,8 @@ Poniższe pliki istnieją w repozytorium, ale zawierają tylko tytuł (1 wiersz)
 - [ ] Dodać obsługę obrazów w Markdown (`![alt](url)`)
 
 ### `site-config.js`
-- [ ] Ujednolicić klucze planów: `disability_psychology` nie ma wpisu w `plans {}` (tylko w `wikis`)
-- [ ] Dodać `plans.kulturowa`, `plans.rozwojowa`, `plans.uzaleznienia`, `plans.relacje`, `plans.etyka` — tak by ich artykuły pojawiały się na stronach domenowych
+- [ ] Ujednolicić klucze planów: `disability_psychology` nie ma wpisu w `plans {}` (tylko w `wikis`) — *do weryfikacji, wpis plans.disability_psychology istnieje*
+- [ ] Dodać `plans.spoleczna`, `plans.kulturowa`, `plans.rozwojowa`, `plans.uzaleznienia`, `plans.relacje`, `plans.etyka` — tak by ich artykuły pojawiały się na stronach domenowych
 
 ### SEO / metadane
 - [ ] Dodać dynamiczne `<title>` i `<meta description>` przy nawigacji (history.pushState)

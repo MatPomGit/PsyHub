@@ -1,7 +1,7 @@
 # PsyHub — Lista zadań (TODO)
 
 > Ostatnia aktualizacja: 2026-04-05  
-> Stan bazy: **357 plików MD**, **733 artykułów live**, **2 zaplanowanych**, **26 encyklopedii wiki**
+> Stan bazy: **359 plików MD**, **735 artykułów live**, **0 zaplanowanych**, **26 encyklopedii wiki**
 
 ---
 
@@ -115,13 +115,13 @@ Następujące klucze są odwoływane przez nawigację (`wiki-index/...`), ale br
 - [x] Diagnoza a stygmatyzacja ✓ `wiki/diagnoza/diagnoza_stygmatyzacja.md`
 
 ### WIKI — Etyka zawodowa (`etyka`)
-- [ ] Kodeksy etyczne — przegląd
+- [x] Kodeksy etyczne — przegląd ✓ `wiki/etyka/kodeksy_etyczne.md`
 - [x] Zasady APA i PTP ✓ `wiki/etyka/zasady_apa_ptp.md`
 - [x] Dobro i nieszkodzenie ✓ `wiki/etyka/dobro_nieszkodzenie.md`
 - [x] Tajemnica zawodowa i jej granice ✓ `wiki/etyka/tajemnica_zawodowa_granice.md`
 - [x] Świadoma zgoda ✓ `wiki/etyka/swiadoma_zgoda.md`
 - [x] Granice relacji terapeutycznej ✓ `wiki/etyka/granice_relacji.md`
-- [ ] Superwizja i odpowiedzialność
+- [x] Superwizja i odpowiedzialność ✓ `wiki/etyka/superwizja_odpowiedzialnosc.md`
 
 ### WIKI — Psychologia osób z niepełnosprawnością (`niepelnosprawnosc`)
 - [x] Psychologia niepełnosprawności — wprowadzenie ✓ `wiki/disability_psychology/wprowadzenie.md`

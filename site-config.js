@@ -136,11 +136,13 @@ window.SITE_CONFIG = {
     {
       section: 'Etyka zawodowa',
       items: [
+        { id: 'etyka/kodeksy_etyczne', label: 'Kodeksy etyczne — przegląd', file: 'wiki/etyka/kodeksy_etyczne.md' },
         { id: 'etyka/zasady_apa_ptp', label: 'Zasady APA i PTP', file: 'wiki/etyka/zasady_apa_ptp.md' },
         { id: 'etyka/dobro_nieszkodzenie', label: 'Dobro i nieszkodzenie', file: 'wiki/etyka/dobro_nieszkodzenie.md' },
         { id: 'etyka/tajemnica_zawodowa_granice', label: 'Tajemnica zawodowa i jej granice', file: 'wiki/etyka/tajemnica_zawodowa_granice.md' },
         { id: 'etyka/swiadoma_zgoda', label: 'Świadoma zgoda', file: 'wiki/etyka/swiadoma_zgoda.md' },
         { id: 'etyka/granice_relacji', label: 'Granice relacji terapeutycznej', file: 'wiki/etyka/granice_relacji.md' },
+        { id: 'etyka/superwizja_odpowiedzialnosc', label: 'Superwizja i odpowiedzialność', file: 'wiki/etyka/superwizja_odpowiedzialnosc.md' },
       ]
     },
     {
@@ -1288,11 +1290,13 @@ window.SITE_CONFIG = {
       { file: 'wiki/relacje/przemoc_zwiazki.md',                 label: 'Przemoc w związkach',                status: 'live' },
     ],
     etyka: [
+      { file: 'wiki/etyka/kodeksy_etyczne.md',                   label: 'Kodeksy etyczne — przegląd',         status: 'live' },
       { file: 'wiki/etyka/zasady_apa_ptp.md',                    label: 'Zasady APA i PTP',                   status: 'live' },
       { file: 'wiki/etyka/dobro_nieszkodzenie.md',               label: 'Dobro i nieszkodzenie',              status: 'live' },
       { file: 'wiki/etyka/tajemnica_zawodowa_granice.md',        label: 'Tajemnica zawodowa i jej granice',   status: 'live' },
       { file: 'wiki/etyka/swiadoma_zgoda.md',                    label: 'Świadoma zgoda',                     status: 'live' },
       { file: 'wiki/etyka/granice_relacji.md',                   label: 'Granice relacji terapeutycznej',     status: 'live' },
+      { file: 'wiki/etyka/superwizja_odpowiedzialnosc.md',       label: 'Superwizja i odpowiedzialność',      status: 'live' },
     ],
     diagnoza: [
       { file: 'wiki/diagnoza/etapy_diagnozy.md',                 label: 'Etapy i cele diagnozy',              status: 'live' },
@@ -1856,6 +1860,7 @@ window.SITE_CONFIG = {
         {
           title: 'Fundament etyki',
           articles: [
+            { label: 'Kodeksy etyczne — przegląd', id: 'etyka/kodeksy_etyczne', status: 'live' },
             { label: 'Etyka zawodowa psychologa i psychoterapeuty w Polsce', id: 'reference/etyka_psychologa', status: 'live' },
             { label: 'Zasady APA i PTP', id: 'etyka/zasady_apa_ptp', status: 'live' },
             { label: 'Dobro i nieszkodzenie', id: 'etyka/dobro_nieszkodzenie', status: 'live' },
@@ -1868,7 +1873,7 @@ window.SITE_CONFIG = {
             { label: 'Tajemnica zawodowa i jej granice', id: 'etyka/tajemnica_zawodowa_granice', status: 'live' },
             { label: 'Świadoma zgoda', id: 'etyka/swiadoma_zgoda', status: 'live' },
             { label: 'Granice relacji terapeutycznej', id: 'etyka/granice_relacji', status: 'live' },
-            { label: 'Superwizja i odpowiedzialność', id: 'psychotherapy/superwizja', status: 'live' },
+            { label: 'Superwizja i odpowiedzialność', id: 'etyka/superwizja_odpowiedzialnosc', status: 'live' },
           ]
         },
       ]

@@ -897,8 +897,8 @@ function renderDailyPsychology(id, item) {
     area.innerHTML = '<div class="error-box"><h2>Błąd ładowania modułu</h2><p>Nie udało się wczytać danych psychologii codziennej.</p></div>';
     return;
   }
-  const todayDay = new Date().getDay(); /* 0=Sun … 6=Sat */
-  const displayDay = (dailySelectedDay !== null) ? dailySelectedDay : todayDay;
+  const today = new Date().getDay(); /* 0=Sun … 6=Sat */
+  const displayDay = (dailySelectedDay !== null) ? dailySelectedDay : today;
   const entry = data.find(e => e.day === displayDay) || data[0];
 
   const typeLabels = {
@@ -907,7 +907,7 @@ function renderDailyPsychology(id, item) {
   };
 
   const navBtns = data.map(e => {
-    const isToday = e.day === todayDay;
+    const isToday = e.day === today;
     const isActive = e.day === displayDay;
     const todayMark = isToday ? `<span class="daily-today-label">dziś</span>` : '';
     return `<button class="daily-day-btn${isActive ? ' active' : ''}" onclick="selectDailyDay(${e.day})">${e.emoji} ${e.dayName}${todayMark}</button>`;
@@ -922,7 +922,7 @@ function renderDailyPsychology(id, item) {
   area.innerHTML = `<div class="rendered daily-wrap">
     <div class="page-hero">
       <span class="chapter-lbl">${item.section || ''}</span>
-      <h1>Psychologia Codziennej</h1>
+      <h1>Psychologia Codzienna</h1>
       <p class="lead">Codzienna dawka wiedzy psychologicznej i pracy nad sobą — zależnie od dnia tygodnia.</p>
     </div>
     <div class="daily-nav">${navBtns}</div>

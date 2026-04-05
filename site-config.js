@@ -31,7 +31,7 @@ window.SITE_CONFIG = {
       items: [
         { id: 'students/wybor_specjalnosci',    label: 'Wybór specjalności',           file: 'wiki/students/wybor_specjalnosci.md' },
         { id: 'students/test_specjalnosci',     label: 'Test wyboru specjalności',     custom: 'specialization_test' },
-        { id: 'students/psychologia_codziennej', label: 'Psychologia Codziennej 🗓️',   custom: 'daily_psychology' },
+        { id: 'students/psychologia_codziennej', label: 'Psychologia Codzienna 🗓️',    custom: 'daily_psychology' },
         /**{ id: 'students/monopoly_psychologiczne', href: 'https://matpomgit.github.io/Psychopoly/', label: 'Monopoly Psychologiczne' },*/
       ]
     },

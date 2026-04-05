@@ -35,7 +35,7 @@ Trzy wymiary stygmatyzacji:
 
 ### Autostygmatyzacja i jej konsekwencje
 
-Gdy osoba z diagnozą integralizuje społeczne stereotypy, może doświadczać:
+Gdy osoba z diagnozą internalizuje społeczne stereotypy, może doświadczać:
 - Obniżonego poczucia własnej wartości i kompetencji
 - Zmniejszonej motywacji do poszukiwania pomocy (*why try*-effect, Corrigan 2009)
 - Unikania leczenia z obawy przed etykietą

@@ -33,7 +33,7 @@ Obserwacja nie polega na subiektywnym „wrażeniu" — wymaga systematyczności
 
 ### 1. Wygląd zewnętrzny (*Appearance*)
 
-- Wiek biologiczny a metrykalny, higienę, ubiór, zadbanie
+- Wiek biologiczny a metrykalny, higiena, ubiór, zadbanie
 - Anomalie fizyczne mogące sugerować genezę organiczną
 - Sygnały niewerbalnego niepokoju (pot, drżenie, czerwienienie)
 

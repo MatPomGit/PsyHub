@@ -240,6 +240,7 @@ window.SITE_CONFIG = {
         { id: 'diagnostics/testy_jezyka',      label: 'Testy językowe',             file: 'wiki/diagnostics/testy_jezyka.md'      },
         { id: 'diagnostics/wais',              label: 'Skale Wechslera (WAIS/WISC)',file: 'wiki/diagnostics/wais.md'              },
         { id: 'diagnostics/neuropsych_battery',label: 'Baterie neuropsychologiczne',file: 'wiki/diagnostics/neuropsych_battery.md'},
+        { id: 'diagnostics/rdoc',              label: 'Model RDoC',                  file: 'wiki/diagnostics/rdoc.md'              },
       ]
     },
     {
@@ -796,6 +797,7 @@ window.SITE_CONFIG = {
       { file: 'wiki/diagnostics/testy_jezyka.md',     label: 'Testy językowe',        status: 'live' },
       { file: 'wiki/diagnostics/wais.md',             label: 'Skale Wechslera (WAIS/WISC)', status: 'live' },
       { file: 'wiki/diagnostics/neuropsych_battery.md',label: 'Baterie neuropsychologiczne', status: 'live' },
+      { file: 'wiki/diagnostics/rdoc.md',              label: 'Model RDoC',                  status: 'live' },
     ],
     psychometrics: [
       { file: 'wiki/psychometrics/psychometria_wprowadzenie.md', label: 'Psychometria — wprowadzenie', status: 'live' },
@@ -1622,6 +1624,12 @@ window.SITE_CONFIG = {
             { label: 'Wywiad psychologiczny', id: null, status: 'planned' },
             { label: 'Obserwacja kliniczna', id: null, status: 'planned' },
             { label: 'Formułowanie przypadku', id: null, status: 'planned' },
+          ]
+        },
+        {
+          title: 'Modele diagnostyczne',
+          articles: [
+            { label: 'Model RDoC', id: 'diagnostics/rdoc', status: 'live' },
           ]
         },
         {

@@ -32,6 +32,8 @@ window.SITE_CONFIG = {
         { id: 'students/wybor_specjalnosci', label: 'Wybór specjalności', file: 'wiki/students/wybor_specjalnosci.md' },
         { id: 'students/test_specjalnosci',  label: 'Test wyboru specjalności', custom: 'specialization_test' },
         { id: 'students/etyka_studenta',     label: 'Etyka studenta psychologii', file: 'wiki/students/etyka_studenta.md' },
+        { id: 'students/psychologia_codziennej', label: 'Psychologia codzienna 🗓️',    custom: 'daily_psychology' },
+        { id: 'students/testy_teoretyczne',      label: 'Testy teoretyczne 📝',         custom: 'theoretical_test' },
         /**{ id: 'students/monopoly_psychologiczne', href: 'https://matpomgit.github.io/Psychopoly/', label: 'Monopoly Psychologiczne' },*/
       ]
     },
@@ -207,6 +209,7 @@ window.SITE_CONFIG = {
         { id: 'individual_diffs/genetyka',             label: 'Uwarunkowania genetyczne',    file: 'wiki/individual_diffs/genetyka.md'              },
         { id: 'individual_diffs/style_poznawcze',      label: 'Style poznawcze',             file: 'wiki/individual_diffs/style_poznawcze.md'       },
         { id: 'individual_diffs/plec_psychologia',     label: 'Psychologia płci',            file: 'wiki/individual_diffs/plec_psychologia.md'      },
+        { id: 'individual_diffs/ciemna_triada',        label: 'Ciemna Triada',               file: 'wiki/individual_diffs/ciemna_triada.md'          },
       ]
     },
     {
@@ -303,6 +306,8 @@ window.SITE_CONFIG = {
         { id: 'psychotherapy/logoterapia_frankl',      label: 'Logoterapia (Frankl)',          file: 'wiki/psychotherapy/logoterapia_frankl.md'      },
         { id: 'psychotherapy/psychoanaliza_fromma',    label: 'Psychoanaliza humanistyczna (Fromm)', file: 'wiki/psychotherapy/psychoanaliza_fromma.md' },
         { id: 'psychotherapy/psychologia_zimbardo',    label: 'Psychologia społeczna (Zimbardo)',    file: 'wiki/psychotherapy/psychologia_zimbardo.md' },
+        { id: 'psychotherapy/aktywacja_behawioralna', label: 'Aktywacja behawioralna',               file: 'wiki/psychotherapy/aktywacja_behawioralna.md' },
+        { id: 'psychotherapy/superwizja',              label: 'Superwizja w psychoterapii',           file: 'wiki/psychotherapy/superwizja.md'           },
       ]
     },
     {
@@ -626,9 +631,45 @@ window.SITE_CONFIG = {
       ]
     },
     {
+      section: 'Porozumiewanie się bez przemocy (NVC)',
+      items: [
+        { id: 'nvc/wprowadzenie',              label: 'NVC — wprowadzenie',                    file: 'wiki/nvc/wprowadzenie.md'              },
+        { id: 'nvc/cztery_komponenty',         label: 'Cztery komponenty NVC',                 file: 'wiki/nvc/cztery_komponenty.md'         },
+        { id: 'nvc/obserwacja',                label: 'Obserwacja bez oceniania',              file: 'wiki/nvc/obserwacja.md'                },
+        { id: 'nvc/uczucia',                   label: 'Uczucia w NVC',                         file: 'wiki/nvc/uczucia.md'                   },
+        { id: 'nvc/potrzeby',                  label: 'Katalog potrzeb',                       file: 'wiki/nvc/potrzeby.md'                  },
+        { id: 'nvc/prosba_i_zadanie',          label: 'Prośba a żądanie',                      file: 'wiki/nvc/prosba_i_zadanie.md'          },
+        { id: 'nvc/empatia_nvc',               label: 'Empatia w NVC',                         file: 'wiki/nvc/empatia_nvc.md'               },
+        { id: 'nvc/jezyk_szakala_i_zyrafy',    label: 'Język szakala i żyrafy',                file: 'wiki/nvc/jezyk_szakala_i_zyrafy.md'    },
+        { id: 'nvc/autoempatia',               label: 'Autoempatia i samowspółczucie',         file: 'wiki/nvc/autoempatia.md'               },
+        { id: 'nvc/nvc_w_konfliktach',         label: 'NVC w rozwiązywaniu konfliktów',        file: 'wiki/nvc/nvc_w_konfliktach.md'         },
+        { id: 'nvc/nvc_w_wychowaniu',          label: 'NVC w wychowaniu i edukacji',           file: 'wiki/nvc/nvc_w_wychowaniu.md'          },
+        { id: 'nvc/praktyka_nvc',              label: 'Praktyka NVC w codziennym życiu',       file: 'wiki/nvc/praktyka_nvc.md'              },
+      ]
+    },
+    {
+      section: 'Seminarium dyplomowe',
+      items: [
+        { id: 'ppd/wprowadzenie',             label: 'Seminarium dyplomowe — wprowadzenie',    file: 'wiki/ppd/wprowadzenie.md'             },
+        { id: 'ppd/struktura_pracy',          label: 'Struktura pracy magisterskiej',          file: 'wiki/ppd/struktura_pracy.md'          },
+        { id: 'ppd/przeglad_literatury',      label: 'Przegląd literatury naukowej',           file: 'wiki/ppd/przeglad_literatury.md'      },
+        { id: 'ppd/metodologia_badan',        label: 'Metodologia badań psychologicznych',     file: 'wiki/ppd/metodologia_badan.md'        },
+        { id: 'ppd/pomiary_psychologiczne',   label: 'Zasady prowadzenia pomiarów',            file: 'wiki/ppd/pomiary_psychologiczne.md'   },
+        { id: 'ppd/narzedzia_badawcze',       label: 'Narzędzia badawcze i kwestionariusze',  file: 'wiki/ppd/narzedzia_badawcze.md'       },
+        { id: 'ppd/analizy_statystyczne',     label: 'Analizy statystyczne',                  file: 'wiki/ppd/analizy_statystyczne.md'     },
+        { id: 'ppd/etyka_badan',              label: 'Etyka badań naukowych',                 file: 'wiki/ppd/etyka_badan.md'              },
+        { id: 'ppd/bledy_badawcze',           label: 'Błędy badawcze — czego unikać',         file: 'wiki/ppd/bledy_badawcze.md'           },
+        { id: 'ppd/opis_wynikow',             label: 'Pisanie i interpretacja wyników',       file: 'wiki/ppd/opis_wynikow.md'             },
+        { id: 'ppd/obrona_pracy',             label: 'Obrona pracy magisterskiej',            file: 'wiki/ppd/obrona_pracy.md'             },
+        { id: 'ppd/dobre_praktyki',           label: 'Dobre praktyki w pisaniu pracy',        file: 'wiki/ppd/dobre_praktyki.md'           },
+      ]
+    },
+    {
       section: 'Psychologia Społeczna',
       items: [
         { id: 'spoleczna/percepcja_spoleczna', label: 'Percepcja społeczna i atrybucje', file: 'wiki/spoleczna/percepcja_spoleczna.md' },
+        { id: 'spoleczna/eksperyment_wiezienny', label: 'Stanfordzki Eksperyment Więzienny', file: 'wiki/spoleczna/eksperyment_wiezienny.md' },
+        { id: 'spoleczna/manipulacja', label: 'Manipulacja — mechanizmy i metody wpływu', file: 'wiki/spoleczna/manipulacja.md' },
       ]
     },
     
@@ -664,6 +705,8 @@ window.SITE_CONFIG = {
         { id: 'wiki-index/psych_sadowa',         label: 'WIKI — Psychologia sądowa',                wiki: 'psych_sadowa'         },
         { id: 'wiki-index/e_terapia',            label: 'WIKI — E-terapia',                         wiki: 'e_terapia'            },
         { id: 'wiki-index/filozofia',            label: 'WIKI — Filozofia',                         wiki: 'filozofia'            },
+        { id: 'wiki-index/nvc',                  label: 'WIKI — Porozumiewanie się bez przemocy',   wiki: 'nvc'                  },
+        { id: 'wiki-index/seminarium_dyplomowe', label: 'WIKI — Seminarium dyplomowe',              wiki: 'seminarium_dyplomowe' },
       ]
     },
     {
@@ -730,6 +773,8 @@ window.SITE_CONFIG = {
     ],
     spoleczna: [
       { file: 'wiki/spoleczna/percepcja_spoleczna.md', label: 'Percepcja społeczna i atrybucje', status: 'live' },
+      { file: 'wiki/spoleczna/eksperyment_wiezienny.md', label: 'Stanfordzki Eksperyment Więzienny', status: 'live' },
+      { file: 'wiki/spoleczna/manipulacja.md', label: 'Manipulacja — mechanizmy i metody wpływu', status: 'live' },
     ],
     disorders: [
       { file: 'wiki/disorders/afazje.md',    label: 'Afazje',                 status: 'live' },
@@ -783,7 +828,8 @@ window.SITE_CONFIG = {
       { file: 'wiki/individual_diffs/kreatywnosc.md',   label: 'Kreatywność',              status: 'live' },
       { file: 'wiki/individual_diffs/genetyka.md',      label: 'Uwarunkowania genetyczne', status: 'live' },
       { file: 'wiki/individual_diffs/style_poznawcze.md',label: 'Style poznawcze',         status: 'live' },
-      { file: 'wiki/individual_diffs/plec_psychologia.md',label: 'Psychologia płci',       status: 'live' },
+      { file: 'wiki/individual_diffs/plec_psychologia.md', label: 'Psychologia płci',       status: 'live' },
+      { file: 'wiki/individual_diffs/ciemna_triada.md',   label: 'Ciemna Triada',           status: 'live' },
     ],
     temperament: [
       { file: 'wiki/temperament/temperament_wprowadzenie.md', label: 'Temperament — wprowadzenie', status: 'live' },
@@ -827,6 +873,8 @@ window.SITE_CONFIG = {
       { file: 'wiki/psychotherapy/logoterapia_frankl.md',   label: 'Logoterapia (Frankl)',                  status: 'live' },
       { file: 'wiki/psychotherapy/psychoanaliza_fromma.md', label: 'Psychoanaliza humanistyczna (Fromm)',   status: 'live' },
       { file: 'wiki/psychotherapy/psychologia_zimbardo.md', label: 'Psychologia społeczna (Zimbardo)',      status: 'live' },
+      { file: 'wiki/psychotherapy/aktywacja_behawioralna.md', label: 'Aktywacja behawioralna',             status: 'live' },
+      { file: 'wiki/psychotherapy/superwizja.md',           label: 'Superwizja w psychoterapii',            status: 'live' },
     ],
     psychopathology: [
       { file: 'wiki/psychopathology/psychopatologia_wprowadzenie.md', label: 'Psychopatologia — wprowadzenie', status: 'live' },
@@ -1145,6 +1193,34 @@ window.SITE_CONFIG = {
       { file: 'wiki/philosophy/paradoksalny_determinizm.md',  label: 'Paradoksalny determinizm',                   status: 'live' },
       { file: 'wiki/philosophy/realizm_modalny.md',           label: 'Realizm modalny',                            status: 'live' },
     ],
+    nvc: [
+      { file: 'wiki/nvc/wprowadzenie.md',           label: 'NVC — wprowadzenie',                    status: 'live' },
+      { file: 'wiki/nvc/cztery_komponenty.md',       label: 'Cztery komponenty NVC',                 status: 'live' },
+      { file: 'wiki/nvc/obserwacja.md',              label: 'Obserwacja bez oceniania',              status: 'live' },
+      { file: 'wiki/nvc/uczucia.md',                 label: 'Uczucia w NVC',                         status: 'live' },
+      { file: 'wiki/nvc/potrzeby.md',                label: 'Katalog potrzeb',                       status: 'live' },
+      { file: 'wiki/nvc/prosba_i_zadanie.md',        label: 'Prośba a żądanie',                      status: 'live' },
+      { file: 'wiki/nvc/empatia_nvc.md',             label: 'Empatia w NVC',                         status: 'live' },
+      { file: 'wiki/nvc/jezyk_szakala_i_zyrafy.md',  label: 'Język szakala i żyrafy',                status: 'live' },
+      { file: 'wiki/nvc/autoempatia.md',             label: 'Autoempatia i samowspółczucie',         status: 'live' },
+      { file: 'wiki/nvc/nvc_w_konfliktach.md',       label: 'NVC w rozwiązywaniu konfliktów',        status: 'live' },
+      { file: 'wiki/nvc/nvc_w_wychowaniu.md',        label: 'NVC w wychowaniu i edukacji',           status: 'live' },
+      { file: 'wiki/nvc/praktyka_nvc.md',            label: 'Praktyka NVC w codziennym życiu',       status: 'live' },
+    ],
+    ppd: [
+      { file: 'wiki/ppd/wprowadzenie.md',           label: 'Seminarium dyplomowe — wprowadzenie',   status: 'live' },
+      { file: 'wiki/ppd/struktura_pracy.md',        label: 'Struktura pracy magisterskiej',         status: 'live' },
+      { file: 'wiki/ppd/przeglad_literatury.md',    label: 'Przegląd literatury naukowej',          status: 'live' },
+      { file: 'wiki/ppd/metodologia_badan.md',      label: 'Metodologia badań psychologicznych',    status: 'live' },
+      { file: 'wiki/ppd/pomiary_psychologiczne.md', label: 'Zasady prowadzenia pomiarów',           status: 'live' },
+      { file: 'wiki/ppd/narzedzia_badawcze.md',     label: 'Narzędzia badawcze i kwestionariusze', status: 'live' },
+      { file: 'wiki/ppd/analizy_statystyczne.md',   label: 'Analizy statystyczne',                 status: 'live' },
+      { file: 'wiki/ppd/etyka_badan.md',            label: 'Etyka badań naukowych',                status: 'live' },
+      { file: 'wiki/ppd/bledy_badawcze.md',         label: 'Błędy badawcze — czego unikać',        status: 'live' },
+      { file: 'wiki/ppd/opis_wynikow.md',           label: 'Pisanie i interpretacja wyników',      status: 'live' },
+      { file: 'wiki/ppd/obrona_pracy.md',           label: 'Obrona pracy magisterskiej',           status: 'live' },
+      { file: 'wiki/ppd/dobre_praktyki.md',         label: 'Dobre praktyki w pisaniu pracy',       status: 'live' },
+    ],
   },
 
   // ─────────────────────────────────────────────────────────────
@@ -1276,6 +1352,8 @@ window.SITE_CONFIG = {
             { label: 'Logoterapia (Frankl)', id: 'psychotherapy/logoterapia_frankl', status: 'live' },
             { label: 'Psychoanaliza humanistyczna (Fromm)', id: 'psychotherapy/psychoanaliza_fromma', status: 'live' },
             { label: 'Psychologia społeczna (Zimbardo)', id: 'psychotherapy/psychologia_zimbardo', status: 'live' },
+            { label: 'Aktywacja behawioralna', id: 'psychotherapy/aktywacja_behawioralna', status: 'live' },
+            { label: 'Superwizja w psychoterapii', id: 'psychotherapy/superwizja', status: 'live' },
             { label: 'Interwencja kryzysowa', id: 'suicidology/interwencja', status: 'live' },
           ]
         },
@@ -1361,6 +1439,8 @@ window.SITE_CONFIG = {
         {
           title: 'Wpływ społeczny',
           articles: [
+            { label: 'Stanfordzki Eksperyment Więzienny', id: 'spoleczna/eksperyment_wiezienny', status: 'live' },
+            { label: 'Manipulacja — mechanizmy i metody wpływu', id: 'spoleczna/manipulacja', status: 'live' },
             { label: 'Konformizm i posłuszeństwo', id: null, status: 'planned' },
             { label: 'Perswazja i propaganda', id: null, status: 'planned' },
             { label: 'Dynamika grupowa', id: null, status: 'planned' },
@@ -1622,6 +1702,7 @@ window.SITE_CONFIG = {
             { label: 'Genetyka osobowości', id: 'individual_diffs/genetyka', status: 'live' },
             { label: 'Style poznawcze', id: 'individual_diffs/style_poznawcze', status: 'live' },
             { label: 'Psychologia płci', id: 'individual_diffs/plec_psychologia', status: 'live' },
+            { label: 'Ciemna Triada', id: 'individual_diffs/ciemna_triada', status: 'live' },
           ]
         },
         {
@@ -1688,7 +1769,7 @@ window.SITE_CONFIG = {
             { label: 'Tajemnica zawodowa i jej granice', id: null, status: 'planned' },
             { label: 'Świadoma zgoda', id: null, status: 'planned' },
             { label: 'Granice relacji terapeutycznej', id: null, status: 'planned' },
-            { label: 'Superwizja i odpowiedzialność', id: null, status: 'planned' },
+            { label: 'Superwizja i odpowiedzialność', id: 'psychotherapy/superwizja', status: 'live' },
           ]
         },
       ]
@@ -2303,6 +2384,10 @@ window.SITE_CONFIG = {
           articles: [
             { label: 'E-terapia dzieci i młodzieży', id: 'e_therapy/e_terapia_dzieci',     status: 'live' },
             { label: 'Przyszłość e-terapii',         id: 'e_therapy/przyszlosc_e_terapii', status: 'live' },
+          ]
+        },
+      ]
+    },
     filozofia: {
       title: 'WIKI — Filozofia',
       intro: 'Filozofia jest matką wszystkich nauk — bada fundamentalne pytania o rzeczywistość, poznanie, wartości i naturę człowieka. Encyklopedia obejmuje główne działy filozofii (ontologię, epistemologię, etykę, filozofię umysłu) oraz kierunki szczególnie bliskie psychologii: egzystencjalizm, fenomenologię, hermeneutykę i filozofię języka.',
@@ -2351,6 +2436,82 @@ window.SITE_CONFIG = {
             { label: 'Podświadomy nihilizm',                   id: 'philosophy/podswiadomy_nihilizm',      status: 'live' },
             { label: 'Paradoksalny determinizm',               id: 'philosophy/paradoksalny_determinizm',  status: 'live' },
             { label: 'Realizm modalny',                        id: 'philosophy/realizm_modalny',           status: 'live' },
+          ]
+        },
+      ]
+    },
+    nvc: {
+      title: 'WIKI — Porozumiewanie się bez przemocy (NVC)',
+      intro: 'Nonviolent Communication (NVC) to metoda komunikacji opracowana przez Marshalla Rosenberga, oparta na empatii, obserwacji bez oceniania oraz identyfikacji uczuć i potrzeb. NVC uczy wyrażania siebie z autentycznością i słuchania innych z prawdziwą obecnością.',
+      sections: [
+        {
+          title: 'Podstawy NVC',
+          articles: [
+            { label: 'NVC — wprowadzenie',         id: 'nvc/wprowadzenie',        status: 'live', desc: 'Geneza, filozofia i zastosowania Porozumiewania się bez przemocy.' },
+            { label: 'Cztery komponenty NVC',       id: 'nvc/cztery_komponenty',   status: 'live', desc: 'Obserwacja, uczucie, potrzeba, prośba — struktura procesu NVC.' },
+            { label: 'Język szakala i żyrafy',      id: 'nvc/jezyk_szakala_i_zyrafy', status: 'live', desc: 'Dwa style komunikacji — oceniający i empatyczny.' },
+          ]
+        },
+        {
+          title: 'Cztery komponenty w praktyce',
+          articles: [
+            { label: 'Obserwacja bez oceniania',    id: 'nvc/obserwacja',          status: 'live', desc: 'Jak opisywać zdarzenia bez ocen, etykietek i generalizacji.' },
+            { label: 'Uczucia w NVC',               id: 'nvc/uczucia',             status: 'live', desc: 'Katalog uczuć, pseudouczucia i odpowiedzialność za emocje.' },
+            { label: 'Katalog potrzeb',             id: 'nvc/potrzeby',            status: 'live', desc: 'Universalne ludzkie potrzeby i ich rola w NVC.' },
+            { label: 'Prośba a żądanie',            id: 'nvc/prosba_i_zadanie',    status: 'live', desc: 'Jak formułować prośby i czym różnią się od żądań.' },
+          ]
+        },
+        {
+          title: 'Empatia i wewnętrzna praca',
+          articles: [
+            { label: 'Empatia w NVC',               id: 'nvc/empatia_nvc',         status: 'live', desc: 'Empatyczne słuchanie, blokady empatii i cztery poziomy słyszenia.' },
+            { label: 'Autoempatia i samowspółczucie', id: 'nvc/autoempatia',       status: 'live', desc: 'Słuchanie własnych uczuć i potrzeb z życzliwością.' },
+          ]
+        },
+        {
+          title: 'Zastosowania NVC',
+          articles: [
+            { label: 'NVC w rozwiązywaniu konfliktów', id: 'nvc/nvc_w_konfliktach', status: 'live', desc: 'Mediacja NVC, trzy fazy rozwiązywania konfliktu.' },
+            { label: 'NVC w wychowaniu i edukacji',  id: 'nvc/nvc_w_wychowaniu',  status: 'live', desc: 'Wychowanie bez kar i nagród, NVC w szkole.' },
+            { label: 'Praktyka NVC w codziennym życiu', id: 'nvc/praktyka_nvc',   status: 'live', desc: 'Codzienna praktyka NVC w domu, pracy i relacjach.' },
+          ]
+        },
+      ]
+    },
+    seminarium_dyplomowe: {
+      title: 'WIKI — Seminarium dyplomowe',
+      intro: 'Seminarium dyplomowe przygotowuje studentów psychologii do samodzielnego prowadzenia badań i pisania pracy magisterskiej. Encyklopedia obejmuje zasady pisania pracy naukowej, metodologię badań, prowadzenie pomiarów psychologicznych, analizy statystyczne, etykę naukową, typowe błędy badawcze oraz dobre praktyki akademickie.',
+      sections: [
+        {
+          title: 'Podstawy pracy naukowej',
+          articles: [
+            { label: 'Seminarium dyplomowe — wprowadzenie',  id: 'ppd/wprowadzenie',         status: 'live', desc: 'Cel i struktura seminarium dyplomowego, typy prac magisterskich.' },
+            { label: 'Struktura pracy magisterskiej',        id: 'ppd/struktura_pracy',      status: 'live', desc: 'Standardowe rozdziały, formatowanie i objętość pracy.' },
+            { label: 'Przegląd literatury naukowej',         id: 'ppd/przeglad_literatury',  status: 'live', desc: 'Bazy danych, strategie wyszukiwania, ocena źródeł, cytowanie.' },
+          ]
+        },
+        {
+          title: 'Metodologia i pomiar',
+          articles: [
+            { label: 'Metodologia badań psychologicznych',    id: 'ppd/metodologia_badan',       status: 'live', desc: 'Paradygmaty, typy projektów, dobór próby, operacjonalizacja.' },
+            { label: 'Zasady prowadzenia pomiarów',           id: 'ppd/pomiary_psychologiczne',  status: 'live', desc: 'Skale, rzetelność, trafność, standaryzacja, normy.' },
+            { label: 'Narzędzia badawcze i kwestionariusze', id: 'ppd/narzedzia_badawcze',      status: 'live', desc: 'Wybór narzędzia, adaptacja, tworzenie własnych kwestionariuszy.' },
+            { label: 'Analizy statystyczne',                  id: 'ppd/analizy_statystyczne',    status: 'live', desc: 'Testy parametryczne i nieparametryczne, efekty, raportowanie APA.' },
+          ]
+        },
+        {
+          title: 'Etyka i jakość badań',
+          articles: [
+            { label: 'Etyka badań naukowych',               id: 'ppd/etyka_badan',      status: 'live', desc: 'Świadoma zgoda, poufność, komisje etyczne, integralność naukowa.' },
+            { label: 'Błędy badawcze — czego unikać',       id: 'ppd/bledy_badawcze',   status: 'live', desc: 'Błędy projektowania, pomiaru, analizy i interpretacji wyników.' },
+          ]
+        },
+        {
+          title: 'Pisanie i obrona',
+          articles: [
+            { label: 'Pisanie i interpretacja wyników',  id: 'ppd/opis_wynikow',    status: 'live', desc: 'Raportowanie statystyk, tabele, wykresy, dyskusja i ograniczenia.' },
+            { label: 'Obrona pracy magisterskiej',       id: 'ppd/obrona_pracy',    status: 'live', desc: 'Prezentacja, typowe pytania, strategia odpowiedzi, stres.' },
+            { label: 'Dobre praktyki w pisaniu pracy',   id: 'ppd/dobre_praktyki',  status: 'live', desc: 'Organizacja czasu, zarządzanie danymi, relacja z promotorem, dobrostan.' },
           ]
         },
       ]

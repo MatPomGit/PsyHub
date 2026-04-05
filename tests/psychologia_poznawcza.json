@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "question": "Pamięć robocza (working memory) według modelu Baddeleya składa się z:",
+    "options": [
+      "Pamięci epizodycznej, semantycznej i proceduralnej",
+      "Centralnego systemu wykonawczego, pętli fonologicznej, szkicownika wzrokowo-przestrzennego i bufora epizodycznego",
+      "Pamięci sensorycznej, krótkotrwałej i długotrwałej",
+      "Pamięci jawnej i utajonej"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 2,
+    "question": "Efekt pierwszeństwa (primacy effect) w zapamiętywaniu listy słów polega na:",
+    "options": [
+      "Lepszym zapamiętywaniu słów z końca listy",
+      "Lepszym zapamiętywaniu słów z początku listy",
+      "Lepszym zapamiętywaniu słów ze środka listy",
+      "Jednakowym zapamiętywaniu wszystkich elementów listy"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 3,
+    "question": "Selektywna uwaga odnosi się do zdolności do:",
+    "options": [
+      "Utrzymywania skupienia przez długi czas",
+      "Jednoczesnego wykonywania dwóch zadań",
+      "Skupiania się na wybranych bodźcach przy jednoczesnym ignorowaniu innych",
+      "Przenoszenia uwagi między różnymi źródłami informacji"
+    ],
+    "correct": 2,
+    "difficulty": 1
+  },
+  {
+    "id": 4,
+    "question": "Warunkowanie klasyczne Pawłowa polega na:",
+    "options": [
+      "Uczeniu się poprzez obserwację modela",
+      "Skojarzeniu bodźca neutralnego z bodźcem bezwarunkowym, co prowadzi do wywoływania reakcji warunkowej",
+      "Wzmacnianiu pożądanego zachowania nagrodą",
+      "Karaniu niepożądanego zachowania bodźcem awersyjnym"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 5,
+    "question": "Złudzenie Müllera-Lyera ilustruje, że:",
+    "options": [
+      "Pamięć wzrokowa jest zawsze dokładna",
+      "Percepcja może być niezgodna z fizyczną rzeczywistością – mózg interpretuje bodźce, a nie tylko je rejestruje",
+      "Uwaga selektywna ogranicza przetwarzanie bodźców wzrokowych",
+      "Percepcja głębi wymaga obu oczu"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 6,
+    "question": "Heurystyka reprezentatywności (Tversky i Kahneman) polega na:",
+    "options": [
+      "Ocenie prawdopodobieństwa na podstawie łatwości przypominania sobie przykładów",
+      "Ocenie prawdopodobieństwa na podstawie podobieństwa do prototypu lub stereotypu kategorii",
+      "Dostosowywaniu ocen do punktu startowego i korygowaniu w stopniu niewystarczającym",
+      "Preferowaniu informacji potwierdzających wcześniejsze przekonania"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 7,
+    "question": "Teoria wykrywania sygnałów (SDT) rozdziela percepcję na:",
+    "options": [
+      "Pamięć sensoryczną i sensoryczną krótkotrwałą",
+      "Czułość sensoryczną (d') i kryterium decyzyjne (β) – oddzielając zdolność percepcji od skłonności do odpowiedzi",
+      "Percepcję świadomą i podprogową",
+      "Percepcję wzrokową i słuchową"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 8,
+    "question": "Efekt kontekstu w pamięci (encoding specificity principle, Tulving i Thomson) oznacza, że:",
+    "options": [
+      "Materiał zapamiętany w jednym kontekście jest trudniej przypomnieć w innym – kontekst kodowania ułatwia przypomnienie",
+      "Najlepiej zapamiętujemy materiał nowy i zaskakujący",
+      "Emocje zawsze pogarszają zapamiętywanie faktów",
+      "Powtarzanie wystarczy do trwałego zapamiętania"
+    ],
+    "correct": 0,
+    "difficulty": 1
+  },
+  {
+    "id": 9,
+    "question": "Model dwóch systemów poznawczych Kahnemana (System 1 i System 2) zakłada, że System 1 jest:",
+    "options": [
+      "Wolny, analityczny i wymagający wysiłku",
+      "Szybki, automatyczny, intuicyjny i podatny na błędy heurystyczne",
+      "Odpowiedzialny za rozwiązywanie złożonych problemów matematycznych",
+      "Aktywny wyłącznie podczas snu i konsolidacji pamięci"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 10,
+    "question": "Schemat poznawczy w teorii Piageta i psychologii poznawczej to:",
+    "options": [
+      "Plan terapii opracowany przez psychologa",
+      "Zorganizowana struktura wiedzy ułatwiająca interpretację nowych informacji",
+      "Wzorzec reakcji emocjonalnych na stres",
+      "Schematy graficzne stosowane w terapii"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 11,
+    "question": "Zjawisko \"cocktail party effect\" (efekt przyjęcia koktajlowego) ilustruje:",
+    "options": [
+      "Interferencję proaktywną w pamięci słuchowej",
+      "Zdolność do wychwytywania własnego imienia lub istotnych informacji z ignorowanego kanału słuchowego",
+      "Pogorszenie percepcji mowy w hałasie u osób po 50. roku życia",
+      "Efekt pierwszeństwa w przetwarzaniu dźwięków mowy"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 12,
+    "question": "Paradoks Simona (Simon effect) w psychologii poznawczej dotyczy:",
+    "options": [
+      "Interferencji między słowem a kolorem w zadaniu Stroopa",
+      "Wpływu lokalizacji przestrzennej bodźca na czas reakcji, nawet jeśli lokalizacja jest nieistotna dla zadania",
+      "Efektu pierwszeństwa i świeżości na liście słów",
+      "Tendencji do porównywania się z osobami podobnymi do nas"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 13,
+    "question": "Teoria poziomów przetwarzania (Craik i Lockhart) zakłada, że trwałość pamięci zależy od:",
+    "options": [
+      "Liczby powtórzeń materiału w pamięci roboczej",
+      "Głębokości przetwarzania – głębsze, semantyczne przetwarzanie prowadzi do trwalszych śladów pamięciowych niż płytkie, strukturalne",
+      "Długości materiału do zapamiętania",
+      "Czasu, jaki upłynął od pierwszego zapoznania się z materiałem"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 14,
+    "question": "Efekt Stroopa polega na tym, że:",
+    "options": [
+      "Kontekst narracyjny ułatwia czytanie nieznanych słów",
+      "Niezgodność między znaczeniem słowa a kolorem druku spowalnia czas reakcji przy nazywaniu koloru",
+      "Seryjne zapamiętywanie jest wolniejsze niż zapamiętywanie swobodne",
+      "Rozproszenie uwagi przez muzykę utrudnia przetwarzanie werbalne"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 15,
+    "question": "Interferencja retroaktywna w pamięci polega na tym, że:",
+    "options": [
+      "Wcześniej wyuczone informacje utrudniają zapamiętywanie nowych",
+      "Nowo wyuczone informacje utrudniają przypomnienie sobie wcześniej zapamiętanego materiału",
+      "Przypomniane informacje stają się podatne na zniekształcenia",
+      "Emocjonalnie neutralny materiał jest gorzej pamiętany niż emocjonalny"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 16,
+    "question": "Efekt Zeigarnik polega na:",
+    "options": [
+      "Lepszym zapamiętywaniu materiału powtarzanego metodą rozłożoną w czasie",
+      "Lepszym pamiętaniu zadań przerwanych (niedokończonych) niż ukończonych",
+      "Tendencji do zapamiętywania bodźców emocjonalnych lepiej niż neutralnych",
+      "Poprawie przypominania po przerwie (efekt inkubacji)"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 17,
+    "question": "Pojęcie \"inhibicji latentnej\" w psychologii poznawczej odnosi się do:",
+    "options": [
+      "Hamowania powtarzających się ruchów w uczeniu się motorycznym",
+      "Spowalniania warunkowania bodźca, który wcześniej był prezentowany bez konsekwencji",
+      "Supresji nieistotnych wspomnień w pamięci roboczej",
+      "Hamowania reakcji automatycznych w zadaniach wymagających kontroli wykonawczej"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 18,
+    "question": "Teoria zasobów uwagi (Kahneman) zakłada, że:",
+    "options": [
+      "Uwaga jest podzielona na niezależne moduły, każdy z własną pojemnością",
+      "Istnieje ogólna pula zasobów uwagi, które są przydzielane do zadań w zależności od trudności i motywacji",
+      "Pojemność uwagi jest stała i niezależna od trudności zadania",
+      "Uwaga działa wyłącznie w sposób selekcji wczesnej (filtru Broadbenta)"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 19,
+    "question": "W modelu pamięci długoterminowej, różnica między pamięcią epizodyczną a semantyczną polega na tym, że:",
+    "options": [
+      "Pamięć semantyczna przechowuje konkretne zdarzenia z życia, a epizodyczna – ogólną wiedzę",
+      "Pamięć epizodyczna przechowuje autobiograficzne zdarzenia z kontekstem czasowo-przestrzennym, a semantyczna – wiedzę ogólną bez kontekstu",
+      "Pamięć semantyczna jest podtypem pamięci proceduralnej",
+      "Obie przechowują te same informacje, różnią się jedynie szybkością dostępu"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 20,
+    "question": "Efekt \"rozproszenia końcówki języka\" (tip-of-the-tongue state, TOT) ilustruje:",
+    "options": [
+      "Całkowite usunięcie informacji z pamięci długoterminowej",
+      "Częściową dostępność informacji – wiadomo, że coś się wie, ale nie można w danej chwili w pełni odtworzyć",
+      "Interferencję retroaktywną uniemożliwiającą dostęp do wspomnień",
+      "Efekt pierwszeństwa przy odtwarzaniu listy słów"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 21,
+    "question": "Teoria reprezentacji dwukodowej Paivio (dual coding theory) zakłada, że:",
+    "options": [
+      "Informacje werbalne i obrazowe są przechowywane w tym samym systemie pamięciowym",
+      "Istnieją dwa niezależne systemy kodowania – werbalny i wyobrażeniowy – a ich jednoczesna aktywacja wzmacnia zapamiętywanie",
+      "Obrazy są zawsze lepiej pamiętane niż słowa niezależnie od kontekstu",
+      "Kodowanie werbalne jest dominującym i wystarczającym trybem przechowywania informacji"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 22,
+    "question": "Rola \"predykcyjnego kodowania\" (predictive coding, Friston) w percepcji i poznaniu polega na:",
+    "options": [
+      "Mózg pasywnie rejestruje bodźce sensoryczne i przesyła je do wyższych obszarów",
+      "Mózg generuje predykcje top-down i porównuje je z sygnałami sensorycznymi – percepcja to minimalizacja błędów predykcji",
+      "Percepcja jest wyłącznie procesem bottom-up, zależnym od intensywności bodźca",
+      "Kodowanie informacji odbywa się sekwencyjnie od zmysłów do kory kojarzeniowej"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 23,
+    "question": "Koncepcja \"rozszerzonego umysłu\" (extended mind, Clark i Chalmers) zakłada, że:",
+    "options": [
+      "Procesy poznawcze są wyłącznie wewnętrznymi procesami mózgu",
+      "Procesy poznawcze mogą obejmować narzędzia i środowisko zewnętrzne, gdy spełniają te same funkcje co procesy wewnętrzne",
+      "Inteligencja sztuczna jest tożsama z ludzkim poznaniem",
+      "Pamięć externa (np. notatniki) jest zawsze mniej wiarygodna niż wewnętrzna"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 24,
+    "question": "Efekt \"desensytyzacji habitualnej\" w poznaniu opartym na schematach (schema theory) oznacza, że:",
+    "options": [
+      "Schematy poznawcze ulegają osłabieniu przy braku aktywacji",
+      "Powtarzające się ekspozycje na niezgodne z schematem informacje prowadzą do stopniowej zmiany schematów",
+      "Schematy zawsze uniemożliwiają przetwarzanie nowych informacji",
+      "Aktywacja schematów powoduje zniekształcenia pamięciowe w kierunku zgodności ze schematem"
+    ],
+    "correct": 3,
+    "difficulty": 3
+  },
+  {
+    "id": 25,
+    "question": "Teoria ACT-R (Anderson) to architektura kognitywna, która integruje:",
+    "options": [
+      "Wyłącznie modele pamięci deklaratywnej",
+      "Moduły deklaratywne, proceduralne, wzrokowe i motoryczne w zunifikowanej teorii poznania z biologicznymi odpowiednikami w mózgu",
+      "Wyłącznie teorie uczenia się przez wzmocnienie",
+      "Modele sieci neuronowych bez odpowiedników w psychologii poznawczej"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 26,
+    "question": "Zjawisko \"przechylenia ku teraźniejszości\" (present bias) w poznaniu i podejmowaniu decyzji oznacza:",
+    "options": [
+      "Tendencję do lepszego zapamiętywania zdarzeń bieżących niż przeszłych",
+      "Przecenianie nagród dostępnych w teraźniejszości kosztem przyszłych – niespójna dyskontowanie czasowe",
+      "Stronniczość percepcji wynikającą z aktualnego nastroju",
+      "Efekt świeżości w pamięci roboczej"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 27,
+    "question": "Koncepcja \"metacognition\" (metapoznania) Flawella obejmuje:",
+    "options": [
+      "Wyłącznie wiedzę o własnej pamięci",
+      "Wiedzę o własnych procesach poznawczych oraz monitorowanie i regulowanie tych procesów podczas wykonywania zadań",
+      "Wyłącznie procesy kontroli wykonawczej w korze przedczołowej",
+      "Automatyczne procesy nieobjęte świadomą kontrolą"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 28,
+    "question": "Teoria prototypów w kategoryzacji (Rosch) zakłada, że:",
+    "options": [
+      "Kategorie mają sztywne, binarne granice oparte na koniecznych i wystarczających cechach",
+      "Kategorie są zorganizowane wokół najlepszych przykładów (prototypów), a przynależność do kategorii jest stopniowalna",
+      "Kategoryzacja jest wyłącznie wynikiem warunkowania kulturowego",
+      "Każdy element kategorii jest równoważny i żaden nie jest bardziej \"centralny\""
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 29,
+    "question": "Model MINERVA 2 (Hintzman) jest przykładem teorii pamięci opartej na:",
+    "options": [
+      "Skryptach i schematach poznawczych",
+      "Wielu śladach pamięciowych (instance-based) – wydobycie jest efektem jednoczesnej aktywacji wszystkich śladów podobnych do wskazówki",
+      "Hierarchicznej sieci semantycznej",
+      "Modelu jednokomponentowej pamięci roboczej"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 30,
+    "question": "Efekt \"roaming spotlight\" w teoriach uwagi przestrzennej (Posner) pokazuje, że:",
+    "options": [
+      "Uwaga przestrzenna jest nierozerwalnie związana z ruchami gałek ocznych",
+      "Uwaga może być przesuwana w przestrzeni bez ruchu gałek ocznych (covert attention), przyspieszając przetwarzanie bodźców w ogniskowanym obszarze",
+      "Percepcja przestrzenna jest wyłącznie zależna od kory wzrokowej pierwszorzędowej",
+      "Ruchy gałek ocznych zawsze wyprzedzają przesunięcia uwagi"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  }
+]

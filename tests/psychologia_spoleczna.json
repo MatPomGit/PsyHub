@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "question": "Efekt konformizmu badany przez Ascha (1951) polegał na tym, że badani:",
+    "options": [
+      "Odmawiali wykonywania poleceń autorytetu",
+      "Dopasowywali swoje odpowiedzi do jawnie błędnych odpowiedzi większości grupy",
+      "Pomagali nieznajomym w sytuacji zagrożenia",
+      "Wykazywali agresję wobec słabszych uczestników"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 2,
+    "question": "Eksperyment Milgrama (1963) dotyczył:",
+    "options": [
+      "Wpływu grupy na spostrzeganie",
+      "Posłuszeństwa wobec autorytetu i gotowości do zadawania bólu na polecenie",
+      "Pomagania w sytuacji zagrożenia życia",
+      "Kategoryzacji społecznej i faworyzowania grupy własnej"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 3,
+    "question": "Teoria atrybucji Kelvina (i Weinera) zajmuje się przede wszystkim:",
+    "options": [
+      "Procesami percepcji społecznej i rozpoznawania twarzy",
+      "Sposobami, w jakie ludzie wyjaśniają przyczyny zdarzeń i zachowań – własnych i innych osób",
+      "Formowaniem się postaw i ich zmianą",
+      "Procesami grupowymi i przywództwem"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 4,
+    "question": "Dysonans poznawczy (Festinger) pojawia się, gdy:",
+    "options": [
+      "Człowiek działa automatycznie bez refleksji",
+      "Dwa lub więcej przekonań, postaw lub zachowań są ze sobą niezgodne, wywołując napięcie motywacyjne do redukcji niezgodności",
+      "Osoba jest świadkiem krzywdy innego człowieka",
+      "Człowiek naśladuje zachowania modela"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 5,
+    "question": "Zjawisko \"efektu widza\" (bystander effect) polega na tym, że:",
+    "options": [
+      "Obecność widowni poprawia wykonanie prostych zadań",
+      "Im więcej osób jest świadkiem sytuacji wymagającej pomocy, tym mniejsze prawdopodobieństwo interwencji każdej z nich",
+      "Osoby w grupach są bardziej agresywne niż osoby samotne",
+      "Większe grupy podejmują bardziej ryzykowne decyzje"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 6,
+    "question": "Stereotypy w psychologii społecznej są definiowane jako:",
+    "options": [
+      "Emocjonalne, negatywne nastawienie do grupy społecznej",
+      "Poznawcze, uogólnione przekonania o cechach członków danej grupy społecznej",
+      "Zachowania dyskryminacyjne wobec mniejszości",
+      "Silne, negatywne emocje kierowane wobec outgrupy"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 7,
+    "question": "Podstawowy błąd atrybucji (fundamental attribution error) polega na:",
+    "options": [
+      "Przypisywaniu własnych sukcesów czynnikom zewnętrznym",
+      "Przecenianiu roli czynników dyspozycyjnych (osobowościowych), a niedocenianiu sytuacyjnych przy wyjaśnianiu zachowań innych osób",
+      "Przypisywaniu własnych porażek czynnikom wewnętrznym",
+      "Niedocenianiu roli osobowości w wyjaśnianiu własnych zachowań"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 8,
+    "question": "Teoria społeczno-poznawcza Bandury zakłada, że uczenie się zachowań agresywnych odbywa się poprzez:",
+    "options": [
+      "Wyłącznie warunkowanie instrumentalne",
+      "Obserwację i naśladownictwo modeli (uczenie się przez obserwację)",
+      "Wrodzone instynkty agresywne wyzwalane przez frustrację",
+      "Wyłącznie bezpośrednie wzmocnienie negatywne"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 9,
+    "question": "Polaryzacja grupowa (group polarization) oznacza, że:",
+    "options": [
+      "Grupy zawsze podejmują bardziej konserwatywne decyzje niż jednostki",
+      "Po dyskusji grupowej postawy członków przesuwają się ku bardziej ekstremalnym wersjom dominującego przed dyskusją stanowiska",
+      "Grupy dzielą się na wyraźnie antagonistyczne podgrupy",
+      "Jednostki rezygnują z własnych opinii pod wpływem autorytetu lidera"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 10,
+    "question": "Samospełniające się proroctwo w kontekście edukacyjnym (efekt Pygmaliona, Rosenthal i Jacobson) polega na:",
+    "options": [
+      "Uczniach, którzy osiągają wyniki zgodne z własnym obrazem siebie",
+      "Oczekiwaniach nauczyciela wobec ucznia, które wpływają na jego faktyczne osiągnięcia",
+      "Efekcie porównywania się uczniów z rówieśnikami",
+      "Wzroście motywacji przy publicznej ocenie wyników"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 11,
+    "question": "Teoria tożsamości społecznej (SIT) Tajfela i Turnera zakłada, że:",
+    "options": [
+      "Tożsamość jednostki opiera się wyłącznie na cechach osobowości",
+      "Przynależność do grup społecznych dostarcza elementu tożsamości, a motywacja do pozytywnej oceny własnej grupy prowadzi do faworyzowania ingrupy",
+      "Konflikty między grupami wynikają wyłącznie z rywalizacji o zasoby",
+      "Procesy kategoryzacji nie mają wpływu na uprzedzenia"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 12,
+    "question": "Hipoteza kontaktu Allporta (1954) wskazuje, że uprzedzenia zmniejszają się pod warunkiem kontaktu:",
+    "options": [
+      "Każdego rodzaju – wystarczy samo zetknięcie się grup",
+      "Równego statusu, opartego na współpracy, z poparciem instytucjonalnym i wspólnymi celami",
+      "Wyłącznie w warunkach rywalizacji, bo wzmacnia wzajemny szacunek",
+      "Ograniczonego i pośredniego (medialnego), by unikać konfliktów"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 13,
+    "question": "Teoria reaktancji (Brehm) w kontekście perswazji i zgodności oznacza, że:",
+    "options": [
+      "Ludzie zawsze ulegają perswazji, gdy przekaz pochodzi od autorytetu",
+      "Gdy ludzie spostrzegają zagrożenie wolności wyboru, reagują oporem i wzrostem atrakcyjności zakazanej opcji",
+      "Im silniejszy nacisk społeczny, tym wyższy poziom konformizmu",
+      "Efekty perswazji znikają po usunięciu źródła nacisku"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 14,
+    "question": "Heurystyka dostępności (Tversky i Kahneman) polega na tym, że:",
+    "options": [
+      "Oceniamy prawdopodobieństwo zdarzenia na podstawie jego podobieństwa do prototypu",
+      "Oceniamy prawdopodobieństwo zdarzenia na podstawie łatwości, z jaką przykłady przychodzą na myśl",
+      "Dostosowujemy oceny do punktu startowego (kotwicy)",
+      "Preferujemy informacje potwierdzające nasze wcześniejsze przekonania"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 15,
+    "question": "Model perswazji ELM (Elaboration Likelihood Model, Petty i Cacioppo) wyróżnia dwie trasy przetwarzania perswazji:",
+    "options": [
+      "Świadomą i nieświadomą",
+      "Centralną (analiza argumentów) i peryferyjną (wskazówki heurystyczne)",
+      "Emocjonalną i racjonalną",
+      "Indywidualną i grupową"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 16,
+    "question": "Syndrom grupowego myślenia (groupthink, Janis) charakteryzuje się:",
+    "options": [
+      "Nadmierną krytyką i konfliktem wewnętrznym w grupie",
+      "Przecenianiem spójności grupy, iluzją nieomylności i autocenzurą, prowadzącymi do złych decyzji",
+      "Zróżnicowaniem perspektyw i kreatywnością grupową",
+      "Faworyzowaniem mniejszości kosztem większości"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 17,
+    "question": "Efekt Lucyfera (Zimbardo) odnosi się do:",
+    "options": [
+      "Skłonności jednostek wybitnie inteligentnych do działań antyspołecznych",
+      "Możliwości, że zwykłe osoby w określonych warunkach sytuacyjnych mogą zachowywać się w skrajnie okrutny sposób",
+      "Wpływu mediów na wzrost agresji u dzieci",
+      "Tendencji grup do dehumanizacji swoich liderów"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 18,
+    "question": "Teoria atrybucji Weinera dotycząca osiągnięć szkolnych zakłada, że kluczowy wymiar odpowiedzialny za motywację to:",
+    "options": [
+      "Wewnętrzne–zewnętrzne i stabilne–niestabilne",
+      "Globalne–specyficzne i chwilowe–stałe",
+      "Świadome–nieświadome i zamierzone–niezamierzone",
+      "Biologiczne–środowiskowe i wrodzone–nabyte"
+    ],
+    "correct": 0,
+    "difficulty": 2
+  },
+  {
+    "id": 19,
+    "question": "Technika \"stopy w drzwiach\" (foot-in-the-door) opiera się na mechanizmie:",
+    "options": [
+      "Wzajemności – osoba spełnia małą przysługę, oczekując wzajemności",
+      "Konsekwencji – po spełnieniu małej prośby ludzie są bardziej skłonni spełnić większą, by być konsekwentnymi",
+      "Niedoboru – ograniczona dostępność zwiększa chęć posiadania",
+      "Społecznego dowodu słuszności – inni też to robią"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 20,
+    "question": "Deindywiduacja w tłumie (Zimbardo, Festinger) wiąże się z:",
+    "options": [
+      "Wzrostem odpowiedzialności jednostkowej w dużej grupie",
+      "Zmniejszeniem samoświadomości i zahamowań, co może prowadzić do antyspołecznych zachowań",
+      "Większą refleksyjnością decyzji podejmowanych w anonimowości",
+      "Wzrostem empatii wobec ofiar w dużej grupie"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 21,
+    "question": "Teoria interpersonalna samobójstwa Joinera zakłada, że ryzyko samobójcze jest najwyższe przy jednoczesnym występowaniu:",
+    "options": [
+      "Depresji, impulsywności i historii traumy",
+      "Poczucia bycia ciężarem, sfrustrowanej przynależności i nabytej zdolności do skrzywdzenia siebie",
+      "Izolacji społecznej, bezrobocia i chorób somatycznych",
+      "Zaburzeń osobowości, nadużywania substancji i braku wsparcia"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 22,
+    "question": "Model Steele'a dotyczący zagrożenia stereotypem (stereotype threat) wykazał, że:",
+    "options": [
+      "Stereotypy nie mają wpływu na wyniki testów, jeśli badani mają wysoką samoocenę",
+      "Świadomość negatywnego stereotypu dotyczącego własnej grupy w sytuacji oceny pogarsza wyniki, potwierdzając stereotyp",
+      "Zagrożenie stereotypem dotyczy wyłącznie grup mniejszościowych",
+      "Efekt pojawia się tylko wtedy, gdy badani podzielają stereotyp"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 23,
+    "question": "Teoria zarządzania trwogą (Terror Management Theory, Greenberg, Solomon, Pyszczynski) zakłada, że:",
+    "options": [
+      "Strach przed śmiercią redukuje się wyłącznie przez unikanie myśli o śmiertelności",
+      "Świadomość własnej śmiertelności motywuje do podtrzymywania światopoglądów i poczucia własnej wartości, które symbolicznie transcendują śmierć",
+      "Kultury różnią się wyłącznie w zakresie rytuałów żałobnych, nie w psychologicznych reakcjach na śmierć",
+      "Tylko osoby z zaburzeniami lękowymi doświadczają egzystencjalnego lęku przed śmiercią"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 24,
+    "question": "Socjometryczny model sieci społecznych wskazuje, że centralne osoby w sieci (\"hubs\"):",
+    "options": [
+      "Zawsze odczuwają silniejsze wsparcie społeczne niż osoby peryferyjne",
+      "Mają większy wpływ na dyfuzję informacji i norm, lecz są też bardziej narażone na przeciążenie relacyjne",
+      "Charakteryzują się wyłącznie wysokim statusem socjoekonomicznym",
+      "Wykazują typowo niższy poziom empatii niż osoby na peryferiach sieci"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 25,
+    "question": "Teoria autodeterminacji (SDT, Deci i Ryan) wyróżnia trzy podstawowe potrzeby psychologiczne:",
+    "options": [
+      "Bezpieczeństwo, przynależność i szacunek",
+      "Autonomię, kompetencję i związek z innymi",
+      "Wolność, sprawiedliwość i wzajemność",
+      "Przyjemność, unikanie bólu i reprodukcję"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 26,
+    "question": "Model Latané'a dotyczący wpływu społecznego zakłada, że siła wpływu grupy zależy od:",
+    "options": [
+      "Wyłącznie liczby źródeł wpływu",
+      "Liczby, bezpośredniości (bliskości) i siły (statusu) źródeł wpływu",
+      "Wyłącznie statusu osoby wywierającej wpływ",
+      "Relacji między nadawcą a odbiorcą"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 27,
+    "question": "Zjawisko \"kaskad informacyjnych\" (information cascades) w psychologii społecznej oznacza, że:",
+    "options": [
+      "Informacje przekazywane ustnie ulegają systematycznym zniekształceniom",
+      "Jednostki ignorują własną wiedzę na rzecz obserwacji zachowań innych, prowadząc do masowego podążania za trendem mimo prywatnych wątpliwości",
+      "Media społecznościowe pogłębiają konflikty grupowe",
+      "Grupowe podejmowanie decyzji zawsze jest bardziej racjonalne niż indywidualne"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 28,
+    "question": "Teoria ram interpretacyjnych (framing theory) Tversky'ego i Kahnemana wykazuje, że:",
+    "options": [
+      "Ludzie zawsze podejmują racjonalne decyzje przy wystarczającej ilości informacji",
+      "Sposób prezentacji tej samej informacji (zysk vs. strata) wpływa na wybory, co jest sprzeczne z założeniami teorii użyteczności oczekiwanej",
+      "Efekty framing dotyczą wyłącznie decyzji finansowych",
+      "Emocje nie mają wpływu na framing, gdy decyzja dotyczy kwestii etycznych"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 29,
+    "question": "Efekt fałszywego konsensusu (false consensus effect) Rossa polega na:",
+    "options": [
+      "Przekonaniu, że własne poglądy są mniej powszechne niż poglądy innych",
+      "Przecenianiu stopnia, w jakim inni ludzie podzielają nasze przekonania i zachowania",
+      "Tendencji do przypisywania sukcesów własnym zdolnościom, a porażek czynnikom zewnętrznym",
+      "Dostosowywaniu ocen do oczekiwań grupy bez wewnętrznej zmiany przekonań"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 30,
+    "question": "W kontekście badań nad altruizmem, \"hipoteza empatia-altruizm\" Batsona zakłada, że:",
+    "options": [
+      "Ludzie pomagają innym wyłącznie z powodów egoistycznych (redukcja własnego dyskomfortu)",
+      "Empatia emocjonalna wywołuje prawdziwie altruistyczną motywację do pomocy niezależnie od osobistych korzyści",
+      "Pomoc innym jest zawsze warunkowana sposobnością do wzajemności",
+      "Altruizm ewoluował wyłącznie w kontekście doboru krewniaczy"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  }
+]

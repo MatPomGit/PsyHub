@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "question": "Terapia poznawczo-behawioralna (CBT) zakłada, że zaburzenia emocjonalne wynikają przede wszystkim z:",
+    "options": [
+      "Nieświadomych konfliktów intrapsychicznych",
+      "Dysfunkcjonalnych myśli i przekonań wpływających na emocje i zachowania",
+      "Braku zaspokojenia potrzeby samorealizacji",
+      "Zaburzonego neuroprzekaźnictwa serotoninergicznego"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 2,
+    "question": "Technika \"wolnych skojarzeń\" jest charakterystyczna dla:",
+    "options": [
+      "Terapii behawioralnej",
+      "Terapii humanistycznej",
+      "Terapii psychodynamicznej / psychoanalitycznej",
+      "Terapii systemowej"
+    ],
+    "correct": 2,
+    "difficulty": 1
+  },
+  {
+    "id": 3,
+    "question": "Pojęcie \"bezwarunkowej akceptacji pozytywnej\" (unconditional positive regard) pochodzi z:",
+    "options": [
+      "Podejścia psychoanalitycznego Freuda",
+      "Terapii skoncentrowanej na kliencie Carla Rogersa",
+      "Terapii poznawczej Becka",
+      "Terapii racjonalno-emotywnej Ellisa"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 4,
+    "question": "Ekspozycja z zapobieganiem reakcji (ERP) jest podstawową techniką stosowaną w leczeniu:",
+    "options": [
+      "Depresji endogennej",
+      "Zaburzeń osobowości",
+      "OCD (zaburzenia obsesyjno-kompulsywnego)",
+      "Schizofrenii"
+    ],
+    "correct": 2,
+    "difficulty": 1
+  },
+  {
+    "id": 5,
+    "question": "Terapia dialektyczno-behawioralna (DBT) została opracowana przez Marshę Linehan przede wszystkim dla:",
+    "options": [
+      "Osób z zaburzeniem obsesyjno-kompulsywnym",
+      "Osób z zaburzeniem osobowości z pogranicza (BPD)",
+      "Dzieci z ADHD",
+      "Osób ze schizofrenią"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 6,
+    "question": "Zjawisko \"przeniesienia\" (transferu) w terapii psychodynamicznej polega na:",
+    "options": [
+      "Przekazywaniu przez terapeutę swoich emocji klientowi",
+      "Przenoszeniu przez klienta uczuć i schematów relacyjnych z ważnych osób z przeszłości na terapeutę",
+      "Stosowaniu technik relaksacyjnych w trakcie sesji",
+      "Przejściu pacjenta od jednego terapeuty do drugiego"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 7,
+    "question": "Czym jest \"sojusz terapeutyczny\" (therapeutic alliance)?",
+    "options": [
+      "Umową finansową między terapeutą a pacjentem",
+      "Relacją opartą na wspólnym celu, zadaniach i emocjonalnej więzi między terapeutą a klientem – silny predyktor skuteczności terapii",
+      "Techniką stosowaną wyłącznie w terapii grupowej",
+      "Transferem klienta do innego specjalisty"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 8,
+    "question": "Terapia EMDR (Eye Movement Desensitization and Reprocessing) jest szczególnie skuteczna w leczeniu:",
+    "options": [
+      "Schizofrenii",
+      "PTSD i traumy",
+      "Zaburzeń odżywiania",
+      "Zaburzeń osobowości narcystycznej"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 9,
+    "question": "Terapia systemowa skupia się przede wszystkim na:",
+    "options": [
+      "Indywidualnych mechanizmach obronnych pacjenta",
+      "Wzorcach komunikacji i relacjach w systemie rodzinnym lub społecznym",
+      "Biologii zaburzeń i farmakoterapii",
+      "Głęboko zakorzenionych schematach poznawczych z dzieciństwa"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 10,
+    "question": "W podejściu poznawczym Becka \"automatyczne myśli\" to:",
+    "options": [
+      "Głęboko utrwalone przekonania o sobie i świecie",
+      "Szybkie, mimowolne myśli pojawiające się w reakcji na sytuacje, często nieświadomie wpływające na emocje",
+      "Obsesje i ruminacje charakterystyczne dla OCD",
+      "Treści pojawiające się w snach pacjenta"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 11,
+    "question": "Technika \"sokratejskiego dialogu\" w CBT polega na:",
+    "options": [
+      "Konfrontowaniu pacjenta z jego zachowaniami w sposób dyrektywny",
+      "Pytaniach ukierunkowujących pacjenta ku samodzielnej weryfikacji dysfunkcjonalnych przekonań",
+      "Analizie marzeń sennych i wolnych skojarzeń",
+      "Stosowaniu technik relaksacyjnych i biofeedbacku"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "id": 12,
+    "question": "Psychoterapia oparta na mentalizacji (MBT) zakłada, że objawy BPD wynikają z:",
+    "options": [
+      "Dysregulacji osi HPA pod wpływem stresu",
+      "Deficytów w zdolności do rozumienia własnych i cudzych stanów mentalnych (mentalizacji)",
+      "Nadmiernie aktywnego superego blokującego id",
+      "Dysfunkcyjnych schematów poznawczych ukształtowanych w adolescencji"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 13,
+    "question": "Terapia schematu Younga (Schema Therapy) jest rozwinięciem CBT o elementy:",
+    "options": [
+      "Terapii systemowej i analizy transakcyjnej",
+      "Teorii przywiązania, psychodynamiki i gestalt – skupia się na wczesnych nieadaptacyjnych schematach",
+      "Terapii narracyjnej i podejścia fenomenologicznego",
+      "Terapii ACT i analizy behawioralnej"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 14,
+    "question": "Różnica między CBT pierwszej a trzeciej fali polega na tym, że terapie trzeciej fali (np. ACT, DBT) kładą większy nacisk na:",
+    "options": [
+      "Zmianę treści myśli i przekonań",
+      "Akceptację doświadczeń wewnętrznych, uważność i zmianę relacji z myślami (defuzję poznawczą)",
+      "Techniki ekspozycji opartej na zasadach warunkowania",
+      "Psychoedukację w zakresie neurobiologii zaburzeń"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 15,
+    "question": "Koncepcja \"kontenerowania\" (containment) Biona w terapii psychodynamicznej odnosi się do:",
+    "options": [
+      "Techniki izolowania pacjenta od bodźców środowiskowych",
+      "Zdolności terapeuty do przyjmowania i przetwarzania projekcji pacjenta, zwracając mu je w przetrawionej formie",
+      "Strukturalizowania sesji terapeutycznych",
+      "Techniki uziemienia stosowanej w pracy z traumą"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 16,
+    "question": "Terapia poznawczo-behawioralna oparta na uważności (MBCT) jest rekomendowana szczególnie dla osób:",
+    "options": [
+      "Z pierwszym epizodem depresji",
+      "Z nawracającą depresją (3 lub więcej epizodów) jako profilaktyka nawrotów",
+      "Z ostrą psychozą",
+      "Z zaburzeniami osobowości antysocjalnej"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 17,
+    "question": "Pojęcie \"kontrprzeniesienia\" (countertransference) we współczesnej psychoterapii jest rozumiane jako:",
+    "options": [
+      "Wyłącznie patologiczna reakcja terapeuty, która zawsze zaburza terapię",
+      "Totalna odpowiedź terapeuty – emocjonalna, cielesna i poznawcza – na klienta, stanowiąca cenny materiał diagnostyczny",
+      "Technika ekspozycji stosowana w leczeniu fobii",
+      "Przeniesienie przez terapeutę własnych potrzeb na klienta"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 18,
+    "question": "Terapia narracyjna (White i Epston) polega na:",
+    "options": [
+      "Analizie marzeń sennych jako narracji nieświadomości",
+      "Eksternalizacji problemu i reautoryzacji historii życia klienta",
+      "Zmianie dysfunkcjonalnych schematów poznawczych",
+      "Zastosowaniu technik mindfulness do obserwacji strumienia myśli"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 19,
+    "question": "W interwencji kryzysowej kluczowe jest:",
+    "options": [
+      "Długoterminowe przetworzenie traumy metodą psychodynamiczną",
+      "Szybkie przywrócenie równowagi psychicznej, ocena bezpieczeństwa i uruchomienie zasobów",
+      "Wdrożenie farmakoterapii jako pierwszorzędowej metody",
+      "Kompleksowa diagnoza osobowości przed podjęciem działań"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 20,
+    "question": "Terapia ekspozycji przedłużonej (Prolonged Exposure – PE) Foa w leczeniu PTSD obejmuje:",
+    "options": [
+      "Systematyczną desensytyzację bez elementu ekspozycji in vivo",
+      "Wyobrażeniową ekspozycję na wspomnienie traumy oraz ekspozycję in vivo na unikane sytuacje",
+      "Wyłącznie techniki relaksacyjne i mindfulness",
+      "Restrukturyzację schematu tożsamości przez pracę z częściami osobowości"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 21,
+    "question": "\"Efekt Dodo\" (Dodo Bird Verdict) w badaniach nad psychoterapią oznacza, że:",
+    "options": [
+      "Efekty terapii są niepowtarzalne i nie można ich generalizować",
+      "Różne podejścia terapeutyczne mają porównywalne wyniki, a wspólne czynniki ważniejsze niż techniki specyficzne",
+      "Terapia CBT jest skuteczniejsza od wszystkich innych podejść",
+      "Farmakoterapia zawsze przewyższa psychoterapię"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "id": 22,
+    "question": "Terapia akceptacji i zaangażowania (ACT) opiera się na modelu:",
+    "options": [
+      "Analizy transakcyjnej i teorii ról społecznych",
+      "Heksafleksu – elastyczności psychologicznej, defuzji poznawczej i zaangażowania w wartości",
+      "Trójkąta dramatycznego Karpmana",
+      "Hierarchii potrzeb Maslowa"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 23,
+    "question": "Czynniki wspólne (common factors) terapii, opisane przez Lamberta, obejmują:",
+    "options": [
+      "Wyłącznie techniki specyficzne dla danego nurtu (CBT, psychodynamika)",
+      "Czynniki relacyjne (~30%), placebo/oczekiwanie (~15%), techniki specyficzne (~15%) i czynniki pozaterapeutyczne (~40%)",
+      "Nurt terapii jako główny predyktor wyniku",
+      "Długość terapii jako jedyny istotny predyktor skuteczności"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 24,
+    "question": "Model OPD (Operationalized Psychodynamic Diagnosis) służy do:",
+    "options": [
+      "Szybkiej oceny ryzyka samobójstwa w trybie nagłym",
+      "Wieloosiowej psychodynamicznej oceny relacji, konfliktu, struktury osobowości i choroby – jako podstawy planowania terapii",
+      "Automatycznej klasyfikacji zaburzeń przy użyciu algorytmów DSM-5",
+      "Diagnozy neuropsychologicznej po urazach czaszkowo-mózgowych"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 25,
+    "question": "Koncepcja \"okna tolerancji\" (Window of Tolerance) Ogdena w pracy z traumą oznacza, że:",
+    "options": [
+      "Każda ekspozycja na trudne wspomnienia jest terapeutyczna niezależnie od intensywności pobudzenia",
+      "Efektywne przetwarzanie traumy zachodzi w optymalnym zakresie pobudzenia między hiper- a hipoaktywacją",
+      "Techniki poznawcze wystarczą do pracy z traumą bez pracy z ciałem",
+      "Zbyt niska aktywacja jest ważniejszym problemem niż nadmierna aktywacja"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 26,
+    "question": "Terapia oparta na transferze (TFP) Kernberga jest przeznaczona dla:",
+    "options": [
+      "Pacjentów z zaburzeniami lękowymi",
+      "Pacjentów z organizacją osobowości na poziomie borderline, a celem jest integracja zdewaluowanych i wyidealizowanych reprezentacji obiektu",
+      "Dzieci z zaburzeniami przywiązania",
+      "Pacjentów po epizodzie psychotycznym"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 27,
+    "question": "Metaanaliza Wampoldsa (2001) nad efektami psychoterapii wykazała, że:",
+    "options": [
+      "Techniki specyficzne odpowiadają za ponad 50% wariancji wyników",
+      "Czynniki relacyjne i terapeuta-specyficzne wyjaśniają więcej wariancji niż przynależność do nurtu terapeutycznego",
+      "Farmakoterapia w połączeniu z terapią zawsze przewyższa samą psychoterapię",
+      "CBT jest jedynym podejściem z udowodnioną skutecznością empiryczną"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 28,
+    "question": "Koncepcja \"intersubiektywności\" w psychoterapii relacyjnej odnosi się do:",
+    "options": [
+      "Wyłącznie badań nad komunikacją niewerbalną",
+      "Wzajemnego, ciągłego wpływu podmiotowości terapeuty i klienta – terapia jako współtworzony proces",
+      "Techniki lustrzanego odbicia emocji stosowanej w terapii humanistycznej",
+      "Interwencji grupowych opartych na wymianie doświadczeń"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 29,
+    "question": "\"Paradoks terapeutyczny\" (np. prescribing the symptom) jako technika stosowana jest przede wszystkim w:",
+    "options": [
+      "Terapii poznawczej Becka",
+      "Strategicznej terapii systemowej (np. MRI Palo Alto, Haley)",
+      "Terapii psychodynamicznej długoterminowej",
+      "Terapii opartej na schemacie Younga"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  },
+  {
+    "id": 30,
+    "question": "Zasada \"ekwifinalności\" w terapii systemowej oznacza, że:",
+    "options": [
+      "Wszystkie rodziny przechodzą przez te same etapy rozwoju",
+      "Ten sam wynik może zostać osiągnięty różnymi drogami, a różne punkty wyjścia mogą prowadzić do tego samego rezultatu",
+      "Każdy system rodzinny dąży do równowagi (homeostazy) kosztem zmiany",
+      "Skuteczność terapii rodzinnej zależy wyłącznie od technik stosowanych przez terapeutę"
+    ],
+    "correct": 1,
+    "difficulty": 3
+  }
+]

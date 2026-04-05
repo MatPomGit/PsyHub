@@ -13,6 +13,7 @@
   <script src="anime.min.js" defer></script>
   <script src="site-config.js" defer></script>
   <script src="specialization-test.js" defer></script>
+  <script src="daily-psychology.js" defer></script>
   <style>
 /* ═══════════════════════════════════════════
    DESIGN TOKENS
@@ -285,6 +286,37 @@ em{color:var(--goldl)}
 .axis-head{display:flex;justify-content:space-between;font-size:.74rem;color:var(--t3);margin-bottom:.42rem}
 .axis-track{position:relative;height:10px;background:linear-gradient(90deg,rgba(184,107,123,.5) 0%, rgba(155,155,176,.18) 50%, rgba(90,158,111,.45) 100%);border-radius:999px;border:1px solid var(--border)}
 .axis-marker{position:absolute;top:-4px;width:3px;height:18px;background:var(--goldl);box-shadow:0 0 0 1px rgba(0,0,0,.4)}
+
+/* psychologia codziennej */
+.daily-wrap{max-width:860px}
+.daily-day-badge{display:inline-flex;align-items:center;gap:.5rem;font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:var(--gold);font-weight:700;margin-bottom:.5rem}
+.daily-theme{font-size:.9rem;color:var(--t2);margin-bottom:1.8rem}
+.daily-nav{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.6rem}
+.daily-day-btn{background:var(--bg3);border:1px solid var(--border);color:var(--t3);border-radius:8px;padding:.42rem .7rem;cursor:pointer;font-size:.78rem;transition:all var(--ease)}
+.daily-day-btn:hover{border-color:var(--gold);color:var(--gold)}
+.daily-day-btn.active{background:var(--goldt);border-color:var(--gold);color:var(--goldl);font-weight:600}
+.daily-card{background:linear-gradient(165deg,rgba(18,26,40,.98),rgba(13,18,30,.95));border:1px solid rgba(130,165,199,.25);box-shadow:0 8px 24px rgba(0,0,0,.28);border-radius:var(--r);padding:1.3rem 1.4rem;margin-bottom:1.1rem}
+.daily-card-hdr{display:flex;align-items:center;gap:.6rem;margin-bottom:.8rem}
+.daily-card-icon{font-size:1.4rem;line-height:1}
+.daily-card-label{font-size:.65rem;text-transform:uppercase;letter-spacing:.14em;font-weight:700}
+.daily-card-label.curiosity{color:#82b4d4}
+.daily-card-label.exercise{color:#7ec8a0}
+.daily-card-title{font-family:var(--serif);font-size:1.22rem;line-height:1.3;color:#ecf4ff;margin-bottom:.55rem}
+.daily-card-lead{font-size:.9rem;color:var(--t2);font-style:italic;margin-bottom:.85rem;line-height:1.65;border-left:3px solid rgba(130,165,199,.3);padding-left:.85rem}
+.daily-card-body{font-size:.87rem;color:var(--t2);line-height:1.7}
+.daily-card-body p{margin-bottom:.7rem}
+.daily-exercise-type{display:inline-block;font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;padding:.2rem .5rem;border-radius:4px;margin-bottom:.75rem;font-weight:600}
+.daily-exercise-type.reflection{background:rgba(91,140,184,.18);color:#82b4d4;border:1px solid rgba(91,140,184,.3)}
+.daily-exercise-type.challenge{background:rgba(184,107,123,.18);color:#d48a9e;border:1px solid rgba(184,107,123,.3)}
+.daily-exercise-type.bodyscan{background:rgba(90,158,111,.18);color:#7ec8a0;border:1px solid rgba(90,158,111,.3)}
+.daily-exercise-type.writing{background:rgba(201,162,39,.18);color:#d4b858;border:1px solid rgba(201,162,39,.3)}
+.daily-exercise-type.mindfulness{background:rgba(138,107,184,.18);color:#b48dd4;border:1px solid rgba(138,107,184,.3)}
+.daily-exercise-type.social{background:rgba(91,140,184,.18);color:#82b4d4;border:1px solid rgba(91,140,184,.3)}
+.daily-exercise-type.creative{background:rgba(201,162,39,.18);color:#d4b858;border:1px solid rgba(201,162,39,.3)}
+.daily-steps{list-style:none;padding:0;margin:.85rem 0 0;display:grid;gap:.55rem}
+.daily-steps li{display:grid;grid-template-columns:24px 1fr;gap:.55rem;font-size:.87rem;color:var(--t2);line-height:1.65}
+.daily-step-num{width:22px;height:22px;border-radius:50%;background:rgba(130,165,199,.15);border:1px solid rgba(130,165,199,.25);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#82b4d4;flex-shrink:0;margin-top:2px}
+.daily-today-label{font-size:.7rem;color:var(--gold);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-left:.4rem}
 
 /* page hero */
 .page-hero{padding-bottom:1.9rem;margin-bottom:2.3rem;border-bottom:1px solid var(--border)}
@@ -651,6 +683,7 @@ function navigate(id, replaceHistory) {
   closeSidebar();
   if (item.file)       loadMd(id, item);
   else if (item.custom === 'specialization_test') renderSpecializationTest(id, item);
+  else if (item.custom === 'daily_psychology')    renderDailyPsychology(id, item);
   else if (item.wiki)  renderWiki(id, item.wiki);
   else                 renderHome();
 }
@@ -850,6 +883,81 @@ window.jumpToFirstUnanswered = function() {
   testCurrentIndex = missingIdx;
   if (current === 'students/test_specjalnosci') {
     renderSpecializationTest(current, pageMap.get(current));
+  }
+};
+
+/* ── Daily Psychology renderer ───────────────────── */
+let dailySelectedDay = null; /* null = today */
+
+function renderDailyPsychology(id, item) {
+  const area = document.getElementById('content');
+  setBreadcrumb(item);
+  const data = window.DAILY_PSYCHOLOGY;
+  if (!data) {
+    area.innerHTML = '<div class="error-box"><h2>Błąd ładowania modułu</h2><p>Nie udało się wczytać danych psychologii codziennej.</p></div>';
+    return;
+  }
+  const today = new Date().getDay(); /* 0=Sun … 6=Sat */
+  const displayDay = (dailySelectedDay !== null) ? dailySelectedDay : today;
+  const entry = data.find(e => e.day === displayDay) || data[0];
+
+  const typeLabels = {
+    reflection: 'Refleksja', challenge: 'Wyzwanie', bodyscan: 'Skan ciała',
+    writing: 'Pisanie', mindfulness: 'Uważność', social: 'Wyzwanie społeczne', creative: 'Kreatywność'
+  };
+
+  const navBtns = data.map(e => {
+    const isToday = e.day === today;
+    const isActive = e.day === displayDay;
+    const todayMark = isToday ? `<span class="daily-today-label">dziś</span>` : '';
+    return `<button class="daily-day-btn${isActive ? ' active' : ''}" onclick="selectDailyDay(${e.day})">${e.emoji} ${e.dayName}${todayMark}</button>`;
+  }).join('');
+
+  const stepsHtml = entry.exercise.steps.map((step, i) =>
+    `<li><span class="daily-step-num">${i + 1}</span><span>${step}</span></li>`
+  ).join('');
+
+  const bodyParas = entry.curiosity.body.map(p => `<p>${p}</p>`).join('');
+
+  area.innerHTML = `<div class="rendered daily-wrap">
+    <div class="page-hero">
+      <span class="chapter-lbl">${item.section || ''}</span>
+      <h1>Psychologia Codzienna</h1>
+      <p class="lead">Codzienna dawka wiedzy psychologicznej i pracy nad sobą — zależnie od dnia tygodnia.</p>
+    </div>
+    <div class="daily-nav">${navBtns}</div>
+    <div class="daily-day-badge">${entry.emoji} ${entry.dayName}</div>
+    <div class="daily-theme">Temat dnia: <strong>${entry.theme}</strong></div>
+
+    <div class="daily-card">
+      <div class="daily-card-hdr">
+        <span class="daily-card-icon">🧠</span>
+        <span class="daily-card-label curiosity">Ciekawostka psychologiczna</span>
+      </div>
+      <div class="daily-card-title">${entry.curiosity.title}</div>
+      <div class="daily-card-lead">${entry.curiosity.lead}</div>
+      <div class="daily-card-body">${bodyParas}</div>
+    </div>
+
+    <div class="daily-card">
+      <div class="daily-card-hdr">
+        <span class="daily-card-icon">✏️</span>
+        <span class="daily-card-label exercise">Praca nad sobą</span>
+      </div>
+      <div class="daily-card-title">${entry.exercise.title}</div>
+      <span class="daily-exercise-type ${entry.exercise.type}">${typeLabels[entry.exercise.type] || entry.exercise.type}</span>
+      <div class="daily-card-lead">${entry.exercise.intro}</div>
+      <ol class="daily-steps">${stepsHtml}</ol>
+    </div>
+  </div>`;
+  window.scrollTo(0, 0);
+  animateContentIn();
+}
+
+window.selectDailyDay = function(day) {
+  dailySelectedDay = day;
+  if (current === 'students/psychologia_codziennej') {
+    renderDailyPsychology(current, pageMap.get(current));
   }
 };
 

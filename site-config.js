@@ -87,6 +87,73 @@ window.SITE_CONFIG = {
         { id: 'spoleczna/percepcja_spoleczna', label: 'Percepcja społeczna i atrybucje', file: 'wiki/spoleczna/percepcja_spoleczna.md' },
         { id: 'spoleczna/eksperyment_wiezienny', label: 'Stanfordzki Eksperyment Więzienny', file: 'wiki/spoleczna/eksperyment_wiezienny.md' },
         { id: 'spoleczna/manipulacja', label: 'Manipulacja — mechanizmy i metody wpływu', file: 'wiki/spoleczna/manipulacja.md' },
+        { id: 'spoleczna/stereotypy', label: 'Stereotypy i uprzedzenia', file: 'wiki/spoleczna/stereotypy.md' },
+        { id: 'spoleczna/ja_i_samoocena', label: 'Ja i samoocena', file: 'wiki/spoleczna/ja_i_samoocena.md' },
+        { id: 'spoleczna/postawy', label: 'Postawy i zmiana postaw', file: 'wiki/spoleczna/postawy.md' },
+        { id: 'spoleczna/konformizm', label: 'Konformizm i posłuszeństwo', file: 'wiki/spoleczna/konformizm.md' },
+        { id: 'spoleczna/perswazja', label: 'Perswazja i propaganda', file: 'wiki/spoleczna/perswazja.md' },
+        { id: 'spoleczna/dynamika_grupowa', label: 'Dynamika grupowa', file: 'wiki/spoleczna/dynamika_grupowa.md' },
+        { id: 'spoleczna/atrakcyjnosc', label: 'Atrakcyjność interpersonalna', file: 'wiki/spoleczna/atrakcyjnosc.md' },
+        { id: 'spoleczna/agresja', label: 'Agresja', file: 'wiki/spoleczna/agresja.md' },
+        { id: 'spoleczna/zachowania_prospoleczne', label: 'Zachowania prospołeczne', file: 'wiki/spoleczna/zachowania_prospoleczne.md' },
+      ]
+    },
+    {
+      section: 'Psychologia Kulturowa',
+      items: [
+        { id: 'kulturowa/wprowadzenie', label: 'Czym jest psychologia kulturowa?', file: 'wiki/kulturowa/wprowadzenie.md' },
+        { id: 'kulturowa/metody', label: 'Metody: emic vs. etic', file: 'wiki/kulturowa/metody.md' },
+        { id: 'kulturowa/indywidualizm_kolektywizm', label: 'Wymiar indywidualizm–kolektywizm', file: 'wiki/kulturowa/indywidualizm_kolektywizm.md' },
+        { id: 'kulturowa/kultura_percepcja', label: 'Kultura a percepcja i uwaga', file: 'wiki/kulturowa/kultura_percepcja.md' },
+        { id: 'kulturowa/kulturowe_modele_ja', label: 'Kulturowe modele Ja', file: 'wiki/kulturowa/kulturowe_modele_ja.md' },
+        { id: 'kulturowa/kultura_zdrowie', label: 'Kultura a zdrowie psychiczne', file: 'wiki/kulturowa/kultura_zdrowie.md' },
+      ]
+    },
+    {
+      section: 'Psychologia Uzależnień',
+      items: [
+        { id: 'uzaleznienia/kryteria_diagnostyczne', label: 'Kryteria diagnostyczne', file: 'wiki/uzaleznienia/kryteria_diagnostyczne.md' },
+        { id: 'uzaleznienia/dialog_motywujacy', label: 'Dialog motywujący', file: 'wiki/uzaleznienia/dialog_motywujacy.md' },
+        { id: 'uzaleznienia/zapobieganie_nawrotom', label: 'Zapobieganie nawrotom', file: 'wiki/uzaleznienia/zapobieganie_nawrotom.md' },
+        { id: 'uzaleznienia/uzaleznienia_mlodziezy', label: 'Uzależnienia u młodzieży', file: 'wiki/uzaleznienia/uzaleznienia_mlodziezy.md' },
+        { id: 'uzaleznienia/wspoluzaleznienie', label: 'Współuzależnienie', file: 'wiki/uzaleznienia/wspoluzaleznienie.md' },
+        { id: 'uzaleznienia/profilaktyka', label: 'Profilaktyka', file: 'wiki/uzaleznienia/profilaktyka.md' },
+      ]
+    },
+    {
+      section: 'Relacje i związki',
+      items: [
+        { id: 'relacje/przywiezanie_doroslych', label: 'Style przywiązania u dorosłych', file: 'wiki/relacje/przywiezanie_doroslych.md' },
+        { id: 'relacje/trojkatna_teoria_milosci', label: 'Triangularna teoria miłości', file: 'wiki/relacje/trojkatna_teoria_milosci.md' },
+        { id: 'relacje/dobor_partnera', label: 'Dobór partnera', file: 'wiki/relacje/dobor_partnera.md' },
+        { id: 'relacje/komunikacja_para', label: 'Komunikacja w parze', file: 'wiki/relacje/komunikacja_para.md' },
+        { id: 'relacje/konflikty', label: 'Konflikty i ich rozwiązywanie', file: 'wiki/relacje/konflikty.md' },
+        { id: 'relacje/zdrada', label: 'Zdrada i odbudowa zaufania', file: 'wiki/relacje/zdrada.md' },
+        { id: 'relacje/terapia_par', label: 'Terapia par', file: 'wiki/relacje/terapia_par.md' },
+        { id: 'relacje/przemoc_zwiazki', label: 'Przemoc w związkach', file: 'wiki/relacje/przemoc_zwiazki.md' },
+      ]
+    },
+    {
+      section: 'Etyka zawodowa',
+      items: [
+        { id: 'etyka/zasady_apa_ptp', label: 'Zasady APA i PTP', file: 'wiki/etyka/zasady_apa_ptp.md' },
+        { id: 'etyka/dobro_nieszkodzenie', label: 'Dobro i nieszkodzenie', file: 'wiki/etyka/dobro_nieszkodzenie.md' },
+        { id: 'etyka/tajemnica_zawodowa_granice', label: 'Tajemnica zawodowa i jej granice', file: 'wiki/etyka/tajemnica_zawodowa_granice.md' },
+        { id: 'etyka/swiadoma_zgoda', label: 'Świadoma zgoda', file: 'wiki/etyka/swiadoma_zgoda.md' },
+        { id: 'etyka/granice_relacji', label: 'Granice relacji terapeutycznej', file: 'wiki/etyka/granice_relacji.md' },
+      ]
+    },
+    {
+      section: 'Diagnoza psychologiczna (proces)',
+      items: [
+        { id: 'diagnoza/etapy_diagnozy', label: 'Etapy i cele diagnozy', file: 'wiki/diagnoza/etapy_diagnozy.md' },
+        { id: 'diagnoza/wywiad_psychologiczny', label: 'Wywiad psychologiczny', file: 'wiki/diagnoza/wywiad_psychologiczny.md' },
+        { id: 'diagnoza/obserwacja_kliniczna', label: 'Obserwacja kliniczna', file: 'wiki/diagnoza/obserwacja_kliniczna.md' },
+        { id: 'diagnoza/formulowanie_przypadku', label: 'Formułowanie przypadku', file: 'wiki/diagnoza/formulowanie_przypadku.md' },
+        { id: 'diagnoza/techniki_projekcyjne', label: 'Techniki projekcyjne', file: 'wiki/diagnoza/techniki_projekcyjne.md' },
+        { id: 'diagnoza/opinia_psychologiczna', label: 'Opinia psychologiczna', file: 'wiki/diagnoza/opinia_psychologiczna.md' },
+        { id: 'diagnoza/tajemnica_zawodowa', label: 'Tajemnica zawodowa', file: 'wiki/diagnoza/tajemnica_zawodowa.md' },
+        { id: 'diagnoza/diagnoza_stygmatyzacja', label: 'Diagnoza a stygmatyzacja', file: 'wiki/diagnoza/diagnoza_stygmatyzacja.md' },
       ]
     },
     {
@@ -729,11 +796,21 @@ window.SITE_CONFIG = {
       { file: 'wiki/cognitive/hda.md',                     label: 'Human Decision Accuracy (HDA)',status: 'live' },
       { file: 'wiki/cognitive/system1_system2.md',        label: 'System 1 i System 2 (Kahneman)', status: 'live' },
       { file: 'wiki/cognitive/przetwarzanie_predyktywne.md', label: 'Predictive processing',        status: 'live' },
+      { file: 'wiki/cognitive/ucielesnienie.md',              label: 'Ucieleśnione poznanie',        status: 'live' },
     ],
     spoleczna: [
       { file: 'wiki/spoleczna/percepcja_spoleczna.md', label: 'Percepcja społeczna i atrybucje', status: 'live' },
       { file: 'wiki/spoleczna/eksperyment_wiezienny.md', label: 'Stanfordzki Eksperyment Więzienny', status: 'live' },
       { file: 'wiki/spoleczna/manipulacja.md', label: 'Manipulacja — mechanizmy i metody wpływu', status: 'live' },
+      { file: 'wiki/spoleczna/stereotypy.md', label: 'Stereotypy i uprzedzenia', status: 'live' },
+      { file: 'wiki/spoleczna/ja_i_samoocena.md', label: 'Ja i samoocena', status: 'live' },
+      { file: 'wiki/spoleczna/postawy.md', label: 'Postawy i zmiana postaw', status: 'live' },
+      { file: 'wiki/spoleczna/konformizm.md', label: 'Konformizm i posłuszeństwo', status: 'live' },
+      { file: 'wiki/spoleczna/perswazja.md', label: 'Perswazja i propaganda', status: 'live' },
+      { file: 'wiki/spoleczna/dynamika_grupowa.md', label: 'Dynamika grupowa', status: 'live' },
+      { file: 'wiki/spoleczna/atrakcyjnosc.md', label: 'Atrakcyjność interpersonalna', status: 'live' },
+      { file: 'wiki/spoleczna/agresja.md', label: 'Agresja', status: 'live' },
+      { file: 'wiki/spoleczna/zachowania_prospoleczne.md', label: 'Zachowania prospołeczne', status: 'live' },
     ],
     disorders: [
       { file: 'wiki/disorders/afazje.md',    label: 'Afazje',                 status: 'live' },
@@ -770,6 +847,7 @@ window.SITE_CONFIG = {
       { file: 'wiki/psychometrics/bdi_2.md',        label: 'BDI-II (Inwentarz Depresji Becka)',status: 'live' },
       { file: 'wiki/psychometrics/ados.md',         label: 'ADOS-2',                         status: 'live' },
       { file: 'wiki/psychometrics/diva.md',         label: 'DIVA-5 (diagnoza ADHD)',          status: 'live' },
+      { file: 'wiki/psychometrics/narzedzia_kliniczne.md', label: 'Narzędzia kliniczne (PHQ-9, GAD-7, PCL-5)', status: 'live' },
     ],
     pharmacology: [
       { file: 'wiki/pharmacology/neurofarmakologia.md',   label: 'Neurofarmakologia',           status: 'live' },
@@ -856,6 +934,7 @@ window.SITE_CONFIG = {
       { file: 'wiki/psychopathology/intelektualizacja.md',          label: 'Intelektualizacja emocji',    status: 'live' },
       { file: 'wiki/psychopathology/dezintegracja_pozytywna.md',    label: 'Dezintegracja pozytywna',     status: 'live' },
       { file: 'wiki/psychopathology/klasyfikacje.md',               label: 'Klasyfikacje ICD-11 i DSM-5-TR', status: 'live' },
+      { file: 'wiki/psychopathology/formulowanie_przypadku.md',     label: 'Formułowanie przypadku',        status: 'live' },
     ],
     suicidology: [
       { file: 'wiki/suicidology/suicydologia_wprowadzenie.md', label: 'Suicydologia — wprowadzenie', status: 'live' },
@@ -1182,6 +1261,58 @@ window.SITE_CONFIG = {
       { file: 'wiki/ppd/obrona_pracy.md',           label: 'Obrona pracy magisterskiej',           status: 'live' },
       { file: 'wiki/ppd/dobre_praktyki.md',         label: 'Dobre praktyki w pisaniu pracy',       status: 'live' },
     ],
+    kulturowa: [
+      { file: 'wiki/kulturowa/wprowadzenie.md',                  label: 'Czym jest psychologia kulturowa?',    status: 'live' },
+      { file: 'wiki/kulturowa/metody.md',                        label: 'Metody: emic vs. etic',               status: 'live' },
+      { file: 'wiki/kulturowa/indywidualizm_kolektywizm.md',     label: 'Wymiar indywidualizm–kolektywizm',    status: 'live' },
+      { file: 'wiki/kulturowa/kultura_percepcja.md',             label: 'Kultura a percepcja i uwaga',         status: 'live' },
+      { file: 'wiki/kulturowa/kulturowe_modele_ja.md',           label: 'Kulturowe modele Ja',                 status: 'live' },
+      { file: 'wiki/kulturowa/kultura_zdrowie.md',               label: 'Kultura a zdrowie psychiczne',        status: 'live' },
+    ],
+    uzaleznienia: [
+      { file: 'wiki/uzaleznienia/kryteria_diagnostyczne.md',     label: 'Kryteria diagnostyczne',             status: 'live' },
+      { file: 'wiki/uzaleznienia/dialog_motywujacy.md',          label: 'Dialog motywujący',                  status: 'live' },
+      { file: 'wiki/uzaleznienia/zapobieganie_nawrotom.md',      label: 'Zapobieganie nawrotom',              status: 'live' },
+      { file: 'wiki/uzaleznienia/uzaleznienia_mlodziezy.md',     label: 'Uzależnienia u młodzieży',           status: 'live' },
+      { file: 'wiki/uzaleznienia/wspoluzaleznienie.md',          label: 'Współuzależnienie',                  status: 'live' },
+      { file: 'wiki/uzaleznienia/profilaktyka.md',               label: 'Profilaktyka',                       status: 'live' },
+    ],
+    relacje: [
+      { file: 'wiki/relacje/przywiezanie_doroslych.md',          label: 'Style przywiązania u dorosłych',     status: 'live' },
+      { file: 'wiki/relacje/trojkatna_teoria_milosci.md',        label: 'Triangularna teoria miłości',        status: 'live' },
+      { file: 'wiki/relacje/dobor_partnera.md',                  label: 'Dobór partnera',                     status: 'live' },
+      { file: 'wiki/relacje/komunikacja_para.md',                label: 'Komunikacja w parze',                status: 'live' },
+      { file: 'wiki/relacje/konflikty.md',                       label: 'Konflikty i ich rozwiązywanie',      status: 'live' },
+      { file: 'wiki/relacje/zdrada.md',                          label: 'Zdrada i odbudowa zaufania',         status: 'live' },
+      { file: 'wiki/relacje/terapia_par.md',                     label: 'Terapia par',                        status: 'live' },
+      { file: 'wiki/relacje/przemoc_zwiazki.md',                 label: 'Przemoc w związkach',                status: 'live' },
+    ],
+    etyka: [
+      { file: 'wiki/etyka/zasady_apa_ptp.md',                    label: 'Zasady APA i PTP',                   status: 'live' },
+      { file: 'wiki/etyka/dobro_nieszkodzenie.md',               label: 'Dobro i nieszkodzenie',              status: 'live' },
+      { file: 'wiki/etyka/tajemnica_zawodowa_granice.md',        label: 'Tajemnica zawodowa i jej granice',   status: 'live' },
+      { file: 'wiki/etyka/swiadoma_zgoda.md',                    label: 'Świadoma zgoda',                     status: 'live' },
+      { file: 'wiki/etyka/granice_relacji.md',                   label: 'Granice relacji terapeutycznej',     status: 'live' },
+    ],
+    diagnoza: [
+      { file: 'wiki/diagnoza/etapy_diagnozy.md',                 label: 'Etapy i cele diagnozy',              status: 'live' },
+      { file: 'wiki/diagnoza/wywiad_psychologiczny.md',          label: 'Wywiad psychologiczny',              status: 'live' },
+      { file: 'wiki/diagnoza/obserwacja_kliniczna.md',           label: 'Obserwacja kliniczna',               status: 'live' },
+      { file: 'wiki/diagnoza/formulowanie_przypadku.md',         label: 'Formułowanie przypadku',             status: 'live' },
+      { file: 'wiki/diagnoza/techniki_projekcyjne.md',           label: 'Techniki projekcyjne',               status: 'live' },
+      { file: 'wiki/diagnoza/opinia_psychologiczna.md',          label: 'Opinia psychologiczna',              status: 'live' },
+      { file: 'wiki/diagnoza/tajemnica_zawodowa.md',             label: 'Tajemnica zawodowa',                 status: 'live' },
+      { file: 'wiki/diagnoza/diagnoza_stygmatyzacja.md',         label: 'Diagnoza a stygmatyzacja',           status: 'live' },
+    ],
+    rozwojowa: [
+      { file: 'wiki/rozwojowa/teorie_rozwoju.md',                label: 'Główne teorie rozwoju',              status: 'live' },
+      { file: 'wiki/rozwojowa/metody_podluzne.md',               label: 'Metody badań podłużnych',            status: 'live' },
+      { file: 'wiki/rozwojowa/niemowlectwo.md',                  label: 'Niemowlęctwo i wczesne dzieciństwo', status: 'live' },
+      { file: 'wiki/rozwojowa/wiek_szkolny.md',                  label: 'Wiek szkolny',                       status: 'live' },
+      { file: 'wiki/rozwojowa/adolescencja.md',                  label: 'Adolescencja',                       status: 'live' },
+      { file: 'wiki/rozwojowa/doroslosc.md',                     label: 'Dorosłość i starzenie się',          status: 'live' },
+      { file: 'wiki/rozwojowa/plastycznosc_mozgu.md',            label: 'Plastyczność mózgu a okresy krytyczne', status: 'live' },
+    ],
   },
 
   // ─────────────────────────────────────────────────────────────
@@ -1272,7 +1403,7 @@ window.SITE_CONFIG = {
             { label: 'Psychopatologia ogólna', id: 'psychopathology/psychopatologia_wprowadzenie', status: 'live' },
             { label: 'Badanie stanu psychicznego (MSE)', id: 'psychopathology/objawy_ogolne', status: 'live' },
             { label: 'Klasyfikacje ICD-11 i DSM-5-TR', id: 'psychopathology/klasyfikacje', status: 'live' },
-            { label: 'Formułowanie przypadku', id: null, status: 'planned' },
+            { label: 'Formułowanie przypadku', id: 'psychopathology/formulowanie_przypadku', status: 'live' },
           ]
         },
         {
@@ -1336,7 +1467,7 @@ window.SITE_CONFIG = {
           title: 'Psychometria',
           articles: [
             { label: 'Psychometria — wprowadzenie', id: 'psychometrics/psychometria_wprowadzenie', status: 'xlink' },
-            { label: 'Narzędzia kliniczne (PHQ-9, GAD-7, PCL-5)', id: null, status: 'planned' },
+            { label: 'Narzędzia kliniczne (PHQ-9, GAD-7, PCL-5)', id: 'psychometrics/narzedzia_kliniczne', status: 'live' },
           ]
         },
       ]
@@ -1379,7 +1510,7 @@ window.SITE_CONFIG = {
           articles: [
             { label: 'System 1 i System 2 (Kahneman)', id: 'cognitive/system1_system2', status: 'live' },
             { label: 'Predictive processing', id: 'cognitive/przetwarzanie_predyktywne', status: 'live' },
-            { label: 'Ucieleśnione poznanie', id: null, status: 'planned' },
+            { label: 'Ucieleśnione poznanie', id: 'cognitive/ucielesnienie', status: 'live' },
           ]
         },
       ]
@@ -1393,9 +1524,9 @@ window.SITE_CONFIG = {
           title: 'Poznanie społeczne',
           articles: [
             { label: 'Percepcja społeczna i atrybucje', id: 'spoleczna/percepcja_spoleczna', status: 'live' },
-            { label: 'Stereotypy i uprzedzenia', id: null, status: 'planned' },
-            { label: 'Ja i samoocena', id: null, status: 'planned' },
-            { label: 'Postawy i zmiana postaw', id: null, status: 'planned' },
+            { label: 'Stereotypy i uprzedzenia', id: 'spoleczna/stereotypy', status: 'live' },
+            { label: 'Ja i samoocena', id: 'spoleczna/ja_i_samoocena', status: 'live' },
+            { label: 'Postawy i zmiana postaw', id: 'spoleczna/postawy', status: 'live' },
           ]
         },
         {
@@ -1403,17 +1534,17 @@ window.SITE_CONFIG = {
           articles: [
             { label: 'Stanfordzki Eksperyment Więzienny', id: 'spoleczna/eksperyment_wiezienny', status: 'live' },
             { label: 'Manipulacja — mechanizmy i metody wpływu', id: 'spoleczna/manipulacja', status: 'live' },
-            { label: 'Konformizm i posłuszeństwo', id: null, status: 'planned' },
-            { label: 'Perswazja i propaganda', id: null, status: 'planned' },
-            { label: 'Dynamika grupowa', id: null, status: 'planned' },
+            { label: 'Konformizm i posłuszeństwo', id: 'spoleczna/konformizm', status: 'live' },
+            { label: 'Perswazja i propaganda', id: 'spoleczna/perswazja', status: 'live' },
+            { label: 'Dynamika grupowa', id: 'spoleczna/dynamika_grupowa', status: 'live' },
           ]
         },
         {
           title: 'Relacje i zachowania',
           articles: [
-            { label: 'Atrakcyjność interpersonalna', id: null, status: 'planned' },
-            { label: 'Agresja', id: null, status: 'planned' },
-            { label: 'Zachowania prospołeczne', id: null, status: 'planned' },
+            { label: 'Atrakcyjność interpersonalna', id: 'spoleczna/atrakcyjnosc', status: 'live' },
+            { label: 'Agresja', id: 'spoleczna/agresja', status: 'live' },
+            { label: 'Zachowania prospołeczne', id: 'spoleczna/zachowania_prospoleczne', status: 'live' },
           ]
         },
       ]
@@ -1426,18 +1557,18 @@ window.SITE_CONFIG = {
         {
           title: 'Podstawy',
           articles: [
-            { label: 'Czym jest psychologia kulturowa?', id: null, status: 'planned' },
-            { label: 'Metody: emic vs. etic', id: null, status: 'planned' },
-            { label: 'Wymiar indywidualizm–kolektywizm', id: null, status: 'planned' },
+            { label: 'Czym jest psychologia kulturowa?', id: 'kulturowa/wprowadzenie', status: 'live' },
+            { label: 'Metody: emic vs. etic', id: 'kulturowa/metody', status: 'live' },
+            { label: 'Wymiar indywidualizm–kolektywizm', id: 'kulturowa/indywidualizm_kolektywizm', status: 'live' },
           ]
         },
         {
           title: 'Kultura a procesy psychiczne',
           articles: [
-            { label: 'Kultura a percepcja i uwaga', id: null, status: 'planned' },
+            { label: 'Kultura a percepcja i uwaga', id: 'kulturowa/kultura_percepcja', status: 'live' },
             { label: 'Kultura a emocje', id: 'emotions/emocje_wprowadzenie', status: 'xlink' },
-            { label: 'Kulturowe modele Ja', id: null, status: 'planned' },
-            { label: 'Kultura a zdrowie psychiczne', id: null, status: 'planned' },
+            { label: 'Kulturowe modele Ja', id: 'kulturowa/kulturowe_modele_ja', status: 'live' },
+            { label: 'Kultura a zdrowie psychiczne', id: 'kulturowa/kultura_zdrowie', status: 'live' },
           ]
         },
         {
@@ -1462,24 +1593,24 @@ window.SITE_CONFIG = {
         {
           title: 'Fundamenty',
           articles: [
-            { label: 'Główne teorie rozwoju', id: null, status: 'planned' },
-            { label: 'Metody badań podłużnych', id: null, status: 'planned' },
+            { label: 'Główne teorie rozwoju', id: 'rozwojowa/teorie_rozwoju', status: 'live' },
+            { label: 'Metody badań podłużnych', id: 'rozwojowa/metody_podluzne', status: 'live' },
           ]
         },
         {
           title: 'Etapy życia',
           articles: [
-            { label: 'Niemowlęctwo i wczesne dzieciństwo', id: null, status: 'planned' },
-            { label: 'Wiek szkolny', id: null, status: 'planned' },
-            { label: 'Adolescencja', id: null, status: 'planned' },
-            { label: 'Dorosłość i starzenie się', id: null, status: 'planned' },
+            { label: 'Niemowlęctwo i wczesne dzieciństwo', id: 'rozwojowa/niemowlectwo', status: 'live' },
+            { label: 'Wiek szkolny', id: 'rozwojowa/wiek_szkolny', status: 'live' },
+            { label: 'Adolescencja', id: 'rozwojowa/adolescencja', status: 'live' },
+            { label: 'Dorosłość i starzenie się', id: 'rozwojowa/doroslosc', status: 'live' },
           ]
         },
         {
           title: 'Neurobiologia rozwoju',
           articles: [
             { label: 'Neurobiologia — podstawy', id: 'neuro/anatomia', status: 'xlink' },
-            { label: 'Plastyczność mózgu a okresy krytyczne', id: null, status: 'planned' },
+            { label: 'Plastyczność mózgu a okresy krytyczne', id: 'rozwojowa/plastycznosc_mozgu', status: 'live' },
           ]
         },
       ]
@@ -1494,7 +1625,7 @@ window.SITE_CONFIG = {
           articles: [
             { label: 'Neurobiologia uzależnień', id: 'pharmacology/neurofarmakologia', status: 'xlink' },
             { label: 'Uzależnienia — aspekt psychologiczny', id: 'psychopathology/uzaleznienia_psych', status: 'live' },
-            { label: 'Kryteria diagnostyczne', id: null, status: 'planned' },
+            { label: 'Kryteria diagnostyczne', id: 'uzaleznienia/kryteria_diagnostyczne', status: 'live' },
           ]
         },
         {
@@ -1513,17 +1644,17 @@ window.SITE_CONFIG = {
         {
           title: 'Terapia',
           articles: [
-            { label: 'Dialog motywujący', id: null, status: 'planned' },
+            { label: 'Dialog motywujący', id: 'uzaleznienia/dialog_motywujacy', status: 'live' },
             { label: 'CBT w uzależnieniach', id: 'psychotherapy/cbt', status: 'xlink' },
-            { label: 'Zapobieganie nawrotom', id: null, status: 'planned' },
+            { label: 'Zapobieganie nawrotom', id: 'uzaleznienia/zapobieganie_nawrotom', status: 'live' },
           ]
         },
         {
           title: 'Konteksty',
           articles: [
-            { label: 'Uzależnienia u młodzieży', id: null, status: 'planned' },
-            { label: 'Współuzależnienie', id: null, status: 'planned' },
-            { label: 'Profilaktyka', id: null, status: 'planned' },
+            { label: 'Uzależnienia u młodzieży', id: 'uzaleznienia/uzaleznienia_mlodziezy', status: 'live' },
+            { label: 'Współuzależnienie', id: 'uzaleznienia/wspoluzaleznienie', status: 'live' },
+            { label: 'Profilaktyka', id: 'uzaleznienia/profilaktyka', status: 'live' },
           ]
         },
       ]
@@ -1536,24 +1667,24 @@ window.SITE_CONFIG = {
         {
           title: 'Podstawy',
           articles: [
-            { label: 'Style przywiązania u dorosłych', id: null, status: 'planned' },
-            { label: 'Triangularna teoria miłości', id: null, status: 'planned' },
-            { label: 'Dobór partnera', id: null, status: 'planned' },
+            { label: 'Style przywiązania u dorosłych', id: 'relacje/przywiezanie_doroslych', status: 'live' },
+            { label: 'Triangularna teoria miłości', id: 'relacje/trojkatna_teoria_milosci', status: 'live' },
+            { label: 'Dobór partnera', id: 'relacje/dobor_partnera', status: 'live' },
           ]
         },
         {
           title: 'Dynamika związku',
           articles: [
-            { label: 'Komunikacja w parze', id: null, status: 'planned' },
-            { label: 'Konflikty i ich rozwiązywanie', id: null, status: 'planned' },
-            { label: 'Zdrada i odbudowa zaufania', id: null, status: 'planned' },
+            { label: 'Komunikacja w parze', id: 'relacje/komunikacja_para', status: 'live' },
+            { label: 'Konflikty i ich rozwiązywanie', id: 'relacje/konflikty', status: 'live' },
+            { label: 'Zdrada i odbudowa zaufania', id: 'relacje/zdrada', status: 'live' },
           ]
         },
         {
           title: 'Terapia i trudne sytuacje',
           articles: [
-            { label: 'Terapia par', id: null, status: 'planned' },
-            { label: 'Przemoc w związkach', id: null, status: 'planned' },
+            { label: 'Terapia par', id: 'relacje/terapia_par', status: 'live' },
+            { label: 'Przemoc w związkach', id: 'relacje/przemoc_zwiazki', status: 'live' },
             { label: 'Psychologia seksu', id: 'sexology/seksuologia_wprowadzenie', status: 'xlink' },
           ]
         },
@@ -1580,10 +1711,10 @@ window.SITE_CONFIG = {
         {
           title: 'Proces diagnostyczny',
           articles: [
-            { label: 'Etapy i cele diagnozy', id: null, status: 'planned' },
-            { label: 'Wywiad psychologiczny', id: null, status: 'planned' },
-            { label: 'Obserwacja kliniczna', id: null, status: 'planned' },
-            { label: 'Formułowanie przypadku', id: null, status: 'planned' },
+            { label: 'Etapy i cele diagnozy', id: 'diagnoza/etapy_diagnozy', status: 'live' },
+            { label: 'Wywiad psychologiczny', id: 'diagnoza/wywiad_psychologiczny', status: 'live' },
+            { label: 'Obserwacja kliniczna', id: 'diagnoza/obserwacja_kliniczna', status: 'live' },
+            { label: 'Formułowanie przypadku', id: 'diagnoza/formulowanie_przypadku', status: 'live' },
           ]
         },
         {
@@ -1597,7 +1728,7 @@ window.SITE_CONFIG = {
           articles: [
             { label: 'Psychometria — podstawy', id: 'psychometrics/psychometria_wprowadzenie', status: 'xlink' },
             { label: 'Testy neuropsychologiczne', id: 'diagnostics/testy_przeglad', status: 'xlink' },
-            { label: 'Techniki projekcyjne', id: null, status: 'planned' },
+            { label: 'Techniki projekcyjne', id: 'diagnoza/techniki_projekcyjne', status: 'live' },
           ]
         },
         {
@@ -1616,9 +1747,9 @@ window.SITE_CONFIG = {
         {
           title: 'Etyka i prawo',
           articles: [
-            { label: 'Opinia psychologiczna', id: null, status: 'planned' },
-            { label: 'Tajemnica zawodowa', id: null, status: 'planned' },
-            { label: 'Diagnoza a stygmatyzacja', id: null, status: 'planned' },
+            { label: 'Opinia psychologiczna', id: 'diagnoza/opinia_psychologiczna', status: 'live' },
+            { label: 'Tajemnica zawodowa', id: 'diagnoza/tajemnica_zawodowa', status: 'live' },
+            { label: 'Diagnoza a stygmatyzacja', id: 'diagnoza/diagnoza_stygmatyzacja', status: 'live' },
           ]
         },
         {
@@ -1726,17 +1857,17 @@ window.SITE_CONFIG = {
           title: 'Fundament etyki',
           articles: [
             { label: 'Etyka zawodowa psychologa i psychoterapeuty w Polsce', id: 'reference/etyka_psychologa', status: 'live' },
-            { label: 'Zasady APA i PTP', id: null, status: 'planned' },
-            { label: 'Dobro i nieszkodzenie', id: null, status: 'planned' },
+            { label: 'Zasady APA i PTP', id: 'etyka/zasady_apa_ptp', status: 'live' },
+            { label: 'Dobro i nieszkodzenie', id: 'etyka/dobro_nieszkodzenie', status: 'live' },
           ]
         },
         {
           title: 'Praktyka',
           articles: [
             { label: 'Przepisy i zasady pracy psychologa w Polsce i NFZ', id: 'reference/przepisy_zawod', status: 'live' },
-            { label: 'Tajemnica zawodowa i jej granice', id: null, status: 'planned' },
-            { label: 'Świadoma zgoda', id: null, status: 'planned' },
-            { label: 'Granice relacji terapeutycznej', id: null, status: 'planned' },
+            { label: 'Tajemnica zawodowa i jej granice', id: 'etyka/tajemnica_zawodowa_granice', status: 'live' },
+            { label: 'Świadoma zgoda', id: 'etyka/swiadoma_zgoda', status: 'live' },
+            { label: 'Granice relacji terapeutycznej', id: 'etyka/granice_relacji', status: 'live' },
             { label: 'Superwizja i odpowiedzialność', id: 'psychotherapy/superwizja', status: 'live' },
           ]
         },
@@ -1902,33 +2033,33 @@ window.SITE_CONFIG = {
         {
           title: 'Podstawy',
           articles: [
-            { label: 'Psychologia niepełnosprawności — wprowadzenie', id: null, status: 'planned', desc: 'Definicje, zakres dyscypliny, historia podejść do niepełnosprawności.' },
-            { label: 'Modele niepełnosprawności',                     id: null, status: 'planned', desc: 'Model medyczny, społeczny, biopsychospołeczny i ICF (WHO).' },
+            { label: 'Psychologia niepełnosprawności — wprowadzenie', id: 'disability_psychology/wprowadzenie', status: 'live' },
+            { label: 'Modele niepełnosprawności',                     id: 'disability_psychology/modele_niepelnosprawnosci', status: 'live' },
           ]
         },
         {
           title: 'Rodzaje niepełnosprawności',
           articles: [
-            { label: 'Niepełnosprawność intelektualna',  id: null, status: 'planned', desc: 'Klasyfikacja, diagnoza (IQ, adaptacja), wsparcie i terapia.' },
-            { label: 'Niepełnosprawność ruchowa',        id: null, status: 'planned', desc: 'Psychologiczne konsekwencje ograniczeń motorycznych i bólu przewlekłego.' },
-            { label: 'Niepełnosprawność wzrokowa',       id: null, status: 'planned', desc: 'Specyfika funkcjonowania poznawczego i społecznego przy dysfunkcjach wzroku.' },
-            { label: 'Niepełnosprawność słuchowa',       id: null, status: 'planned', desc: 'Tożsamość głuchych, komunikacja, wsparcie psychologiczne.' },
-            { label: 'Spektrum autyzmu i niepełnosprawność', id: null, status: 'planned', desc: 'ASD w kontekście niepełnosprawności — neurodywersja i wsparcie.' },
+            { label: 'Niepełnosprawność intelektualna',  id: 'disability_psychology/niepelnosprawnosc_intelektualna', status: 'live' },
+            { label: 'Niepełnosprawność ruchowa',        id: 'disability_psychology/niepelnosprawnosc_ruchowa', status: 'live' },
+            { label: 'Niepełnosprawność wzrokowa',       id: 'disability_psychology/niepelnosprawnosc_wzrokowa', status: 'live' },
+            { label: 'Niepełnosprawność słuchowa',       id: 'disability_psychology/niepelnosprawnosc_sluchowa', status: 'live' },
+            { label: 'Spektrum autyzmu i niepełnosprawność', id: 'disability_psychology/autyzm_niepelnosprawnosc', status: 'live' },
           ]
         },
         {
           title: 'Funkcjonowanie psychiczne',
           articles: [
-            { label: 'Jakość życia osób z niepełnosprawnością', id: null, status: 'planned', desc: 'Pomiar jakości życia, czynniki ochronne i ryzyka, dobrostan.' },
-            { label: 'Stres, adaptacja i radzenie sobie',        id: null, status: 'planned', desc: 'Modele stresu i kryzysu po nabytej niepełnosprawności, resilience.' },
+            { label: 'Jakość życia osób z niepełnosprawnością', id: 'disability_psychology/jakosc_zycia', status: 'live' },
+            { label: 'Stres, adaptacja i radzenie sobie',        id: 'disability_psychology/stres_i_adaptacja', status: 'live' },
           ]
         },
         {
           title: 'Środowisko i wsparcie',
           articles: [
-            { label: 'Rodzina i opiekunowie',              id: null, status: 'planned', desc: 'Obciążenie opiekunów, interwencje wspierające rodzinę, rodzeństwo.' },
-            { label: 'Rehabilitacja psychologiczna',       id: null, status: 'planned', desc: 'Modele i metody rehabilitacji — od biopsychospołecznej po środowiskową.' },
-            { label: 'Inkluzja społeczna i prawa',         id: null, status: 'planned', desc: 'Konwencja ONZ o prawach osób z niepełnosprawnościami, antydyskryminacja, dostępność.' },
+            { label: 'Rodzina i opiekunowie',              id: 'disability_psychology/rodzina_i_opiekunowie', status: 'live' },
+            { label: 'Rehabilitacja psychologiczna',       id: 'disability_psychology/rehabilitacja_psychologiczna', status: 'live' },
+            { label: 'Inkluzja społeczna i prawa',         id: 'disability_psychology/inkluzja_spoleczna', status: 'live' },
           ]
         },
       ]

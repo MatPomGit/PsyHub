@@ -1038,6 +1038,15 @@ function ttGetCounts(length, difficulty) {
   return [d1, d2, d3];
 }
 
+function ttShuffleOptions(questions) {
+  return questions.map(q => {
+    const indices = ttShuffle(q.options.map((_, i) => i));
+    const shuffledOptions = indices.map(i => q.options[i]);
+    const newCorrect = indices.indexOf(q.correct);
+    return Object.assign({}, q, { options: shuffledOptions, correct: newCorrect });
+  });
+}
+
 function ttSelectQuestions(allQuestions, length, difficulty) {
   const byDiff = [
     allQuestions.filter(q => q.difficulty === 1),
@@ -1217,7 +1226,7 @@ window.ttStart = async function() {
     const r = await fetch(topic.file);
     if (!r.ok) throw new Error('HTTP ' + r.status);
     const allQuestions = await r.json();
-    const questions = ttSelectQuestions(allQuestions, st.length, st.difficulty);
+    const questions = ttShuffleOptions(ttSelectQuestions(allQuestions, st.length, st.difficulty));
     st.questions = questions;
     st.currentIndex = 0;
     st.answers = new Array(questions.length).fill(null);

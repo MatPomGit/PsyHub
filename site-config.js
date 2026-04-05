@@ -32,8 +32,8 @@ window.SITE_CONFIG = {
         { id: 'students/wybor_specjalnosci', label: 'Wybór specjalności', file: 'wiki/students/wybor_specjalnosci.md' },
         { id: 'students/test_specjalnosci',  label: 'Test wyboru specjalności', custom: 'specialization_test' },
         { id: 'students/etyka_studenta',     label: 'Etyka studenta psychologii', file: 'wiki/students/etyka_studenta.md' },
-        { id: 'students/psychologia_codziennej', label: 'Psychologia codzienna 🗓️',    custom: 'daily_psychology' },
-        { id: 'students/testy_teoretyczne',      label: 'Testy teoretyczne 📝',         custom: 'theoretical_test' },
+        { id: 'students/psychologia_codziennej', label: 'Psychologia codzienna',    custom: 'daily_psychology' },
+        { id: 'students/testy_teoretyczne',      label: 'Testy teoretyczne',         custom: 'theoretical_test' },
         /**{ id: 'students/monopoly_psychologiczne', href: 'https://matpomgit.github.io/Psychopoly/', label: 'Monopoly Psychologiczne' },*/
       ]
     },

@@ -14,32 +14,6 @@
   'use strict';
 
   const DAILY_PSYCHOLOGY = [
-    /* ─── Niedziela (0) ────────────────────────────── */
-    {
-      day: 0,
-      dayName: 'Niedziela',
-      theme: 'Autonarracja i tożsamość',
-      emoji: '🌙',
-      curiosity: {
-        title: 'Narracyjna tożsamość – jesteś historią, którą sobie opowiadasz',
-        lead: 'Dan McAdams wykazał, że tożsamość człowieka nie jest gotową „etykietą", lecz żywą opowieścią – personal myth – którą nieustannie piszemy i przepisujemy.',
-        body: [
-          'Każdy z nas konstruuje wewnętrzną narrację swojego życia: kto jest bohaterem, jakie były zwroty akcji, co nas ukształtowało. Badania McAdamsa pokazują, że osoby psychicznie prężne charakteryzują się historiami z motywem <em>odkupienia</em> – trudne doświadczenia prowadzą do czegoś lepszego – podczas gdy narracje <em>skażenia</em> (dobre zdarzenia kończą się źle) korelują z depresją.',
-          'Dla psychologa ta wiedza jest podwójna: rozumiesz mechanizm klientów, ale równie ważne jest uświadomienie sobie własnej narracji. Jak opowiadasz swój wybór zawodu? Czy jest to historia powołania, ucieczki, czy może wciąż niedomkniętego pytania?'
-        ]
-      },
-      exercise: {
-        title: 'Trzyzdaniowa historia bohatera',
-        type: 'writing',
-        intro: 'Niedziela to dobry czas na refleksję, zanim nowy tydzień nabierze własnej dynamiki.',
-        steps: [
-          'Weź kartkę lub otwórz notatnik. Napisz trzy zdania streszczające swoje życie zawodowe z perspektywy bohatera, który <strong>pokonuje trudności</strong>, a nie ofiary, która im ulega. Zacznij od: <em>„Wybrałem/wybrałam tę drogę, bo…"</em>',
-          'Przeczytaj to, co napisałeś/aś, na głos. Co czujesz? Gdzie brzmi prawdziwie, a gdzie czujesz opór?',
-          'Dopisz jedno zdanie o tym, co chcesz, by znalazło się w tej historii za rok – nie osiągnięcie, lecz jakość: jak chcesz <em>być</em>, nie co chcesz <em>mieć</em>.',
-          '<strong>Refleksja:</strong> Narracja nie jest kłamstwem ani życzeniem – jest soczewką. Zmiana języka, którym opisujesz siebie, realnie zmienia Twoje działania.'
-        ]
-      }
-    },
 
     /* ─── Poniedziałek (1) ─────────────────────────── */
     {
@@ -208,6 +182,32 @@
           'Zatrzymaj się i zapisz: jakie zdania pojawiły się w głowie? <em>„Jestem do niczego"</em> czy <em>„To jest trudne, ale mogę się poprawić"</em>? Skąd pochodzi ten głos?',
           'Zakończ ćwiczenie z jednym pozytywnym spostrzeżeniem: czego się <em>nauczyłeś/aś</em>, nawet jeśli efekt był słaby?',
           '<strong>Refleksja:</strong> Sabotażysta wewnętrzny, który pojawia się gdy jesteś kiepski/a w czymś nowym, to ten sam głos, który mówi Twoim klientom, że zmiana jest niemożliwa. Znając go z autopsji, skuteczniej z nim pracujesz w gabinecie.'
+        ]
+      }
+    },
+         /* ─── Niedziela (0) ────────────────────────────── */
+    {
+      day: 0,
+      dayName: 'Niedziela',
+      theme: 'Autonarracja i tożsamość',
+      emoji: '🌙',
+      curiosity: {
+        title: 'Narracyjna tożsamość – jesteś historią, którą sobie opowiadasz',
+        lead: 'Dan McAdams wykazał, że tożsamość człowieka nie jest gotową „etykietą", lecz żywą opowieścią – personal myth – którą nieustannie piszemy i przepisujemy.',
+        body: [
+          'Każdy z nas konstruuje wewnętrzną narrację swojego życia: kto jest bohaterem, jakie były zwroty akcji, co nas ukształtowało. Badania McAdamsa pokazują, że osoby psychicznie prężne charakteryzują się historiami z motywem <em>odkupienia</em> – trudne doświadczenia prowadzą do czegoś lepszego – podczas gdy narracje <em>skażenia</em> (dobre zdarzenia kończą się źle) korelują z depresją.',
+          'Dla psychologa ta wiedza jest podwójna: rozumiesz mechanizm klientów, ale równie ważne jest uświadomienie sobie własnej narracji. Jak opowiadasz swój wybór zawodu? Czy jest to historia powołania, ucieczki, czy może wciąż niedomkniętego pytania?'
+        ]
+      },
+      exercise: {
+        title: 'Trzyzdaniowa historia bohatera',
+        type: 'writing',
+        intro: 'Niedziela to dobry czas na refleksję, zanim nowy tydzień nabierze własnej dynamiki.',
+        steps: [
+          'Weź kartkę lub otwórz notatnik. Napisz trzy zdania streszczające swoje życie zawodowe z perspektywy bohatera, który <strong>pokonuje trudności</strong>, a nie ofiary, która im ulega. Zacznij od: <em>„Wybrałem/wybrałam tę drogę, bo…"</em>',
+          'Przeczytaj to, co napisałeś/aś, na głos. Co czujesz? Gdzie brzmi prawdziwie, a gdzie czujesz opór?',
+          'Dopisz jedno zdanie o tym, co chcesz, by znalazło się w tej historii za rok – nie osiągnięcie, lecz jakość: jak chcesz <em>być</em>, nie co chcesz <em>mieć</em>.',
+          '<strong>Refleksja:</strong> Narracja nie jest kłamstwem ani życzeniem – jest soczewką. Zmiana języka, którym opisujesz siebie, realnie zmienia Twoje działania.'
         ]
       }
     }

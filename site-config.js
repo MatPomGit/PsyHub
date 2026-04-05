@@ -169,6 +169,23 @@ window.SITE_CONFIG = {
       ]
     },
     {
+      section: 'Podstawy pomocy psychologicznej',
+      items: [
+        { id: 'podstawy_pomocy/wprowadzenie',                   label: 'Pomoc psychologiczna — wprowadzenie',  file: 'wiki/podstawy_pomocy/wprowadzenie.md'                   },
+        { id: 'podstawy_pomocy/relacja_pomocowa',               label: 'Relacja pomocowa',                     file: 'wiki/podstawy_pomocy/relacja_pomocowa.md'               },
+        { id: 'podstawy_pomocy/aktywne_sluchanie',              label: 'Aktywne słuchanie',                    file: 'wiki/podstawy_pomocy/aktywne_sluchanie.md'              },
+        { id: 'podstawy_pomocy/empatia_w_pomocy',               label: 'Empatia w pomocy psychologicznej',     file: 'wiki/podstawy_pomocy/empatia_w_pomocy.md'               },
+        { id: 'podstawy_pomocy/granice_w_pomocy',               label: 'Granice w relacji pomocowej',          file: 'wiki/podstawy_pomocy/granice_w_pomocy.md'               },
+        { id: 'podstawy_pomocy/kryzys_psychologiczny',          label: 'Kryzys psychologiczny i interwencja',  file: 'wiki/podstawy_pomocy/kryzys_psychologiczny.md'          },
+        { id: 'podstawy_pomocy/pierwsza_pomoc_psychologiczna',  label: 'Pierwsza pomoc psychologiczna',        file: 'wiki/podstawy_pomocy/pierwsza_pomoc_psychologiczna.md'  },
+        { id: 'podstawy_pomocy/modele_pomocy',                  label: 'Modele pomocy psychologicznej',        file: 'wiki/podstawy_pomocy/modele_pomocy.md'                  },
+        { id: 'podstawy_pomocy/komunikacja_wspierajaca',        label: 'Komunikacja wspierająca',              file: 'wiki/podstawy_pomocy/komunikacja_wspierajaca.md'        },
+        { id: 'podstawy_pomocy/wsparcie_spoleczne',             label: 'Wsparcie społeczne',                   file: 'wiki/podstawy_pomocy/wsparcie_spoleczne.md'             },
+        { id: 'podstawy_pomocy/samoopieka_pomagajacego',        label: 'Samoopieka pomagającego',              file: 'wiki/podstawy_pomocy/samoopieka_pomagajacego.md'        },
+        { id: 'podstawy_pomocy/etyka_pomocy',                   label: 'Etyka pomocy psychologicznej',         file: 'wiki/podstawy_pomocy/etyka_pomocy.md'                   },
+      ]
+    },
+    {
       section: 'Temperament',
       items: [
         { id: 'temperament/temperament_wprowadzenie', label: 'Temperament — wprowadzenie', file: 'wiki/temperament/temperament_wprowadzenie.md' },
@@ -733,6 +750,7 @@ window.SITE_CONFIG = {
         { id: 'wiki-index/filozofia',            label: 'WIKI — Filozofia',                          wiki: 'filozofia'            },
         { id: 'wiki-index/nvc',                  label: 'WIKI — Porozumiewanie się bez przemocy',    wiki: 'nvc'                  },
         { id: 'wiki-index/seminarium_dyplomowe', label: 'WIKI — Seminarium dyplomowe',               wiki: 'seminarium_dyplomowe' },
+        { id: 'wiki-index/podstawy_pomocy',      label: 'WIKI — Podstawy pomocy psychologicznej',    wiki: 'podstawy_pomocy'      },
       ]
     },
     {
@@ -868,6 +886,20 @@ window.SITE_CONFIG = {
       { file: 'wiki/individual_diffs/style_poznawcze.md',label: 'Style poznawcze',         status: 'live' },
       { file: 'wiki/individual_diffs/plec_psychologia.md', label: 'Psychologia płci',       status: 'live' },
       { file: 'wiki/individual_diffs/ciemna_triada.md',   label: 'Ciemna Triada',           status: 'live' },
+    ],
+    podstawy_pomocy: [
+      { file: 'wiki/podstawy_pomocy/wprowadzenie.md',                  label: 'Pomoc psychologiczna — wprowadzenie', status: 'live' },
+      { file: 'wiki/podstawy_pomocy/relacja_pomocowa.md',              label: 'Relacja pomocowa',                    status: 'live' },
+      { file: 'wiki/podstawy_pomocy/aktywne_sluchanie.md',             label: 'Aktywne słuchanie',                   status: 'live' },
+      { file: 'wiki/podstawy_pomocy/empatia_w_pomocy.md',              label: 'Empatia w pomocy psychologicznej',    status: 'live' },
+      { file: 'wiki/podstawy_pomocy/granice_w_pomocy.md',              label: 'Granice w relacji pomocowej',         status: 'live' },
+      { file: 'wiki/podstawy_pomocy/kryzys_psychologiczny.md',         label: 'Kryzys psychologiczny i interwencja', status: 'live' },
+      { file: 'wiki/podstawy_pomocy/pierwsza_pomoc_psychologiczna.md', label: 'Pierwsza pomoc psychologiczna',       status: 'live' },
+      { file: 'wiki/podstawy_pomocy/modele_pomocy.md',                 label: 'Modele pomocy psychologicznej',       status: 'live' },
+      { file: 'wiki/podstawy_pomocy/komunikacja_wspierajaca.md',       label: 'Komunikacja wspierająca',             status: 'live' },
+      { file: 'wiki/podstawy_pomocy/wsparcie_spoleczne.md',            label: 'Wsparcie społeczne',                  status: 'live' },
+      { file: 'wiki/podstawy_pomocy/samoopieka_pomagajacego.md',       label: 'Samoopieka pomagającego',             status: 'live' },
+      { file: 'wiki/podstawy_pomocy/etyka_pomocy.md',                  label: 'Etyka pomocy psychologicznej',        status: 'live' },
     ],
     temperament: [
       { file: 'wiki/temperament/temperament_wprowadzenie.md', label: 'Temperament — wprowadzenie', status: 'live' },
@@ -2611,6 +2643,44 @@ window.SITE_CONFIG = {
             { label: 'Pisanie i interpretacja wyników',  id: 'ppd/opis_wynikow',    status: 'live', desc: 'Raportowanie statystyk, tabele, wykresy, dyskusja i ograniczenia.' },
             { label: 'Obrona pracy magisterskiej',       id: 'ppd/obrona_pracy',    status: 'live', desc: 'Prezentacja, typowe pytania, strategia odpowiedzi, stres.' },
             { label: 'Dobre praktyki w pisaniu pracy',   id: 'ppd/dobre_praktyki',  status: 'live', desc: 'Organizacja czasu, zarządzanie danymi, relacja z promotorem, dobrostan.' },
+          ]
+        },
+      ]
+    },
+    podstawy_pomocy: {
+      title: 'WIKI — Podstawy pomocy psychologicznej',
+      intro: 'Podstawy pomocy psychologicznej to dziedzina obejmująca fundamentalne umiejętności i wiedzę niezbędną każdemu, kto profesjonalnie lub wolontariacko udziela wsparcia psychologicznego. Od relacji pomocowej i aktywnego słuchania, przez interwencję kryzysową, po samoopiękę pomagającego i etykę zawodową.',
+      sections: [
+        {
+          title: 'Istota pomocy psychologicznej',
+          articles: [
+            { label: 'Pomoc psychologiczna — wprowadzenie', id: 'podstawy_pomocy/wprowadzenie',                  status: 'live', desc: 'Rodzaje pomocy psychologicznej, zasady podstawowe i różnice między nimi.' },
+            { label: 'Relacja pomocowa',                    id: 'podstawy_pomocy/relacja_pomocowa',              status: 'live', desc: 'Sojusz terapeutyczny, czynniki budujące relację i zagrożenia dla niej.' },
+            { label: 'Modele pomocy psychologicznej',       id: 'podstawy_pomocy/modele_pomocy',                 status: 'live', desc: 'Medyczny, psychodynamiczny, CBT, humanistyczny, systemowy i ekologiczny.' },
+          ]
+        },
+        {
+          title: 'Umiejętności pomocowe',
+          articles: [
+            { label: 'Aktywne słuchanie',                   id: 'podstawy_pomocy/aktywne_sluchanie',             status: 'live', desc: 'Parafrazowanie, odzwierciedlanie emocji, klaryfikacja i bariery słuchania.' },
+            { label: 'Empatia w pomocy psychologicznej',    id: 'podstawy_pomocy/empatia_w_pomocy',              status: 'live', desc: 'Empatia poznawcza, emocjonalna i współczująca; granica między empatią a fuzją.' },
+            { label: 'Komunikacja wspierająca',             id: 'podstawy_pomocy/komunikacja_wspierajaca',       status: 'live', desc: 'Walidacja, normalizacja, pytania otwarte i nieskuteczne wzorce komunikacji.' },
+          ]
+        },
+        {
+          title: 'Interwencja i wsparcie',
+          articles: [
+            { label: 'Kryzys psychologiczny i interwencja', id: 'podstawy_pomocy/kryzys_psychologiczny',         status: 'live', desc: 'Fazy kryzysu, rodzaje, zasady ABC interwencji i model FASTER.' },
+            { label: 'Pierwsza pomoc psychologiczna',       id: 'podstawy_pomocy/pierwsza_pomoc_psychologiczna', status: 'live', desc: 'Osiem komponentów PFA, co robić i czego unikać, PPP a debriefing.' },
+            { label: 'Wsparcie społeczne',                  id: 'podstawy_pomocy/wsparcie_spoleczne',            status: 'live', desc: 'Rodzaje wsparcia, modele efektu głównego i buforowego, grupy wsparcia.' },
+          ]
+        },
+        {
+          title: 'Profesjonalizm i dobrostan pomagającego',
+          articles: [
+            { label: 'Granice w relacji pomocowej',         id: 'podstawy_pomocy/granice_w_pomocy',              status: 'live', desc: 'Granice fizyczne, emocjonalne, roli; naruszenia i asertywne wyznaczanie granic.' },
+            { label: 'Samoopieka pomagającego',             id: 'podstawy_pomocy/samoopieka_pomagajacego',       status: 'live', desc: 'Wypalenie zawodowe, wtórna traumatyzacja i obszary samoopieki.' },
+            { label: 'Etyka pomocy psychologicznej',        id: 'podstawy_pomocy/etyka_pomocy',                  status: 'live', desc: 'Cztery zasady bioetyki, tajemnica zawodowa, świadoma zgoda, dylematy etyczne.' },
           ]
         },
       ]

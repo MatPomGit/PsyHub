@@ -627,6 +627,23 @@ window.SITE_CONFIG = {
       ]
     },
     {
+      section: 'Porozumiewanie się bez przemocy (NVC)',
+      items: [
+        { id: 'nvc/wprowadzenie',              label: 'NVC — wprowadzenie',                    file: 'wiki/nvc/wprowadzenie.md'              },
+        { id: 'nvc/cztery_komponenty',         label: 'Cztery komponenty NVC',                 file: 'wiki/nvc/cztery_komponenty.md'         },
+        { id: 'nvc/obserwacja',                label: 'Obserwacja bez oceniania',              file: 'wiki/nvc/obserwacja.md'                },
+        { id: 'nvc/uczucia',                   label: 'Uczucia w NVC',                         file: 'wiki/nvc/uczucia.md'                   },
+        { id: 'nvc/potrzeby',                  label: 'Katalog potrzeb',                       file: 'wiki/nvc/potrzeby.md'                  },
+        { id: 'nvc/prosba_i_zadanie',          label: 'Prośba a żądanie',                      file: 'wiki/nvc/prosba_i_zadanie.md'          },
+        { id: 'nvc/empatia_nvc',               label: 'Empatia w NVC',                         file: 'wiki/nvc/empatia_nvc.md'               },
+        { id: 'nvc/jezyk_szakala_i_zyrafy',    label: 'Język szakala i żyrafy',                file: 'wiki/nvc/jezyk_szakala_i_zyrafy.md'    },
+        { id: 'nvc/autoempatia',               label: 'Autoempatia i samowspółczucie',         file: 'wiki/nvc/autoempatia.md'               },
+        { id: 'nvc/nvc_w_konfliktach',         label: 'NVC w rozwiązywaniu konfliktów',        file: 'wiki/nvc/nvc_w_konfliktach.md'         },
+        { id: 'nvc/nvc_w_wychowaniu',          label: 'NVC w wychowaniu i edukacji',           file: 'wiki/nvc/nvc_w_wychowaniu.md'          },
+        { id: 'nvc/praktyka_nvc',              label: 'Praktyka NVC w codziennym życiu',       file: 'wiki/nvc/praktyka_nvc.md'              },
+      ]
+    },
+    {
       section: 'Psychologia Społeczna',
       items: [
         { id: 'spoleczna/percepcja_spoleczna', label: 'Percepcja społeczna i atrybucje', file: 'wiki/spoleczna/percepcja_spoleczna.md' },
@@ -665,6 +682,7 @@ window.SITE_CONFIG = {
         { id: 'wiki-index/psych_sadowa',         label: 'WIKI — Psychologia sądowa',                wiki: 'psych_sadowa'         },
         { id: 'wiki-index/e_terapia',            label: 'WIKI — E-terapia',                         wiki: 'e_terapia'            },
         { id: 'wiki-index/filozofia',            label: 'WIKI — Filozofia',                         wiki: 'filozofia'            },
+        { id: 'wiki-index/nvc',                  label: 'WIKI — Porozumiewanie się bez przemocy',   wiki: 'nvc'                  },
       ]
     },
     {
@@ -1144,6 +1162,20 @@ window.SITE_CONFIG = {
       { file: 'wiki/philosophy/podswiadomy_nihilizm.md',      label: 'Podświadomy nihilizm',                       status: 'live' },
       { file: 'wiki/philosophy/paradoksalny_determinizm.md',  label: 'Paradoksalny determinizm',                   status: 'live' },
       { file: 'wiki/philosophy/realizm_modalny.md',           label: 'Realizm modalny',                            status: 'live' },
+    ],
+    nvc: [
+      { file: 'wiki/nvc/wprowadzenie.md',           label: 'NVC — wprowadzenie',                    status: 'live' },
+      { file: 'wiki/nvc/cztery_komponenty.md',       label: 'Cztery komponenty NVC',                 status: 'live' },
+      { file: 'wiki/nvc/obserwacja.md',              label: 'Obserwacja bez oceniania',              status: 'live' },
+      { file: 'wiki/nvc/uczucia.md',                 label: 'Uczucia w NVC',                         status: 'live' },
+      { file: 'wiki/nvc/potrzeby.md',                label: 'Katalog potrzeb',                       status: 'live' },
+      { file: 'wiki/nvc/prosba_i_zadanie.md',        label: 'Prośba a żądanie',                      status: 'live' },
+      { file: 'wiki/nvc/empatia_nvc.md',             label: 'Empatia w NVC',                         status: 'live' },
+      { file: 'wiki/nvc/jezyk_szakala_i_zyrafy.md',  label: 'Język szakala i żyrafy',                status: 'live' },
+      { file: 'wiki/nvc/autoempatia.md',             label: 'Autoempatia i samowspółczucie',         status: 'live' },
+      { file: 'wiki/nvc/nvc_w_konfliktach.md',       label: 'NVC w rozwiązywaniu konfliktów',        status: 'live' },
+      { file: 'wiki/nvc/nvc_w_wychowaniu.md',        label: 'NVC w wychowaniu i edukacji',           status: 'live' },
+      { file: 'wiki/nvc/praktyka_nvc.md',            label: 'Praktyka NVC w codziennym życiu',       status: 'live' },
     ],
   },
 
@@ -2356,6 +2388,44 @@ window.SITE_CONFIG = {
             { label: 'Podświadomy nihilizm',                   id: 'philosophy/podswiadomy_nihilizm',      status: 'live' },
             { label: 'Paradoksalny determinizm',               id: 'philosophy/paradoksalny_determinizm',  status: 'live' },
             { label: 'Realizm modalny',                        id: 'philosophy/realizm_modalny',           status: 'live' },
+          ]
+        },
+      ]
+    },
+    nvc: {
+      title: 'WIKI — Porozumiewanie się bez przemocy (NVC)',
+      intro: 'Nonviolent Communication (NVC) to metoda komunikacji opracowana przez Marshalla Rosenberga, oparta na empatii, obserwacji bez oceniania oraz identyfikacji uczuć i potrzeb. NVC uczy wyrażania siebie z autentycznością i słuchania innych z prawdziwą obecnością.',
+      sections: [
+        {
+          title: 'Podstawy NVC',
+          articles: [
+            { label: 'NVC — wprowadzenie',         id: 'nvc/wprowadzenie',        status: 'live', desc: 'Geneza, filozofia i zastosowania Porozumiewania się bez przemocy.' },
+            { label: 'Cztery komponenty NVC',       id: 'nvc/cztery_komponenty',   status: 'live', desc: 'Obserwacja, uczucie, potrzeba, prośba — struktura procesu NVC.' },
+            { label: 'Język szakala i żyrafy',      id: 'nvc/jezyk_szakala_i_zyrafy', status: 'live', desc: 'Dwa style komunikacji — oceniający i empatyczny.' },
+          ]
+        },
+        {
+          title: 'Cztery komponenty w praktyce',
+          articles: [
+            { label: 'Obserwacja bez oceniania',    id: 'nvc/obserwacja',          status: 'live', desc: 'Jak opisywać zdarzenia bez ocen, etykietek i generalizacji.' },
+            { label: 'Uczucia w NVC',               id: 'nvc/uczucia',             status: 'live', desc: 'Katalog uczuć, pseudouczucia i odpowiedzialność za emocje.' },
+            { label: 'Katalog potrzeb',             id: 'nvc/potrzeby',            status: 'live', desc: 'Universalne ludzkie potrzeby i ich rola w NVC.' },
+            { label: 'Prośba a żądanie',            id: 'nvc/prosba_i_zadanie',    status: 'live', desc: 'Jak formułować prośby i czym różnią się od żądań.' },
+          ]
+        },
+        {
+          title: 'Empatia i wewnętrzna praca',
+          articles: [
+            { label: 'Empatia w NVC',               id: 'nvc/empatia_nvc',         status: 'live', desc: 'Empatyczne słuchanie, blokady empatii i cztery poziomy słyszenia.' },
+            { label: 'Autoempatia i samowspółczucie', id: 'nvc/autoempatia',       status: 'live', desc: 'Słuchanie własnych uczuć i potrzeb z życzliwością.' },
+          ]
+        },
+        {
+          title: 'Zastosowania NVC',
+          articles: [
+            { label: 'NVC w rozwiązywaniu konfliktów', id: 'nvc/nvc_w_konfliktach', status: 'live', desc: 'Mediacja NVC, trzy fazy rozwiązywania konfliktu.' },
+            { label: 'NVC w wychowaniu i edukacji',  id: 'nvc/nvc_w_wychowaniu',  status: 'live', desc: 'Wychowanie bez kar i nagród, NVC w szkole.' },
+            { label: 'Praktyka NVC w codziennym życiu', id: 'nvc/praktyka_nvc',   status: 'live', desc: 'Codzienna praktyka NVC w domu, pracy i relacjach.' },
           ]
         },
       ]

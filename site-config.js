@@ -645,6 +645,23 @@ window.SITE_CONFIG = {
       ]
     },
     {
+      section: 'Seminarium dyplomowe',
+      items: [
+        { id: 'ppd/wprowadzenie',             label: 'Seminarium dyplomowe — wprowadzenie',    file: 'wiki/ppd/wprowadzenie.md'             },
+        { id: 'ppd/struktura_pracy',          label: 'Struktura pracy magisterskiej',          file: 'wiki/ppd/struktura_pracy.md'          },
+        { id: 'ppd/przeglad_literatury',      label: 'Przegląd literatury naukowej',           file: 'wiki/ppd/przeglad_literatury.md'      },
+        { id: 'ppd/metodologia_badan',        label: 'Metodologia badań psychologicznych',     file: 'wiki/ppd/metodologia_badan.md'        },
+        { id: 'ppd/pomiary_psychologiczne',   label: 'Zasady prowadzenia pomiarów',            file: 'wiki/ppd/pomiary_psychologiczne.md'   },
+        { id: 'ppd/narzedzia_badawcze',       label: 'Narzędzia badawcze i kwestionariusze',  file: 'wiki/ppd/narzedzia_badawcze.md'       },
+        { id: 'ppd/analizy_statystyczne',     label: 'Analizy statystyczne',                  file: 'wiki/ppd/analizy_statystyczne.md'     },
+        { id: 'ppd/etyka_badan',              label: 'Etyka badań naukowych',                 file: 'wiki/ppd/etyka_badan.md'              },
+        { id: 'ppd/bledy_badawcze',           label: 'Błędy badawcze — czego unikać',         file: 'wiki/ppd/bledy_badawcze.md'           },
+        { id: 'ppd/opis_wynikow',             label: 'Pisanie i interpretacja wyników',       file: 'wiki/ppd/opis_wynikow.md'             },
+        { id: 'ppd/obrona_pracy',             label: 'Obrona pracy magisterskiej',            file: 'wiki/ppd/obrona_pracy.md'             },
+        { id: 'ppd/dobre_praktyki',           label: 'Dobre praktyki w pisaniu pracy',        file: 'wiki/ppd/dobre_praktyki.md'           },
+      ]
+    },
+    {
       section: 'Psychologia Społeczna',
       items: [
         { id: 'spoleczna/percepcja_spoleczna', label: 'Percepcja społeczna i atrybucje', file: 'wiki/spoleczna/percepcja_spoleczna.md' },
@@ -685,6 +702,7 @@ window.SITE_CONFIG = {
         { id: 'wiki-index/e_terapia',            label: 'WIKI — E-terapia',                         wiki: 'e_terapia'            },
         { id: 'wiki-index/filozofia',            label: 'WIKI — Filozofia',                         wiki: 'filozofia'            },
         { id: 'wiki-index/nvc',                  label: 'WIKI — Porozumiewanie się bez przemocy',   wiki: 'nvc'                  },
+        { id: 'wiki-index/seminarium_dyplomowe', label: 'WIKI — Seminarium dyplomowe',              wiki: 'seminarium_dyplomowe' },
       ]
     },
     {
@@ -1180,6 +1198,20 @@ window.SITE_CONFIG = {
       { file: 'wiki/nvc/nvc_w_konfliktach.md',       label: 'NVC w rozwiązywaniu konfliktów',        status: 'live' },
       { file: 'wiki/nvc/nvc_w_wychowaniu.md',        label: 'NVC w wychowaniu i edukacji',           status: 'live' },
       { file: 'wiki/nvc/praktyka_nvc.md',            label: 'Praktyka NVC w codziennym życiu',       status: 'live' },
+    ],
+    ppd: [
+      { file: 'wiki/ppd/wprowadzenie.md',           label: 'Seminarium dyplomowe — wprowadzenie',   status: 'live' },
+      { file: 'wiki/ppd/struktura_pracy.md',        label: 'Struktura pracy magisterskiej',         status: 'live' },
+      { file: 'wiki/ppd/przeglad_literatury.md',    label: 'Przegląd literatury naukowej',          status: 'live' },
+      { file: 'wiki/ppd/metodologia_badan.md',      label: 'Metodologia badań psychologicznych',    status: 'live' },
+      { file: 'wiki/ppd/pomiary_psychologiczne.md', label: 'Zasady prowadzenia pomiarów',           status: 'live' },
+      { file: 'wiki/ppd/narzedzia_badawcze.md',     label: 'Narzędzia badawcze i kwestionariusze', status: 'live' },
+      { file: 'wiki/ppd/analizy_statystyczne.md',   label: 'Analizy statystyczne',                 status: 'live' },
+      { file: 'wiki/ppd/etyka_badan.md',            label: 'Etyka badań naukowych',                status: 'live' },
+      { file: 'wiki/ppd/bledy_badawcze.md',         label: 'Błędy badawcze — czego unikać',        status: 'live' },
+      { file: 'wiki/ppd/opis_wynikow.md',           label: 'Pisanie i interpretacja wyników',      status: 'live' },
+      { file: 'wiki/ppd/obrona_pracy.md',           label: 'Obrona pracy magisterskiej',           status: 'live' },
+      { file: 'wiki/ppd/dobre_praktyki.md',         label: 'Dobre praktyki w pisaniu pracy',       status: 'live' },
     ],
   },
 
@@ -2432,6 +2464,44 @@ window.SITE_CONFIG = {
             { label: 'NVC w rozwiązywaniu konfliktów', id: 'nvc/nvc_w_konfliktach', status: 'live', desc: 'Mediacja NVC, trzy fazy rozwiązywania konfliktu.' },
             { label: 'NVC w wychowaniu i edukacji',  id: 'nvc/nvc_w_wychowaniu',  status: 'live', desc: 'Wychowanie bez kar i nagród, NVC w szkole.' },
             { label: 'Praktyka NVC w codziennym życiu', id: 'nvc/praktyka_nvc',   status: 'live', desc: 'Codzienna praktyka NVC w domu, pracy i relacjach.' },
+          ]
+        },
+      ]
+    },
+    seminarium_dyplomowe: {
+      title: 'WIKI — Seminarium dyplomowe',
+      intro: 'Seminarium dyplomowe przygotowuje studentów psychologii do samodzielnego prowadzenia badań i pisania pracy magisterskiej. Encyklopedia obejmuje zasady pisania pracy naukowej, metodologię badań, prowadzenie pomiarów psychologicznych, analizy statystyczne, etykę naukową, typowe błędy badawcze oraz dobre praktyki akademickie.',
+      sections: [
+        {
+          title: 'Podstawy pracy naukowej',
+          articles: [
+            { label: 'Seminarium dyplomowe — wprowadzenie',  id: 'ppd/wprowadzenie',         status: 'live', desc: 'Cel i struktura seminarium dyplomowego, typy prac magisterskich.' },
+            { label: 'Struktura pracy magisterskiej',        id: 'ppd/struktura_pracy',      status: 'live', desc: 'Standardowe rozdziały, formatowanie i objętość pracy.' },
+            { label: 'Przegląd literatury naukowej',         id: 'ppd/przeglad_literatury',  status: 'live', desc: 'Bazy danych, strategie wyszukiwania, ocena źródeł, cytowanie.' },
+          ]
+        },
+        {
+          title: 'Metodologia i pomiar',
+          articles: [
+            { label: 'Metodologia badań psychologicznych',    id: 'ppd/metodologia_badan',       status: 'live', desc: 'Paradygmaty, typy projektów, dobór próby, operacjonalizacja.' },
+            { label: 'Zasady prowadzenia pomiarów',           id: 'ppd/pomiary_psychologiczne',  status: 'live', desc: 'Skale, rzetelność, trafność, standaryzacja, normy.' },
+            { label: 'Narzędzia badawcze i kwestionariusze', id: 'ppd/narzedzia_badawcze',      status: 'live', desc: 'Wybór narzędzia, adaptacja, tworzenie własnych kwestionariuszy.' },
+            { label: 'Analizy statystyczne',                  id: 'ppd/analizy_statystyczne',    status: 'live', desc: 'Testy parametryczne i nieparametryczne, efekty, raportowanie APA.' },
+          ]
+        },
+        {
+          title: 'Etyka i jakość badań',
+          articles: [
+            { label: 'Etyka badań naukowych',               id: 'ppd/etyka_badan',      status: 'live', desc: 'Świadoma zgoda, poufność, komisje etyczne, integralność naukowa.' },
+            { label: 'Błędy badawcze — czego unikać',       id: 'ppd/bledy_badawcze',   status: 'live', desc: 'Błędy projektowania, pomiaru, analizy i interpretacji wyników.' },
+          ]
+        },
+        {
+          title: 'Pisanie i obrona',
+          articles: [
+            { label: 'Pisanie i interpretacja wyników',  id: 'ppd/opis_wynikow',    status: 'live', desc: 'Raportowanie statystyk, tabele, wykresy, dyskusja i ograniczenia.' },
+            { label: 'Obrona pracy magisterskiej',       id: 'ppd/obrona_pracy',    status: 'live', desc: 'Prezentacja, typowe pytania, strategia odpowiedzi, stres.' },
+            { label: 'Dobre praktyki w pisaniu pracy',   id: 'ppd/dobre_praktyki',  status: 'live', desc: 'Organizacja czasu, zarządzanie danymi, relacja z promotorem, dobrostan.' },
           ]
         },
       ]

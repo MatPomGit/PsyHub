@@ -299,6 +299,7 @@ window.SITE_CONFIG = {
         { id: 'psychotherapy/logoterapia_frankl',      label: 'Logoterapia (Frankl)',          file: 'wiki/psychotherapy/logoterapia_frankl.md'      },
         { id: 'psychotherapy/psychoanaliza_fromma',    label: 'Psychoanaliza humanistyczna (Fromm)', file: 'wiki/psychotherapy/psychoanaliza_fromma.md' },
         { id: 'psychotherapy/psychologia_zimbardo',    label: 'Psychologia społeczna (Zimbardo)',    file: 'wiki/psychotherapy/psychologia_zimbardo.md' },
+        { id: 'psychotherapy/superwizja',              label: 'Superwizja w psychoterapii',           file: 'wiki/psychotherapy/superwizja.md'           },
       ]
     },
     {
@@ -625,6 +626,7 @@ window.SITE_CONFIG = {
       section: 'Psychologia Społeczna',
       items: [
         { id: 'spoleczna/percepcja_spoleczna', label: 'Percepcja społeczna i atrybucje', file: 'wiki/spoleczna/percepcja_spoleczna.md' },
+        { id: 'spoleczna/eksperyment_wiezienny', label: 'Stanfordzki Eksperyment Więzienny', file: 'wiki/spoleczna/eksperyment_wiezienny.md' },
       ]
     },
     
@@ -725,6 +727,7 @@ window.SITE_CONFIG = {
     ],
     spoleczna: [
       { file: 'wiki/spoleczna/percepcja_spoleczna.md', label: 'Percepcja społeczna i atrybucje', status: 'live' },
+      { file: 'wiki/spoleczna/eksperyment_wiezienny.md', label: 'Stanfordzki Eksperyment Więzienny', status: 'live' },
     ],
     disorders: [
       { file: 'wiki/disorders/afazje.md',    label: 'Afazje',                 status: 'live' },
@@ -822,6 +825,7 @@ window.SITE_CONFIG = {
       { file: 'wiki/psychotherapy/logoterapia_frankl.md',   label: 'Logoterapia (Frankl)',                  status: 'live' },
       { file: 'wiki/psychotherapy/psychoanaliza_fromma.md', label: 'Psychoanaliza humanistyczna (Fromm)',   status: 'live' },
       { file: 'wiki/psychotherapy/psychologia_zimbardo.md', label: 'Psychologia społeczna (Zimbardo)',      status: 'live' },
+      { file: 'wiki/psychotherapy/superwizja.md',           label: 'Superwizja w psychoterapii',            status: 'live' },
     ],
     psychopathology: [
       { file: 'wiki/psychopathology/psychopatologia_wprowadzenie.md', label: 'Psychopatologia — wprowadzenie', status: 'live' },
@@ -1270,6 +1274,7 @@ window.SITE_CONFIG = {
             { label: 'Logoterapia (Frankl)', id: 'psychotherapy/logoterapia_frankl', status: 'live' },
             { label: 'Psychoanaliza humanistyczna (Fromm)', id: 'psychotherapy/psychoanaliza_fromma', status: 'live' },
             { label: 'Psychologia społeczna (Zimbardo)', id: 'psychotherapy/psychologia_zimbardo', status: 'live' },
+            { label: 'Superwizja w psychoterapii', id: 'psychotherapy/superwizja', status: 'live' },
             { label: 'Interwencja kryzysowa', id: 'suicidology/interwencja', status: 'live' },
           ]
         },
@@ -1355,6 +1360,7 @@ window.SITE_CONFIG = {
         {
           title: 'Wpływ społeczny',
           articles: [
+            { label: 'Stanfordzki Eksperyment Więzienny', id: 'spoleczna/eksperyment_wiezienny', status: 'live' },
             { label: 'Konformizm i posłuszeństwo', id: null, status: 'planned' },
             { label: 'Perswazja i propaganda', id: null, status: 'planned' },
             { label: 'Dynamika grupowa', id: null, status: 'planned' },
@@ -1682,7 +1688,7 @@ window.SITE_CONFIG = {
             { label: 'Tajemnica zawodowa i jej granice', id: null, status: 'planned' },
             { label: 'Świadoma zgoda', id: null, status: 'planned' },
             { label: 'Granice relacji terapeutycznej', id: null, status: 'planned' },
-            { label: 'Superwizja i odpowiedzialność', id: null, status: 'planned' },
+            { label: 'Superwizja i odpowiedzialność', id: 'psychotherapy/superwizja', status: 'live' },
           ]
         },
       ]

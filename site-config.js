@@ -31,6 +31,7 @@ window.SITE_CONFIG = {
       items: [
         { id: 'students/wybor_specjalnosci', label: 'Wybór specjalności', file: 'wiki/students/wybor_specjalnosci.md' },
         { id: 'students/test_specjalnosci',  label: 'Test wyboru specjalności', custom: 'specialization_test' },
+        { id: 'students/etyka_studenta',     label: 'Etyka studenta psychologii', file: 'wiki/students/etyka_studenta.md' },
         /**{ id: 'students/monopoly_psychologiczne', href: 'https://matpomgit.github.io/Psychopoly/', label: 'Monopoly Psychologiczne' },*/
       ]
     },
@@ -668,9 +669,10 @@ window.SITE_CONFIG = {
     {
       section: 'Referencje',
       items: [
-        { id: 'reference/zakres',         label: 'Zakres wiedzy',                      file: 'wiki/reference/zakres.md'         },
-        { id: 'reference/literatura',     label: 'Literatura',                         file: 'wiki/reference/literatura.md'     },
-        { id: 'reference/przepisy_zawod', label: 'Przepisy i zasady pracy psychologa', file: 'wiki/reference/przepisy_zawod.md' },
+        { id: 'reference/zakres',             label: 'Zakres wiedzy',                      file: 'wiki/reference/zakres.md'             },
+        { id: 'reference/literatura',         label: 'Literatura',                         file: 'wiki/reference/literatura.md'         },
+        { id: 'reference/przepisy_zawod',     label: 'Przepisy i zasady pracy psychologa', file: 'wiki/reference/przepisy_zawod.md'     },
+        { id: 'reference/etyka_psychologa',   label: 'Etyka zawodowa psychologa i psychoterapeuty', file: 'wiki/reference/etyka_psychologa.md' },
       ]
     },
   ],
@@ -954,9 +956,10 @@ window.SITE_CONFIG = {
       { file: 'wiki/cases/split_brain.md', label: 'Rozdzielony mózg', status: 'live' },
     ],
     reference: [
-      { file: 'wiki/reference/zakres.md',         label: 'Zakres wiedzy',                      status: 'live' },
-      { file: 'wiki/reference/literatura.md',     label: 'Literatura',                         status: 'live' },
-      { file: 'wiki/reference/przepisy_zawod.md', label: 'Przepisy i zasady pracy psychologa', status: 'live' },
+      { file: 'wiki/reference/zakres.md',               label: 'Zakres wiedzy',                               status: 'live' },
+      { file: 'wiki/reference/literatura.md',           label: 'Literatura',                                  status: 'live' },
+      { file: 'wiki/reference/przepisy_zawod.md',       label: 'Przepisy i zasady pracy psychologa',          status: 'live' },
+      { file: 'wiki/reference/etyka_psychologa.md',     label: 'Etyka zawodowa psychologa i psychoterapeuty', status: 'live' },
     ],
     geropsychology: [
       { file: 'wiki/geropsychology/wprowadzenie.md',               label: 'Psychologia starości — wprowadzenie',  status: 'live' },
@@ -1673,7 +1676,7 @@ window.SITE_CONFIG = {
         {
           title: 'Fundament etyki',
           articles: [
-            { label: 'Kodeksy etyczne — przegląd', id: null, status: 'planned' },
+            { label: 'Etyka zawodowa psychologa i psychoterapeuty w Polsce', id: 'reference/etyka_psychologa', status: 'live' },
             { label: 'Zasady APA i PTP', id: null, status: 'planned' },
             { label: 'Dobro i nieszkodzenie', id: null, status: 'planned' },
           ]

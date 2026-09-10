@@ -1,14 +1,372 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PsyHub - strona P9</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klasyczne prace, które każdy student psychologii powinien przeczytać</title>
+    <style>
+        :root {
+            --primary-color: #1a365d;
+            --accent-color: #2b6cb0;
+            --bg-color: #f7f9fb;
+            --card-bg: #ffffff;
+            --text-color: #2c3e50;
+            --text-muted: #4a5568;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 35px 25px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            color: #cbd5e1;
+            font-size: 1.05rem;
+            font-style: italic;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            border-left: 4px solid var(--accent-color);
+            padding: 16px 20px;
+            margin-bottom: 25px;
+            border-radius: 0 6px 6px 0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            color: var(--text-muted);
+            font-size: 0.98rem;
+        }
+
+        .item {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .item-img-container {
+            flex-shrink: 0;
+            width: 150px;
+            text-align: center;
+        }
+
+        .item-img {
+            width: 100%;
+            height: auto;
+            max-height: 220px;
+            object-fit: contain;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+            border: 1px solid #e2e8f0;
+        }
+
+        .item-content {
+            flex-grow: 1;
+        }
+
+        .item-title {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            margin-bottom: 4px;
+            font-weight: 700;
+        }
+
+        .item-author {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .item-desc {
+            color: var(--text-muted);
+            font-size: 0.98rem;
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        .fact-box {
+            background-color: #f8fafc;
+            border: 1px dashed #cbd5e1;
+            border-radius: 6px;
+            padding: 12px 15px;
+            margin-bottom: 14px;
+            font-size: 0.92rem;
+            color: #334155;
+        }
+
+        .fact-box strong {
+            color: var(--primary-color);
+        }
+
+        .item-link {
+            display: inline-block;
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .item-link:hover {
+            border-bottom-color: var(--accent-color);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 35px;
+            padding-top: 15px;
+            border-top: 1px solid var(--border-color);
+            color: #a0aec0;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            .item {
+                flex-direction: column;
+                align-items: center;
+            }
+            .item-img-container {
+                width: 140px;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <main>
-    <h1>Strona P9</h1>
-    <p>Ta podstrona jest przygotowana jako miejsce na planowany materiał edukacyjny PsyHub.</p>
-  </main>
+
+    <div class="container">
+        <header>
+            <h1>Klasyczne prace, które każdy student psychologii powinien przeczytać</h1>
+            <p>Kanon najważniejszych i najbardziej wpływowych publikacji w historii psychologii</p>
+        </header>
+
+        <div class="intro">
+            Poniższe zestawienie obejmuje wybrane fundamentalne publikacje naukowe, artykuły oraz monografie, które ukształtowały współczesną psychologię. Opisy zostały rozbudowane o kluczowe fakty, najważniejsze zagadnienia i kontekst historyczny wywołanych dyskusji naukowych.
+        </div>
+
+        <!-- Position 1 -->
+        <div class="item">
+            <div class="item-img-container">
+                <img class="item-img" src="https://m.media-amazon.com/images/I/61qJ0faL5-L.jpg" alt="Hierarchy of Needs - Abraham H. Maslow">
+            </div>
+            <div class="item-content">
+                <h2 class="item-title">1. Hierarchy of Needs: A Theory of Human Motivation</h2>
+                <div class="item-author">Abraham H. Maslow (1943)</div>
+                <p class="item-desc">
+                    Przełomowa publikacja stanowiąca fundament psychologii humanistycznej, określanej mianem „trzeciej siły” w psychologii (obok behawioryzmu i psychoanalizy). Maslow zaprezentował w niej koncepcję hierarchii ludzkich potrzeb, na której szczycie umieścił potrzebę samorealizacji – wewnętrzne dążenie człowieka do urzeczywistnienia swojego pełnego potencjału. Autor przekonywał, że zaspokojenie niższych potrzeb biologicznych i bezpieczeństwa jest warunkiem koniecznym do uwalniania wyższych aspiracji duchowych czy twórczych. Monografia ta zmieniła dotychczasowe postrzeganie ludzkiej natury, odchodząc od skupiania się na patologiach ku potencjałowi rozwojowemu. Stanowi do dziś punkt wyjścia dla współczesnej psychologii pozytywnej i teorii motywacji. Praca ta wywarła przemożny wpływ nie tylko na psychologię, ale również na edukację, zarządzanie i marketing.
+                </p>
+                <div class="fact-box">
+                    <strong>Ciekawostki i zagadnienia:</strong> Wbrew powszechnemu przekonaniu, sam Maslow w swojej oryginalnej pracy naukowej z 1943 roku nigdy nie narysował słynnej piramidy! Wizualizacja w formie piramidy pojawiła się dopiero później w podręcznikach zarządzania. Co więcej, Maslow podkreślał, że hierarchia nie jest sztywna – w rzadkich przypadkach ludzie są gotowi zrezygnować z podstawowych potrzeb fizjologicznych na rzecz wyższych wartości lub celów twórczych.
+                </div>
+                <a class="item-link" href="https://www.all-about-psychology.com/hierarchy-of-needs.html" target="_blank" rel="noopener">Czytaj więcej o tej publikacji &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Position 2 -->
+        <div class="item">
+            <div class="item-img-container">
+                <img class="item-img" src="https://website-assets.studocu.com/img/document_thumbnails/67aefddce1ba7a4627270877260df2c0/thumb_1200_1965.png" alt="Conditioned Emotional Reactions - Watson & Rayner">
+            </div>
+            <div class="item-content">
+                <h2 class="item-title">2. Conditioned Emotional Reactions</h2>
+                <div class="item-author">John B. Watson & Rosalie Rayner (1920)</div>
+                <p class="item-desc">
+                    Jedno z najbardziej znanych i zarazem kontrowersyjnych badań w historii psychologii, znane powszechnie jako eksperyment z uczestnictwem „Małego Alberta”. Autorzy podjęli próbę wykazania, że emocje – a w szczególności lęk – mogą zostać wyuczone i utrwalone u niemowlęcia poprzez proces klasycznego warunkowania bodźców reaktywnych. Poprzez zestawianie neutralnego dotąd obiektu, takiego jak biały szczur, z przerażającym głośnym dźwiękiem uderzanej metalowej rury, badacze doprowadzili do wytworzenia silnej fobii. Eksperyment ten pokazał ponadto zjawisko generalizacji bodźca, gdyż dziecko zaczęło bać się innych puszystych obiektów, w tym brody czy futrzanego płaszcza. Praca ta stała się flagowym dowodem empirycznym na poparcie tez rodzącego się behawioryzmu. Publikacja ta wyznaczyła na dziesięciolecia kierunek badań nad zaburzeniami lękowymi i mechanizmami powstawania fobii u ludzi.
+                </p>
+                <div class="fact-box">
+                    <strong>Ciekawostki i zagadnienia:</strong> Eksperyment ten jest dziś podawany jako podręcznikowy przykład złamania zasad etyki badawczej. Albert został wywarunkowany tak, aby odczuwać przerażenie na widok białego szczura i futrzanych przedmiotów, jednak badacze nigdy nie odwarunkowali jego lęku. Przez dziesięciolecia tożsamość „Małego Alberta” pozostawała tajemnicą – późniejsze śledztwa historyczne sugerowały, że był to Douglas Merritte (który zmarł tragicznie w wieku 6 lat) lub William Barger.
+                </div>
+                <a class="item-link" href="https://www.all-about-psychology.com/conditioned-emotional-reactions.html" target="_blank" rel="noopener">Czytaj więcej o tej publikacji &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Position 3 -->
+        <div class="item">
+            <div class="item-img-container">
+                <img class="item-img" src="https://m.media-amazon.com/images/I/41OToAnVfWL._AC_UF1000,1000_QL80_.jpg" alt="Play And its Role in The Mental Development of The Child - Lew Wygotski">
+            </div>
+            <div class="item-content">
+                <h2 class="item-title">3. Play And its Role in The Mental Development of The Child</h2>
+                <div class="item-author">Lew Wygotski (1933)</div>
+                <p class="item-desc">
+                    Praca wybitnego radzieckiego psychologa rozwoju, poświęcona znaczeniu swobodnej i twórczej zabawy w rozwoju poznawczym oraz emocjonalnym dziecka. Wygotski wykazuje, że zabawa nie jest jedynie formą rozrywki, lecz kluczowym mechanizmem kształtowania samoregulacji, myślenia symbolicznego oraz przechodzenia od działania na konkretnych obiektach do operacji na pojęciach. Autor zwraca uwagę, że podczas zabawy w odgrywanie ról dzieci uczą się kontrolować własne impulsy i stosować do abstrakcyjnych reguł społecznych. Zabawa tworzy naturalne środowisko, w którym maluch potrafi przekraczać swoje dotychczasowe ograniczenia poznawcze i wiekowe. Publikacja ta zmieniła podejście dydaktyczne w pedagogice przedszkolnej i wczesnoszkolnej na całym świecie. Do dziś pozostaje fundamentem współczesnych teorii rozwoju psychospołecznego dzieci.
+                </p>
+                <div class="fact-box">
+                    <strong>Ciekawostki i zagadnienia:</strong> Wygotski wprowadził tu słynną koncepcję „sfery najbliższego rozwoju” (ZPD). Według niego podczas zabawy dziecko zawsze zachowuje się „o głowę wyżej niż swój rzeczywisty wiek”. Podczas zabawy w odgrywanie ról dziecko dobrowolnie podporządkowuje się regułom (np. udając stojącego na straży żołnierza, ćwiczy silną wolę i powściągliwość bardziej efektywnie niż na polecenie dorosłego).
+                </div>
+                <a class="item-link" href="https://www.all-about-psychology.com/lev-vygotsky-play.html" target="_blank" rel="noopener">Czytaj więcej o tej publikacji &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Position 4 -->
+        <div class="item">
+            <div class="item-img-container">
+                <img class="item-img" src="https://www.simplypsychology.org/wp-content/uploads/social-cognitive-theory-1536x1536.jpeg" alt="Transmission of Aggression - Albert Bandura">
+            </div>
+            <div class="item-content">
+                <h2 class="item-title">4. Transmission of Aggression Through Imitation of Aggressive Models</h2>
+                <div class="item-author">Albert Bandura (1961)</div>
+                <p class="item-desc">
+                    Opis legendarnego eksperymentu z użyciem lalki Bobo, który położył podwaliny pod teorię społecznego uczenia się. Bandura udowodnił, że zachowania agresywne u dzieci mogą być nabywane bezpośrednio poprzez obserwację i naśladowanie dorosłych modeli, bez konieczności bezpośredniego doświadczania nagród czy kar. Badanie wyraźnie wykazało, że ekspozycja na przemoc prowadzi do przejmowania specyficznych wzorców zachowań werbalnych i fizycznych przez najmłodszych. Wyniki te stanowiły przełom w rozumieniu socjalizacji i formowania się nawyków w grupie rówieśniczej. Eksperyment ten zrewolucjonizował spojrzenie na rolę opiekunów i autorytetów w procesie wychowawczym. Stał się również punktem wyjścia do wieloletnich badań nad wpływem mediów masowych na ludzką zachowanie.
+                </p>
+                <div class="fact-box">
+                    <strong>Ciekawostki i zagadnienia:</strong> Badanie to radykalnie podważyło dominującą wówczas psychoanalityczną teorię katarsis (przekonanie, że oglądanie agresji pozwala "rozładować" własne tłumione popędy). Wyniki Bandury wykazały coś wręcz odwrotnego: kontakt z agresywnym wzorcem nasilał zachowania agresywne. Wyniki te miały kluczowy wpływ na późniejsze debaty publiczne i regulacje prawne dotyczące wpływu przemocy w telewizji i mediach na dzieci.
+                </div>
+                <a class="item-link" href="https://www.all-about-psychology.com/transmission-of-aggression-through-imitation-of-aggressive-models.html" target="_blank" rel="noopener">Czytaj więcej o tej publikacji &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Position 5 -->
+        <div class="item">
+            <div class="item-img-container">
+                <img class="item-img" src="https://m.media-amazon.com/images/I/71m2psPjrkL._UF1000,1000_QL80_.jpg" alt="Cognitive Consequences of Forced Compliance - Festinger & Carlsmith">
+            </div>
+            <div class="item-content">
+                <h2 class="item-title">5. Cognitive Consequences of Forced Compliance</h2>
+                <div class="item-author">Leon Festinger & James Carlsmith (1959)</div>
+                <p class="item-desc">
+                    Pierwsze z serii klasycznych badań doświadczalnych potwierdzających teorię dysonansu poznawczego. Autorzy wykazali, że zmuszenie człowieka do działania niegodnego lub niezgodnego z jego prywatnymi przekonaniami wywołuje stan napięcia psychicznego, co prowadzi do samorzutnej zmiany prywatnych opinii w celu przywrócenia wewnętrznej spójności. Praca udowodniła, że ludzie mają silną potrzebę utrzymywania harmonii pomiędzy własnymi przekonaniami a podejmowanymi działaniami. Gdy dochodzi do sprzeczności, umysł modyfikuje postawy tak, by uniknąć poczucia hipokryzji lub poczucia błędu. Odkrycie to obaliło proste założenia behawiorystów dotyczące nagród i kar w kształtowaniu postaw. Publikacja ta do dziś pozostaje jedną z najważniejszych prac w historii całej psychologii społecznej.
+                </p>
+                <div class="fact-box">
+                    <strong>Ciekawostki i zagadnienia:</strong> Eksperyment przyniósł paradoksalny wynik: uczestnicy, którym zapłacono zaledwie <strong>1 dolara</strong> za okłamanie innego badanego (że nudne zadanie było rzekomo pasjonujące), naprawdę uwierzyli, że zadanie było ciekawe! Z kolei badani, którzy dostali <strong>20 dolarów</strong> (znaczna kwota w 1959 r.), nadal uważali zadanie za nudne. Wynikało to z faktu, że 20 dolarów stanowiło wystarczające uzasadnienie dla kłamstwa, podczas gdy kwota 1 dolara wywoływała silny dysonans poznawczy.
+                </div>
+                <a class="item-link" href="https://www.all-about-psychology.com/cognitive-consequences-of-forced-compliance.html" target="_blank" rel="noopener">Czytaj więcej o tej publikacji &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Position 6 -->
+        <div class="item">
+            <div class="item-img-container">
+                <img class="item-img" src="https://s.lubimyczytac.pl/upload/books/4884000/4884297/730276-352x500.jpg" alt="The Myth of Mental Illness - Thomas Szasz">
+            </div>
+            <div class="item-content">
+                <h2 class="item-title">6. The Myth of Mental Illness</h2>
+                <div class="item-author">Thomas Szasz (1960)</div>
+                <p class="item-desc">
+                    Polemiczna i wysoce wpływa praca stanowiąca kamień milowy w dyskusji nad definicją zdrowia psychicznego. Szasz podważa w niej tradycyjny medyczny model zaburzeń psychicznych, twierdząc, że większość z nich to w rzeczywistości trudności życiowe i konflikty społeczne, a nie patologie neurologiczne. Autor argumentował, że diagnozy psychiatryczne bywają często wykorzystywane jako narzędzia kontroli społecznej i stygmatyzacji jednostek nieprzystosowanych. Praca ta wywołała ogólnoświatową debatę na temat etyki medycznej, praw pacjenta i granic interwencji psychiatrycznej. Skłoniła również badaczy do dokładniejszego definiowania kryteriów diagnostycznych w kolejnych wydaniach klasyfikacji DSM. Mimo ogromnej krytyki ze strony tradycyjnego środowiska medycznego, publikacja wywarła trwały wpływ na humanistyczne podejście do pacjenta.
+                </p>
+                <div class="fact-box">
+                    <strong>Ciekawostki i zagadnienia:</strong> Thomas Szasz sam był wykształconym psychiatrą i profesorem medycyny, a mimo to stał się czołową postacią ruchu antypsychiatrii. Argumentował, że etykietowanie ludzi jako „chorych psychicznie” służy społeczeństwu do pozbawiania ich wolności i kontroli pod pozorem leczenia. Artykuł wywołał ogromną burzę środowiskową, jednak przyczynił się do reformy praw pacjentów i rewizji klasyfikacji diagnostycznych.
+                </div>
+                <a class="item-link" href="https://www.all-about-psychology.com/the-myth-of-mental-illness.html" target="_blank" rel="noopener">Czytaj więcej o tej publikacji &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Position 7 -->
+        <div class="item">
+            <div class="item-img-container">
+                <img class="item-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Conditioning_chamber.svg/800px-Conditioning_chamber.svg.png" alt="Behaviorism - John B. Watson">
+            </div>
+            <div class="item-content">
+                <h2 class="item-title">7. Psychology As The Behaviorist Views It</h2>
+                <div class="item-author">John B. Watson (1913)</div>
+                <p class="item-desc">
+                    Artykuł powszechnie uznawany za oficjalny manifest behawioryzmu, który odmienił oblicze dwudziestowiecznej psychologii. Watson odrzucił w nim introspekcję oraz badanie świadomości jako metody nieodpowiadające kryteriom nauk ścisłych, postulując, że celem psychologii powinno być wyłącznie obiektywne badanie i przewidywanie obserwowalnego zachowania. Badacz przekonywał, że psychologia musi stać się w pełni eksperymentalną gałęzią nauk przyrodniczych. Odrzucił pojęcia takie jak „dusza”, „umysł” czy „nieświadomość”, uznając je za nienaukowe i niemożliwe do zweryfikowania. Publikacja ta wywołała prawdziwą rewolucję metodologiczną na uczelniach na całym świecie. Otworzyła ona erę empirycznych badań nad procesami uczenia się, nawykami i modyfikacją zachowań.
+                </p>
+                <div class="fact-box">
+                    <strong>Ciekawostki i zagadnienia:</strong> Watson zadeklarował w tej publikacji całkowite zrównanie ludzi i zwierząt w badaniach psychologicznych. Co ciekawe, po skandalu obyczajowym i usunięciu ze świata akademickiego, Watson wykorzystał swoje behawiorystyczne zasady warunkowania w... branży reklamowej na Wall Street, stając się pionierem nowoczesnego marketingu i kreowania nawyków konsumenckich.
+                </div>
+                <a class="item-link" href="https://www.all-about-psychology.com/psychology-as-the-behaviorist-views-it.html" target="_blank" rel="noopener">Czytaj więcej o tej publikacji &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Position 8 -->
+        <div class="item">
+            <div class="item-img-container">
+                <img class="item-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Life_space_Kurt_Lewin.svg/800px-Life_space_Kurt_Lewin.svg.png" alt="Field Theory - Kurt Lewin">
+            </div>
+            <div class="item-content">
+                <h2 class="item-title">8. Defining The Field At A Given Time</h2>
+                <div class="item-author">Kurt Lewin (1941)</div>
+                <p class="item-desc">
+                    Kluczowa publikacja prezentująca słynną teorię pola Kurta Lewina, która stała się podwaliną nowoczesnej psychologii społecznej i organizacyjnej. Autor proponuje metodologię analizy zachowania ludzkiego jako funkcji zależności pomiędzy jednostką a jej pełnym środowiskiem psychologicznym w danym momencie czasowym. Lewin kładł nacisk na tzw. „przestrzeń życiową”, uwzględniającą zarówno czynniki wewnętrzne jednostki, jak i postrzegane otoczenie. Praca ta odrzuciła prostoliniowy determinizm na rzecz dynamicznego ujęcia sił psychologicznych. Koncepcje Lewina pozwoliły lepiej zrozumieć procesy grupowe, przywództwo oraz dynamikę zmian w organizacjach. Praca ta do dziś inspiruje badaczy zajmujących się psychologią środowiskową oraz socjologią.
+                </p>
+                <div class="fact-box">
+                    <strong>Ciekawostki i zagadnienia:</strong> Lewin wyraził swoje podejście w słynnym wzorze matematyczno-psychologicznym: <em>B = f(P, E)</em> (Zachowanie jest funkcją Osoby i jej Środowiska). Podejście to zastąpiło proste myślenie przyczynowo-skutkowe analizą całej dynamicznej sytuacji. Lewin po ucieczce z Niemiec przed nazizmem stał się w USA twórcą dynamiki grupowej oraz badań w działaniu (action research).
+                </div>
+                <a class="item-link" href="https://www.all-about-psychology.com/kurt-lewin-field-theory.html" target="_blank" rel="noopener">Czytaj więcej o tej publikacji &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Position 9 -->
+        <div class="item">
+            <div class="item-img-container">
+                <img class="item-img" src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=600&q=80" alt="Nature vs Nurture concept">
+            </div>
+            <div class="item-content">
+                <h2 class="item-title">9. Heredity, Environment, and The Question "How?"</h2>
+                <div class="item-author">Anne Anastasi (1958)</div>
+                <p class="item-desc">
+                    Przełomowy artykuł w sporym i wieloletnim sporze dotyczącym relacji „natura czy wychowanie” (nature vs. nurture). Anastasi przekonywająco wykazała, że tradycyjne pytania o to, <em>który</em> czynnik dominuje lub <em>w jakim procencie</em> wpływa na rozwój, są niewłaściwie sformułowane – właściwe podejście naukowe powinno skupiać się na pytaniu <em>jak</em> czynniki te współdziałają. Autorka podkreśliła, że rozwój cech psychicznych i inteligencji jest rezultatem nieustającej, dynamicznej interakcji między uwarunkowaniami biologicznymi a doświadczeniem środowiskowym. Publikacja ta pomogła psychologii wyjść ze sztywnych podziałów ideologicznych na rzecz bardziej złożonych modeli badawczych. Praca ta położyła również podwaliny pod nowoczesną psychometrię i badania nad różnicami indywidualnymi. Stanowi klasyczny tekst obowiązkowy dla każdego badacza zajmującego się rozwojem człowieka.
+                </p>
+                <div class="fact-box">
+                    <strong>Ciekawostki i zagadnienia:</strong> Anne Anastasi była zaledwie trzecią kobietą wybraną na stanowisko prezesa American Psychological Association (APA). Jej praca wyprzedziła o kilka dekad współczesną epigenetykę oraz psychologię rozwojową, dowodząc, że geny i środowisko nie działają jako osobne siły, lecz tworzą nierozdzielną sieć interakcji biologiczno-społecznych.
+                </div>
+                <a class="item-link" href="https://www.all-about-psychology.com/heredity-environment-and-the-question-how.html" target="_blank" rel="noopener">Czytaj więcej o tej publikacji &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Position 10 -->
+        <div class="item">
+            <div class="item-img-container">
+                <img class="item-img" src="https://m.media-amazon.com/images/I/71D0Y3bS2yL._AC_UF1000,1000_QL80_.jpg" alt="A Psychological Analysis of Adolf Hitler - Walter C. Langer">
+            </div>
+            <div class="item-content">
+                <h2 class="item-title">10. A Psychological Analysis of Adolf Hitler: His Life and Legend</h2>
+                <div class="item-author">Walter C. Langer (1943)</div>
+                <p class="item-desc">
+                    Niezwykłe studium psychologiczne przygotowane w trakcie II wojny światowej na zlecenie amerykańskiego Biura Służb Strategicznych (OSS – poprzednika CIA). Langer zastosował narzędzia psychoanalizy freudowskiej do stworzenia szczegółowego profilu osobowości dyktatora oraz analizy jego mechanizmów obronnych. Raport miał pomóc dowództwu alianckiemu w zrozumieniu motywacji psychologicznych Hitlera oraz w przewidywaniu jego decyzji strategicznych w sytuacjach kryzysowych. Praca ta opierała się na wywiadach z osobami z otoczenia dyktatora oraz analizie jego przemówień i pism. Publikacja stanowi unikalne połączenie teorii psychoanalitycznej z praktycznym zastosowaniem psychologii w wywiadzie wojskowym. Zapoczątkowała ona nową dziedzinę badań zwaną psychohistorią i profilowaniem psychologicznym liderów.
+                </p>
+                <div class="fact-box">
+                    <strong>Ciekawostki i zagadnienia:</strong> Langer z zadziwiającą precyzją trafnie przewidział w raporcie z 1943 roku, że w miarę zbliżania się klęski Niemiec stan psychiczny Hitlera ulegnie głębokiej dekompensacji i zakończy się on samobójstwem. Raport ten zainspirował stworzenie w CIA specjalnego oddziału profilowania liderów światowych, który działa do dzisiaj i tworzył profile m.in. Stalina czy Saddama Husajna.
+                </div>
+                <a class="item-link" href="https://www.all-about-psychology.com/adolf-hitler.html" target="_blank" rel="noopener">Czytaj więcej o tej publikacji &rarr;</a>
+            </div>
+        </div>
+
+        <footer>
+            Opracowano na podstawie klasycznych zasobów serwisu All-About-Psychology.com
+        </footer>
+    </div>
+
 </body>
 </html>

@@ -1,14 +1,448 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PsyHub - strona P10</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Praca nad stylem przywiązania</title>
+<style>
+  :root{
+    --bg:#0f1115; --panel:#171a21; --panel2:#1e222b; --border:#2a2f3a;
+    --text:#e8e9ec; --muted:#9aa0ac; --accent:#c9a15a; --danger:#c96a5a;
+    --secure:#5aa9c9; --anxious:#c9a15a; --avoidant:#7a8ca3; --fearful:#c96a5a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:"Georgia","Iowan Old Style",serif;line-height:1.55;padding:0 0 60px}
+  .wrap{max-width:760px;margin:0 auto;padding:32px 20px}
+  h1{font-size:1.5rem;margin-bottom:4px;letter-spacing:.2px}
+  .sub{color:var(--muted);font-size:.92rem;margin-bottom:28px}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:22px 24px;margin-bottom:20px}
+  .trait{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid var(--border)}
+  .trait:last-child{border-bottom:none}
+  .trait input{margin-top:5px;width:16px;height:16px;accent-color:var(--accent);flex-shrink:0}
+  .trait label{cursor:pointer;font-size:.97rem}
+  button{background:var(--accent);color:#1a1a1a;border:none;padding:12px 22px;border-radius:6px;font-size:.95rem;font-weight:600;cursor:pointer;font-family:inherit}
+  button:hover{filter:brightness(1.08)}
+  button.secondary{background:transparent;border:1px solid var(--border);color:var(--text);font-weight:400}
+  #result{display:none}
+  .badge{display:inline-block;padding:4px 12px;border-radius:20px;font-size:.8rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;margin-bottom:10px}
+  .badge.secure{background:var(--secure);color:#0a1620}
+  .badge.anxious{background:var(--anxious);color:#1a1508}
+  .badge.avoidant{background:var(--avoidant);color:#0f1620}
+  .badge.fearful{background:var(--fearful);color:#1a0a08}
+  .lead{font-size:1.02rem;font-weight:600;margin:0 0 10px}
+  .warn{background:var(--panel2);border-left:3px solid var(--danger);padding:12px 16px;margin:14px 0;font-size:.92rem;color:var(--text)}
+  .cite{color:var(--muted);font-size:.82rem;font-style:italic;margin-top:4px}
+  ol.steps{padding-left:22px;margin:0}
+  ol.steps li{margin-bottom:14px;font-size:.95rem}
+  ol.steps li b{color:var(--accent)}
+  .step-note{color:var(--muted);font-size:.85rem;display:block;margin-top:2px}
+  .scores{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0;font-size:.8rem;color:var(--muted)}
+  .scores span{background:var(--panel2);padding:3px 9px;border-radius:12px;border:1px solid var(--border)}
+  hr{border:none;border-top:1px solid var(--border);margin:26px 0}
+  .footer-note{color:var(--muted);font-size:.8rem;margin-top:30px;text-align:center}
+  .safety-note{background:var(--panel2);border:1px solid var(--border);border-left:3px solid var(--secure);border-radius:8px;padding:12px 14px;margin:-8px 0 20px;font-size:.86rem;color:var(--muted)}
+  .extra-section{margin-top:24px;padding-top:22px;border-top:1px solid var(--border)}
+  .extra-title{font-size:1rem;font-weight:700;margin:0 0 10px;color:var(--text)}
+  .decision-rules{margin:8px 0 0;padding-left:22px;font-size:.93rem}
+  .decision-rules li{margin-bottom:8px}
+  .practice-grid{display:grid;gap:9px;margin-top:12px}
+  .practice-item{position:relative;background:var(--panel2);border:1px solid var(--border);border-radius:8px;padding:12px 38px 12px 14px;font-size:.91rem}
+  .practice-item b{color:var(--accent)}
+  .practice-item input{position:absolute;right:13px;top:14px;width:16px;height:16px;accent-color:var(--accent)}
+  .practice-dose{display:block;color:var(--muted);font-size:.82rem;margin-top:3px}
+  .progress-mini{margin:12px 0 4px;font-size:.82rem;color:var(--muted)}
+  .progress-track{height:6px;background:var(--border);border-radius:99px;overflow:hidden;margin-top:6px}
+  .progress-fill{display:block;height:100%;width:0;background:var(--accent);transition:width .2s ease}
+  .micro-note{color:var(--muted);font-size:.82rem;margin-top:10px}
+</style>
 </head>
 <body>
-  <main>
-    <h1>Strona P10</h1>
-    <p>Ta podstrona jest przygotowana jako miejsce na planowany materiał edukacyjny PsyHub.</p>
-  </main>
+<div class="wrap">
+
+  <h1>Styl przywiązania: diagnoza i plan pracy</h1>
+  <div class="sub">Zaznacz cechy, które Cię opisują. Narzędzie do samodzielnej, prywatnej pracy. Nie zastępuje terapii.</div>
+
+  <div class="safety-note">
+    <b>Zakres narzędzia.</b> Style przywiązania nie są odrębnymi zaburzeniami psychicznymi w klasyfikacjach DSM/ICD,
+    a wynik poniżej jest orientacyjną heurystyką, nie diagnozą kliniczną. Ćwiczenia ekspozycyjne dotyczą wyłącznie
+    bezpiecznych i dobrowolnych relacji. Przemoc, przymus, stalking lub poważne naruszenia granic są wskazaniem
+    do zwiększenia dystansu i zadbania o bezpieczeństwo, a nie do „wytrzymywania” bliskości.
+  </div>
+
+  <div class="card" id="quiz">
+    <div id="traits"></div>
+    <div style="margin-top:18px;display:flex;gap:10px">
+      <button onclick="compute()">Pokaż wynik</button>
+      <button class="secondary" onclick="reset()">Wyczyść</button>
+    </div>
+  </div>
+
+  <div class="card" id="result"></div>
+
+</div>
+
+<script>
+const TRAITS = [
+  {t:"Łatwo mi ufać partnerowi i wierzyć w jego dobre intencje.", s:"secure"},
+  {t:"Potrzebuję częstych zapewnień, że jestem kochana/kochany, inaczej pojawia się niepokój.", s:"anxious"},
+  {t:"Wolę radzić sobie sama/sam niż prosić kogoś o wsparcie emocjonalne.", s:"avoidant"},
+  {t:"Chcę bliskości, ale gdy się zbliża, czuję potrzebę ucieczki lub sabotuję relację.", s:"fearful"},
+  {t:"Potrafię otwarcie mówić o swoich potrzebach bez lęku przed odrzuceniem.", s:"secure"},
+  {t:"Analizuję każdą wiadomość partnera pod kątem ukrytego chłodu lub odrzucenia.", s:"anxious"},
+  {t:"Dyskomfort budzi we mnie nadmierna bliskość lub zależność emocjonalna drugiej osoby.", s:"avoidant"},
+  {t:"Jednocześnie pragnę bliskości i boję się, że skrzywdzi mnie ona tak jak wcześniej.", s:"fearful"},
+  {t:"Konflikt w relacji nie zagraża mojemu poczuciu bezpieczeństwa.", s:"secure"},
+  {t:"Boję się, że zostanę porzucona/porzucony, nawet gdy nic na to nie wskazuje.", s:"anxious"},
+  {t:"Emocje, zarówno swoje, jak i cudze, traktuję jako coś, co lepiej trzymać pod kontrolą lub dystansem.", s:"avoidant"},
+  {t:"Mam trudność z zaufaniem, mimo że desperacko chcę mieć bliski związek.", s:"fearful"},
+  {t:"Umiem być sam/sama i szukać wsparcia, gdy tego potrzebuję, bez popadania w skrajności.", s:"secure"},
+  {t:"Dostosowuję się nadmiernie do partnera, żeby go nie stracić, kosztem własnych potrzeb.", s:"anxious"},
+  {t:"Definiuję siebie jako osobę niezależną, dla której samotność jest wyborem, nie strategią obronną.", s:"avoidant"},
+  {t:"Moje reakcje w bliskich relacjach bywają nieprzewidywalne nawet dla mnie samej/samego.", s:"fearful"},
+  {t:"Zakończenie związku przeżywam z żalem, ale bez poczucia zagrożenia własnej wartości.", s:"secure"},
+  {t:"Mam skłonność do relacji na przemian intensywnych i chaotycznych, opartych na przechodzeniu od silnej bliskości do silnej niechęci.", s:"fearful"},
+  {t:"Unikam głębokich rozmów o uczuciach, wolę działanie i logikę.", s:"avoidant"},
+  {t:"Trudno mi być samej/samemu, dlatego szybko szukam nowej relacji po rozstaniu.", s:"anxious"}
+];
+
+const DECISION_RULES = [
+  ["Dyskomfort nie jest dowodem zagrożenia.", "Najpierw sprawdź fakty i kontekst."],
+  ["Ulga po ucieczce nie dowodzi, że ucieczka była dobrą decyzją.", "Dowodzi przede wszystkim, że napięcie chwilowo spadło."],
+  ["Wątpliwość nie jest poleceniem.", "Możesz ją zauważyć bez natychmiastowego działania."],
+  ["Bliskość i autonomia mogą współistnieć.", "Bezpieczna więź oznacza elastyczność, nie utratę niezależności."],
+  ["Decyzje o relacji opieraj na danych długoterminowych.", "Bierz pod uwagę bezpieczeństwo, wartości i powtarzalne zachowanie obu osób, a nie tylko chwilowy poziom pobudzenia."]
+];
+
+const AVOIDANT_SUPPLEMENT = [
+  {
+    title:"Zmapuj pełny cykl unikania",
+    text:"Przez 7 dni zapisuj: bodziec → myśl → emocję lub sygnał z ciała → impuls → działanie → natychmiastową ulgę → koszt po okresie od 24 do 72 godzin. Szukaj powtarzalności po wzroście bliskości, konflikcie, prośbie o wsparcie lub rozmowie o przyszłości.",
+    dose:"Minimum: 1 zapis dziennie przez 7 dni."
+  },
+  {
+    title:"Stosuj regulowaną przerwę zamiast znikania",
+    text:"Jeżeli potrzebujesz przerwy, nazwij przeciążenie i podaj konkretny czas powrotu do rozmowy. Sama przerwa może regulować pobudzenie; brak informacji i nieokreślone wycofanie wzmacniają wzorzec unikania.",
+    dose:"Każda przerwa ma zawierać termin powrotu."
+  },
+  {
+    title:"Przyjmuj wsparcie bez natychmiastowego „oddawania długu”",
+    text:"Kiedy ktoś pomaga, ćwicz przyjęcie pomocy bez jej umniejszania, rewanżu w tej samej chwili albo odzyskiwania pełnej niezależności. Celem jest tolerowanie krótkiej, bezpiecznej zależności.",
+    dose:"Zauważ co najmniej 2 takie sytuacje tygodniowo."
+  },
+  {
+    title:"Audytuj nagłe deprecjonowanie partnera",
+    text:"Gdy po zwiększeniu bliskości zaczynasz widzieć przede wszystkim wady, rozdziel je na: realne czerwone flagi, zwykłe niedoskonałości, różnice preferencji oraz argumenty pojawiające się dopiero po zbliżeniu.",
+    dose:"Wykonaj audyt przed decyzją o wycofaniu się."
+  },
+  {
+    title:"Oceniaj relację według stabilnych kryteriów",
+    text:"Zapisz wcześniej kryteria takie jak bezpieczeństwo, szacunek, responsywność, uczciwość, zgodność kluczowych wartości i zdolność do naprawy konfliktu. Przy późniejszym zwątpieniu wróć do tej listy zamiast tworzyć kryteria od nowa pod wpływem napięcia.",
+    dose:"Aktualizuj listę dopiero po spokojnej refleksji."
+  },
+  {
+    title:"Naprawiaj kontakt po konflikcie",
+    text:"Jeżeli relacja jest bezpieczna, wykonaj ruch naprawczy: nazwij własny udział, zaproponuj rozmowę albo ustal konkretny termin powrotu do tematu. Nie używaj wielodniowego milczenia jako podstawowej metody regulacji.",
+    dose:"Cel roboczy: ruch naprawczy w ciągu 24 godzin."
+  },
+  {
+    title:"Stosuj torowanie poczucia bezpiecznej bazy",
+    text:"Przed trudnym krokiem społecznym przez okres od 3 do 5 minut przypomnij sobie konkretną sytuację, w której ktoś był dostępny, życzliwy i przewidywalny. Następnie wykonaj mały krok w stronę kontaktu.",
+    dose:"Codziennie przez co najmniej 2 tygodnie."
+  },
+  {
+    title:"Zbuduj plan nawrotu",
+    text:"Zapisz trzy najczęstsze sygnały ostrzegawcze i przypisz im gotowe reakcje. Przykład: „chcę zniknąć → informuję o przerwie i terminie powrotu”; „widzę tylko wady → robię audyt czerwonych flag i reakcji dezaktywacyjnej”.",
+    dose:"Plan powinien być dostępny przed kolejną sytuacją wysokiego napięcia."
+  }
+];
+
+function buildSupplement(style){
+  if(style === "secure") return "";
+
+  const rules = DECISION_RULES.map(([a,b])=>`<li><b>${a}</b> ${b}</li>`).join("");
+  let avoidant = "";
+
+  if(style === "avoidant"){
+    const tasks = AVOIDANT_SUPPLEMENT.map((x,i)=>`
+      <div class="practice-item">
+        <input type="checkbox" class="supp-task" data-task="${i}" aria-label="Oznacz ćwiczenie jako wykonane">
+        <b>${x.title}.</b> ${x.text}
+        <span class="practice-dose">${x.dose}</span>
+      </div>`).join("");
+
+    avoidant = `
+      <div class="extra-section">
+        <div class="extra-title">Rozszerzony moduł praktyczny dla wzorca unikającego</div>
+        <p style="font-size:.93rem;margin-top:0">Poniższe ćwiczenia uzupełniają istniejący plan o elementy, których nie obejmuje on wprost. Nie zastępują wcześniejszych kroków.</p>
+        <div class="progress-mini">Postęp modułu: <b><span id="suppDone">0</span>/${AVOIDANT_SUPPLEMENT.length}</b>
+          <div class="progress-track"><span class="progress-fill" id="suppFill"></span></div>
+        </div>
+        <div class="practice-grid">${tasks}</div>
+        <div class="micro-note">Postęp jest zapisywany lokalnie w tej przeglądarce.</div>
+      </div>`;
+  }
+
+  return `
+    <div class="extra-section">
+      <div class="extra-title">Pięć reguł przed podjęciem decyzji pod wpływem wzorca</div>
+      <ol class="decision-rules">${rules}</ol>
+      <div class="micro-note">Reguły nie dotyczą sytuacji przemocy, przymusu ani realnego zagrożenia bezpieczeństwa.</div>
+    </div>
+    ${avoidant}`;
+}
+
+function bindSupplementProgress(style){
+  if(style !== "avoidant") return;
+  const tasks = [...document.querySelectorAll('.supp-task')];
+  const storageKey = 'attachmentAvoidantSupplementProgress';
+
+  try{
+    const saved = JSON.parse(localStorage.getItem(storageKey) || '[]');
+    tasks.forEach((cb,i)=>cb.checked = !!saved[i]);
+  }catch(e){}
+
+  const update = ()=>{
+    const done = tasks.filter(cb=>cb.checked).length;
+    const doneEl = document.getElementById('suppDone');
+    const fillEl = document.getElementById('suppFill');
+    if(doneEl) doneEl.textContent = done;
+    if(fillEl) fillEl.style.width = (tasks.length ? (done/tasks.length*100) : 0) + '%';
+    try{ localStorage.setItem(storageKey, JSON.stringify(tasks.map(cb=>cb.checked))); }catch(e){}
+  };
+
+  tasks.forEach(cb=>cb.addEventListener('change', update));
+  update();
+}
+
+const STYLE_INFO = {
+  secure: {
+    label:"Bezpieczny",
+    class:"secure",
+    lead:"Wzorzec zdrowy: regulacja bliskości i autonomii bez mechanizmów obronnych.",
+    text:`Osoba o bezpiecznym stylu przywiązania toleruje bliskość i separację bez aktywacji lęku
+    lub unikania. To punkt odniesienia, do którego prowadzi praca nad pozostałymi trzema stylami
+    (tzw. <i>earned secure attachment</i>, czyli bezpieczeństwo wypracowane, a nie wyłącznie wrodzone).`,
+    cite:"Mikulincer, M., Shaver, P.R. (2007). <i>Attachment in Adulthood: Structure, Dynamics, and Change.</i>",
+    steps:[
+      ["Utrzymanie", "Regularna superwizja własnych relacji. Bezpieczny styl nie jest stanem stałym, lecz wymaga monitorowania pod wpływem stresu i traumy sytuacyjnej."],
+      ["Modelowanie", "Świadome wykorzystanie własnej regulacji jako zasobu w relacjach z osobami o stylu lękowym lub unikowym, bez przejmowania ich wzorca reaktywności."]
+    ]
+  },
+  anxious: {
+    label:"Lękowo-ambiwalentny",
+    class:"anxious",
+    lead:"Deregulacja lęku separacyjnego: hiperaktywacja systemu przywiązania.",
+    text:`Zachowania: potrzeba stałych zapewnień, czujność wobec sygnałów odrzucenia, zachowania protestacyjne,
+    utrata autonomii na rzecz utrzymania bliskości. <b>To nie jest cecha osobowości ani racjonalna ocena
+    ryzyka w relacji</b>. Jest to zautomatyzowana strategia hiperaktywacji, wyuczona we wczesnym dzieciństwie
+    w odpowiedzi na niespójną dostępność opiekuna. System nerwowy interpretuje neutralne sygnały jako
+    zagrożenie utraty więzi niezależnie od realnych faktów.`,
+    cite:"Cassidy, J., Berlin, L.J. (1994). <i>The insecure/ambivalent pattern of attachment</i>, Child Development, 65(4).",
+    imposed:[
+      "„Muszę dostać potwierdzenie teraz, inaczej coś jest nie tak”",
+      "„Powinnam/powinienem być zawsze dostępna/dostępny dla partnera, bez względu na koszt”",
+      "„Jeśli on/ona się oddali, to znaczy, że mnie nie kocha”",
+      "„Muszę wiedzieć, gdzie jest i co robi, żeby czuć się bezpiecznie”",
+      "„Bez tej relacji nie poradzę sobie”"
+    ],
+    steps:[
+      ["Deidentyfikacja", "Nazywaj myśl w momencie jej pojawienia się: „to hiperaktywacja systemu przywiązania, nie fakt”. Nie oceniaj jej trafności, ponieważ ocena w tym stanie jest zniekształcona przez lęk."],
+      ["Tolerowanie ciszy", "Ekspozycja: nie odpisuj natychmiast, nie szukaj zapewnienia przy pierwszym niepokoju. Zacznij od 30 minut opóźnienia reakcji, zwiększaj stopniowo do kilku godzin."],
+      ["Samoregulacja bez partnera", "Zbuduj listę 5 działań regulujących pobudzenie bez udziału drugiej osoby (oddech, ruch, kontakt z ciałem) i używaj jej zamiast szukania kontaktu w chwili lęku."],
+      ["Odklejenie wartości od relacji", "Codziennie zapisz jedno zdarzenie potwierdzające Twoją wartość niezależną od reakcji partnera."],
+      ["Praca ze schematem", "Ustal, kiedy i z kim ten wzorzec się wykształcił (dziennik pochodzenia schematu). Pomaga to ograniczyć generalizację lęku na obecne relacje."],
+      ["Zakaz zachowań protestacyjnych", "Zidentyfikuj swoje typowe zachowania protestacyjne (testowanie, wycofanie karzące, seria wiadomości) i wprowadź twardy zakaz ich stosowania. Zastąp je jednym, wprost sformułowanym komunikatem o potrzebie."],
+      ["Trening tolerancji niepewności", "Codziennie świadomie zostawiaj jedną sprawę relacyjną „niedopytaną” (bez potwierdzenia, bez wyjaśnienia) i notuj poziom lęku co godzinę. Obserwuj naturalny spadek pobudzenia bez działania."],
+      ["Rozdzielenie lęku od zagrożenia", "Przy każdym skoku niepokoju zadaj pytanie: jaki jest konkretny dowód zagrożenia w tej chwili, a nie jaki jest poziom odczuwanego lęku. Decyduj na podstawie dowodu, nie odczucia."],
+      ["Samodzielne aktywności bazowe", "Wprowadź i utrzymuj minimum 3 regularne aktywności (praca, pasja, relacje przyjacielskie) niezależne od statusu związku. Mierzalnym kryterium jest to, czy w ostatnim tygodniu były realizowane niezależnie od nastroju relacyjnego."],
+      ["Ekspozycja na rozstanie tymczasowe", "Zaplanuj i zrealizuj krótkie, uzgodnione rozdzielenie fizyczne z partnerem (wyjazd, weekend osobno) bez kontaktu kontrolnego. Obserwuj i zapisz przebieg lęku od początku do końca."]
+    ]
+  },
+  avoidant: {
+    label:"Unikający",
+    class:"avoidant",
+    lead:"Deaktywacja systemu przywiązania: obronna niezależność.",
+    text:`Zachowania: dystansowanie się przy narastającej bliskości, dewaluacja potrzeby więzi,
+    kompulsywna samowystarczalność, trudność z proszeniem o pomoc. <b>Przekonanie „nie potrzebuję
+    bliskości, wolę być sam/sama” w tym wzorcu nie jest autonomicznym wyborem, tylko strategią
+    deaktywacji</b>, czyli wyuczoną reakcją na wczesne doświadczenie odrzucania potrzeb emocjonalnych.
+    Badania nad przywiązaniem pokazują rozdźwięk: na poziomie deklaratywnym osoba unikająca zgłasza
+    brak potrzeby bliskości, podczas gdy wskaźniki fizjologiczne (tętno, przewodnictwo skóry) w
+    sytuacjach separacyjnych wskazują na aktywne pobudzenie. Jest to sygnał, że deklarowana niezależność
+    jest tłumieniem, nie brakiem potrzeby.`,
+    cite:"Fraley, R.C., Shaver, P.R. (1997). <i>Adult attachment and the suppression of unwanted thoughts</i>, JPSP, 73(5); Mikulincer, M. (1998). <i>Attachment style and the mental representation of the self</i>.",
+    imposed:[
+      "„Nie potrzebuję nikogo, poradzę sobie sama/sam”",
+      "„Bliskość ogranicza moją wolność i tożsamość”",
+      "„Samotność jest najbezpieczniejszym i najbardziej racjonalnym wyborem”",
+      "„Nie muszę nikomu tłumaczyć się z emocji, których nawet nie umiem nazwać”",
+      "„Każda relacja i tak kończy się rozczarowaniem, więc lepiej się nie angażować”"
+    ],
+    steps:[
+      ["Deidentyfikacja", "Gdy pojawia się impuls do dystansu lub myśl „poradzę sobie sama/sam, nie chcę tego”, nazwij go jako reakcję deaktywacyjną, a nie preferencję, zanim podejmiesz decyzję pod jego wpływem."],
+      ["Ekspozycja na proszenie", "Raz w tygodniu poproś świadomie kogoś o pomoc lub wsparcie emocjonalne w sytuacji, w której naturalnym odruchem byłoby poradzenie sobie samodzielnie."],
+      ["Tolerowanie bliskości", "W sytuacji narastającej intymności (rozmowa, czułość) zostań w niej minimum 2 minuty dłużej niż podpowiada odruch wycofania, bez fizycznej lub słownej ucieczki."],
+      ["Nazywanie emocji", "Prowadź dzienny zapis stanów emocjonalnych w słowach (nie w kategoriach działania), ponieważ deaktywacja opiera się na unikaniu języka emocji."],
+      ["Weryfikacja narracji o niezależności", "Wypisz decyzje z ostatniego roku podjęte pod hasłem „wolę być sama/sam” i sprawdź, ile z nich nastąpiło bezpośrednio po wzroście bliskości z kimś. Pozwala to porównać reakcję deaktywacyjną z autentycznym wyborem."],
+      ["Zakaz odroczonego wyjaśniania", "Gdy pojawia się impuls do dystansu wobec partnera, zamiast wycofywać się bez słowa, w ciągu 24 godzin wprost nazwij partnerowi, co się dzieje, nawet jeśli komunikat brzmi niewygodnie."],
+      ["Demontaż mitu samowystarczalności", "Zapisz 3 sytuacje z ostatniego miesiąca, w których pomoc innej osoby faktycznie poprawiła Twoją sytuację. Skonfrontuj to z przekonaniem „nikt mi nie jest potrzebny”."],
+      ["Ekspozycja na zależność partnera", "Świadomie pozwól partnerowi okazać Ci potrzebę bliskości lub troski bez natychmiastowego dystansowania się lub minimalizowania jego znaczenia."],
+      ["Przerwanie ucieczki w zajętość", "Zidentyfikuj sytuacje, w których „nadmiar obowiązków” pojawia się akurat wtedy, gdy relacja wymaga emocjonalnego zaangażowania. W takiej sytuacji zostań w kontakcie zamiast wycofywać się w pracę."],
+      ["Trening słownictwa emocjonalnego", "Codziennie nazwij partnerowi jedną emocję wprost (nie poprzez działanie ani unikanie tematu). Celem jest zbudowanie nawyku komunikowania stanu wewnętrznego zamiast jego maskowania."],
+      ["Weryfikacja dewaluacji", "Przy każdej myśli deprecjonującej związek lub partnera („to i tak nie jest to”) zapisz ją i wróć do niej po tygodniu. Sprawdź, czy nadal wydaje się równie zasadna, czy była funkcją narastającej bliskości."]
+    ]
+  },
+  fearful: {
+    label:"Lękowo-unikający (zdezorganizowany)",
+    class:"fearful",
+    lead:"Konflikt dwóch sprzecznych strategii: jednoczesne dążenie do bliskości i ucieczka od niej.",
+    text:`Zachowania: naprzemienne szukanie i odrzucanie bliskości, nieprzewidywalność relacyjna,
+    związki o wysokiej intensywności i niestabilności, sabotowanie relacji w momencie zbliżenia.
+    Ten wzorzec wynika z sytuacji, w której źródło bliskości było jednocześnie źródłem zagrożenia, dlatego
+    dziecko nie miało spójnej strategii radzenia sobie, bo opiekun był zarówno bezpieczną przystanią,
+    jak i źródłem lęku. <b>Skutkiem jest brak jednej spójnej strategii. Impulsy do zbliżenia i ucieczki
+    występują naprzemiennie i nie są wynikiem świadomej oceny relacji.</b> Bez interwencji ten wzorzec
+    ma najsilniejszą tendencję do <i>przymusu powtarzania</i> (ang. <i>repetition compulsion</i>), czyli nieświadomego
+    odtwarzania relacji o podobnej strukturze zagrożenia, w nadziei na inne zakończenie.`,
+    cite:"Main, M., Solomon, J. (1986). <i>Discovery of an insecure-disorganized/disoriented attachment pattern</i>; Freud, S. (1920). <i>Beyond the Pleasure Principle</i>, koncepcja przymusu powtarzania; van der Hart, O., et al. (2006). <i>The Haunted Self.</i>",
+    imposed:[
+      "„Bliskość to zawsze zapowiedź zagrożenia”",
+      "„Muszę uciec, zanim zostanę skrzywdzona/skrzywdzony”",
+      "„Nie zasługuję na stabilną, spokojną relację”",
+      "„To i tak się nie uda, jak zawsze”",
+      "„Muszę sprawdzać granice partnera (testować, prowokować), żeby wiedzieć, czy naprawdę zostanie”"
+    ],
+    steps:[
+      ["Stabilizacja bazowa", "Przed pracą relacyjną zastosuj 4 tygodnie regularnych praktyk regulacji układu nerwowego (oddech, uziemienie), ponieważ zdezorganizowany wzorzec bazuje na rozregulowaniu, a nie na deficycie umiejętności relacyjnych."],
+      ["Rozpoznanie przełącznika", "Prowadź dziennik momentów, w których impuls zmienia się z „chcę bliskości” na „muszę uciec”. Zapisuj wyzwalacz. To odsłania mechanizm, nie osobowość."],
+      ["Przerwanie automatyzmu", "W momencie wykrytego przełącznika (krok 2) odczekaj co najmniej 24 godziny przed jakąkolwiek decyzją dotyczącą relacji (kontakt, zerwanie, wiadomość)."],
+      ["Konsultacja specjalistyczna", "Ten wzorzec, w przeciwieństwie do pozostałych dwóch, wiąże się najczęściej z historią traumy relacyjnej. Praca własna powinna być prowadzona równolegle z terapią (np. podejście oparte na traumie: EMDR, IFS, Somatic Experiencing), nie zamiast niej."],
+      ["Test rzeczywistości", "Przy każdej decyzji o zerwaniu lub ucieczce z relacji zapisz: czy zagrożenie jest aktualne, czy jest reaktywacją wzorca z przeszłości. Podejmij decyzję dopiero po tej analizie, nie w momencie impulsu."],
+      ["Mapowanie cyklu", "Sporządź schemat swojego typowego cyklu relacyjnego (zbliżenie → lęk → sabotaż/ucieczka → tęsknota → powrót) na podstawie od 2 do 3 poprzednich relacji. Rozpoznanie powtarzalności osłabia poczucie, że to „ta relacja jest inna”."],
+      ["Kontrakt awaryjny", "Wspólnie z partnerem (jeśli relacja trwa) ustalcie z góry procedurę na moment kryzysu impulsywnego, na przykład obowiązkową przerwę trwającą 48 godzin zamiast decyzji o zerwaniu podjętej w afekcie."],
+      ["Skan ciała przy aktywacji", "W momencie silnej ambiwalencji (jednocześnie chcę bliskości i odczuwam potrzebę ucieczki) wykonaj krótki skan ciała i zapisz lokalizację napięcia. Pomaga to odróżnić reakcję somatyczną związaną ze wzorcem od realnej oceny sytuacji."],
+      ["Ograniczenie decyzji pod wpływem afektu", "Wprowadź twardą zasadę: żadna decyzja kończąca relację nie zapada w ciągu 24 godzin od epizodu silnego pobudzenia (kłótnia, poczucie zagrożenia, atak paniki)."],
+      ["Praca nad historią traumy", "Równolegle z terapeutą identyfikuj konkretne wczesne doświadczenia, w których bliskość i zagrożenie współwystępowały, oraz ich świadome odróżnienie od obecnych relacji."],
+      ["Trening przewidywalności", "Buduj jedną nawykową, przewidywalną rutynę relacyjną (np. stały rytuał kontaktu) i utrzymuj ją niezależnie od bieżącego poziomu lęku. W ten sposób trenujesz układ nerwowy w tolerowaniu stabilności."]
+    ]
+  }
+};
+
+const traitsDiv = document.getElementById('traits');
+TRAITS.forEach((tr,i)=>{
+  const div = document.createElement('div');
+  div.className='trait';
+  div.innerHTML = `<input type="checkbox" id="t${i}" data-s="${tr.s}"><label for="t${i}">${tr.t}</label>`;
+  traitsDiv.appendChild(div);
+});
+
+function compute(){
+  const scores = {secure:0, anxious:0, avoidant:0, fearful:0};
+  document.querySelectorAll('#traits input:checked').forEach(cb=>{
+    scores[cb.dataset.s]++;
+  });
+  const total = Object.values(scores).reduce((a,b)=>a+b,0);
+  let winner = 'secure';
+  let max = -1;
+  for(const k in scores){ if(scores[k] > max){ max = scores[k]; winner = k; } }
+
+  if(total === 0){
+    alert('Zaznacz przynajmniej jedną cechę.');
+    return;
+  }
+
+  const info = STYLE_INFO[winner];
+  const scoreRow = Object.entries(scores).map(([k,v])=>`<span>${STYLE_INFO[k].label}: ${v}</span>`).join('');
+
+  const imposedBlock = info.imposed ? `
+    <hr>
+    <div class="lead" style="margin-bottom:10px">Potrzeby i przekonania narzucone przez wzorzec, a nie przez Ciebie</div>
+    <p style="font-size:.93rem;margin-bottom:10px">
+      Poniższe myśli i „potrzeby” subiektywnie odczuwane są jako Twoje własne, autentyczne stanowisko.
+      W rzeczywistości są produktem wzorca obronnego. Pojawiły się wcześniej niż zdolność do ich
+      krytycznej oceny i od tamtej pory działają jako filtr interpretacyjny, a nie wniosek wyciągnięty
+      z bieżącej rzeczywistości. Kierowanie się nimi nie chroni Cię, lecz utrzymuje wzorzec w mocy poprzez
+      dostarczanie mu ciągłego potwierdzenia (samospełniająca się przepowiednia).
+    </p>
+    <ul style="padding-left:20px;font-size:.93rem;margin-bottom:14px">
+      ${info.imposed.map(x=>`<li style="margin-bottom:6px">${x}</li>`).join('')}
+    </ul>
+    <div class="warn" style="border-left-color:var(--fearful)">
+      <b>Dlaczego trzeba działać wbrew temu, co podpowiada umysł.</b> Wzorzec obronny nie zgłasza się
+      jako „przekonanie do zweryfikowania”, lecz jako odczucie oczywistej słuszności, silniejsze
+      niż argument. To mechanizm zgodny z teorią redukcji dysonansu poznawczego: umysł preferuje
+      spójność ze znanym stanem (nawet bolesnym) nad niepewnością nieznanego, dlatego każda próba
+      zmiany wywołuje wewnętrzny opór odczuwany jako „to nie jest właściwe” lub „nie jestem gotowa/gotowy”.
+      Ten opór nie jest sygnałem błędu w planie. Jest oczekiwanym, mierzalnym objawem działania
+      mechanizmu, który praca ma rozmontować. W terapii ekspozycyjnej ten fakt jest podstawą metody:
+      unikanie zawsze przynosi natychmiastową subiektywną ulgę, a mimo to utrwala zaburzenie w czasie
+      (Foa &amp; Kozak, 1986, <i>Emotional Processing of Fear</i>). Wyłącznie działanie sprzeczne z
+      impulsem, powtarzane niezależnie od chwilowego dyskomfortu, dostarcza układowi nerwowemu
+      nowego doświadczenia korygującego, ponieważ samo przekonanie nigdy nie zostanie zmienione przez
+      wewnętrzną dyskusję z samym sobą, tylko przez nowe dane z rzeczywistości, których wzorzec
+      systematycznie unika. Czekanie na moment, w którym działanie „poczuje się dobrze” lub „słusznie”,
+      jest odroczeniem w nieskończoność. To poczucie z definicji pojawia się dopiero po serii
+      powtórzeń wbrew impulsowi, nigdy przed nią.
+    </div>
+    ` : '';
+
+  document.getElementById('result').innerHTML = `
+    <span class="badge ${info.class}">${info.label}</span>
+    <div class="lead">${info.lead}</div>
+    <div class="scores">${scoreRow}</div>
+    <p>${info.text}</p>
+    <div class="cite">${info.cite}</div>
+    <div class="warn">
+      Powyższe zachowania są strategią obronną wyuczoną w reakcji na wczesne środowisko relacyjne.
+      nie są cechą tożsamości ani świadomym wyborem. Podążanie za impulsami generowanymi przez ten
+      wzorzec (np. „nie potrzebuję nikogo”, „muszę się wycofać”, „muszę to sprawdzić teraz”) utrwala
+      go. Bez świadomej interwencji wzorzec odtwarza się w kolejnych relacjach niezależnie od ich
+      obiektywnych cech (przymus powtarzania; Freud, 1920). Jedną z dróg wyjścia jest konsekwentna
+      realizacja poniższych kroków, niezależnie od tego, co w danym momencie „podpowiada” ten schemat.
+    </div>
+    <div class="warn" style="border-left-color:var(--accent)">
+      <b>Koszt bezczynności.</b> Nieprzepracowany wzorzec nie jest neutralny. Obniża realną jakość
+      życia: liczbę i trwałość satysfakcjonujących relacji, bazowy poziom lęku, zdolność do
+      intymności i poczucie sprawczości. Osoby z niebezpiecznym stylem przywiązania raportują istotnie
+      niższy dobrostan i satysfakcję z relacji w porównaniu do osób o stylu bezpiecznym (Mikulincer &amp;
+      Shaver, 2007). To nie jest odległe ryzyko teoretyczne. Jest to koszt płacony każdego dnia, w którym
+      wzorzec pozostaje nieprzepracowany.
+      <br><br>
+      <b>Mit „idealnego momentu” i „idealnego partnera”.</b> Myśl „zajmę się tym, gdy będzie lepszy
+      moment” lub „potrzebuję kogoś, kto najpierw udowodni, że jest bezpieczny” nie jest racjonalną
+      strategią ostrożności, lecz mechanizmem podtrzymującym unikanie. Lepszy moment nie nadejdzie
+      samoistnie, bo to nie okoliczności zewnętrzne generują unikanie, tylko wewnętrzny wzorzec, który
+      aktywuje się niezależnie od tego, kto jest partnerem i kiedy. Partner spełniający warunek
+      „wystarczająco bezpieczny, żeby się otworzyć” nie istnieje jako punkt docelowy. Każda relacja,
+      również z osobą o stylu bezpiecznym, w pewnym momencie wymaga tolerowania niepewności i ryzyka.
+      Czekanie na spełnienie tego warunku jest odroczeniem w nieskończoność, nie strategią.
+      <br><br>
+      <b>Niedostępność emocjonalna i ucieczka nie są ochroną.</b> To wygodne uzasadnienie
+      wykorzystywane przez sam wzorzec do usprawiedliwienia sabotażu kolejnych relacji: „to nie ja
+      uciekam, to oni nie byli odpowiedni” / „nie jestem gotowa/gotowy, muszę najpierw popracować nad
+      sobą w izolacji”. Te myśli chronią wzorzec, a nie osobę, ponieważ pozwalają uniknąć konfrontacji z lękiem
+      bez nazwania tego unikaniem. Praca nad sobą, która ma sens, dzieje się <i>w relacji</i>
+      (poprzez ekspozycję i korektę), nie <i>przed</i> relacją, w oczekiwaniu na stan gotowości, który
+      z definicji nie nadchodzi poza kontekstem relacyjnym.
+    </div>
+    ${imposedBlock}
+    <hr>
+    <div class="lead" style="margin-bottom:14px">Plan pracy: kroki do wykonania w kolejności</div>
+    <ol class="steps">
+      ${info.steps.map(s=>`<li><b>${s[0]}.</b> ${s[1]}</li>`).join('')}
+    </ol>
+    ${buildSupplement(winner)}
+  `;
+  document.getElementById('result').style.display = 'block';
+  bindSupplementProgress(winner);
+  document.getElementById('result').scrollIntoView({behavior:'smooth'});
+}
+
+function reset(){
+  document.querySelectorAll('#traits input').forEach(cb=>cb.checked=false);
+  document.getElementById('result').style.display='none';
+}
+</script>
+
 </body>
 </html>
